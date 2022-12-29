@@ -15,7 +15,7 @@
 
 
 ```
- touch "~/.cache/zshhistory"
+touch "~/.cache/zshhistory"
 #-- Setup Alias in $HOME/zsh/aliasrc
 mkdir ~/.zsh
 mkdir ~/.zsh/plugins/
