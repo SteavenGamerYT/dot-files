@@ -200,3 +200,6 @@ exec_always --no-startup-id feh --bg-scale ~/Downloads/1098643.jpg
 bindsym --release Print exec gnome-screenshot
 bindsym --release Mod1+Sys_Req exec gnome-screenshot -w
 bindsym --release Shift+Print exec gnome-screenshot -a
+
+# Keyboard Layouts (English and Arabic)
+exec_always --no-startup-id setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle
