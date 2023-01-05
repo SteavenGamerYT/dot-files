@@ -144,3 +144,7 @@ fi
 if [ -d "$HOME/.spicetify" ] ;
   then PATH="$HOME/.spicetify:$PATH"
 fi
+
+# Sounds
+alias laptop-speekers="wpctl set-default 54"
+alias usb-headphones="wpctl set-default 31"
