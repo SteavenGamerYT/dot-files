@@ -116,15 +116,31 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Created by `pipx` on 2022-12-28 22:55:40
+
+
 
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
-# fake vim
-alias vim="nano"
+### PATH
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
 
-# add Spicetify to path
-export PATH=$PATH:/home/omarhanykasban/.spicetify
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/Applications" ] ;
+  then PATH="$HOME/Applications:$PATH"
+fi
+
+if [ -d "/var/lib/flatpak/exports/bin/" ] ;
+  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
+
+if [ -d "$HOME/.spicetify" ] ;
+  then PATH="$HOME/.spicetify:$PATH"
+fi
