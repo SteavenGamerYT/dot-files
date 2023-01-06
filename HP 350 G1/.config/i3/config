@@ -192,8 +192,8 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 #Hardware Setup
-exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
-exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1 
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 exec_always --no-startup-id xrandr -r 60 -s 1366x768 --output eDP-1
 
 #Wallpaper
