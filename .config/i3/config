@@ -51,7 +51,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#325E82' -sf '#EEEEEE' -fn 'monospace-10'"
+
+
 #bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -191,7 +194,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 #Hardware Setup
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
 exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
-exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output  eDP-1-1
+#exec_always --no-startup-id xrandr --output eDP-1-1  --mode 1920x1080 --scale-from 1536x864 -r 120
+exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output eDP-1-1
 
 #Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Downloads/1098643.jpg
@@ -201,5 +205,15 @@ bindsym --release Print exec gnome-screenshot
 bindsym --release Mod1+Sys_Req exec gnome-screenshot -w
 bindsym --release Shift+Print exec gnome-screenshot -a
 
+
 # Keyboard Layouts (English and Arabic)
 exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle"
+
+# class                 border  bground text    indicator child_border
+client.focused          #4C7899 #208FE9 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #325E82 #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #2C5372 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
