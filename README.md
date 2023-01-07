@@ -39,7 +39,7 @@ sudo fc-cache -vf
 ```
 
 
-#(Dell G15 5510)
+# (Dell G15 5510)
 
 
 ```
@@ -55,7 +55,7 @@ ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/polybar/launch.sh ~/.co
 ```
 
 
-#(HP 350 G1)
+# (HP 350 G1)
 
 
 ```
