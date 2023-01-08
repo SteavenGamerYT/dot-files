@@ -51,8 +51,8 @@ alias hs='history | grep'
 alias hsi='history | grep -i'
 
 #CopyDIR 
-#alias pbcopy='xclip -selection clipboard'
-#alias pbpaste='xclip -selection clipboard -o'
-#function copydir {
-#  pwd | tr -d "\r\n" | pbcopy
-#}
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+function copydir {
+  pwd | tr -d "\r\n" | pbcopy
+}
