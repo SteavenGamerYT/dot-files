@@ -198,7 +198,7 @@ exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "l
 exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output eDP-1-1
 
 #Wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Downloads/1098643.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers-3/wallpaperflare.com_wallpaper-(5).jpg
 
 #ScreenShot
 bindsym --release Print exec gnome-screenshot
