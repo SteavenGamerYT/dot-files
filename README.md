@@ -8,7 +8,7 @@
  to use them you need this packages installed 
 
 
- zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch
+ `sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
 
 
  and powerleveal10k
