@@ -148,3 +148,13 @@ fi
 # Sounds
 alias laptop-speekers="pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 alias usb-headphones="pactl set-default-sink alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.iec958-stereo"
+
+# History
+alias h='history'
+alias hs='history | grep'
+alias hsi='history | grep -i'
+
+#CopyDIR 
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias copydir='pwd | tr -d "\r\n" | pbcopy'
