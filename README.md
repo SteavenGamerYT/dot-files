@@ -65,6 +65,5 @@ ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.zshenv ~/.zshenv
 ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.p10k.zsh ~/.p10k.zsh
 ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/i3/config ~/.config/i3/config
 ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/neofetch/config.conf ~/.config/neofetch/config.conf
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/polybar/config.ini ~/.config/polybar/config.ini
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/polybar/launch.sh ~/.config/polybar/launch.sh
+ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/polybar ~/.config/polybar
 ```
