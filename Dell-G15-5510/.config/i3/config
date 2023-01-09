@@ -23,7 +23,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#325E82' -sf '#EEEEEE' -fn 'monospace-10'"
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10' -p 'dmenu prompt &gt;'"
 #bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 # move focus
@@ -148,13 +148,13 @@ bindsym --release Print exec flameshot gui
 exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle"
 
 # class                 border  bground text    indicator child_border
-client.focused          #4C7899 #208FE9 #FFFFFF #2E9EF4   #285577
-client.focused_inactive #333333 #325E82 #FFFFFF #484E50   #5F676A
-client.unfocused        #333333 #2C5372 #888888 #292D2E   #222222
+client.focused          #4C566A #4C566A #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #2E3440 #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
-
 client.background       #FFFFFF
+
 #Screen Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
