@@ -158,3 +158,4 @@ client.background       #FFFFFF
 #Screen Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+for_window [class="^.*"] border pixel 1
