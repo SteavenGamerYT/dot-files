@@ -161,3 +161,6 @@ alias copydir='pwd | tr -d "\r\n" | pbcopy'
 
 #speedtest fix
 alias speedtest='speedtest --secure'
+
+#samba connect
+alias smb-connect='nemo smb://192.168.0.109/omar-share'
