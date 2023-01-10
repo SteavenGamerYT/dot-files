@@ -167,3 +167,33 @@ alias smb-connect='nemo smb://192.168.0.109/omar-share'
 
 # ls -all = ll
 alias ll='ls -all --color=auto'
+
+# Alias's to modified commands
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='trash -v'
+alias mkdir='mkdir -p'
+alias ps='ps auxf'
+alias ping='ping -c 10'
+alias less='less -R'
+alias cls='clear'
+alias apt-get='sudo apt-get'
+alias multitail='multitail --no-repeat -c'
+alias freshclam='sudo freshclam'
+alias vi='nvim'
+alias svi='sudo vi'
+alias vis='nvim "+set si"'
+# Alias's for archives
+alias mktar='tar -cvf'
+alias mkbz2='tar -cvjf'
+alias mkgz='tar -cvzf'
+alias untar='tar -xvf'
+alias unbz2='tar -xvjf'
+alias ungz='tar -xvzf'
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
+	. /usr/share/autojump/autojump.sh
+elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+	. /usr/share/autojump/autojump.bash
+else
+	echo "can't found the autojump script"
+fi
