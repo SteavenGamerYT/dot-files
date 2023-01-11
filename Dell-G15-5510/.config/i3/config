@@ -24,7 +24,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
-#bindsym $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+c exec "rofi -modi drun,run -show drun"
 
 # move focus
 bindsym $mod+j focus left
@@ -137,8 +137,7 @@ exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "li
 exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
 #exec_always --no-startup-id xrandr --output eDP-1-1  --mode 1920x1080 --scale-from 1536x864 -r 120
 #exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output eDP-1-1
-#exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -r 120  --output HDMI-0 --mode 1920x1080 -r 60 --right-of eDP-1-1
-exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 -r 120  --output HDMI-1-0 --mode 1920x1080 -r 60 --right-of eDP-1
+exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -r 120  --output HDMI-0 --mode 1920x1080 -r 60 --right-of eDP-1-1
 #Wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Pictures/1.jpg
 
@@ -159,3 +158,5 @@ client.background       #FFFFFF
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #for_window [class="^.*"] border pixel 1
+# root fix
+exec_always --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
