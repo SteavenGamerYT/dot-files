@@ -137,10 +137,10 @@ exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "li
 exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
 #exec_always --no-startup-id xrandr --output eDP-1-1  --mode 1920x1080 --scale-from 1536x864 -r 120
 #exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output eDP-1-1
-exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -r 120  --output HDMI-0 --mode 1920x1080 -r 60 --right-of eDP-1-1
-
+#exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -r 120  --output HDMI-0 --mode 1920x1080 -r 60 --right-of eDP-1-1
+exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 -r 120  --output HDMI-1-0 --mode 1920x1080 -r 60 --right-of eDP-1
 #Wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers-3/5.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/1.jpg
 
 #ScreenShot
 bindsym --release Print exec flameshot gui
