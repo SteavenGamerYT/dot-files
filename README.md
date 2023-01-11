@@ -51,6 +51,7 @@ ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.p10k.zsh ~/.p10k.zsh
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/i3/config ~/.config/i3/config
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/polybar ~/.config/polybar
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/kitty ~/.config/kitty
 ```
 
 
