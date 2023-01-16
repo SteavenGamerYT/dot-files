@@ -145,6 +145,10 @@ if [ -d "$HOME/.spicetify" ] ;
   then PATH="$HOME/.spicetify:$PATH"
 fi
 
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
 # Sounds
 alias laptop-speekers="pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 alias usb-headphones="pactl set-default-sink alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo"
