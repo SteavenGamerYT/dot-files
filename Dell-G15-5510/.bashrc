@@ -210,3 +210,9 @@ alias nix-list-installed='nix-env -q'
 alias nix-remove='nix-env -e'
 alias nix-install='nix-env -iA '
 alias nix-update='nix-env -u'
+
+# sudo nix package manager
+alias sudo-nix-list-installed='sudo nix-env -q'
+alias sudo-nix-remove='sudo nix-env -e'
+alias sudo-nix-install='sudo nix-env -iA '
+alias sudo-nix-update='sudo nix-env -u'
