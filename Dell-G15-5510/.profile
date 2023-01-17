@@ -36,3 +36,7 @@ fi
 if [ -d "$HOME/.spicetify" ] ;
   then PATH="$HOME/.spicetify:$PATH"
 fi
+
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
