@@ -167,7 +167,8 @@ alias copydir='pwd | tr -d "\r\n" | pbcopy'
 alias speedtest='speedtest --secure'
 
 #samba connect
-alias smb-connect='nemo smb://192.168.0.109/omar-share'
+alias smb-connect='nemo smb://192.168.1.4/omar-share'
+alias smb-connect2='nemo smb://192.168.1.13/omar-share'
 
 # ls -all = ll
 alias ll='ls -all --color=auto'
@@ -204,6 +205,7 @@ else
 fi
 
 alias mount-hdd='sudo lowntfs-3g -o uid=1000,gid=1000,rw,user,exec,umask=000 /dev/sda1 /media/externlhdd'
+alias mount-hdd2='sudo lowntfs-3g -o uid=1000,gid=1000,rw,user,exec,umask=000 /dev/sdb1 /media/externlhdd'
 
 # nix package manager
 alias nix-list-installed='nix-env -q'
