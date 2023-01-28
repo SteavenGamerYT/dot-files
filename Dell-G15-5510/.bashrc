@@ -217,3 +217,5 @@ alias sudo-nix-list-installed='sudo nix-env -q'
 alias sudo-nix-remove='sudo nix-env -e'
 alias sudo-nix-install='sudo nix-env -iA '
 alias sudo-nix-update='sudo nix-env -u'
+
+export PATH=$PATH:/home/omarhanykasban/.spicetify
