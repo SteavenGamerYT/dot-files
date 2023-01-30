@@ -63,7 +63,7 @@ alias copydir='pwd | tr -d "\r\n" | pbcopy'
 alias speedtest='speedtest --secure'
 
 #samba connect
-alias smb-connect='nautilus smb://192.168.1.18/omar-share'
+alias smb-connect='nemo smb://192.168.1.18/omar-share'
 
 # ls -all = ll
 alias ll='ls -all --color=auto'
@@ -118,3 +118,4 @@ export PATH=$PATH:/home/omarhanykasban/.spicetify
 
 # gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
 alias gedit='gnome-text-editor'
+alias sudo-gedit='sudo gnome-text-editor'
