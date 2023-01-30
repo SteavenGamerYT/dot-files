@@ -99,9 +99,6 @@ else
 	echo "can't found the autojump script"
 fi
 
-alias mount-hdd='sudo lowntfs-3g -o uid=1000,gid=1000,rw,user,exec,umask=000 /dev/sda1 /media/externlhdd'
-alias mount-hdd2='sudo lowntfs-3g -o uid=1000,gid=1000,rw,user,exec,umask=000 /dev/sdb1 /media/externlhdd'
-
 # nix package manager
 alias nix-list-installed='nix-env -q'
 alias nix-remove='nix-env -e'

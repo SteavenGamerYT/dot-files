@@ -94,4 +94,6 @@ else
 	echo "can't found the autojump script"
 fi
 
-alias mount-hdd='sudo lowntfs-3g -o uid=1000,gid=1000,rw,user,exec,umask=000 /dev/sda1 /media/externlhdd'
+# gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
+alias gedit='gnome-text-editor'
+alias sudo-gedit='sudo gnome-text-editor'
