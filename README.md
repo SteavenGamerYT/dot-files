@@ -1,5 +1,5 @@
 # DOT Files
-My Dot FIles
+My Dot Files
 
 
  # Using
