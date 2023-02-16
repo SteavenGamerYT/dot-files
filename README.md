@@ -1,4 +1,4 @@
-# dot files
+# DOT Files
  My Dot FIles
 
 
