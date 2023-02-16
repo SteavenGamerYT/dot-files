@@ -18,7 +18,7 @@
 `sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
 
 
- and powerleveal10k
+ and powerlevel10k
 
 
 ```
