@@ -11,6 +11,13 @@
  `sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
 
 
+
+`yay -Syu zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
+
+
+`sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
+
+
  and powerleveal10k
 
 
