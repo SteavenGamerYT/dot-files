@@ -50,6 +50,8 @@ sudo fc-cache -vf
 
 
 ```
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.steavengameryt ~/.steavengameryt
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.zshrc ~/.zshrc
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.bashrc ~/.bashrc
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.profile ~/.profile
