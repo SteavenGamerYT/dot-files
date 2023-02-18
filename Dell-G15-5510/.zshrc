@@ -118,3 +118,9 @@ alias sudo-nix-update='sudo nix-env -u'
 # gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
 alias gedit='gnome-text-editor'
 alias sudo-gedit='sudo gnome-text-editor'
+
+# history
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=10000
+setopt sharehistory
+setopt extendedhistory
