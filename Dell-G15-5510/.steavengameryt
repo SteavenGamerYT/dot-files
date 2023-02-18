@@ -96,5 +96,3 @@ alias sudo-gedit='sudo gnome-text-editor'
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
-setopt sharehistory
-setopt extendedhistory

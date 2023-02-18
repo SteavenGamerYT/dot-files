@@ -30,3 +30,9 @@ else
 	echo "can't found the autojump script"
 fi
 
+
+# history
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=10000
+setopt sharehistory
+setopt extendedhistory
