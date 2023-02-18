@@ -1,24 +1,28 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# sourcing my plugins
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+if [[ -r "/home/omarhanykasban/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" ]]; then
+  source "/home/omarhanykasban/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+else
+	echo "can't found the zsh-autocomplete script"
+fi
 
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+if [[ -r "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme" ]]; then
+  source "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme"
+else
+	echo "can't found the powerlevel10k script"
+fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-
-
-# confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
+	. /usr/share/autojump/autojump.sh
+elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+	. /usr/share/autojump/autojump.bash
+else
+	echo "can't found the autojump script"
+fi
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;
@@ -44,6 +48,13 @@ fi
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
+
+export PATH=$PATH:/home/omarhanykasban/.spicetify
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
 
 # Sounds
 alias laptop-speekers="pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
@@ -91,13 +102,6 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
-else
-	echo "can't found the autojump script"
-fi
 
 # nix package manager
 alias nix-list-installed='nix-env -q'
@@ -110,8 +114,6 @@ alias sudo-nix-list-installed='sudo nix-env -q'
 alias sudo-nix-remove='sudo nix-env -e'
 alias sudo-nix-install='sudo nix-env -iA '
 alias sudo-nix-update='sudo nix-env -u'
-
-export PATH=$PATH:/home/omarhanykasban/.spicetify
 
 # gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
 alias gedit='gnome-text-editor'
