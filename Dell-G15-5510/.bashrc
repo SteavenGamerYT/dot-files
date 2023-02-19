@@ -9,3 +9,4 @@ if [[ -r "/home/omarhanykasban/.steavengameryt" ]]; then
 else
 	echo "can't found the steavengameryt script"
 fi
+export PATH=$PATH:/home/omarhanykasban/.spicetify
