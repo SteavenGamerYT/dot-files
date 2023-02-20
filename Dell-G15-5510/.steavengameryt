@@ -96,3 +96,9 @@ alias sudo-gedit='sudo gnome-text-editor'
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
+
+
+# supergxctl 
+alias gpulinux='supergfxctl -m Hybrid && logout'
+alias gpudis='supergfxctl -m Integrated && logout'
+alias gpuwindows='supergfxctl -m Vfio'
