@@ -165,4 +165,4 @@ exec_always --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authenticati
 # Lock Screen
 # betterlockscreen -u /home/omarhanykasban/Pictures/nordic.png --fx dim,pixel
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 180 'betterlockscreen --lock ' '' &
-bindsym Ctrl+$mod+l exec --no-startup-id betterlockscreen --look
+bindsym Ctrl+$mod+l exec --no-startup-id betterlockscreen --lock
