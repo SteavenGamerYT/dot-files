@@ -104,5 +104,5 @@ alias gpudis='supergfxctl -m Integrated && logout'
 alias gpuwindows='supergfxctl -m Vfio'
 
 #neofetch fix
-alias neofetch='neofetch --ascii ~/.config/neofetch/steaven1.txt | lolcat'
+alias neofetch='neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
 alias neofetch-small='neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
