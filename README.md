@@ -8,14 +8,14 @@ My Dot Files
  to use them you need this packages installed 
 
 
- `sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
+ `sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
 
 
 
-`yay -Syu zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
+`yay -Syu zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
 
 
-`sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip`
+`sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
 
 
  and powerlevel10k
