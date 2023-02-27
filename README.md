@@ -61,6 +61,7 @@ ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/i3/config ~/.config/i3/
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/neofetch/ ~/.config/neofetch
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/polybar ~/.config/polybar
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/kitty ~/.config/kitty
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/BetterDiscord ~/.config/BetterDiscord
 ```
 
 
