@@ -165,3 +165,6 @@ exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-ag
 # betterlockscreen -u /home/omarhanykasban/Pictures/nordic.png --fx dim,pixel
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 180 'betterlockscreen --lock ' '' &
 bindsym Ctrl+$mod+l exec --no-startup-id betterlockscreen --lock
+
+# wifi fix
+exec_always --no-startup-id nm-applet
