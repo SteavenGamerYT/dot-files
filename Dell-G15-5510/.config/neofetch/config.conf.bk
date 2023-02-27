@@ -1,37 +1,44 @@
-# Source: https://github.com/Chick2D/neofetch-themes/ 
-# Do consider checking out the repository, it has a ton of great configs like this.
-
-# Made by https://github.com/mmsaeed509 (ozozFetch)
-
-# Customization Wiki https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
-
+# See this wiki page for more info:
+# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
     info title
     info underline
-    
-    info "${c1} OS" os
-    info "${c1} ├ " distro
-    info "${c1} ├ " kernel
-    info "${c1} ├ " packages
-    info "${c1} └ " shell
-    echo
-    info "${c2} DE/WM" wm
-    info "${c2} ├ " theme
-    info "${c2} ├ " icons
-    info "${c2} └ " term
-    echo
-    info "${c3} PC" model
-    info "${c3} ├ " cpu
-    info "${c3} ├ " gpu
-    info "${c3} ├ " memory
-    info "${c3} ├ " uptime
-    info "${c3} └ " resolution
-    
+
+    info "OS" distro
+    info "Host" model
+    info "Kernel" kernel
+    info "Uptime" uptime
+    info "Packages" packages
+    info "Shell" shell
+    info "Resolution" resolution
+    info "DE" de
+    info "WM" wm
+    info "WM Theme" wm_theme
+    info "Theme" theme
+    info "Icons" icons
+    info "Terminal" term
+    info "Terminal Font" term_font
+    info "CPU" cpu
+    info "GPU" gpu
+    info "Memory" memory
+
+    # info "GPU Driver" gpu_driver  # Linux/macOS only
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # [[ "$player" ]] && prin "Music Player" "$player"
+    # info "Local IP" local_ip
+    # info "Public IP" public_ip
+    # info "Users" users
+    # info "Locale" locale  # This only works on glibc systems.
+
     info cols
-    
 }
 
-##--------- Title
+# Title
+
 
 # Hide/Show Fully qualified domain name.
 #
@@ -41,7 +48,8 @@ print_info() {
 title_fqdn="off"
 
 
-##--------- Kernel
+# Kernel
+
 
 # Shorten the output of the kernel function.
 #
@@ -56,7 +64,8 @@ title_fqdn="off"
 kernel_shorthand="on"
 
 
-##--------- Distro
+# Distro
+
 
 # Shorten the output of the distro function
 #
@@ -79,7 +88,8 @@ distro_shorthand="off"
 os_arch="on"
 
 
-##--------- Uptime
+# Uptime
+
 
 # Shorten the output of the uptime function
 #
@@ -94,7 +104,8 @@ os_arch="on"
 uptime_shorthand="on"
 
 
-##--------- Memory
+# Memory
+
 
 # Show memory pecentage in output.
 #
@@ -120,7 +131,8 @@ memory_percent="off"
 memory_unit="mib"
 
 
-##--------- Packages
+# Packages
+
 
 # Show/Hide Package Manager names.
 #
@@ -135,7 +147,8 @@ memory_unit="mib"
 package_managers="on"
 
 
-##--------- Shell
+# Shell
+
 
 # Show the path to $SHELL
 #
@@ -160,7 +173,8 @@ shell_path="off"
 shell_version="on"
 
 
-##--------- CPU
+# CPU
+
 
 # CPU speed type
 #
@@ -235,10 +249,11 @@ cpu_cores="logical"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="on"
+cpu_temp="off"
 
 
-##--------- GPU
+# GPU
+
 
 # Enable/Disable GPU Brand
 #
@@ -271,7 +286,8 @@ gpu_brand="on"
 gpu_type="all"
 
 
-##--------- Resolution
+# Resolution
+
 
 # Display refresh rate next to each monitor
 # Default: 'off'
@@ -285,7 +301,8 @@ gpu_type="all"
 refresh_rate="off"
 
 
-##--------- Gtk Theme / Icons / Font
+# Gtk Theme / Icons / Font
+
 
 # Shorten output of GTK Theme / Icons / Font
 #
@@ -297,6 +314,7 @@ refresh_rate="off"
 # on:  'Numix, Adwaita'
 # off: 'Numix [GTK2], Adwaita [GTK3]'
 gtk_shorthand="off"
+
 
 # Enable/Disable gtk2 Theme / Icons / Font
 #
@@ -321,7 +339,8 @@ gtk2="on"
 gtk3="on"
 
 
-##--------- IP Address
+# IP Address
+
 
 # Website to ping for the public IP
 #
@@ -337,7 +356,9 @@ public_ip_host="http://ident.me"
 # Flag:    --ip_timeout
 public_ip_timeout=2
 
+
 # Desktop Environment
+
 
 # Show Desktop Environment version
 #
@@ -347,7 +368,8 @@ public_ip_timeout=2
 de_version="on"
 
 
-##--------- Disk
+# Disk
+
 
 # Which disks to display.
 # The values can be any /dev/sdXX, mount point or directory.
@@ -404,7 +426,8 @@ disk_subtitle="mount"
 disk_percent="on"
 
 
-##--------- Song
+# Song
+
 
 # Manually specify a music player.
 #
@@ -488,7 +511,8 @@ song_shorthand="off"
 mpc_args=()
 
 
-##--------- Text Colors
+# Text Colors
+
 
 # Text Colors
 #
@@ -505,7 +529,8 @@ mpc_args=()
 colors=(distro)
 
 
-##--------- Text Options
+# Text Options
+
 
 # Toggle bold text
 #
@@ -526,7 +551,8 @@ underline_enabled="on"
 # Default:  '-'
 # Values:   'string'
 # Flag:     --underline_char
-underline_char=""
+underline_char="-"
+
 
 # Info Separator
 # Replace the default separator with the specified string.
@@ -537,10 +563,11 @@ underline_char=""
 # Example:
 # separator="->":   'Shell-> bash'
 # separator=" =":   'WM = dwm'
-separator="->"
+separator=":"
 
 
-##--------- Color Blocks
+# Color Blocks
+
 
 # Color block range
 # The range of colors to print.
@@ -593,7 +620,8 @@ block_height=1
 # col_offset=7      - Leave 7 spaces then print the colors
 col_offset="auto"
 
-##--------- Progress Bars
+# Progress Bars
+
 
 # Bar characters
 #
@@ -635,6 +663,7 @@ bar_length=15
 bar_color_elapsed="distro"
 bar_color_total="distro"
 
+
 # Info display
 # Display a bar with the info.
 #
@@ -656,7 +685,8 @@ battery_display="off"
 disk_display="off"
 
 
-##--------- Backend Settings
+# Backend Settings
+
 
 # Image backend.
 #
@@ -681,7 +711,8 @@ image_backend="ascii"
 image_source="auto"
 
 
-##--------- Ascii Options
+# Ascii Options
+
 
 # Ascii distro
 # Which distro's ascii art to display.
@@ -740,7 +771,7 @@ ascii_distro="auto"
 # Example:
 # ascii_colors=(distro)      - Ascii is colored based on Distro colors.
 # ascii_colors=(4 6 1 8 8 6) - Ascii is colored using these colors.
-ascii_colors=(1 2 3 4 5 6 7 8)
+ascii_colors=(distro)
 
 # Bold ascii logo
 # Whether or not to bold the ascii logo.
@@ -751,7 +782,8 @@ ascii_colors=(1 2 3 4 5 6 7 8)
 ascii_bold="on"
 
 
-##--------- Image Options
+# Image Options
+
 
 # Image loop
 # Setting this to on will make neofetch redraw the image constantly until
@@ -801,7 +833,7 @@ image_size="auto"
 # Default: '3'
 # Values:  'num', '-num'
 # Flag:    --gap
-gap=2
+gap=3
 
 # Image offsets
 # Only works with the w3m backend.
@@ -822,7 +854,7 @@ xoffset=0
 background_color=
 
 
-##--------- Misc Options
+# Misc Options
 
 # Stdout mode
 # Turn off all colors and disables image backend (ASCII/Image).
