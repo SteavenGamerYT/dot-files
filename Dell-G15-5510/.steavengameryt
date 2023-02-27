@@ -102,3 +102,6 @@ HISTSIZE=SAVEHIST=10000
 alias gpulinux='supergfxctl -m Hybrid && logout'
 alias gpudis='supergfxctl -m Integrated && logout'
 alias gpuwindows='supergfxctl -m Vfio'
+
+#neofetch fix
+alias neofetch='neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
