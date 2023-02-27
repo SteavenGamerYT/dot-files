@@ -2,6 +2,7 @@
 	"all": {
 		"changeLogs": {
 			"BDFDB": "3.0.8",
+			"NotificationSounds": "3.7.6",
 			"SpotifyControls": "1.3.2"
 		},
 		"choices": {

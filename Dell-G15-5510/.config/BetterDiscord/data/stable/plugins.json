@@ -4,5 +4,8 @@
     "SpotifyControls": true,
     "FreeEmojis": true,
     "BDFDB": true,
-    "ZeresPluginLibrary": false
+    "ZeresPluginLibrary": true,
+    "TypingUsersAvatars": true,
+    "TypingIndicator": true,
+    "NotificationSounds": true
 }
