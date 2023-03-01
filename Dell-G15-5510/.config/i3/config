@@ -143,8 +143,8 @@ exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -
 exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Dropbox/Pictures/Pikachu/2.jpg
 
 #ScreenShot
-bindsym --release Print exec flameshot gui
-
+#bindsym --release Print exec flameshot gui
+bindsym --release Print exec gnome-screenshot
 exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle"
 
 # class                 border  bground text    indicator child_border
