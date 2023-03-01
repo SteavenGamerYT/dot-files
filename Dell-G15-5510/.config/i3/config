@@ -28,9 +28,9 @@ bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#E
 bindsym $mod+c exec "rofi -modi drun,run -show drun -theme /home/omarhanykasban/.config/polybar/scripts/rofi/material.rasi"
 
 # move focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -168,3 +168,6 @@ bindsym Ctrl+$mod+l exec --no-startup-id betterlockscreen --lock
 
 # wifi fix
 exec_always --no-startup-id nm-applet
+
+bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
+bindsym $mod+l exec "/home/omarhanykasban/w10"

@@ -1,0 +1,4 @@
+supergfxctl -m Integrated
+supergfxctl -m Vfio
+sudo virsh start "win10"
+looking-glass-clinet -F
