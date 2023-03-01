@@ -8,14 +8,7 @@ My Dot Files
  to use them you need this packages installed 
 
 
- `sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
-
-
-
-`yay -Syu zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
-
-
-`sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat`
+`yay -Syu zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat i3 hyprland-bin polkit-gnome ffmpeg rofi-lbonn-wayland-git pavucontrol papirus-icon-theme nwg-look-bin dunst waybar-hyprland wlogout swaylock-effects pamixer noise-suppression-for-voice thunar-archive-plugin kitty swaybg grimblast-git ffmpegthumbnailer tumbler playerctl wl-clipboard wf-recorder viewnior feh betterlockscreen brightnessctl nm-applet`
 
 
  and powerlevel10k
