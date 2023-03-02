@@ -2,9 +2,9 @@
 
 * {
   al:    #00000000;
-  bg:    #141C21FF;
-  bg1:   #90CAF9FF;
-  bg2:   #64B5F6FF;
-  bg3:   #42A5F5FF;
-  fg:    #FFFFFFFF;
+  bg:    #FFFFFFFF;
+  bg1:   #3F51B5FF;
+  bg2:   #3949ABFF;
+  bg3:   #303F9FFF;
+  fg:    #141C21FF;
 }
