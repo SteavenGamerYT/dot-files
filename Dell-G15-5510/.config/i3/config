@@ -172,3 +172,6 @@ exec_always --no-startup-id nm-applet
 bindsym $mod+x exec gnome-terminal
 bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
 bindsym $mod+l exec "/home/omarhanykasban/w10"
+
+# compostor
+exec --no-startup-id picom -CGb
