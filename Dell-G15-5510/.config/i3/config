@@ -160,7 +160,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #for_window [class="^.*"] border pixel 1
 # root fix
-exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec_always --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 $
 # Lock Screen
 # betterlockscreen -u /home/omarhanykasban/Pictures/nordic.png --fx dim,pixel
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 180 'betterlockscreen --lock ' '' &
