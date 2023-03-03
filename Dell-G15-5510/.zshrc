@@ -36,3 +36,4 @@ HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt sharehistory
 setopt extendedhistory
+export PATH=$PATH:/home/omarhanykasban/.spicetify

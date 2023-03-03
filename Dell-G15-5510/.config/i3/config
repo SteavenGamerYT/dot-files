@@ -8,7 +8,8 @@ font pango:Roboto Regular 10
 #font pango:DejaVu Sans Mono 8
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i betterlockscreen --lock
 exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
@@ -164,7 +165,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 exec_always --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 $
 # Lock Screen
 # betterlockscreen -u /home/omarhanykasban/Pictures/nordic.png --fx dim,pixel
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 180 'betterlockscreen --lock ' '' &
+#exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 180 'betterlockscreen --lock ' '' &
 bindsym Ctrl+$mod+l exec --no-startup-id betterlockscreen --lock
 
 # wifi fix
