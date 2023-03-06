@@ -10,3 +10,5 @@ else
 	echo "can't found the steavengameryt script"
 fi
 export PATH=$PATH:/home/omarhanykasban/.spicetify
+
+eval "$(starship init bash)"

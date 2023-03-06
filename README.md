@@ -57,7 +57,7 @@ ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/kitty ~/.config/kitty
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/BetterDiscord ~/.config/BetterDiscord
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/hypr ~/.config/hypr
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/waybar ~/.config/waybar
-```
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/starship.toml ~/.config/starship.toml
 
 
 # (HP 350 G1)
