@@ -9,11 +9,11 @@ else
 	echo "can't found the zsh-autocomplete script"
 fi
 
-if [[ -r "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme" ]]; then
-  source "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme"
-else
-	echo "can't found the powerlevel10k script"
-fi
+#if [[ -r "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme" ]]; then
+#  source "/home/omarhanykasban/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme"
+#else
+#	echo "can't found the powerlevel10k script"
+#fi
 if [[ -r "/home/omarhanykasban/.steavengameryt" ]]; then
   source "/home/omarhanykasban/.steavengameryt"
 else

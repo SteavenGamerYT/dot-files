@@ -106,3 +106,6 @@ alias gpuwindows='supergfxctl -m Vfio'
 #neofetch fix
 alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
 alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
+
+# looking-glass
+alias looking-glass='looking-glass-client -m 97'
