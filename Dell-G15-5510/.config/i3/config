@@ -141,9 +141,9 @@ exec_always --no-startup-id xinput set-prop ""DELL0A64:00 04F3:317E Touchpad" "l
 #exec_always --no-startup-id xrandr -r 120 -s 1920x1080 --output eDP-1-1
 exec_always --no-startup-id xrandr --output eDP-1-1 --primary --mode 1920x1080 -r 120  --output HDMI-0 --mode 1920x1080 -r 60 --right-of eDP-1-1
 #Wallpaper
-#exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Dropbox/Pictures/Pikachu/2.jpg
-#exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/1.jpg
-exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/paul-pastourmatzis-KT3WlrL_bsg-unsplash.jpg
+exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Dropbox/Pictures/Pikachu/2.jpg --no-fehbg
+#exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/blobs-d.svg --no-fehbg
+#exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/paul-pastourmatzis-KT3WlrL_bsg-unsplash.jpg --no-fehbg
 #ScreenShot
 bindsym --release Print exec flameshot gui
 #bindsym --release Print exec gnome-screenshot
@@ -176,4 +176,8 @@ bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
 bindsym $mod+l exec "/home/omarhanykasban/w10"
 
 # compostor
-exec --no-startup-id picom -CGb
+exec --no-startup-id picom
+
+gaps inner 5
+gaps outer 5
+# for_window [class="^.*"] border pixel 2
