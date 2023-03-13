@@ -167,3 +167,11 @@ client.background       #FFFFFF
 gaps inner 5
 gaps outer 5
 # for_window [class="^.*"] border pixel 2
+
+# __          __     _      _      _____        _____  ______ _____  
+# \ \        / /\   | |    | |    |  __ \ /\   |  __ \|  ____|  __ \ 
+#  \ \  /\  / /  \  | |    | |    | |__) /  \  | |__) | |__  | |__) |
+#   \ \/  \/ / /\ \ | |    | |    |  ___/ /\ \ |  ___/|  __| |  _  / 
+#    \  /\  / ____ \| |____| |____| |  / ____ \| |    | |____| | \ \ 
+#     \/  \/_/    \_\______|______|_| /_/    \_\_|    |______|_|  \_\                                                                   
+exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Dropbox/Pictures/Pikachu/2.jpg --no-fehbg
