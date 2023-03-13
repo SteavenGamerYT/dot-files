@@ -44,6 +44,8 @@ bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme /home/omarhanykasban/.config/polybar/scripts/rofi/material.rasi"
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 
 # █▀ █▀▀ █▀█ █▀▀ █▀▀ █▄░█ █▀ █░█ █▀█ ▀█▀
 # ▄█ █▄▄ █▀▄ ██▄ ██▄ █░▀█ ▄█ █▀█ █▄█ ░█░
