@@ -40,6 +40,7 @@ exec --no-startup-id picom
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 $
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id dropbox start -i
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
 bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
