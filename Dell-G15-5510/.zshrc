@@ -39,3 +39,4 @@ setopt extendedhistory
 export PATH=$PATH:/home/omarhanykasban/.spicetify
 
 eval "$(starship init zsh)"
+source ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
