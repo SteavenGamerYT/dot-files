@@ -2,7 +2,7 @@
  * @name NotificationSounds
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 3.7.6
+ * @version 3.7.7
  * @description Allows you to replace the native Sounds with custom Sounds
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -69,11 +69,11 @@ module.exports = (_ => {
 		const message1Types = {
 			dm:			{src: "./message3.mp3", name: "Message (Direct Message)", force: null, focus: true},
 			groupdm:	{src: "./message3.mp3", name: "Message (Group Message)", force: null, focus: true},
-			mentioned:	{src: "./message2.mp3", name: "Message Mentioned", force: false, focus: true},
-			reply:		{src: "./message2.mp3", name: "Message Mentioned (reply)", force: false, focus: true},
-			role:		{src: "./mention1.mp3", name: "Message Mentioned (role)", force: false, focus: true},
-			everyone:	{src: "./mention2.mp3", name: "Message Mentioned (@everyone)", force: false, focus: true},
-			here:		{src: "./mention3.mp3", name: "Message Mentioned (@here)", force: false, focus: true}
+			mentioned:	{src: "./message2.mp3", name: "Mention", force: false, focus: true},
+			reply:		{src: "./message2.mp3", name: "Mention (reply)", force: false, focus: true},
+			role:		{src: "./mention1.mp3", name: "Mention (role)", force: false, focus: true},
+			everyone:	{src: "./mention2.mp3", name: "Mention (@everyone)", force: false, focus: true},
+			here:		{src: "./mention3.mp3", name: "Mention (@here)", force: false, focus: true}
 		};
 		
 		const defaultAudios = {
@@ -86,8 +86,8 @@ module.exports = (_ => {
 		const WebAudioSound = class WebAudioSound {
 			constructor (type) {
 				this.name = type;
-				this._src = audios[choices[type].category][choices[type].sound] || types[type].src;
-				this._volume = choices[type].volume / 100;
+				this._src = choices[type] && audios[choices[type].category][choices[type].sound] || types[type] && types[type].src || BDFDB.LibraryModules.SoundParser(`./${type}.mp3`);
+				this._volume = (choices[type] ? choices[type].volume : 100) / 100;
 			}
 			loop () {
 				this._ensureAudio().then(audio => {
@@ -286,8 +286,8 @@ module.exports = (_ => {
 							cancel();
 							BDFDB.PatchUtils.patch(this, e.returnValue.constructor.prototype, ["play", "loop"], {instead: e2 => {
 								let type = e2.instance && e2.instance.name;
+								let loop = e2.originalMethodName == "loop";
 								if (type && choices[type]) {
-									let loop = e2.originalMethodName == "loop";
 									e2.stopOriginalMethodCall();
 									BDFDB.TimeUtils.timeout(_ => {
 										if (type == "message1") {
@@ -302,21 +302,13 @@ module.exports = (_ => {
 										else this.playAudio(type, loop);
 									});
 								}
-								else e2.callOriginalMethodAfterwards();
+								else this.playAudio(type, loop);
 							}});
 							BDFDB.PatchUtils.patch(this, e.returnValue.constructor.prototype, "stop", {after: e2 => {
 								let type = e2.instance && e2.instance.name;
 								if (type && createdAudios[type]) createdAudios[type].stop();
 							}});
 						}
-						return;
-						let type = e.methodArguments[0];
-						if (type && choices[type]) {
-							let audio = new WebAudioSound(type);
-							createdAudios[type] = audio;
-							return audio;
-						}
-						else BDFDB.LogUtils.warn(`Could not create Sound for "${type}".`, this);
 					}}, {noCache: true});
 					BDFDB.LibraryModules.SoundUtils.createSound("call_calling");
 				}
@@ -489,11 +481,18 @@ module.exports = (_ => {
 											mini: true,
 											grow: 0,
 											label: "Mute in",
-											labelChildren: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.StatusComponents.Status, {
-												style: {marginLeft: 6},
-												size: 12,
-												status: BDFDB.LibraryComponents.StatusComponents.Types.DND
-											}),
+											labelChildren: [
+												BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.StatusComponents.Status, {
+													style: {marginLeft: 6},
+													size: 12,
+													status: BDFDB.LibraryComponents.StatusComponents.Types.DND
+												}),
+												BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.StatusComponents.Status, {
+													style: {marginLeft: 6},
+													size: 12,
+													status: BDFDB.LibraryComponents.StatusComponents.Types.STREAMING
+												})
+											],
 											value: choices[type].mute,
 											onChange: value => {
 												choices[type].mute = value;
@@ -726,7 +725,7 @@ module.exports = (_ => {
 
 			dontPlayAudio (type) {
 				let status = BDFDB.UserUtils.getStatus();
-				return choices[type].mute && (status == "dnd" || status == "streaming");
+				return choices[type] && choices[type].mute && (status == "dnd" || status == "streaming");
 			}
 
 			fireEvent (type) {

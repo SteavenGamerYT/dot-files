@@ -2,7 +2,7 @@
  * @name BDFDB
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 3.0.8
+ * @version 3.1.5
  * @description Required Library for DevilBro's Plugins
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -1094,14 +1094,16 @@ module.exports = (_ => {
 			const requestLibraryHashes = tryAgain => {
 				requestFunction("https://api.github.com/repos/mwittrien/BetterDiscordAddons/contents/Library/_res/", {headers: {"user-agent": "node.js"}, timeout: 60000}, (e, r, b) => {
 					if ((e || !b || r.statusCode != 200) && tryAgain) return BDFDB.TimeUtils.timeout(_ => requestLibraryHashes(), 10000);
-					try {
-						b = JSON.parse(b);
-						libHashes[cssFileName] = (b.find(n => n && n.name == cssFileName) || {}).sha;
-						libHashes[dataFileName] = (b.find(n => n && n.name == dataFileName) || {}).sha;
-						BDFDB.DataUtils.save(libHashes, BDFDB, "hashes");
+					else {
+						try {
+							b = JSON.parse(b);
+							libHashes[cssFileName] = (b.find(n => n && n.name == cssFileName) || {}).sha;
+							libHashes[dataFileName] = (b.find(n => n && n.name == dataFileName) || {}).sha;
+							BDFDB.DataUtils.save(libHashes, BDFDB, "hashes");
+						}
+						catch (err) {}
 						requestLibraryData(true);
 					}
-					catch (err) {requestLibraryData(true);}
 				});
 			};
 			const requestLibraryData = tryAgain => {
@@ -2463,14 +2465,14 @@ module.exports = (_ => {
 					}
 					return parent.props.children;
 				}
-				MyReact.createElement = function (component, props = {}, errorWrap = false) {
+				MyReact.createElement = function (component, props = {}, errorWrap = false, ignoreErrors = false) {
 					if (component && component.defaultProps) for (let key in component.defaultProps) if (props[key] == null) props[key] = component.defaultProps[key];
 					try {
 						let child = Internal.LibraryModules.React.createElement(component || "div", props) || null;
 						if (errorWrap) return Internal.LibraryModules.React.createElement(Internal.ErrorBoundary, {key: child && child.key || ""}, child) || null;
 						else return child;
 					}
-					catch (err) {BDFDB.LogUtils.error(["Could not create React Element!", err]);}
+					catch (err) {!ignoreErrors && BDFDB.LogUtils.error(["Could not create React Element!", err]);}
 					return null;
 				};
 				MyReact.objectToReact = function (obj) {
@@ -2845,7 +2847,7 @@ module.exports = (_ => {
 					if (!BDFDB.ObjectUtils.is(node)) return null;
 					return node[Object.keys(node).find(key => key.startsWith("__reactInternalInstance") || key.startsWith("__reactFiber"))];
 				};
-				MyReact.render = function (component, node) {
+				MyReact.render = function (component, node, ignoreErrors = false) {
 					if (!BDFDB.ReactUtils.isValidElement(component) || !Node.prototype.isPrototypeOf(node)) return;
 					try {
 						Internal.LibraryModules.ReactDOM.render(component, node);
@@ -2858,15 +2860,15 @@ module.exports = (_ => {
 						}));
 						observer.observe(document.body, {subtree: true, childList: true});
 					}
-					catch (err) {BDFDB.LogUtils.error(["Could not render React Element!", err]);}
+					catch (err) {!ignoreErrors && BDFDB.LogUtils.error(["Could not render React Element!", err]);}
 				};
-				MyReact.hookCall = function (callback, args) {
+				MyReact.hookCall = function (callback, args, ignoreErrors = false) {
 					if (typeof callback != "function") return null;
 					let returnValue = null, tempNode = document.createElement("div");
 					BDFDB.ReactUtils.render(BDFDB.ReactUtils.createElement(_ => {
 						returnValue = callback(args);
 						return null;
-					}), tempNode);
+					}, {}, false, ignoreErrors), tempNode, ignoreErrors);
 					BDFDB.ReactUtils.unmountComponentAtNode(tempNode);
 					return returnValue;
 				};
@@ -3815,11 +3817,11 @@ module.exports = (_ => {
 					});
 				};
 				
-				const MappedMenuItems = {}, RealMenuItems = BDFDB.ModuleUtils.find(m => {
+				var MappedMenuItems = {}, RealMenuItems = BDFDB.ModuleUtils.find(m => {
 					if (!m || typeof m != "function") return false;
 					let string = m.toString();
 					return string.endsWith("{return null}}") && string.indexOf("(){return null}") > -1 && string.indexOf("catch(") == -1;
-				});
+				}) || BDFDB.ModuleUtils.findByString("(){return null}function");
 				if (!RealMenuItems) {
 					RealMenuItems = {};
 					BDFDB.LogUtils.error(["could not find Module for MenuItems"]);
@@ -4560,7 +4562,7 @@ module.exports = (_ => {
 					render() {
 						if (this.state.hasError) return Internal.LibraryModules.React.createElement("span", {
 							style: {
-								background: Internal.DiscordConstants.Colors.PRIMARY_DARK,
+								background: Internal.DiscordConstants.Colors.PRIMARY,
 								borderRadius: 5,
 								color: "var(--status-danger)",
 								fontSize: 12,
@@ -4574,6 +4576,17 @@ module.exports = (_ => {
 						return this.props.children;
 					}
 				};
+				
+				Internal.NativeSubComponents = new Proxy(NativeSubComponents, {
+					get: function (_, item) {
+						if (NativeSubComponents[item]) return NativeSubComponents[item];
+						if (!InternalData.NativeSubComponents[item]) return "div";
+						
+						Internal.findModuleViaData(NativeSubComponents, InternalData.NativeSubComponents, item);
+						
+						return NativeSubComponents[item] ? NativeSubComponents[item] : "div";
+					}
+				});
 				
 				CustomComponents.AutoFocusCatcher = reactInitialized && class BDFDB_AutoFocusCatcher extends Internal.LibraryModules.React.Component {
 					render() {
@@ -6135,7 +6148,7 @@ module.exports = (_ => {
 					handleClick(e) {if (typeof this.props.onClick == "function") this.props.onClick(e, this);}
 					handleContextMenu(e) {if (typeof this.props.onContextMenu == "function") this.props.onContextMenu(e, this);}
 					render() {
-						let color = BDFDB.ColorUtils.convert(this.props.role.colorString, "RGB") || Internal.DiscordConstants.Colors.PRIMARY_DARK_300;
+						let color = BDFDB.ColorUtils.convert(this.props.role.colorString, "RGB") || Internal.DiscordConstants.Colors.PRIMARY_300;
 						return BDFDB.ReactUtils.createElement("li", {
 							className: BDFDB.DOMUtils.formatClassName(BDFDB.disCN.userrole, this.props.className),
 							style: {borderColor: BDFDB.ColorUtils.setAlpha(color, 0.6)},
@@ -6558,6 +6571,22 @@ module.exports = (_ => {
 						});
 					}
 				};
+				CustomComponents.PopoutContainer.Align = {
+					BOTTOM: "bottom",
+					CENTER: "center",
+					LEFT: "left",
+					RIGHT: "right",
+					TOP: "top"
+				};
+				CustomComponents.PopoutContainer.Positions = {
+					BOTTOM: "bottom",
+					CENTER: "center",
+					LEFT: "left",
+					RIGHT: "right",
+					TOP: "top",
+					WINDOW_CENTER: "window_center"
+				};
+				CustomComponents.PopoutContainer.ObjectProperties = ["Animation"];
 				Internal.setDefaultProps(CustomComponents.PopoutContainer, {wrap: true});
 				
 				CustomComponents.PopoutCSSAnimator = function (props) {
@@ -7170,7 +7199,7 @@ module.exports = (_ => {
 					let mini = props.size == Internal.LibraryComponents.Switch.Sizes.MINI;
 					
 					return BDFDB.ReactUtils.createElement(Internal.LibraryComponents.Animations.animated.div, {
-						className: BDFDB.DOMUtils.formatClassName(props.className, BDFDB.disCN.switch, mini && BDFDB.disCN.switchmini),
+						className: BDFDB.DOMUtils.formatClassName(props.className, BDFDB.disCN.switch, mini && BDFDB.disCN.switchmini, "default-colors"),
 						onMouseDown: _ => {
 							return !props.disabled && state[1](true);
 						},
@@ -7284,7 +7313,7 @@ module.exports = (_ => {
 				};
 				Internal.setDefaultProps(CustomComponents.Switch, {
 					size: CustomComponents.Switch.Sizes.DEFAULT,
-					uncheckedColor: Internal.DiscordConstants.Colors.PRIMARY_DARK_400,
+					uncheckedColor: Internal.DiscordConstants.Colors.PRIMARY_400,
 					checkedColor: Internal.DiscordConstants.Colors.BRAND
 				});
 				
@@ -7310,6 +7339,19 @@ module.exports = (_ => {
 							}))
 						}), "itemClassName", "items", "renderItem"));
 					}
+				};
+				CustomComponents.TabBar.Types = {
+					SIDE: "side",
+					TOP: "top",
+					TOP_PILL: "top-pill"
+				};
+				CustomComponents.TabBar.Looks = {
+					0: "GREY",
+					1: "BRAND",
+					2: "CUSTOM",
+					GREY: 0,
+					BRAND: 1,
+					CUSTOM: 2
 				};
 				
 				CustomComponents.Table = reactInitialized && class BDFDB_Table extends Internal.LibraryModules.React.Component {
@@ -7604,6 +7646,14 @@ module.exports = (_ => {
 						});
 					}
 				};
+				CustomComponents.TooltipContainer.Positions = {
+					BOTTOM: "bottom",
+					CENTER: "center",
+					LEFT: "left",
+					RIGHT: "right",
+					TOP: "top",
+					WINDOW_CENTER: "window_center"
+				};
 				
 				CustomComponents.UserPopoutContainer = reactInitialized && class BDFDB_UserPopoutContainer extends Internal.LibraryModules.React.Component {
 					render() {
@@ -7667,17 +7717,6 @@ module.exports = (_ => {
 					}
 				};
 				
-				Internal.NativeSubComponents = new Proxy(NativeSubComponents, {
-					get: function (_, item) {
-						if (NativeSubComponents[item]) return NativeSubComponents[item];
-						if (!InternalData.NativeSubComponents[item]) return "div";
-						
-						Internal.findModuleViaData(NativeSubComponents, InternalData.NativeSubComponents, item);
-						
-						return NativeSubComponents[item] ? NativeSubComponents[item] : "div";
-					}
-				});
-				
 				Internal.LibraryComponents = new Proxy(LibraryComponents, {
 					get: function (_, item) {
 						if (LibraryComponents[item]) return LibraryComponents[item];
@@ -7693,6 +7732,7 @@ module.exports = (_ => {
 								if (key == "defaultProps") LibraryComponents[item][key] = Object.assign({}, LibraryComponents[item][key], NativeComponent[key]);
 								else if (!LibraryComponents[item][key]) LibraryComponents[item][key] = NativeComponent[key];
 							}
+							if (LibraryComponents[item].ObjectProperties) for (let key of LibraryComponents[item].ObjectProperties) if (!LibraryComponents[item][key]) LibraryComponents[item][key] = {};
 						}
 						return LibraryComponents[item] ? LibraryComponents[item] : "div";
 					}
@@ -7722,8 +7762,9 @@ module.exports = (_ => {
 					});
 				}
 				
-				for (let type of Object.keys(RealMenuItems)) {
-					let children = BDFDB.ObjectUtils.get(BDFDB.ReactUtils.hookCall(Internal.LibraryComponents.Menu, {hideScroller: true, children: BDFDB.ReactUtils.createElement(RealMenuItems[type], {})}), "props.children.props.children.props.children");
+				const RealFilteredMenuItems = Object.keys(RealMenuItems).filter(type => typeof RealMenuItems[type] == "function" && RealMenuItems[type].toString().replace(/[\n\t\r]/g, "").endsWith("{return null}"));
+				for (let type of RealFilteredMenuItems) {
+					let children = BDFDB.ObjectUtils.get(BDFDB.ReactUtils.hookCall(Internal.LibraryComponents.Menu, {hideScroller: true, children: BDFDB.ReactUtils.createElement(RealMenuItems[type], {})}, true), "props.children.props.children.props.children");
 					let menuItem = (BDFDB.ArrayUtils.is(children) ? children : []).flat(10).filter(n => n)[0];
 					if (menuItem) {
 						let menuItemsProps = BDFDB.ReactUtils.findValue(menuItem, "menuItemProps");
@@ -7745,7 +7786,7 @@ module.exports = (_ => {
 						}
 					}
 				}
-				LibraryComponents.MenuItems = new Proxy(RealMenuItems, {
+				LibraryComponents.MenuItems = new Proxy(RealFilteredMenuItems.reduce((a, v) => ({ ...a, [v]: v}), {}) , {
 					get: function (_, item) {
 						if (RealMenuItems[item]) return RealMenuItems[item];
 						if (CustomComponents.MenuItems[item]) return CustomComponents.MenuItems[item];
