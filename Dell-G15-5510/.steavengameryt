@@ -1,4 +1,9 @@
-### PATH
+ # _____     _______ _____ _    _ 
+ #|  __ \ /\|__   __/ ____| |  | |
+ #| |__) /  \  | | | |    | |__| |
+ #|  ___/ /\ \ | | | |    |  __  |
+ #| |  / ____ \| | | |____| |  | |
+ #|_| /_/    \_\_|  \_____|_|  |_|                               
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
@@ -25,34 +30,32 @@ fi
 
 export PATH=$PATH:/home/omarhanykasban/.spicetify
 
-# confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
-
+ # _    _          _____  _______          __     _____  ______ 
+ #| |  | |   /\   |  __ \|  __ \ \        / /\   |  __ \|  ____|
+ #| |__| |  /  \  | |__) | |  | \ \  /\  / /  \  | |__) | |__   
+ #|  __  | / /\ \ |  _  /| |  | |\ \/  \/ / /\ \ |  _  /|  __|  
+ #| |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
+ #|_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                             
 # Sounds
 alias laptop-speekers="pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 alias usb-headphones="pactl set-default-sink alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo"
-
-# History
-alias h='history'
-alias hs='history | grep'
-alias hsi='history | grep -i'
-
-#CopyDIR 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-alias copydir='pwd | tr -d "\r\n" | pbcopy'
-
-#speedtest fix
-alias speedtest='speedtest --secure'
-
+# looking-glass
+alias looking-glass='looking-glass-client -m 97'
+# supergxctl 
+alias gpulinux='supergfxctl -m Hybrid && logout'
+alias gpudis='supergfxctl -m Integrated && logout'
+alias gpuwindows='supergfxctl -m Vfio'
 #samba connect
-alias smb-connect='nemo smb://192.168.1.18/omar-share'
+alias smb-connect='nemo smb://192.168.1.15/share'
 
+#           _      _____           _____ 
+#     /\   | |    |_   _|   /\    / ____|
+#    /  \  | |      | |    /  \  | (___  
+#   / /\ \ | |      | |   / /\ \  \___ \ 
+#  / ____ \| |____ _| |_ / ____ \ ____) |
+# /_/    \_\______|_____/_/    \_\_____/     
 # ls -all = ll
-alias ll='ls -all --color=auto'
-
+alias ll='ls -all --color=auto'                                   
 # Alias's to modified commands
 alias cp='cp -i'
 alias mv='mv -i'
@@ -62,8 +65,6 @@ alias ps='ps auxf'
 alias ping='ping -c 10'
 alias less='less -R'
 alias cls='clear'
-alias apt-get='sudo apt-get'
-alias pacman='sudo pacman'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
 alias vi='nvim'
@@ -76,40 +77,51 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+# History
+alias h='history'
+alias hs='history | grep'
+alias hsi='history | grep -i'
+#CopyDIR 
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias copydir='pwd | tr -d "\r\n" | pbcopy'
+#speedtest fix
+alias speedtest='speedtest --secure'
+# gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
+alias gedit='gnome-text-editor'
+alias sudo-gedit='sudo gnome-text-editor'
+#neofetch fix
+alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
+alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
+# google chrome dark mode fix
+alias google-chrome='google-chrome-stable --force-dark-mode'
+alias google-chrome-stable='google-chrome-stable --force-dark-mode'
 
+ # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
+ #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
+ #| |__) /  \ | |    | ' /    /  \ | |  __| |__      | \  / |  /  \  |  \| |  /  \ | |  __| |__  | |__) |
+ #|  ___/ /\ \| |    |  <    / /\ \| | |_ |  __|     | |\/| | / /\ \ | . ` | / /\ \| | |_ |  __| |  _  / 
+ #| |  / ____ \ |____| . \  / ____ \ |__| | |____    | |  | |/ ____ \| |\  |/ ____ \ |__| | |____| | \ \ 
+ #|_| /_/    \_\_____|_|\_\/_/    \_\_____|______|   |_|  |_/_/    \_\_| \_/_/    \_\_____|______|_|  \_\                                                                                                      
+# apt, pacman, dnf package manager sudo fix
+alias apt-get='sudo apt-get'
+alias pacman='sudo pacman'
+alias dnf='sudo dnf'
 # nix package manager
 alias nix-list-installed='nix-env -q'
 alias nix-remove='nix-env -e'
 alias nix-install='nix-env -iA '
 alias nix-update='nix-env -u'
-
 # sudo nix package manager
 alias sudo-nix-list-installed='sudo nix-env -q'
 alias sudo-nix-remove='sudo nix-env -e'
 alias sudo-nix-install='sudo nix-env -iA '
 alias sudo-nix-update='sudo nix-env -u'
 
-# gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
-alias gedit='gnome-text-editor'
-alias sudo-gedit='sudo gnome-text-editor'
-
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
-
-
-# supergxctl 
-alias gpulinux='supergfxctl -m Hybrid && logout'
-alias gpudis='supergfxctl -m Integrated && logout'
-alias gpuwindows='supergfxctl -m Vfio'
-
-#neofetch fix
-alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
-alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
-
-# looking-glass
-alias looking-glass='looking-glass-client -m 97'
-
-# google chrome dark mode fix
-alias google-chrome='google-chrome-stable --force-dark-mode'
-alias google-chrome-stable='google-chrome-stable --force-dark-mode'
