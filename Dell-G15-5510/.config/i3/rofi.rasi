@@ -129,7 +129,7 @@ element-text {
     expand: true;
     horizontal-align: 0;
     vertical-align: 0.5;
-    color: #6e6a86;
+    color: #FFFFFF;
     background-color: transparent;
 }
 

@@ -189,3 +189,14 @@ exec --no-startup-id picom
 gaps inner 5
 gaps outer 5
 # for_window [class="^.*"] border pixel 2
+
+
+
+#element-text {
+#    font: "Inter Regular 11";
+#    expand: true;
+#    horizontal-align: 0;
+#    vertical-align: 0.5;
+#    color: #6e6a86;
+#    background-color: transparent;
+#}
