@@ -41,7 +41,7 @@ exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 $
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id dropbox start -i
-exec_always --no-startup-id autotiling --workspaces 10
+exec_always --no-startup-id autotiling --workspaces 7 8 9 10 
 for_window [title="Chrome"] move to workspace $WS1
 for_window [title="Discord"] move to workspace $WS2
 for_window [class="Spotify"] move to workspace $WS3
