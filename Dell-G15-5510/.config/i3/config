@@ -36,7 +36,7 @@ exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -
 # █▀▄▀█ █ █▀ █▀▀
 # █░▀░█ █ ▄█ █▄▄
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
-exec --no-startup-id picom
+exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 $
 exec --no-startup-id dex --autostart --environment i3
@@ -48,7 +48,8 @@ bindsym $mod+b exec "google-chrome-stable --force-dark-mode"
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
-bindsym $mod+d exec "rofi -modi drun,run -show drun -theme /home/omarhanykasban/.config/polybar/scripts/rofi/material.rasi"
+#bindsym $mod+d exec "rofi -modi drun,run -show drun -theme /home/omarhanykasban/.config/polybar/scripts/rofi/material.rasi"
+bindsym $mod+d exec "rofi -show drun -theme /home/omarhanykasban/.config/i3/rofi.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
