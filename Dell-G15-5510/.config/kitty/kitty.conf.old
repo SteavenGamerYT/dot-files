@@ -1,6 +1,0 @@
-#include ./nord.conf
-copy_on_select yes
-
-#mouse_map right press ungrabbed mouse_selection extend
-mouse_map right press ungrabbed paste_from_selection
-#mouse_map left click ungrabbed no-op
