@@ -51,7 +51,7 @@ ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.profile ~/.profile
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.zshenv ~/.zshenv
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.p10k.zsh ~/.p10k.zsh
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/i3 ~/.config/i3
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/picom~/.config/picom
+ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/picom ~/.config/picom
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/neofetch/ ~/.config/neofetch
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/polybar ~/.config/polybar
 ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/kitty ~/.config/kitty
