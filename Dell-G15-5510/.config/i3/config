@@ -157,8 +157,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #    | |   _| |_   | |   _| |_| |____| |____   | |_) / ____ \| | \ \ ____) |
 #    |_|  |_____|  |_|  |_____|______|______|  |____/_/    \_\_|  \_\_____/                                                                            
 # class                 border  bground text    indicator child_border
-client.focused          #4C566A #4C566A #FFFFFF #2E9EF4   #285577
-client.focused_inactive #333333 #2E3440 #FFFFFF #484E50   #5F676A
+client.focused          #4C566A #4C566A #FFFFFF #2E9EF4   #B5BCC2
+client.focused_inactive #333333 #2E3440 #FFFFFF #484E50   #8B9092
 client.unfocused        #4C566A #4C566A #888888 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
@@ -170,8 +170,8 @@ client.background       #FFFFFF
 # | | |_ | / /\ \ |  ___/ \___ \ 
 # | |__| |/ ____ \| |     ____) |
 #  \_____/_/    \_\_|    |_____/ 
-gaps inner 5
-gaps outer 5
+gaps inner 3
+gaps outer 3
 # for_window [class="^.*"] border pixel 2
 
 # __          __     _      _      _____        _____  ______ _____  
@@ -184,3 +184,6 @@ exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Dropbox/Pictures
 
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720
+
+
+default_border pixel 5
