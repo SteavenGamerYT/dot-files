@@ -39,39 +39,21 @@ sudo fc-cache -vf
 ```
 
 
-# (Dell G15 5510)
-
-
 ```
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.steavengameryt ~/.steavengameryt
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.bash-default ~/.bash-default
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.zshrc ~/.zshrc
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.bashrc ~/.bashrc
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.profile ~/.profile
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.zshenv ~/.zshenv
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.p10k.zsh ~/.p10k.zsh
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/i3 ~/.config/i3
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/picom ~/.config/picom
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/neofetch/ ~/.config/neofetch
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/polybar ~/.config/polybar
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/kitty ~/.config/kitty
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/BetterDiscord ~/.config/BetterDiscord
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/hypr ~/.config/hypr
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/waybar ~/.config/waybar
-ln -s ~/Documents/GitHub/dot-files/Dell-G15-5510/.config/starship.toml ~/.config/starship.toml
-```
-
-
-# (HP 350 G1)
-
-
-```
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.zshrc ~/.zshrc
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.bashrc ~/.bashrc
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.profile ~/.profile
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.zshenv ~/.zshenv
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.p10k.zsh ~/.p10k.zsh
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/i3/config ~/.config/i3/config
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/neofetch/config.conf ~/.config/neofetch/config.conf
-ln -s ~/Documents/GitHub/dot-files/HP-350-G1/.config/polybar ~/.config/polybar
+ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
+ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
+ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
+ln -s ~/Documents/GitHub/dot-files/.bashrc ~/.bashrc
+ln -s ~/Documents/GitHub/dot-files/.profile ~/.profile
+ln -s ~/Documents/GitHub/dot-files/.zshenv ~/.zshenv
+ln -s ~/Documents/GitHub/dot-files/.p10k.zsh ~/.p10k.zsh
+ln -s ~/Documents/GitHub/dot-files/.config/i3 ~/.config/i3
+ln -s ~/Documents/GitHub/dot-files/.config/picom ~/.config/picom
+ln -s ~/Documents/GitHub/dot-files/.config/neofetch/ ~/.config/neofetch
+ln -s ~/Documents/GitHub/dot-files/.config/polybar ~/.config/polybar
+ln -s ~/Documents/GitHub/dot-files/.config/kitty ~/.config/kitty
+ln -s ~/Documents/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
+ln -s ~/Documents/GitHub/dot-files/.config/hypr ~/.config/hypr
+ln -s ~/Documents/GitHub/dot-files/.config/waybar ~/.config/waybar
+ln -s ~/Documents/GitHub/dot-files/.config/starship.toml ~/.config/starship.toml
 ```
