@@ -100,6 +100,8 @@ alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lol
 # google chrome dark mode fix
 alias google-chrome='google-chrome-stable --force-dark-mode'
 alias google-chrome-stable='google-chrome-stable --force-dark-mode'
+# Antvirus made Simpler
+alias antvirus-update='freshclam'
 
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
