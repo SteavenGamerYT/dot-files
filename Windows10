@@ -1,0 +1,2 @@
+virsh --connect qemu:///system start Windows10
+looking-glass-client -m 97 -g OpenGL
