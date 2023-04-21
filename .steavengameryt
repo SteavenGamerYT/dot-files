@@ -102,6 +102,8 @@ alias google-chrome='google-chrome-stable --force-dark-mode'
 alias google-chrome-stable='google-chrome-stable --force-dark-mode'
 # Antvirus made Simpler
 alias antvirus-update='freshclam'
+# youtube downloader
+alias youtube-download='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
 
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
