@@ -55,7 +55,7 @@ alias smb-connect='nemo smb://192.168.1.15/share'
 #  / ____ \| |____ _| |_ / ____ \ ____) |
 # /_/    \_\______|_____/_/    \_\_____/     
 # ls -all = ll
-alias ll='ls -all --color=auto'                                   
+alias ll='ls -all --color=auto -h'                                   
 # Alias's to modified commands
 alias cp='cp -i'
 alias mv='mv -i'
@@ -127,6 +127,20 @@ alias playmov='vlc *.mov'
 alias playmp4='vlc *.mp4'
 # udo mastake fix
 alias udo='sudo'
+# GIT FIX
+gitpush() {
+    git add .
+    git commit -m "$*"
+    git pull
+    git push
+}
+gitupdate() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github
+    ssh -T git@github.com
+}
+alias gp=gitpush
+alias gu=gitupdate
 
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
@@ -152,3 +166,6 @@ alias sudo-nix-update='sudo nix-env -u'
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
+
+## APPS
+export EDITOR=nano
