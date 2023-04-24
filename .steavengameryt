@@ -165,6 +165,7 @@ alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -
 alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
+alias update-all='sudo apt update && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
 
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
