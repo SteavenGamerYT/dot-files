@@ -125,6 +125,8 @@ alias free='free -m'                      # show sizes in MB
 alias playavi='vlc *.avi'
 alias playmov='vlc *.mov'
 alias playmp4='vlc *.mp4'
+# udo mastake fix
+alias udo='sudo'
 
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
