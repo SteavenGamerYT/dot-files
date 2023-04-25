@@ -37,5 +37,5 @@ HISTSIZE=SAVEHIST=10000
 setopt sharehistory
 setopt extendedhistory
 export PATH=$PATH:/home/omarhanykasban/.spicetify
-export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}" 
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 eval "$(starship init zsh)"
