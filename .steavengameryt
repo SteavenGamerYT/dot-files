@@ -166,7 +166,8 @@ alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
 alias update-all='sudo apt update && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
-
+# flatpak fonts
+alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak-font.sh'
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
  #| |__) /  \ | |    | ' /    /  \ | |  __| |__      | \  / |  /  \  |  \| |  /  \ | |  __| |__  | |__) |
