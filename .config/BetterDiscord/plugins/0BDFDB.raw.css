@@ -565,6 +565,7 @@ img:not([src]), img[src=""], img[src="null"] {
 [REPLACE_CLASS_selectwrapper] [REPLACE_CLASS_select] {
 	flex: 1 1 auto;
 }
+[REPLACE_CLASS_selectwrapper] [REPLACE_CLASS_selectouter],
 [REPLACE_CLASS_selectwrapper] [REPLACE_CLASS_selectsearchinput] {
 	width: 100%;
 }
@@ -1157,6 +1158,13 @@ input[REPLACE_CLASS_input][REPLACE_CLASS_inputerror] {
 }
 [REPLACE_CLASS__repolistscroller] {
 	padding-top: 0;
+}
+[REPLACE_CLASS__repolistheader] [REPLACE_CLASS_tabbarcontainer] {
+	display: flex;
+	align-items: flex-start;
+}
+[REPLACE_CLASS__repolistheader] [REPLACE_CLASS_quickselectwrapper] {
+	line-height: 20px;
 }
 [REPLACE_CLASS__repoentry] [REPLACE_CLASS__repofooter] {
 	display: flex;

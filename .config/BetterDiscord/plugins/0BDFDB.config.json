@@ -1,9 +1,9 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.1.7",
-			"NotificationSounds": "3.7.8",
-			"SpotifyControls": "1.3.2"
+			"BDFDB": "3.2.8",
+			"NotificationSounds": "3.8.0",
+			"SpotifyControls": "1.3.4"
 		},
 		"choices": {
 			"toastPosition": "right"
@@ -15,8 +15,8 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "3cd143c70a73334bee12c8acaaf1a4a5601d53e3",
-			"0BDFDB.raw.css": "26087554c644b93f1f9d6c64e7a7918b6ec66dfe"
+			"0BDFDB.data.json": "bee67c4f2d42b41a9b1b2f1a7e33184e30180b06",
+			"0BDFDB.raw.css": "669b57713c736057d0465f4f6258d01a964161e8"
 		}
 	}
 }

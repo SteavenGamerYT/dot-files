@@ -264,6 +264,14 @@
 				"mute": false,
 				"sound": "---",
 				"volume": 100
+			},
+			"clip_save": {
+				"category": "---",
+				"focus": false,
+				"mute": false,
+				"sound": "---",
+				"streamMute": false,
+				"volume": 100
 			}
 		},
 		"volumes": {
