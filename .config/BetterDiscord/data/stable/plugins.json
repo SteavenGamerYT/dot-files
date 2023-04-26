@@ -1,7 +1,7 @@
 {
     "BDFDB": true,
     "ZeresPluginLibrary": false,
-    "FreeEmojis": true,
+    "FreeEmojis": false,
     "NoSpotifyPause": true,
     "NotificationSounds": true,
     "SpotifyControls": true,
