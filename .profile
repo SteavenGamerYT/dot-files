@@ -40,6 +40,3 @@ fi
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
-export MANGOHUD=1
-export QT_STYLE_OVERRIDE=kvantum
-export QT_QPA_PLATFORMTHEME=qt5ct
