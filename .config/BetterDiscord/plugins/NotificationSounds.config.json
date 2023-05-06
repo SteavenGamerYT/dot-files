@@ -272,6 +272,15 @@
 				"sound": "---",
 				"streamMute": false,
 				"volume": 100
+			},
+			"activities-rocket-time": {
+				"category": "---",
+				"focus": false,
+				"invisibleMute": false,
+				"mute": false,
+				"sound": "---",
+				"streamMute": false,
+				"volume": 100
 			}
 		},
 		"volumes": {
