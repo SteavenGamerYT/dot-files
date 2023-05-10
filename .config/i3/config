@@ -43,6 +43,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 $
+exec_always --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
 exec_always --no-startup-id /usr/libexec/xdg-desktop-portal-gtk &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id dropbox start -i
@@ -194,4 +195,3 @@ exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/1.jpg -
 
 
 default_border pixel 5
-exec_always --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
