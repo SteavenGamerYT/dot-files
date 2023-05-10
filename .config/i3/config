@@ -49,7 +49,7 @@ exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec "brave-browser"
+bindsym $mod+b exec "brave-browser --password-store=gnome"
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
@@ -194,3 +194,4 @@ exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/1.jpg -
 
 
 default_border pixel 5
+exec_always --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
