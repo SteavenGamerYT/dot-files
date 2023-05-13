@@ -56,4 +56,7 @@ ln -s ~/Documents/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
 ln -s ~/Documents/GitHub/dot-files/.config/hypr ~/.config/hypr
 ln -s ~/Documents/GitHub/dot-files/.config/waybar ~/.config/waybar
 ln -s ~/Documents/GitHub/dot-files/.config/starship.toml ~/.config/starship.toml
+ln -s ~/Documents/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
+ln -s ~/Documents/GitHub/dot-files/.config/yay ~/.config/yay
+ln -s ~/Documents/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
 ```
