@@ -195,3 +195,7 @@ HISTSIZE=SAVEHIST=10000
 
 ## APPS
 export EDITOR=nano
+
+# HALAL
+export HARAM=0 
+export HALAL=1
