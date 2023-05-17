@@ -38,8 +38,12 @@ sudo unzip Meslo.zip -d "/usr/share/fonts"
 sudo fc-cache -vf
 ```
 
+Installtion, make sure that you dont have any of this files alraday frist!, if so remove them
+
 
 ```
+sudo mkdir -p ~/Documents/GitHub
+git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
