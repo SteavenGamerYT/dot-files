@@ -15,7 +15,7 @@ Installtion, make sure that you dont have any of this files alraday frist!, if s
 
 
 ```
-sudo mkdir -p ~/Documents/GitHub
+mkdir -p ~/Documents/GitHub
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 yay -S starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat
 mkdir ~/.zsh
