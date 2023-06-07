@@ -47,6 +47,8 @@ alias gpudis='supergfxctl -m Integrated && logout'
 alias gpuwindows='supergfxctl -m Vfio'
 #samba connect
 alias smb-connect='nemo smb://192.168.1.15/share'
+#hdd mount
+alias mount-hdd='sudo umount -f UUID=5AC8ED97C8ED7225 && sudo mount UUID=5AC8ED97C8ED7225  --fstab /etc/fstab2'
 
 #           _      _____           _____ 
 #     /\   | |    |_   _|   /\    / ____|
