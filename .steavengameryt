@@ -208,3 +208,6 @@ export EDITOR=nano
 # HALAL
 export HARAM=0 
 export HALAL=1
+
+# CACHE FIX
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"

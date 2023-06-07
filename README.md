@@ -47,4 +47,5 @@ ln -s ~/Documents/GitHub/dot-files/.config/yay ~/.config/yay
 ln -s ~/Documents/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
 ln -s ~/Documents/GitHub/dot-files/.config/brave-flags.conf ~/.config/brave-flags.conf
 ln -s ~/Documents/GitHub/dot-files/.ssh/config ~/.ssh/config
+ln -s ~/Documents/GitHub/dot-files/.config/fish ~/.config/fish
 ```
