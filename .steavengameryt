@@ -198,6 +198,8 @@ alias ssh-dell='ssh omarhanykasban@192.168.1.14'
 alias ssh-lenvo='ssh omarhanykasban@192.168.1.106'
 alias ssh-hp='ssh omarhanykasban@192.168.1.205'
 alias ssh-server='ssh omarhanykasban@192.168.1.15'
+# Flatpak
+alias theme-flatpak='~/Documents/GitHub/dot-files/stylepak install-system'
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
