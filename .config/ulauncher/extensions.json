@@ -1,1 +1,16 @@
-{}
+{
+    "com.github.mepowerleo10.ulauncher-dict-en": {
+        "id": "com.github.mepowerleo10.ulauncher-dict-en",
+        "url": "https://github.com/mepowerleo10/ulauncher-dict-en",
+        "updated_at": "2023-07-08T22:38:23.101085",
+        "last_commit": "78babcd05dff825a580a7192fc14ee73775784f2",
+        "last_commit_time": "2023-04-03T09:26:35"
+    },
+    "com.github.ultiblog.ulauncher-password-generator": {
+        "id": "com.github.ultiblog.ulauncher-password-generator",
+        "url": "https://github.com/Ultiblog/ULauncher-Password-Generator",
+        "updated_at": "2023-07-08T22:45:26.966104",
+        "last_commit": "de08e6b3ce1c58e4f2b23321702ba40fa2110f73",
+        "last_commit_time": "2022-11-11T12:05:05"
+    }
+}
