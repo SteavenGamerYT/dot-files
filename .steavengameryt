@@ -206,8 +206,8 @@ export HARAM=0
 export HALAL=1
 # SSH
 update="yay -Syu && sudo flatpak update"
-alias update-all="ssh -t dell ${update} && ssh -t asus ${update} && ssh -t hp ${update} && ssh -t lenvo ${update}"
-dotfiles="git -c /home/omarhanykasban/Documents/GitHub/dot-files pull"
-alias update-dotfiles="ssh -t dell ${dotfiles} && ssh -t asus ${dotfiles} && ssh -t hp ${dotfiles} && ssh -t lenvo ${dotfiles}"
+alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update}' && ssh -t lenvo '${update}'"
+dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
+alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}' && ssh -t lenvo '${dotfiles}'"
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
