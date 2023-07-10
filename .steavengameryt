@@ -141,6 +141,11 @@ gitupdate() {
     ssh-add ~/.ssh/github
     ssh -T git@github.com
 }
+git-push() {
+	git add .
+	git commit -m "$1"
+	git push
+}
 alias gp=gitpush
 alias gu=gitupdate
 # Alias's to change the directory
