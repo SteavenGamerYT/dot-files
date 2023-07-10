@@ -167,7 +167,6 @@ alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -
 alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
-alias update-all='sudo apt update && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
 # flatpak fonts
 alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak-font.sh'
 # xlsclients fix
@@ -193,7 +192,6 @@ alias sudo-nix-remove='sudo nix-env -e'
 alias sudo-nix-install='sudo nix-env -iA '
 alias sudo-nix-update='sudo nix-env -u'
 # update
-alias update-all='yay -Syu && sudo flatpak update && ssh -t asus yay -Syu && sudo flatpak update && ssh -t hp yay -Syu && sudo flatpak update && ssh -t lenvo yay -Syu && sudo flatpak update'
 # Flatpak
 alias theme-flatpak='~/Documents/GitHub/dot-files/stylepak install-system'
 # history
@@ -206,6 +204,10 @@ export EDITOR=nano
 # HALAL
 export HARAM=0 
 export HALAL=1
-
+# SSH
+update='yay -Syu && sudo flatpak update'
+alias update-all='$(update) && ssh -t asus $(update) && ssh -t hp $(update) && ssh -t lenvo $(update)'
+dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
+alias update-dotfiles='$(dotfiles) && ssh -t asus $(dotfiles) && ssh -t hp $(dotfiles) && ssh -t lenvo $(dotfiles)'
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
