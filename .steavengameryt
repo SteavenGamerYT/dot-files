@@ -192,6 +192,8 @@ alias sudo-nix-list-installed='sudo nix-env -q'
 alias sudo-nix-remove='sudo nix-env -e'
 alias sudo-nix-install='sudo nix-env -iA '
 alias sudo-nix-update='sudo nix-env -u'
+# update
+alias update-all='yay -Syu && sudo flatpak update && ssh -t asus yay -Syu && sudo flatpak update && ssh -t hp yay -Syu && sudo flatpak update && ssh -t lenvo yay -Syu && sudo flatpak update'
 # Flatpak
 alias theme-flatpak='~/Documents/GitHub/dot-files/stylepak install-system'
 # history
