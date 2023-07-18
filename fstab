@@ -1,1 +1,1 @@
-UUID=30EE5E93EE5E50E8 /media/hdd ntfs3 uid=1000,gid=1000,rw,user,exec,umask=000 0 0
+UUID=30EE5E93EE5E50E8 /media/hdd ntfs-3g uid=1000,gid=1000,rw,user,exec,umask=000 0 0
