@@ -158,7 +158,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-
+bindsym XF86AudioPlay exec playerctl play-pause
 #   _______ _____ _______ _____ _      ______    ____          _____   _____ 
 # |__   __|_   _|__   __|_   _| |    |  ____|  |  _ \   /\   |  __ \ / ____|
 #    | |    | |    | |    | | | |    | |__     | |_) | /  \  | |__) | (___  
