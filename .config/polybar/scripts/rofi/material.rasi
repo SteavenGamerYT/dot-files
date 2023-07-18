@@ -33,7 +33,7 @@ configuration {
 	spacing: 0;
 	background-color: transparent;
 
-	font: "Roboto Mono 13";
+	font: "Roboto 13";
 }
 
 window {
