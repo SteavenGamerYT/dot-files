@@ -49,3 +49,9 @@ ln -s ~/Documents/GitHub/dot-files/.config/brave-flags.conf ~/.config/brave-flag
 ln -s ~/Documents/GitHub/dot-files/.ssh/config ~/.ssh/config
 ln -s ~/Documents/GitHub/dot-files/.config/fish ~/.config/fish
 ```
+
+
+***99% OF LINUX DISTROS DONT HAVE Starsship INSALL I USING THIS***
+
+
+`curl -sS https://starship.rs/install.sh | sh`
