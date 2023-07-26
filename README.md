@@ -51,7 +51,7 @@ ln -s ~/Documents/GitHub/dot-files/.config/fish ~/.config/fish
 ```
 
 
-***99% OF LINUX DISTROS DONT HAVE Starsship INSALL I USING THIS***
+***99% OF LINUX DISTROS DONT HAVE Starsship INSALL IT USING THIS***
 
 
 `curl -sS https://starship.rs/install.sh | sh`
