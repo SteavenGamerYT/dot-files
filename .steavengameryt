@@ -210,7 +210,7 @@ export EDITOR=nano
 export HARAM=0 
 export HALAL=1
 # SSH
-update="yay -Syu && sudo flatpak update"
+update="sudo dnf update && sudo flatpak update"
 alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update}' && ssh -t lenvo '${update}'"
 dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}' && ssh -t lenvo '${dotfiles}'"
