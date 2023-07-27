@@ -25,7 +25,7 @@ function! DrawLayout()
     enew
     resize 1
     if has('nvim')
-        call termopen('python '.s:path.'/topbar.py')
+        call termopen('python /home/omarhanykasban/Documents/GitHub/dot-files/vim-nano/topbar.py')
     else
         terminal ++curwin python ./topbar.py
     endif
@@ -42,7 +42,7 @@ function! DrawLayout()
     resize 3
     enew
     if has('nvim')
-        call termopen('python '.s:path.'/botbar.py')
+        call termopen('python /home/omarhanykasban/Documents/GitHub/dot-files/vim-nano/botbar.py')
         execute "$"
     else
         terminal ++curwin python ./botbar.py
