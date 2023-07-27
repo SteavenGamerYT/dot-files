@@ -93,7 +93,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias copydir='pwd | tr -d "\r\n" | pbcopy'
 #speedtest fix
-#alias speedtest='speedtest --secure'
+alias speedtest='speedtest-cli --secure'
 # gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
 alias gedit='gnome-text-editor'
 alias sudo-gedit='sudo gnome-text-editor'
