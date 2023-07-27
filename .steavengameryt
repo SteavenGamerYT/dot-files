@@ -148,6 +148,7 @@ git-push() {
 }
 alias gp=gitpush
 alias gu=gitupdate
+alias cdgit='cd /home/omarhanykasban/Documents/GitHub'
 # Alias's to change the directory
 # Change directory aliases
 alias web='cd /var/www/html'
