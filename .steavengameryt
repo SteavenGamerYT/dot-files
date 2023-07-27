@@ -147,6 +147,11 @@ git-push() {
 	git commit -m "$1"
 	git push
 }
+gitcommit() {
+        git add .
+        git commit -m "$1"
+}
+
 alias gp=gitpush
 alias gu=gitupdate
 alias cdgit='cd /home/omarhanykasban/Documents/GitHub'
