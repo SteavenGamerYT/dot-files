@@ -40,3 +40,4 @@ fi
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
+export QT_STYLE_OVERRIDE=kvantum
