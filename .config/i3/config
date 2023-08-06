@@ -21,7 +21,7 @@ font pango:Roboto Regular 10
 # | |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
 # |_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                              
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
-exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 0
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled Default" 1
 
 # █▀▄▀█ █▀█ █▄░█ █ ▀█▀ █▀█ █▀█
@@ -189,7 +189,7 @@ gaps outer 3
 #   \ \/  \/ / /\ \ | |    | |    |  ___/ /\ \ |  ___/|  __| |  _  / 
 #    \  /\  / ____ \| |____| |____| |  / ____ \| |    | |____| | \ \ 
 #     \/  \/_/    \_\______|______|_| /_/    \_\_|    |______|_|  \_\                                                                   
-exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/1.jpg --no-fehbg
+exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/wallpaperflare.com_wallpaper2.jpg --no-fehbg
 
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720
