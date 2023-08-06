@@ -43,3 +43,4 @@ fi
 #export QT_STYLE_OVERRIDE=kvantum
 export GTK_THEME=Nordic
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export ICON_THEME=Papirus
