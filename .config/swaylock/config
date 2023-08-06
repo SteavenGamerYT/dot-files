@@ -1,5 +1,6 @@
 image="/home/omarhanykasban/Pictures/Pikachu/2.jpg"
 clock
+timestr=%I:%M %p
 indicator-radius=100
 indicator-thickness=7
 effect-vignette=0.5:0.5
