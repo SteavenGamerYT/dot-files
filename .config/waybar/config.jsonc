@@ -46,7 +46,7 @@
         }
     },
     "custom/updates": {
-        "exec": "(pacman -Qu ; yay -Qua) | wc -l",
+        "exec": "dnf check-update| grep -Ec ' updates$'",
         "interval": 7200,
         "format": " {}"
     },
