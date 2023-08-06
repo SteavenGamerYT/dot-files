@@ -20,7 +20,8 @@
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
-        "network"
+        "network",
+        "custom/power"
     ],
 
     "hyprland/window": {
@@ -112,7 +113,7 @@
         "scroll-step": 5
     },
     "network": {
-        "interface": "wlan0",
+        "interface": "wlp0s20f3",
         "format": "{ifname}",
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",
@@ -123,6 +124,10 @@
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50
-   }
-
+   },
+   "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/polybar/scripts/powermenu.sh"
+}
 }
