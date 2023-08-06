@@ -44,6 +44,3 @@ fi
 export GTK_THEME=Nordic
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export ICON_THEME=Papirus
-if [[ "$(tty)" = "/dev/tty1" ]]; then 
-exec Hyprland
-fi
