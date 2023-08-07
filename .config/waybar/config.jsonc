@@ -20,6 +20,7 @@
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
+        "bluetooth",
         "network",
         "custom/power"
     ],
@@ -113,18 +114,31 @@
         "scroll-step": 5
     },
     "network": {
-        "interface": "wlp0s20f3",
+//        "interface": "wl*",
         "format": "{ifname}",
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", //An empty format will hide the module.
+      //  "format-wifi": "⇡{bandwidthUpBytes} ⇣{bandwidthDownBytes} {essid} ({signalStrength}%) ",
+        // "format-ethernet": "{ifname} ",
+        "format-ethernet": "{icon} {ifname}",
+        // "format-ethernet": "{icon} {ifname} ⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}",
+       // "format-disconnected": "", //An empty format will hide the module.
         "format-disconnected": "",
         "tooltip-format": "{ifname}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+        "on-click": "~/Documents/GitHub/dot-files/.config/rofi/rofi-network-manager/rofi-network-manager.sh"
    },
+   "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": " {device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "~/Documents/GitHub/dot-files/.config/rofi/rofi-bluetooth"
+},
    "custom/power": {
     "format": "",
     "tooltip": false,
