@@ -224,3 +224,8 @@ dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}' && ssh -t lenvo '${dotfiles}'"
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
+#konsole fix
+bash_in_konsole(){
+    local IFS
+    konsole -e bash --rcfile <(printf '. ~/.bashrc; set -m; %s\n' "$*")
+}

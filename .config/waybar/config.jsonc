@@ -47,9 +47,12 @@
         }
     },
     "custom/updates": {
-        "exec": "dnf check-update| grep -Ec ' updates$'",
-        "interval": 7200,
-        "format": " {}"
+        "format": " {}",
+        "interval": 7200,                     // every two hours
+        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "~/Documents/GitHub/dot-files/.config/waybar/update.sh", // update system
+        "signal": 8
     },
    "custom/weather" : {
         "tooltip" : true,
