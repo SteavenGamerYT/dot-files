@@ -1,3 +1,8 @@
+# LINUX IS USELESS
+I no longer use linux, since its useless
+
+
+
 # DOT Files
 My Dot Files
 
