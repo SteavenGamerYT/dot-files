@@ -219,7 +219,7 @@ export HALAL=1
 # SSH
 update="sudo dnf update && sudo flatpak update"
 update2="sudo nala upgrade && sudo flatpak update"
-alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update2}' && ssh -t lenvo '${update}'"
+alias update-all="ssh -t dell '${update2}' && ssh -t asus '${update2}' && ssh -t hp '${update2}' && ssh -t lenvo '${update2}'"
 dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}' && ssh -t lenvo '${dotfiles}'"
 # CACHE FIX
