@@ -1,32 +1,55 @@
-
 # DOT Files
 My Dot Files
 
 
- # Using
+# Using
 
 
- to use them you need this packages installed 
+to use them you need this packages installed 
 
 
 `yay -Syu starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat i3 hyprland-nvidia polkit-gnome ffmpeg rofi-lbonn-wayland-git pavucontrol papirus-icon-theme nwg-look-bin dunst waybar-hyprland wlogout swaylock-effects pamixer noise-suppression-for-voice thunar-archive-plugin kitty swaybg grimblast-git ffmpegthumbnailer tumbler playerctl wl-clipboard wf-recorder viewnior feh betterlockscreen brightnessctl nm-applet lightdm-gtk-greeter lightdm xdg-desktop-portal xdg-desktop-portal-hyprland-git xdg-desktop-portal-kde fwupd fwupd-efi kde-gtk-config plasma-desktop plasma-pa plasma-meta polybar`
 
 
-Installtion, make sure that you dont have any of this files alraday frist!, if so remove them
+Installation, make sure that you don't have any of this files already first!, if so remove them
 
 
 ```
 mkdir -p ~/Documents/GitHub
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
-yay -S starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat
+sudo apt install starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat
 mkdir ~/.zsh
 mkdir ~/.zsh/plugins/
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-sudo unzip ~/Documents/GitHub/dot-files/FiraCode.zip -d "/usr/share/fonts/zsh"
-sudo unzip ~/Documents/GitHub/dot-files/Meslo.zip -d "/usr/share/fonts/zsh"
-sudo fc-cache -vf
 chsh -s $(which zsh)
+rm -rf ~/.steavengameryt
+rm -rf  ~/.bash-default
+rm -rf  ~/.zshrc
+rm -rf  ~/.bashrc
+rm -rf  ~/.profile
+rm -rf  ~/.zshenv
+rm -rf  ~/.p10k.zsh
+rm -rf  ~/.config/i3
+rm -rf  ~/.config/picom
+rm -rf  ~/.config/neofetch
+rm -rf  ~/.config/polybar
+rm -rf  ~/.config/kitty
+rm -rf  ~/.config/BetterDiscord
+rm -rf  ~/.config/hypr
+rm -rf  ~/.config/waybar
+rm -rf  ~/.config/starship.toml
+rm -rf  ~/.config/ulauncher
+rm -rf  ~/.config/yay
+rm -rf ~/.config/MangoHud
+rm -rf  ~/.config/brave-flags.conf
+rm -rf  ~/.ssh/config
+rm -rf  ~/.config/fish
+rm -rf  ~/.config/dunst
+rm -rf  ~/.config/swaylock
+rm -rf  ~/.config/rofi
+mkdir ~/.ssh
+mkdir ~/.config
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
