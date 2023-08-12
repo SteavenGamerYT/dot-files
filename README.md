@@ -24,30 +24,30 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
 chsh -s $(which zsh)
 rm -rf ~/.steavengameryt
-rm -rf  ~/.bash-default
-rm -rf  ~/.zshrc
-rm -rf  ~/.bashrc
-rm -rf  ~/.profile
-rm -rf  ~/.zshenv
-rm -rf  ~/.p10k.zsh
-rm -rf  ~/.config/i3
-rm -rf  ~/.config/picom
-rm -rf  ~/.config/neofetch
-rm -rf  ~/.config/polybar
-rm -rf  ~/.config/kitty
-rm -rf  ~/.config/BetterDiscord
-rm -rf  ~/.config/hypr
-rm -rf  ~/.config/waybar
-rm -rf  ~/.config/starship.toml
-rm -rf  ~/.config/ulauncher
-rm -rf  ~/.config/yay
+rm -rf ~/.bash-default
+rm -rf ~/.zshrc
+rm -rf ~/.bashrc
+rm -rf ~/.profile
+rm -rf ~/.zshenv
+rm -rf ~/.p10k.zsh
+rm -rf ~/.config/i3
+rm -rf ~/.config/picom
+rm -rf ~/.config/neofetch
+rm -rf ~/.config/polybar
+rm -rf ~/.config/kitty
+rm -rf ~/.config/BetterDiscord
+rm -rf ~/.config/hypr
+rm -rf ~/.config/waybar
+rm -rf ~/.config/starship.toml
+rm -rf ~/.config/ulauncher
+rm -rf ~/.config/yay
 rm -rf ~/.config/MangoHud
-rm -rf  ~/.config/brave-flags.conf
-rm -rf  ~/.ssh/config
-rm -rf  ~/.config/fish
-rm -rf  ~/.config/dunst
-rm -rf  ~/.config/swaylock
-rm -rf  ~/.config/rofi
+rm -rf ~/.config/brave-flags.conf
+rm -rf ~/.ssh/config
+rm -rf ~/.config/fish
+rm -rf ~/.config/dunst
+rm -rf ~/.config/swaylock
+rm -rf ~/.config/rofi
 mkdir ~/.ssh
 mkdir ~/.config
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
