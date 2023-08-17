@@ -1,3 +1,3 @@
 flatpak list --app --columns=application,runtime|grep org.gnome.Platform|awk -F '\t' '{print "flatpak run --command=fc-cache " $1 " -f -v "}'|xargs -I % echo "%"|sh
-flatpak run --command=fc-cache org.onlyoffice.desktopeditors -f -v 
-flatpak run --command=fc-cache com.belmoussaoui.Obfuscate -f -v
+flatpak list --app --columns=application,runtime|awk -F '\t' '{print "flatpak run --command=fc-cache " $1 " -f -v "}'|xargs -I % echo "%"|sh
+
