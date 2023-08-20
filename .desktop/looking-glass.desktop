@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Looking Glass Client
-Exec=looking-glass-client -m 97 -g OpenGL
-Icon=looking-glass-client
-Terminal=false
