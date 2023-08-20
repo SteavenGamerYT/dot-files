@@ -3,19 +3,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-if [[ -r "~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" ]]; then
-  source "~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+if [[ -r ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]]; then
+  source ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 else
 	echo "can't found the zsh-autocomplete script"
 fi
 
-if [[ -r "~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme" ]]; then
-  source "~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme"
+if [[ -r ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 else
 	echo "can't found the powerlevel10k script"
 fi
-if [[ -r "~/.steavengameryt" ]]; then
-  source "~/.steavengameryt"
+if [[ -r ~/.steavengameryt ]]; then
+  source ~/.steavengameryt
 else
 	echo "can't found the steavengameryt script"
 fi
