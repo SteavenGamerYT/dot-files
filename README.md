@@ -15,14 +15,14 @@ Installation, make sure that you don't have any of this files already first!, if
 
 
 ```
+yay -S starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git
 mkdir -p ~/Documents/GitHub
+mkdir -p ~/.zsh/plugins/
+mkdir ~/.ssh
+mkdir ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
-sudo apt install starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat
-mkdir ~/.zsh
-mkdir ~/.zsh/plugins/
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-chsh -s $(which zsh)
 rm -rf ~/.steavengameryt
 rm -rf ~/.bash-default
 rm -rf ~/.zshrc
@@ -42,14 +42,11 @@ rm -rf ~/.config/starship.toml
 rm -rf ~/.config/ulauncher
 rm -rf ~/.config/yay
 rm -rf ~/.config/MangoHud
-rm -rf ~/.config/brave-flags.conf
 rm -rf ~/.ssh/config
 rm -rf ~/.config/fish
 rm -rf ~/.config/dunst
 rm -rf ~/.config/swaylock
 rm -rf ~/.config/rofi
-mkdir ~/.ssh
-mkdir ~/.config
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
@@ -69,16 +66,10 @@ ln -s ~/Documents/GitHub/dot-files/.config/starship.toml ~/.config/starship.toml
 ln -s ~/Documents/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
 ln -s ~/Documents/GitHub/dot-files/.config/yay ~/.config/yay
 ln -s ~/Documents/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
-ln -s ~/Documents/GitHub/dot-files/.config/brave-flags.conf ~/.config/brave-flags.conf
 ln -s ~/Documents/GitHub/dot-files/.ssh/config ~/.ssh/config
 ln -s ~/Documents/GitHub/dot-files/.config/fish ~/.config/fish
 ln -s ~/Documents/GitHub/dot-files/.config/dunst ~/.config/dunst
 ln -s ~/Documents/GitHub/dot-files/.config/swaylock ~/.config/swaylock
 ln -s ~/Documents/GitHub/dot-files/.config/rofi ~/.config/rofi
+chsh -s $(which zsh)
 ```
-
-
-***99% OF LINUX DISTROS DONT HAVE Starsship INSALL IT USING THIS***
-
-
-`curl -sS https://starship.rs/install.sh | sh`

@@ -28,7 +28,9 @@ if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
 
-export PATH=$PATH:/home/omarhanykasban/.spicetify
+## APPS
+export TERM="xterm-256color"   
+export EDITOR=nano
 
  # _    _          _____  _______          __     _____  ______ 
  #| |  | |   /\   |  __ \|  __ \ \        / /\   |  __ \|  ____|
@@ -36,19 +38,12 @@ export PATH=$PATH:/home/omarhanykasban/.spicetify
  #|  __  | / /\ \ |  _  /| |  | |\ \/  \/ / /\ \ |  _  /|  __|  
  #| |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
  #|_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                             
-# Sounds
-alias laptop-speekers="pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
-alias usb-headphones="pactl set-default-sink alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo"
 # looking-glass
 alias looking-glass='looking-glass-client -m 97 -g OpenGL'
 # supergxctl 
 alias gpulinux='supergfxctl -m Hybrid && logout'
 alias gpudis='supergfxctl -m Integrated && logout'
 alias gpuwindows='supergfxctl -m Vfio'
-#samba connect
-alias smb-connect='nemo smb://192.168.1.15/share'
-#hdd mount
-alias mount-hdd='sudo umount -f UUID=30EE5E93EE5E50E8 && sudo mount UUID=30EE5E93EE5E50E8  --fstab /home/omarhanykasban/Documents/GitHub/dot-files/fstab'
 
 #           _      _____           _____ 
 #     /\   | |    |_   _|   /\    / ____|
@@ -69,10 +64,10 @@ alias less='less -R'
 alias cls='clear'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
-alias vi='nvim -u /home/omarhanykasban/Documents/GitHub/dot-files/vim-nano/nano.vim'
+alias vi='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'
 alias svi='sudo vi'
-alias vis='nvim -u /home/omarhanykasban/Documents/GitHub/dot-files/vim-nano/nano.vim "+set si"'
-alias vim='nvim -u /home/omarhanykasban/Documents/GitHub/dot-files/vim-nano/nano.vim'
+alias vis='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim "+set si"'
+alias vim='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'
 # Alias's for archives
 alias mktar='tar -cvf'
 alias mkbz2='tar -cvjf'
@@ -98,11 +93,8 @@ alias speedtest='speedtest-cli --secure'
 alias gedit='gnome-text-editor'
 alias sudo-gedit='sudo gnome-text-editor'
 #neofetch fix
-alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
-alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
-# google chrome dark mode fix
-alias google-chrome='google-chrome-stable --force-dark-mode'
-alias google-chrome-stable='google-chrome-stable --force-dark-mode'
+alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/steaven.txt | lolcat'
+alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lolcat'
 # Antvirus made Simpler
 alias antvirus-update='freshclam'
 # yt-dlp
@@ -154,7 +146,8 @@ gitcommit() {
 
 alias gp=gitpush
 alias gu=gitupdate
-alias cdgit='cd /home/omarhanykasban/Documents/GitHub'
+alias cdgit='cd ~/Documents/GitHub'
+alias cddot='cd ~/Documents/GitHub/Dot-Files'
 # Alias's to change the directory
 # Change directory aliases
 alias web='cd /var/www/html'
@@ -179,8 +172,6 @@ alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -
 alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
-# flatpak fonts
-alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak-font.sh'
 # xlsclients fix
 alias xwayland-apps='xlsclients'
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
@@ -189,39 +180,30 @@ alias xwayland-apps='xlsclients'
  #|  ___/ /\ \| |    |  <    / /\ \| | |_ |  __|     | |\/| | / /\ \ | . ` | / /\ \| | |_ |  __| |  _  / 
  #| |  / ____ \ |____| . \  / ____ \ |__| | |____    | |  | |/ ____ \| |\  |/ ____ \ |__| | |____| | \ \ 
  #|_| /_/    \_\_____|_|\_\/_/    \_\_____|______|   |_|  |_/_/    \_\_| \_/_/    \_\_____|______|_|  \_\                                                                                                      
-# apt, pacman, dnf package manager sudo fix
-alias apt-get='sudo apt-get'
-alias pacman='sudo pacman'
-alias dnf='sudo dnf'
-# nix package manager
-alias nix-list-installed='nix-env -q'
-alias nix-remove='nix-env -e'
-alias nix-install='nix-env -iA '
-alias nix-update='nix-env -u'
-# sudo nix package manager
-alias sudo-nix-list-installed='sudo nix-env -q'
-alias sudo-nix-remove='sudo nix-env -e'
-alias sudo-nix-install='sudo nix-env -iA '
-alias sudo-nix-update='sudo nix-env -u'
-# update
+# pacman and yay
+alias pacman='sudo pacman'                       # Fixs pacman when its not runed as sudo
+alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
+alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
+alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
+alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
+alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
+alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 # Flatpak
-alias theme-flatpak='~/Documents/GitHub/dot-files/stylepak install-system'
+alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-system'
+alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'
+
 # history
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 
-## APPS
-export EDITOR=nano
-
-# HALAL
-export HARAM=0 
-export HALAL=1
 # SSH
 update="sudo pacman -Syu && sudo flatpak update"
 update2="sudo nala upgrade && sudo flatpak update"
 alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update}' && ssh -t lenvo '${update}'"
-dotfiles='cd /home/omarhanykasban/Documents/GitHub/dot-files && git pull && cd'
-alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}' && ssh -t lenvo '${dotfiles}'"
+dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
+alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles2}' && ssh -t lenvo '${dotfiles}'"
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 #konsole fix

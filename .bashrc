@@ -1,16 +1,16 @@
-
-if [[ -r "/home/omarhanykasban/.bash-default" ]]; then
-  source "/home/omarhanykasban/.bash-default"
+# sourcing my plugins
+if [[ -r "~/.bash-default" ]]; then
+  source "~/.bash-default"
 else
 	echo "can't found the bash-default script"
 fi
 
-if [[ -r "/home/omarhanykasban/.steavengameryt" ]]; then
-  source "/home/omarhanykasban/.steavengameryt"
+if [[ -r "~/.steavengameryt" ]]; then
+  source "~/.steavengameryt"
 else
 	echo "can't found the steavengameryt script"
 fi
-export PATH=$PATH:/home/omarhanykasban/.spicetify
+export PATH=$PATH:~/.spicetify
 eval "$(starship init bash)"
 
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \

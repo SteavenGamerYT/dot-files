@@ -26,13 +26,6 @@ exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "li
 
 # █▀▄▀█ █▀█ █▄░█ █ ▀█▀ █▀█ █▀█
 # █░▀░█ █▄█ █░▀█ █ ░█░ █▄█ █▀▄
-#exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 -r 120  --output HDMI-1-3 --mode 1920x1080 -r 60 --right-of eDP-1
-#exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 -r 120  --output DP-1-3 --mode 1920x1080 -r 60 --right-of eDP-1
-#exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output DP-1-2 --off --output DP-1-3 --off --output HDMI-1-0 --off
-#exec_always --no-startup-id xrandr --output DP-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --off --output eDP-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
-#exec_always --no-startup-id xrandr --output eDP-1-1  --mode 1920x1080 -r 120
-#exec_always --no-startup-id #xrandr --output DP-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --off --output eDP-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
-#exec_always --no-startup-id xrandr --output DP-0 --mode 1920x1080 --pos 3286x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output eDP-1-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
 exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output DP-1-2 --off --output DP-1-3 --off --output HDMI-1-0 --off
 # █ █▄░█ █▀█ █░█ ▀█▀
 # █ █░▀█ █▀▀ █▄█ ░█░
@@ -51,12 +44,12 @@ exec --no-startup-id dex --autostart --environment i3
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
 bindsym $mod+Return exec konsole
 bindsym $mod+x exec konsole
-bindsym $mod+b exec "brave-browser-stable --force-dark-mode --password-store=gnome"
+bindsym $mod+b exec "firefox"
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
-bindsym $mod+d exec "rofi -modi drun,run -show drun -theme /home/omarhanykasban/.config/polybar/scripts/rofi/material.rasi"
-#bindsym $mod+d exec "rofi -show drun -theme /home/omarhanykasban/.config/i3/rofi.rasi"
+bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/material.rasi"
+#bindsym $mod+d exec "rofi -show drun -theme ~/.config/i3/rofi.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
@@ -189,7 +182,7 @@ gaps outer 3
 #   \ \/  \/ / /\ \ | |    | |    |  ___/ /\ \ |  ___/|  __| |  _  / 
 #    \  /\  / ____ \| |____| |____| |  / ____ \| |    | |____| | \ \ 
 #     \/  \/_/    \_\______|______|_| /_/    \_\_|    |______|_|  \_\                                                                   
-exec_always --no-startup-id feh --bg-scale /home/omarhanykasban/Pictures/wallpaperflare.com_wallpaper2.jpg --no-fehbg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaperflare.com_wallpaper2.jpg --no-fehbg
 
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720

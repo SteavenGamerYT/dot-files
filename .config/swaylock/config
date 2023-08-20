@@ -1,4 +1,4 @@
-image="/home/omarhanykasban/Pictures/Pikachu/2.jpg"
+image="~/Pictures/Pikachu/2.jpg"
 clock
 timestr=%I:%M %p
 indicator-radius=100
