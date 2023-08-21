@@ -143,7 +143,7 @@ gitcommit() {
 alias gp=gitpush
 alias gu=gitupdate
 alias cdgit='cd ~/Documents/GitHub'
-alias cddot='cd ~/Documents/GitHub/Dot-Files'
+alias cddot='cd ~/Documents/GitHub/dot-files'
 # Alias's to change the directory
 # Change directory aliases
 alias web='cd /var/www/html'
@@ -197,7 +197,7 @@ HISTSIZE=SAVEHIST=10000
 # SSH
 update="sudo pacman -Syu && sudo flatpak update"
 update2="sudo nala upgrade && sudo flatpak update"
-alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update}' && ssh -t lenvo '${update}'"
+alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update2}' && ssh -t lenvo '${update}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles2}' && ssh -t lenvo '${dotfiles}'"
 # CACHE FIX
