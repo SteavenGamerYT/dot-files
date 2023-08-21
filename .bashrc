@@ -15,3 +15,7 @@ eval "$(starship init bash)"
 
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
+
+IDK WHAT TO DO
+source ~/.bash-default
+source ~/.steavengameryt
