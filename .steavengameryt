@@ -142,7 +142,10 @@ gitcommit() {
 
 alias gp=gitpush
 alias gu=gitupdate
-alias cdgit='cd ~/Documents/GitHub'
+cdgit() {
+        cd ~/Documents/GitHub/"$1"
+}
+alias cdgitf='cd ~/Documents/GitHub'
 alias cddot='cd ~/Documents/GitHub/dot-files'
 # Alias's to change the directory
 # Change directory aliases
