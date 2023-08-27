@@ -1,1 +1,2 @@
 skip_global_compinit=1
+export MOZ_ENABLE_WAYLAND=1
