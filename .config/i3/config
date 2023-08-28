@@ -23,6 +23,9 @@ font pango:Roboto Regular 10
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 0
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled Default" 1
+exec_always --no-startup-id xset m 1
+exec_always --no-startup-id xinput --set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Profile Enabled" 0, 1
+exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 
 # █▀▄▀█ █▀█ █▄░█ █ ▀█▀ █▀█ █▀█
 # █░▀░█ █▄█ █░▀█ █ ░█░ █▄█ █▀▄
@@ -42,7 +45,7 @@ exec_always --no-startup-id /usr/libexec/xdg-desktop-portal-gtk &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/kdeconnectd &
 exec --no-startup-id optimus-manager-qt &
-exec_always --no-startup-id nextcloud &
+exec --no-startup-id nextcloud &
 #exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
 bindsym $mod+Return exec kitty
