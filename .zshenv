@@ -1,2 +1,3 @@
 skip_global_compinit=1
 export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORMTHEME=qt5ct
