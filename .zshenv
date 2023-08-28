@@ -1,3 +1,7 @@
 skip_global_compinit=1
 export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORMTHEME=qt5ct
+if [[ -r ~/.envs ]]; then
+source ~/.envs
+else
+echo "can't found the envs script"
+fi

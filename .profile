@@ -39,3 +39,8 @@ fi
 
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+if [[ -r ~/.envs ]]; then
+source ~/.envs
+else
+echo "can't found the envs script"
+fi
