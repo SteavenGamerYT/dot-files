@@ -212,3 +212,8 @@ bash_in_konsole(){
 }
 # bat-cat
 alias cat='bat'
+
+### BASH INSULTER (works in zsh though) ###
+if [ -f /etc/bash.command-not-found ]; then
+    . /etc/bash.command-not-found
+fi
