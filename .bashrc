@@ -45,3 +45,4 @@ stv() {
     fi
   fi
   }
+colorscript -r

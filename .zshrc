@@ -37,3 +37,4 @@ setopt sharehistory
 setopt extendedhistory
 export PATH=$PATH:~/.spicetify
 eval "$(starship init zsh)"
+colorscript -r
