@@ -52,6 +52,7 @@ exec --no-startup-id nextcloud &
 exec --no-startup-id numlockx on &
 #exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
+exec_always --no-startup-id mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/startup.wav &
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
 bindsym $mod+b exec "firefox"
