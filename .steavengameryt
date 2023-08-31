@@ -203,7 +203,7 @@ update="sudo pacman -Syu && sudo flatpak update"
 update2="sudo nala upgrade && sudo flatpak update"
 alias update-all="ssh -t dell '${update}' && ssh -t asus '${update}' && ssh -t hp '${update2}' && ssh -t lenvo '${update2}' && ssh -t rawan-omar '${update}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
-alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t rawan-omar '${update}'"
+alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t rawan-omar '${dotfiles}'"
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 #konsole fix

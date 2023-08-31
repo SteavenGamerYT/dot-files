@@ -22,7 +22,7 @@ font pango:Roboto Regular 10
 # |_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                              
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 0
-exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled Default" 1
+#exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled Default" 1
 exec_always --no-startup-id xset m 1
 exec_always --no-startup-id xinput --set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Profile Enabled" 0, 1
 exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
