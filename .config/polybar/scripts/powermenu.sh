@@ -40,11 +40,11 @@ case $chosen in
     $shutdown)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			systemctl poweroff
+			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
-			exit 0
+			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && exit 0
         else
-			msg
+			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && msg
         fi
         ;;
     $reboot)
