@@ -42,9 +42,9 @@ case $chosen in
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
-			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && exit 0
+			exit 0
         else
-			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && msg
+			msg
         fi
         ;;
     $reboot)
