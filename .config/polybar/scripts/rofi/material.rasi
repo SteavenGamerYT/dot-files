@@ -27,6 +27,7 @@ configuration {
 	base0D: #82AAFF;
 	base0E: #C792EA;
 	base0F: #FF5370;
+	text:   #d8dee9;
 
 	/*base0D: #00BCD4;*/
 
@@ -131,4 +132,8 @@ element normal urgent, element selected urgent, element alternate urgent {
 
 element normal active, element selected active, element alternate active {
 	text-color: @base0B;
+}
+
+element-text {
+ text-color: @text;
 }
