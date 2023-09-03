@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-[What Are Dotfiles?](https://github.com/SteavenGamerYT/dot-files/blob/main/README.md#dotfiles-are-the-customization-files-that-are-used-to-personalize-your-linux-or-other-unix-based-system--you-can-tell-that-a-file-is-a-dotfile-because-the-name-of-the-file-will-begin-with-a-perioda-dot--the-period-at-the-beginning-of-a-filename-or-directory-name-indicates-that-it-is-a-hidden-file-or-directory--this-repository-contains-my-personal-dotfiles--they-are-stored-here-for-convenience-so-that-i-may-quickly-access-them-on-new-machines-or-new-installs--also-others-may-find-some-of-my-configurations-helpful-in-customizing-their-own-dotfiles "Heading link")
+[What Are Dotfiles?](https://github.com/steavengameryt/dot-files#:~:text=Dotfiles%20are%20the,their%20own%20dotfiles. "Heading link")
 
 [My Window Manager Configs](https://github.com/steavengameryt/dot-files#:~:text=their%20own%20dotfiles.-,My%20Window%20Manager%20Configs,Hyprland,-Using "Heading link")
 
