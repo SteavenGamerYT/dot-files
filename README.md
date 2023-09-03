@@ -23,6 +23,11 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc "Heading link")   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr "Heading link")
 | [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt "Heading link")   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud "Heading link") 
 
+
+
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 # Using
 
 
