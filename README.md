@@ -1,6 +1,12 @@
-| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config) |
-| --- |
-| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf) |
+| Configs | Links |
+| ------- | ----- |
+| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc) | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr) |
+| [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt) | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish) |
+| [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch) | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud) |
+| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar) | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar) |
+| [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi) | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty) |
+| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom) | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst) |
+
 # SteavenGamerYT's Dotfiles
 
 ![](https://github.com/SteavenGamerYT/dot-files/blob/main/screenshot.png?raw=true)
@@ -21,10 +27,9 @@
 Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period–a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
 
 # My Window Manager Configs
-| My Window Manager Configs |
-| ------------- |
-| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)  |
-| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)  |
+| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config) |
+| --- |
+| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf) |
 
 # Other Popular Configs Of Mine
 | Other Popular Configs Of Mine | Other Popular Configs Of Mine|
