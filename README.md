@@ -17,10 +17,9 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 # Other Popular Configs Of Mine
 
-    | First Header  | Second Header |
-    | ------------- | ------------- |
-    | [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar "Heading link")   | Content Cell  |
-    | [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi "Heading link")  | Content Cell  |
+| ------------- | ------------- |
+| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar "Heading link")   | Content Cell  |
+| [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi "Heading link")  | Content Cell  |
 
 # Using
 
