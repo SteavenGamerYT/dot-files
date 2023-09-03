@@ -1,12 +1,7 @@
-<table>
-  <tr>
-    <th>[i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)</th>
-  </tr>
-  <tr>
-    <td>[Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)</td>
-  </tr>
-</table>
-
+|i3 Config||
+|:-:||
+|[i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)|
+|[Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)|
 
 # SteavenGamerYT's Dotfiles
 
