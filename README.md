@@ -7,7 +7,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | My Window Manager Configs |
 | ------------- | ------------- |
 | [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config "Heading link")  |
-| # [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  |
+| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  |
 
 
 
