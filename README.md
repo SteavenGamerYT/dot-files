@@ -21,7 +21,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi "Heading link")  | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty "Heading link")  |
 | [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom "Heading link")   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst "Heading link")  |
 | [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch "Heading link")   | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish "Heading link")  |
-| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc "Heading link")   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr) "Heading link")  |
+| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc "Heading link")   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr "Heading link")  |
 | [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt "Heading link")   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud "Heading link")  |
 
 # Using
