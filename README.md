@@ -1,21 +1,6 @@
-#+TITLE: DT's Dotfiles
-
-* Table of Contents :toc:
-- [[#what-are-dotfiles][What Are Dotfiles?]]
-- [[#my-window-manager-configs][My Window Manager Configs]]
-- [[#other-popular-configs-of-mine][Other Popular Configs Of Mine]]
-- [[#who-am-i][Who Am I?]]
-- [[#distrotube-on-the-web][DistroTube On The Web]]
-- [[#support-dts-work][Support DT's Work]]
-- [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
-- [[#license][License]]
-
-* What Are Dotfiles?
-#+CAPTION: Desktop Scrot
-#+ATTR_HTML: :alt Desktop Scrot :title Desktop Scrot :align left
-[[https://gitlab.com/dwt1/dotfiles/-/raw/master/.screenshots/dotfiles09-thumb.png]]
 
 
+#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 
 # DOT Files
 My Dot Files
