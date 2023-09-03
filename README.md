@@ -1,5 +1,7 @@
 # SteavenGamerYT's Dotfiles
 
+![](https://github.com/SteavenGamerYT/dot-files/blob/main/screenshot.png?raw=true)
+
 # Table of Contents
 
 [What Are Dotfiles?](https://github.com/steavengameryt/dot-files#:~:text=Dotfiles%20are%20the,their%20own%20dotfiles.)
