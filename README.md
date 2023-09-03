@@ -4,9 +4,10 @@
 
 Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period–a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
 
- | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/awesome][Awesome]] | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/bspwm][Bspwm]]    | [[https://gitlab.com/dwt1/dwm-distrotube][Dwm]]    | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/herbstluftwm][Herbstluftwm]] |
- | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/i3][i3-gaps]] | [[https://gitlab.com/dwt1/dotfiles/-/blob/master/.jwmrc][JWM]]      | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/leftwm][LeftWM]] | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/openbox][Openbox]]      |
- | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/qtile][Qtile]]   | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/spectrwm][Spectrwm]] | [[https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/xmonad][XMonad]] |              |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config "Heading link")  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
 
