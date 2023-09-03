@@ -1,5 +1,3 @@
-| Configs | Links |
-| ------- | ----- |
 | [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc) | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr) |
 | [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt) | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish) |
 | [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch) | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud) |
