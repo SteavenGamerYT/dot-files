@@ -1,3 +1,5 @@
+# SteavenGamerYT's Dotfiles
+
 # Table of Contents
 
 [What Are Dotfiles?](https://github.com/SteavenGamerYT/dot-files/blob/main/README.md#dotfiles-are-the-customization-files-that-are-used-to-personalize-your-linux-or-other-unix-based-system--you-can-tell-that-a-file-is-a-dotfile-because-the-name-of-the-file-will-begin-with-a-perioda-dot--the-period-at-the-beginning-of-a-filename-or-directory-name-indicates-that-it-is-a-hidden-file-or-directory--this-repository-contains-my-personal-dotfiles--they-are-stored-here-for-convenience-so-that-i-may-quickly-access-them-on-new-machines-or-new-installs--also-others-may-find-some-of-my-configurations-helpful-in-customizing-their-own-dotfiles "Heading link")
@@ -10,10 +12,6 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | ------------- |
 | [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config "Heading link")  |
 | [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  |
-
-
-# DOT Files
-My Dot Files
 
 
 # Using
