@@ -1,8 +1,6 @@
-const tableFlip = require('tableflip');
-
-const table = tableFlip(['i3 Config']).row(['[i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)']).row(['[Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)']);
-console.log(table.toString());
-
+| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config) |
+| --- |
+| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf) |
 # SteavenGamerYT's Dotfiles
 
 ![](https://github.com/SteavenGamerYT/dot-files/blob/main/screenshot.png?raw=true)
