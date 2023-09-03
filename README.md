@@ -4,7 +4,7 @@
 
 # Table of Contents
 
-[What Are Dotfiles?](https://github.com/steavengameryt/dot-files#:~:text=Dotfiles%20are%20the,their%20own%20dotfiles.)
+[What Are Dotfiles?](https://github.com/SteavenGamerYT/dot-files#)
 
 [My Window Manager Configs](https://github.com/SteavenGamerYT/dot-files#my-window-manager-configs)
 
@@ -14,6 +14,7 @@
 
 [Install](https://github.com/SteavenGamerYT/dot-files#Install)
 
+# What Are Dotfiles?
 Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period–a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
 
 # My Window Manager Configs
