@@ -56,30 +56,7 @@ mkdir ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-rm -rf ~/.steavengameryt
-rm -rf ~/.bash-default
-rm -rf ~/.zshrc
-rm -rf ~/.bashrc
-rm -rf ~/.profile
-rm -rf ~/.zshenv
-rm -rf ~/.p10k.zsh
-rm -rf ~/.config/i3
-rm -rf ~/.config/picom
-rm -rf ~/.config/neofetch
-rm -rf ~/.config/polybar
-rm -rf ~/.config/kitty
-rm -rf ~/.config/BetterDiscord
-rm -rf ~/.config/hypr
-rm -rf ~/.config/waybar
-rm -rf ~/.config/starship.toml
-rm -rf ~/.config/ulauncher
-rm -rf ~/.config/yay
-rm -rf ~/.config/MangoHud
-rm -rf ~/.ssh/config
-rm -rf ~/.config/fish
-rm -rf ~/.config/dunst
-rm -rf ~/.config/swaylock
-rm -rf ~/.config/rofi
+rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
