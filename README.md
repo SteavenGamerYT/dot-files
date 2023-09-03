@@ -11,8 +11,8 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 | My Window Manager Configs |  Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config "Heading link")  | Content Cell  |
+| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  | Content Cell  |
 
 
 # DOT Files
