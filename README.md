@@ -16,10 +16,11 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  |
 
 # Other Popular Configs Of Mine
-| First Header  | Second Header |
+| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar "Heading link")   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar "Heading link")  |
 | ------------- | ------------- |
-| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar "Heading link")   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst "Heading link")  |
 | [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi "Heading link")  | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty "Heading link")  |
+| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom "Heading link")   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst "Heading link")  |
+| [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch "Heading link")   | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish "Heading link")  |
 
 # Using
 
