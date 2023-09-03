@@ -1,7 +1,7 @@
-|i3 Config||
-|:-:||
-|[i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)|
-|[Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)|
+const tableFlip = require('tableflip');
+
+const table = tableFlip(['i3 Config']).row(['[i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config)']).row(['[Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf)']);
+console.log(table.toString());
 
 # SteavenGamerYT's Dotfiles
 
