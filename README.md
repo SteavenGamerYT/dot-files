@@ -4,7 +4,7 @@
 
 # Table of Contents
 
-[What Are Dotfiles?](https://github.com/SteavenGamerYT/dot-files#)
+[What Are Dotfiles?](https://github.com/SteavenGamerYT/dot-files#what-are-dotfiles)
 
 [My Window Manager Configs](https://github.com/SteavenGamerYT/dot-files#my-window-manager-configs)
 
