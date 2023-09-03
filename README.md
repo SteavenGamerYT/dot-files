@@ -1,9 +1,10 @@
-[bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc) - [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr)
-[Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt) - [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish)
-[neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch) - [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud)
-[Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar) - [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar)
-[Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi) - [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty)
-[picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom) - [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst)
+| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc)   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr) |
+| ------------- |:-------------:|
+| [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt)   | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish) |
+| [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch)   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud) |
+| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar)   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar) |
+| [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi)  | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty) |
+| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom)   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst) |
 
 
 
