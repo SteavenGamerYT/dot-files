@@ -16,6 +16,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf "Heading link")  |
 
 # Other Popular Configs Of Mine
+| ------------- | ------------- |
 | [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar "Heading link")   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar "Heading link")  |
 | [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi "Heading link")  | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty "Heading link")  |
 | [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom "Heading link")   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst "Heading link")  |
