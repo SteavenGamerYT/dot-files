@@ -196,7 +196,7 @@ gaps outer 3
 #   \ \/  \/ / /\ \ | |    | |    |  ___/ /\ \ |  ___/|  __| |  _  / 
 #    \  /\  / ____ \| |____| |____| |  / ____ \| |    | |____| | \ \ 
 #     \/  \/_/    \_\______|______|_| /_/    \_\_|    |______|_|  \_\                                                                   
-exec_always --no-startup-id feh --bg-scale ~/Nextcloud/HDD/Pictures/wallpaperflare.com_wallpaper2.jpg --no-fehbg
+exec_always --no-startup-id /home/omarhanykasban/.config/i3/wallpaper.sh
 
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720
