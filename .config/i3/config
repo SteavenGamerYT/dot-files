@@ -50,7 +50,7 @@ exec --no-startup-id /usr/lib/kdeconnectd &
 exec --no-startup-id optimus-manager-qt &
 exec --no-startup-id nextcloud &
 exec --no-startup-id numlockx on &
-bindsym $mod+l betterlockscreen -l
+bindsym $mod+l exec betterlockscreen -l
 #exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
 exec_always --no-startup-id mpv --no-video "$( find /home/omarhanykasban/Nextcloud/HDD/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1 )" &
