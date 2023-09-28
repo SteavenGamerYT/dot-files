@@ -4,45 +4,24 @@ if [[ -r ~/.bash-default ]]; then
 else
 	echo "can't found the bash-default script"
 fi
+#Autojump
+
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
+	. /usr/share/autojump/autojump.sh
+elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+	. /usr/share/autojump/autojump.bash
+else
+	echo "can't found the autojump script"
+fi
 
 if [[ -r ~/.steavengameryt ]]; then
   source ~/.steavengameryt
 else
 	echo "can't found the steavengameryt script"
 fi
-eval "$(starship init bash)" 
-stv-install() {
-  if [[ $1 == "-v" ]]; then
-    x=$@
-    if [[ $2 == "arch" ]]; then
-        x=${x/-v arch/}
-        sudo pacman $x
-    elif [[ $2 == "ubuntu" ]]; then
-        x=${x/-v ubuntu/}
-        distrobox-enter -H ubuntu -- sudo apt $x
-    elif [[ $2 == "fedora" ]]; then
-        x=${x/-v fedora/}
-        distrobox-enter -H fedora -- sudo dnf $x
-    else
-        echo "Command Not Found"
-    fi
-  fi
-}
-stv() {
-  if [[ $1 == "-v" ]]; then
-    x=$@
-    if [[ $2 == "arch" ]]; then
-        x=${x/-v arch/}
-         $x
-    elif [[ $2 == "ubuntu" ]]; then
-        x=${x/-v ubuntu/}
-        distrobox-enter -H ubuntu -- $x
-    elif [[ $2 == "fedora" ]]; then
-        x=${x/-v fedora/}
-        distrobox-enter -H fedora -- $x
-    else
-        echo "Command Not Found"
-    fi
-  fi
-  }
-colorscript -r
+
+# history
+HISTFILE=~/.bash-history
+HISTSIZE=SAVEHIST=10000
+
+eval "$(starship init bash)"

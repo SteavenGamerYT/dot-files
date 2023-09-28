@@ -35,6 +35,5 @@ HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt sharehistory
 setopt extendedhistory
-export PATH=$PATH:~/.spicetify
+
 eval "$(starship init zsh)"
-colorscript -r

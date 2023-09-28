@@ -194,16 +194,12 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-system'
 alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'
 
-# history
-HISTFILE=~/.zhistory
-HISTSIZE=SAVEHIST=10000
-
 # SSH
-update="sudo pacman -Syu && sudo flatpak update"
-update2="sudo nala upgrade && sudo flatpak update"
-alias update-all="ssh -t dell '${update2}' && ssh -t asus '${update2}' && ssh -t hp '${update2}' && ssh -t lenvo '${update2}' && ssh -t rawan-omar '${update}'"
+updatearch="yay -Syu && sudo flatpak update"
+updatedebain="sudo nala upgrade && sudo flatpak update"
+alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatearch}' && ssh -t hp '${updatedebain}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
-alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t rawan-omar '${dotfiles}'"
+alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}'"
 # CACHE FIX
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 #konsole fix
@@ -295,3 +291,44 @@ function ix() {
   local file="$1"
   curl -F "f:1=@$file" ix.io
 }
+
+stv-install() {
+  if [[ $1 == "-v" ]]; then
+    x=$@
+    if [[ $2 == "arch" ]]; then
+        x=${x/-v arch/}
+        sudo pacman $x
+    elif [[ $2 == "ubuntu" ]]; then
+        x=${x/-v ubuntu/}
+        distrobox-enter -H ubuntu -- sudo apt $x
+    elif [[ $2 == "fedora" ]]; then
+        x=${x/-v fedora/}
+        distrobox-enter -H fedora -- sudo dnf $x
+    else
+        echo "Command Not Found"
+    fi
+  fi
+}
+stv() {
+  if [[ $1 == "-v" ]]; then
+    x=$@
+    if [[ $2 == "arch" ]]; then
+        x=${x/-v arch/}
+         $x
+    elif [[ $2 == "ubuntu" ]]; then
+        x=${x/-v ubuntu/}
+        distrobox-enter -H ubuntu -- $x
+    elif [[ $2 == "fedora" ]]; then
+        x=${x/-v fedora/}
+        distrobox-enter -H fedora -- $x
+    else
+        echo "Command Not Found"
+    fi
+  fi
+  }
+
+if [ -f "/usr/bin/colorscript" ]; then
+     /usr/bin/colorscript -r
+else
+    echo "Can't find the Shell Color script"
+fi
