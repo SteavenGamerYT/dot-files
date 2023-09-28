@@ -291,3 +291,7 @@ function fc-list-families () {
   command fc-list : family | sort
 }
 alias font-families="fc-list-families"
+function ix() {
+  local file="$1"
+  curl -F "f:1=@$file" ix.io
+}
