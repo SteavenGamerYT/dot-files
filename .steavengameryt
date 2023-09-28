@@ -195,7 +195,7 @@ alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-syste
 alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'
 
 # SSH
-updatearch="yay -Syu && sudo flatpak update"
+updatearch="yay -Syu --noconfirm --needed && sudo flatpak update -y"
 updatedebain="sudo nala upgrade && sudo flatpak update"
 alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatearch}' && ssh -t hp '${updatedebain}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
