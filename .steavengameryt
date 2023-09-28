@@ -196,7 +196,7 @@ alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-fo
 
 # SSH
 updatearch="yay -Syu --noconfirm --needed && sudo flatpak update -y"
-updatedebain="sudo nala upgrade && sudo flatpak update"
+updatedebain="sudo nala upgrade -y && sudo flatpak update -y"
 alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatearch}' && ssh -t hp '${updatedebain}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}'"
