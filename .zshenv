@@ -22,6 +22,7 @@ fi
 
 if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
   then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
   
 # Run Firefox in wayland Native, IF wayland is Detected.
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
