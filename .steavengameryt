@@ -95,17 +95,16 @@ alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/steaven2.txt | lo
 # Antvirus made Simpler
 alias antvirus-update='freshclam'
 # yt-dlp
-alias yta-aac="yt-dlp --extract-audio --audio-format aac "
-alias yta-best="yt-dlp --extract-audio --audio-format best "
-alias yta-flac="yt-dlp --extract-audio --audio-format flac "
-alias yta-m4a="yt-dlp --extract-audio --audio-format m4a "
-alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
-alias yta-opus="yt-dlp --extract-audio --audio-format opus "
-alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
-alias yta-wav="yt-dlp --extract-audio --audio-format wav "
-alias ytv-best="yt-dlp -f bestvideo+bestaudio "
-# youtube downloader
-alias youtube-download='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
+alias yta-aac="yt-dlp --extract-audio --audio-format aac --embed-metadata --embed-thumbnail "
+alias yta-best="yt-dlp --extract-audio --audio-format best --embed-metadata --embed-thumbnail "
+alias yta-flac="yt-dlp --extract-audio --audio-format flac --embed-metadata --embed-thumbnail "
+alias yta-m4a="yt-dlp --extract-audio --audio-format m4a --embed-metadata --embed-thumbnail "
+alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 --embed-metadata --embed-thumbnail "
+alias yta-opus="yt-dlp --extract-audio --audio-format opus --embed-metadata --embed-thumbnail "
+alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis --embed-metadata --embed-thumbnail "
+alias yta-wav="yt-dlp --extract-audio --audio-format wav --embed-metadata --embed-thumbnail "
+alias ytv-best="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thumbnail --embed-chapters "
+alias ytv-best-mp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
