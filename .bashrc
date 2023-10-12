@@ -1,4 +1,4 @@
-# sourcing my plugins
+	# sourcing my plugins
 if [[ -r ~/.bash-default ]]; then
   source ~/.bash-default
 else
@@ -24,4 +24,9 @@ fi
 HISTFILE=~/.bash-history
 HISTSIZE=SAVEHIST=10000
 
+if [[ $(cat /etc/*-release) == *"arch"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship.toml
+elif [[ $(cat /etc/*-release) == *"fedora"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship-fedora.toml
+fi
 eval "$(starship init bash)"

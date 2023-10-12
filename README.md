@@ -59,7 +59,7 @@ mkdir ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi
+rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship-fedora.toml
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
@@ -76,6 +76,7 @@ ln -s ~/Documents/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
 ln -s ~/Documents/GitHub/dot-files/.config/hypr ~/.config/hypr
 ln -s ~/Documents/GitHub/dot-files/.config/waybar ~/.config/waybar
 ln -s ~/Documents/GitHub/dot-files/.config/starship.toml ~/.config/starship.toml
+ln -s ~/Documents/GitHub/dot-files/.config/starship-fedora.toml ~/.config/starship-fedora.toml
 ln -s ~/Documents/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
 ln -s ~/Documents/GitHub/dot-files/.config/yay ~/.config/yay
 ln -s ~/Documents/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
