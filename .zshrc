@@ -36,4 +36,10 @@ HISTSIZE=SAVEHIST=10000
 setopt sharehistory
 setopt extendedhistory
 
+if [[ $(cat /etc/*-release) == *"arch"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship.toml
+elif [[ $(cat /etc/*-release) == *"fedora"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship-fedora.toml
+fi
+
 eval "$(starship init zsh)"
