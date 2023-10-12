@@ -51,7 +51,7 @@ Installation, make sure that you don't have any of this files already first!, if
 
 # Install
 ```
-yay -Syu --noconfirm --needed starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git trash-cli
+yay -Syu --noconfirm --needed starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git trash-cli bat
 mkdir -p ~/Documents/GitHub
 mkdir -p ~/.zsh/plugins/
 mkdir ~/.ssh
