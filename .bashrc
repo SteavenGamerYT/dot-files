@@ -25,8 +25,18 @@ HISTFILE=~/.bash-history
 HISTSIZE=SAVEHIST=10000
 
 if [[ $(cat /etc/*-release) == *"arch"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
 elif [[ $(cat /etc/*-release) == *"fedora"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship-fedora.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
+elif [[ $(cat /etc/*-release) == *"debian"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
+elif [[ $(cat /etc/*-release) == *"ubuntu"* ]]; then
+    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
+else
+    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+fi
+
+if [[ ! -f $STARSHIP_CONFIG ]]; then
+    echo "Error: The configuration file $STARSHIP_CONFIG is missing!"
 fi
 eval "$(starship init bash)"
