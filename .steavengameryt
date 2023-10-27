@@ -208,7 +208,7 @@ bash_in_konsole(){
     konsole -e bash --rcfile <(printf '. ~/.bashrc; set -m; %s\n' "$*")
 }
 # bat-cat
-alias cat='bat'
+alias cat='batcat'
 
 ### BASH INSULTER (works in zsh though) ###
 if [ -f /etc/bash.command-not-found ]; then
