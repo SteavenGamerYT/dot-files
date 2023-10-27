@@ -105,6 +105,8 @@ alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis --embed-metadata 
 alias yta-wav="yt-dlp --extract-audio --audio-format wav --embed-metadata --embed-thumbnail "
 alias ytv-best="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thumbnail --embed-chapters "
 alias ytv-best-mp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'
+alias ytv-best-mp4-1080p='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'
+
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
