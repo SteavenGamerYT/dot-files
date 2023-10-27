@@ -173,6 +173,7 @@ alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
 # xlsclients fix
 alias xwayland-apps='xlsclients'
+alias watch-xwayland-apps='watch xlsclients'
  # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
  #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
  #| |__) /  \ | |    | ' /    /  \ | |  __| |__      | \  / |  /  \  |  \| |  /  \ | |  __| |__  | |__) |
