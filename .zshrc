@@ -52,3 +52,4 @@ if [[ ! -f $STARSHIP_CONFIG ]]; then
     echo "Error: The configuration file $STARSHIP_CONFIG is missing!"
 fi
 eval "$(starship init zsh)"
+unsetopt nomatch
