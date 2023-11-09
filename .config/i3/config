@@ -21,7 +21,7 @@ font pango:Roboto Regular 10
 # | |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
 # |_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                              
 exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Tapping Enabled" 1 
-exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 0
+exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled" 1
 #exec_always --no-startup-id xinput set-prop "DELL0A64:00 04F3:317E Touchpad" "libinput Natural Scrolling Enabled Default" 1
 exec_always --no-startup-id xset m 1
 exec_always --no-startup-id xinput --set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Profile Enabled" 0, 1
@@ -29,9 +29,9 @@ exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 
 
 # █▀▄▀█ █▀█ █▄░█ █ ▀█▀ █▀█ █▀█
 # █░▀░█ █▄█ █░▀█ █ ░█░ █▄█ █▀▄
-#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --output eDP-1-1 --mode 1920x1080 --pos 1920x0
-#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
-#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --off --output eDP-1-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
+#exec_always --no-startup-id xrandr --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
+#exec_always --no-startup-id /home/omarhanykasban/.screenlayout/display.sh
+
 # █ █▄░█ █▀█ █░█ ▀█▀
 # █ █░▀█ █▀▀ █▄█ ░█░
 exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle"
@@ -48,26 +48,26 @@ exec --no-startup-id clipit &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/kdeconnectd &
 exec --no-startup-id optimus-manager-qt &
-exec --no-startup-id nextcloud &
 exec --no-startup-id numlockx on &
 bindsym $mod+l exec betterlockscreen -l
 #exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
-exec_always --no-startup-id mpv --no-video "$( find /home/omarhanykasban/Nextcloud/HDD/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1 )" &
-bindsym $mod+Return exec kitty
-bindsym $mod+x exec kitty
-bindsym $mod+b exec "firefox"
+exec_always --no-startup-id mpv --no-video "$( find ~/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1 )" &
+bindsym $mod+Return exec konsole
+bindsym $mod+x exec konsole
+bindsym $mod+b exec "thorium-browser"
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 #bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
-bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/material.rasi"
+bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 #bindsym $mod+d exec "rofi -show drun -theme ~/.config/i3/rofi.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # █▀ █▀▀ █▀█ █▀▀ █▀▀ █▄░█ █▀ █░█ █▀█ ▀█▀
 # ▄█ █▄▄ █▀▄ ██▄ ██▄ █░▀█ ▄█ █▀█ █▄█ ░█░
-bindsym --release Print exec "flameshot gui"
+bindsym --release Print exec "flameshot full -c"
+bindsym $mod+Shift+s exec "flameshot gui"
 
 # █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀
 # ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █░▀░█ █▀█ █░▀█ █▀█ █▄█ █░▀░█ ██▄ █░▀█ ░█░
@@ -197,7 +197,7 @@ gaps outer 3
 #   \ \/  \/ / /\ \ | |    | |    |  ___/ /\ \ |  ___/|  __| |  _  / 
 #    \  /\  / ____ \| |____| |____| |  / ____ \| |    | |____| | \ \ 
 #     \/  \/_/    \_\______|______|_| /_/    \_\_|    |______|_|  \_\                                                                   
-exec_always --no-startup-id /home/omarhanykasban/.config/i3/wallpaper.sh
+exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
 
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720
