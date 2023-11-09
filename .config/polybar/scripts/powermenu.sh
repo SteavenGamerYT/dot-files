@@ -40,7 +40,7 @@ case $chosen in
     $shutdown)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+			mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
         else
@@ -50,7 +50,7 @@ case $chosen in
     $reboot)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-		    mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+		    mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && systemctl reboot
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
         else
@@ -82,13 +82,13 @@ case $chosen in
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
-				mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && openbox --exit
+				mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && openbox --exit
 			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
-				mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && bspc quit
+				mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && bspc quit
 			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
-				mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+				mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == "hyprland" ]]; then
-				mpv --no-video ~/Documents/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+				mpv --no-video ~/Nextcloud/HDD/Documents/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
 			fi
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
