@@ -1,4 +1,4 @@
-# _____     _______ _____ _    _ 
+ # _____     _______ _____ _    _ 
  #|  __ \ /\|__   __/ ____| |  | |
  #| |__) /  \  | | | |    | |__| |
  #|  ___/ /\ \ | | | |    |  __  |
@@ -39,8 +39,7 @@ export EDITOR=nano
  #| |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
  #|_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                             
 # looking-glass
-alias looking-glass-opengl='looking-glass-client -m 97 -g OpenGL'
-alias looking-glass-egl='looking-glass-client -m 97 -g EGL'
+alias looking-glass='looking-glass-client -m 97 -g OpenGL'
 # supergxctl 
 alias gpulinux='supergfxctl -m Hybrid && logout'
 alias gpudis='supergfxctl -m Integrated && logout'
