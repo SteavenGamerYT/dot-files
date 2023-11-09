@@ -3,5 +3,5 @@ img=(`find ~/Documents/GitHub/nord-background/ -name '*' -exec file {} \; | grep
 while true
 do
    feh --bg-scale --randomize --no-fehbg "${img[$RANDOM % ${#img[@]} ]}"
-sleep 1m
+sleep 10m
 done
