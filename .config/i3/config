@@ -29,7 +29,9 @@ exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 
 
 # █▀▄▀█ █▀█ █▄░█ █ ▀█▀ █▀█ █▀█
 # █░▀░█ █▄█ █░▀█ █ ░█░ █▄█ █▀▄
-exec_always --no-startup-id xrandr --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
+#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --output eDP-1-1 --mode 1920x1080 --pos 1920x0
+#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
+#exec_always --no-startup-id xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-0 --off --output eDP-1-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --off --output DP-1-2 --off --output HDMI-1-2 --off
 # █ █▄░█ █▀█ █░█ ▀█▀
 # █ █░▀█ █▀▀ █▄█ ░█░
 exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ara -variant ,, -option grp:win_space_toggle"
@@ -46,14 +48,15 @@ exec --no-startup-id clipit &
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/kdeconnectd &
 exec --no-startup-id optimus-manager-qt &
+exec --no-startup-id nextcloud &
 exec --no-startup-id numlockx on &
 bindsym $mod+l exec betterlockscreen -l
 #exec --no-startup-id dropbox start -i
 #exec_always --no-startup-id autotiling --workspaces 1 5 6 7 8 9 10 
-exec_always --no-startup-id mpv --no-video "$( find ~/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1 )" &
-bindsym $mod+Return exec konsole
-bindsym $mod+x exec konsole
-bindsym $mod+b exec "thorium-browser"
+exec_always --no-startup-id mpv --no-video "$( find /home/omarhanykasban/Nextcloud/HDD/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1 )" &
+bindsym $mod+Return exec kitty
+bindsym $mod+x exec kitty
+bindsym $mod+b exec "firefox"
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 #bindsym $mod+c exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#4C566A' -sf '#EEEEEE' -fn 'monospace-10'"
