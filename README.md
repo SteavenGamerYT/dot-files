@@ -43,7 +43,7 @@ yay -Syu --noconfirm --needed hyprland-nvidia rofi-lbonn-wayland-git pavucontrol
 
 ## I3 with ALMOST everything I use
 ```sh
-yay -Syu --noconfirm --needed polybar picom i3 dunst optimus-manager-qt optimus-manager firefox brave-bin discord flatpak nemo nemo-fileroller network-manager-applet nemo kitty flameshot gnome-keyring polkit polkit-gnome sddm-git playerctl brightnessctl rofi xdg-desktop-portal xdg-desktop-portal-gtk pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-jack lib32-pipewire-jack kvantum-theme-nordic-git nordic-theme papirus-icon-theme kvantum qt5ct qt6ct lxappearance nextcloud-client gnome-system-monitor gnome-disk-utility fwupd fwupd-efi flatseal starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git github-desktop-bin visual-studio-code-bin xorg-xinit xorg-xinput xinput-gui pavucontrol opensshserver gvfs-smb find-the-command shell-color-scripts clipit numlockx
+yay -Syu --noconfirm --needed polybar picom i3 dunst optimus-manager firefox  discord  nemo nemo-fileroller network-manager-applet nemo konsole kwalletd scrot polkit polkit-gnome sddm-git playerctl brightnessctl rofi xdg-desktop-portal xdg-desktop-portal-gtk pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-jack lib32-pipewire-jack kvantum-theme-nordic-git nordic-theme papirus-icon-theme kvantum qt5ct qt6ct lxappearance gnome-system-monitor gnome-disk-utility fwupd fwupd-efi flatseal starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git github-desktop-bin visual-studio-code-bin xorg-xinit xorg-xinput xinput-gui pavucontrol opensshserver gvfs-smb find-the-command shell-color-scripts xclip numlockx
 ```
 
 
