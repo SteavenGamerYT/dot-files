@@ -1,30 +1,24 @@
-skip_global_compinit=1
-### PATH
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
-fi
+# Add user's custom binaries directory to PATH
+[ -d "$HOME/.bin" ] && PATH="$HOME/.bin:$PATH"
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
+# Add user's local binaries directory to PATH
+[ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 
-if [ -d "$HOME/Applications" ] ;
-  then PATH="$HOME/Applications:$PATH"
-fi
+# Add custom Applications directory to PATH
+[ -d "$HOME/Applications" ] && PATH="$HOME/Applications:$PATH"
 
-if [ -d "/var/lib/flatpak/exports/bin/" ] ;
-  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
-fi
+# Add Flatpak binaries directory to PATH
+[ -d "/var/lib/flatpak/exports/bin/" ] && PATH="/var/lib/flatpak/exports/bin/:$PATH"
 
-if [ -d "$HOME/.spicetify" ] ;
-  then PATH="$HOME/.spicetify:$PATH"
-fi
+# Add Spicetify directory to PATH
+SPICETIFY_DIR="$HOME/.spicetify"
+[ -d "$SPICETIFY_DIR" ] && PATH="$SPICETIFY_DIR:$PATH"
 
-if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-fi
-  
-# Run Firefox in wayland Native, IF wayland is Detected.
+# Add Linuxbrew binaries directory to PATH
+LINUXBREW_DIR="/home/linuxbrew/.linuxbrew/bin"
+[ -d "$LINUXBREW_DIR" ] && PATH="$LINUXBREW_DIR:$PATH"
+
+# Run Firefox in Wayland Native if Wayland is detected
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi

@@ -1,55 +1,52 @@
-# sourcing my plugins
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# Function to source a plugin with error handling
+source_plugin() {
+    if [[ -r "$1" ]]; then
+        source "$1"
+    else
+        echo "Can't find the necessary script: $1"
+    fi
+}
 
-if [[ -r ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]]; then
-  source ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# Sourcing plugins
+source_plugin ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source_plugin ~/.steavengameryt
+
+# Source Starship configuration based on Linux distribution
+if [ -e /etc/os-release ]; then
+    linux_distro=$(awk -F= '/^ID=/{print tolower($2)}' /etc/os-release)
 else
-	echo "can't found the zsh-autocomplete script"
+    linux_distro=$(lsb_release -si | tr '[:upper:]' '[:lower:]')
 fi
 
-#if [[ -r ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme ]]; then
-#  source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-#else
-#	echo "can't found the powerlevel10k script"
-#fi
-if [[ -r ~/.steavengameryt ]]; then
-  source ~/.steavengameryt
+case $linux_distro in
+    arch) export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml ;;
+    fedora) export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml ;;
+    debian) export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml ;;
+    ubuntu) export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml ;;
+    *) export STARSHIP_CONFIG=~/.config/starship/starship.toml ;;
+esac
+
+# Check if Starship configuration is readable before initializing
+if [[ -f "$STARSHIP_CONFIG" && -r "$STARSHIP_CONFIG" ]]; then
+    eval "$(starship init zsh)"
 else
-	echo "can't found the steavengameryt script"
+    echo "Error: The configuration file $STARSHIP_CONFIG is not readable!"
 fi
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+# Autojump setup with error handling
 if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
+    . /usr/share/autojump/autojump.sh
 elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
+    . /usr/share/autojump/autojump.bash
 else
-	echo "can't found the autojump script"
+    echo "Can't find the autojump script."
 fi
 
-# history
+# History configuration
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt sharehistory
 setopt extendedhistory
 
-if [[ $(cat /etc/*-release) == *"arch"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
-elif [[ $(cat /etc/*-release) == *"fedora"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
-elif [[ $(cat /etc/*-release) == *"debian"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
-elif [[ $(cat /etc/*-release) == *"ubuntu"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
-else
-    export STARSHIP_CONFIG=~/.config/starship/starship.toml
-fi
-
-if [[ ! -f $STARSHIP_CONFIG ]]; then
-    echo "Error: The configuration file $STARSHIP_CONFIG is missing!"
-fi
-eval "$(starship init zsh)"
+# Unset nomatch option
 unsetopt nomatch

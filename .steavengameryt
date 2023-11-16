@@ -1,60 +1,34 @@
-# _____     _______ _____ _    _ 
- #|  __ \ /\|__   __/ ____| |  | |
- #| |__) /  \  | | | |    | |__| |
- #|  ___/ /\ \ | | | |    |  __  |
- #| |  / ____ \| | | |____| |  | |
- #|_| /_/    \_\_|  \_____|_|  |_|                               
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+# Path Customization
+if [ -d "$HOME/.bin" ]; then
+  PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+  PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/Applications" ] ;
-  then PATH="$HOME/Applications:$PATH"
+if [ -d "$HOME/Applications" ]; then
+  PATH="$HOME/Applications:$PATH"
 fi
 
-if [ -d "/var/lib/flatpak/exports/bin/" ] ;
-  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+if [ -d "/var/lib/flatpak/exports/bin/" ]; then
+  PATH="/var/lib/flatpak/exports/bin/:$PATH"
 fi
 
-if [ -d "$HOME/.spicetify" ] ;
-  then PATH="$HOME/.spicetify:$PATH"
+if [ -d "$HOME/.spicetify" ]; then
+  PATH="$HOME/.spicetify:$PATH"
 fi
 
-if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
+  PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
 
-## APPS
-export TERM="xterm-256color"   
+# Terminal Settings
+export TERM="xterm-256color"
 export EDITOR=nano
 
- # _    _          _____  _______          __     _____  ______ 
- #| |  | |   /\   |  __ \|  __ \ \        / /\   |  __ \|  ____|
- #| |__| |  /  \  | |__) | |  | \ \  /\  / /  \  | |__) | |__   
- #|  __  | / /\ \ |  _  /| |  | |\ \/  \/ / /\ \ |  _  /|  __|  
- #| |  | |/ ____ \| | \ \| |__| | \  /\  / ____ \| | \ \| |____ 
- #|_|  |_/_/    \_\_|  \_\_____/   \/  \/_/    \_\_|  \_\______|                                                             
-# looking-glass
-alias looking-glass-opengl='looking-glass-client -m 97 -g OpenGL'
-alias looking-glass-egl='looking-glass-client -m 97 -g EGL'
-# supergxctl 
-alias gpulinux='supergfxctl -m Hybrid && logout'
-alias gpudis='supergfxctl -m Integrated && logout'
-alias gpuwindows='supergfxctl -m Vfio'
-
-#           _      _____           _____ 
-#     /\   | |    |_   _|   /\    / ____|
-#    /  \  | |      | |    /  \  | (___  
-#   / /\ \ | |      | |   / /\ \  \___ \ 
-#  / ____ \| |____ _| |_ / ____ \ ____) |
-# /_/    \_\______|_____/_/    \_\_____/     
-# ls -all = ll
-alias ll='ls -all --color=auto -h'                                   
-# Alias's to modified commands
+# Aliases for File and Directory Operations
+alias ll='ls -all --color=auto -h'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='trash -v'
@@ -66,36 +40,54 @@ alias cls='clear && colorscript -r'
 alias clear='/bin/clear && colorscript -r'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
+
+# Text Editors
 alias vi='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'
 alias svi='sudo vi'
 alias vis='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim "+set si"'
 alias vim='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'
-# Alias's for archives
+
+# Archive Aliases
 alias mktar='tar -cvf'
 alias mkbz2='tar -cvjf'
 alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
-# History
+
+# History Aliases
 alias h='history'
 alias hs='history | grep'
 alias hsi='history | grep -i'
-#CopyDIR 
+
+# Clipboard Operations
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias copydir='pwd | tr -d "\r\n" | pbcopy'
-#speedtest fix
+
+# Speed Test
 alias speedtest='speedtest-cli --secure'
-# gnome text editor name got changed from gedit to gnome-text-editor NO PROBLEM 
+
+# GNOME Text Editor
 alias gedit='gnome-text-editor'
 alias sudo-gedit='sudo gnome-text-editor'
-#neofetch fix
+
+# Neofetch Fix
 alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/cat.txt | lolcat'
 alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/cat2.txt | lolcat'
-# Antvirus made Simpler
-alias antvirus-update='freshclam'
-# yt-dlp
+
+# Antivirus Update
+alias antivirus-update='freshclam'
+
+# looking-glass
+alias looking-glass-opengl='looking-glass-client -m 97 -g OpenGL'
+alias looking-glass-egl='looking-glass-client -m 97 -g EGL'
+# supergxctl 
+alias gpulinux='supergfxctl -m Hybrid && logout'
+alias gpudis='supergfxctl -m Integrated && logout'
+alias gpuwindows='supergfxctl -m Vfio'
+
+# yt-dlp Aliases
 alias yta-aac="yt-dlp --extract-audio --audio-format aac --embed-metadata --embed-thumbnail "
 alias yta-best="yt-dlp --extract-audio --audio-format best --embed-metadata --embed-thumbnail "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac --embed-metadata --embed-thumbnail "
@@ -108,82 +100,97 @@ alias ytv-best="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thumbnail
 alias ytv-best-mp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'
 alias ytv-best-mp4-1080p='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'
 
-# Colorize grep output (good for log files)
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-# adding flags
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
 # Play video files in current dir by type
 alias playavi='vlc *.avi'
 alias playmov='vlc *.mov'
 alias playmp4='vlc *.mp4'
+
+# human readable sizes
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
 # udo mastake fix
 alias udo='sudo'
-# GIT FIX
+
+# Colorize Grep Output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Display Open Ports
+alias openports='netstat -nape --inet'
+
+# Reboot Aliases
+alias rebootsafe='sudo shutdown -r now'
+alias rebootforce='sudo shutdown -r -n now'
+# GIT Customizations
 gitpush() {
     git add .
     git commit -m "$*"
     git pull
     git push
 }
+
 gitupdate() {
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/github
     ssh -T git@github.com
 }
+
 git-push() {
-	git add .
-	git commit -m "$1"
-	git push
-}
-gitcommit() {
-        git add .
-        git commit -m "$1"
+    git add .
+    git commit -m "$1"
+    git push
 }
 
-alias gp=gitpush
-alias gu=gitupdate
-cdgit() {
-        cd ~/Documents/GitHub/"$1"
+gitcommit() {
+    git add .
+    git commit -m "$1"
 }
+
+# Aliases for GIT
+alias gp='gitpush'
+alias gu='gitupdate'
+alias gpush='git-push'
+alias gcommit='gitcommit'
+
+# Directory and Navigation Aliases
+cdgit() {
+    cd ~/Documents/GitHub/"$1"
+}
+
 alias cdgitf='cd ~/Documents/GitHub'
 alias cddot='cd ~/Documents/GitHub/dot-files'
-# Alias's to change the directory
+
 # Change directory aliases
 alias web='cd /var/www/html'
 alias home='cd ~'
+
 # cd into the old directory
 alias bd='cd "$OLDPWD"'
+
 # Search files in the current folder
 alias f="find . | grep "
+
 # Count all files (recursively) in the current folder
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"
+
 # To see if a command is aliased, a file, or a built-in command
 alias checkcommand="type -t"
-# Show open ports
-alias openports='netstat -nape --inet'
-# Alias's for safe and forced reboots
-alias rebootsafe='sudo shutdown -r now'
-alias rebootforce='sudo shutdown -r -n now'
-# Alias's to show disk space and space used in a folder
+
+
+# Disk Space and Usage
 alias diskspace="du -S -h | sort -n -r |more"
 alias folders='du -h --max-depth=1'
 alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
-# xlsclients fix
+
+# XLS Clients Fix
 alias xwayland-apps='xlsclients'
 alias watch-xwayland-apps='watch xlsclients'
- # _____        _____ _  __          _____ ______     __  __          _   _          _____ ______ _____  
- #|  __ \ /\   / ____| |/ /    /\   / ____|  ____|   |  \/  |   /\   | \ | |   /\   / ____|  ____|  __ \ 
- #| |__) /  \ | |    | ' /    /  \ | |  __| |__      | \  / |  /  \  |  \| |  /  \ | |  __| |__  | |__) |
- #|  ___/ /\ \| |    |  <    / /\ \| | |_ |  __|     | |\/| | / /\ \ | . ` | / /\ \| | |_ |  __| |  _  / 
- #| |  / ____ \ |____| . \  / ____ \ |__| | |____    | |  | |/ ____ \| |\  |/ ____ \ |__| | |____| | \ \ 
- #|_| /_/    \_\_____|_|\_\/_/    \_\_____|______|   |_|  |_/_/    \_\_| \_/_/    \_\_____|______|_|  \_\                                                                                                      
-# pacman and yay
+
+# Pacman and Yay Aliases
 alias pacman='sudo pacman'                       # Fixs pacman when its not runed as sudo
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
@@ -193,32 +200,32 @@ alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
-# Flatpak
+
+# Flatpak Aliases
 alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-system'
 alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'
 
-# SSH
+# SSH and System Update Aliases
 updatearch="yay -Syu --noconfirm --needed && sudo flatpak update -y"
 updatefedora="sudo dnf update -y && sudo flatpak update -y"
-updatedebain="sudo nala upgrade -y && sudo flatpak update -y"
-alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatefedora}' && ssh -t hp '${updatedebain}'"
+updatedebian="sudo nala upgrade -y && sudo flatpak update -y"
+alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatefedora}' && ssh -t hp '${updatedebian}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}'"
-# CACHE FIX
+
+# Cache Fix
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
-#konsole fix
-bash_in_konsole(){
-    local IFS
-    konsole -e bash --rcfile <(printf '. ~/.bashrc; set -m; %s\n' "$*")
+
+# Konsole Fix
+bash_in_konsole() {
+  local IFS
+  konsole -e bash --rcfile <(printf '. ~/.bashrc; set -m; %s\n' "$*")
 }
-# bat-cat
+
+# Batcat
 alias cat='batcat'
 
-### BASH INSULTER (works in zsh though) ###
-if [ -f /etc/bash.command-not-found ]; then
-    . /etc/bash.command-not-found
-fi
-
+# FC-list Customization
 # custom fc-list
 # - sort list
 # - add color
@@ -283,6 +290,7 @@ function fc-list () {
   column -t -s: | \
   less -S
 }
+
 alias fonts="fc-list"
 
 # fc-list-families
@@ -291,48 +299,15 @@ function fc-list-families () {
   command fc-list : family | sort
 }
 alias font-families="fc-list-families"
+
 function ix() {
   local file="$1"
   curl -F "f:1=@$file" ix.io
 }
 
-stv-install() {
-  if [[ $1 == "-v" ]]; then
-    x=$@
-    if [[ $2 == "arch" ]]; then
-        x=${x/-v arch/}
-        sudo pacman $x
-    elif [[ $2 == "ubuntu" ]]; then
-        x=${x/-v ubuntu/}
-        distrobox-enter -H ubuntu -- sudo apt $x
-    elif [[ $2 == "fedora" ]]; then
-        x=${x/-v fedora/}
-        distrobox-enter -H fedora -- sudo dnf $x
-    else
-        echo "Command Not Found"
-    fi
-  fi
-}
-stv() {
-  if [[ $1 == "-v" ]]; then
-    x=$@
-    if [[ $2 == "arch" ]]; then
-        x=${x/-v arch/}
-         $x
-    elif [[ $2 == "ubuntu" ]]; then
-        x=${x/-v ubuntu/}
-        distrobox-enter -H ubuntu -- $x
-    elif [[ $2 == "fedora" ]]; then
-        x=${x/-v fedora/}
-        distrobox-enter -H fedora -- $x
-    else
-        echo "Command Not Found"
-    fi
-  fi
-  }
-
-if [ -f "/usr/bin/colorscript" ]; then
-     /usr/bin/colorscript -r
+# Check for Color Script
+if command -v colorscript &> /dev/null; then
+  colorscript -r
 else
-    echo "Can't find the Shell Color script"
+  echo "Can't find the Shell Color script"
 fi

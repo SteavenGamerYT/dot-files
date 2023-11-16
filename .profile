@@ -1,46 +1,24 @@
-# ~/.profile: executed by the command interpreter for login shells.
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
-# see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
+# Add user's custom binaries directory to PATH
+[ -d "$HOME/.bin" ] && PATH="$HOME/.bin:$PATH"
 
-# the default umask is set in /etc/profile; for setting the umask
-# for ssh logins, install and configure the libpam-umask package.
-#umask 022
+# Add user's local binaries directory to PATH
+[ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
-    fi
-fi
+# Add custom Applications directory to PATH
+[ -d "$HOME/Applications" ] && PATH="$HOME/Applications:$PATH"
 
-### PATH
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
-fi
+# Add Flatpak binaries directory to PATH
+[ -d "/var/lib/flatpak/exports/bin/" ] && PATH="/var/lib/flatpak/exports/bin/:$PATH"
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
+# Add Spicetify directory to PATH
+SPICETIFY_DIR="$HOME/.spicetify"
+[ -d "$SPICETIFY_DIR" ] && PATH="$SPICETIFY_DIR:$PATH"
 
-if [ -d "$HOME/Applications" ] ;
-  then PATH="$HOME/Applications:$PATH"
-fi
+# Add Linuxbrew binaries directory to PATH
+LINUXBREW_DIR="/home/linuxbrew/.linuxbrew/bin"
+[ -d "$LINUXBREW_DIR" ] && PATH="$LINUXBREW_DIR:$PATH"
 
-if [ -d "/var/lib/flatpak/exports/bin/" ] ;
-  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
-fi
-
-if [ -d "$HOME/.spicetify" ] ;
-  then PATH="$HOME/.spicetify:$PATH"
-fi
-
-if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-
-# Run Firefox in wayland Native, IF wayland is Detected.
+# Run Firefox in Wayland Native if Wayland is detected
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi

@@ -1,42 +1,57 @@
-	# sourcing my plugins
+# Sourcing custom settings
 if [[ -r ~/.bash-default ]]; then
   source ~/.bash-default
 else
-	echo "can't found the bash-default script"
+  echo "Error: Can't find the bash-default script"
 fi
-#Autojump
 
+# Autojump setup
 if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
+  . /usr/share/autojump/autojump.sh
 elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
+  . /usr/share/autojump/autojump.bash
 else
-	echo "can't found the autojump script"
+  echo "Error: Can't find the autojump script"
 fi
 
+# Sourcing additional custom settings
 if [[ -r ~/.steavengameryt ]]; then
   source ~/.steavengameryt
 else
-	echo "can't found the steavengameryt script"
+  echo "Error: Can't find the steavengameryt script"
 fi
 
-# history
+# History settings
 HISTFILE=~/.bash-history
 HISTSIZE=SAVEHIST=10000
 
-if [[ $(cat /etc/*-release) == *"arch"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
-elif [[ $(cat /etc/*-release) == *"fedora"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
-elif [[ $(cat /etc/*-release) == *"debian"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
-elif [[ $(cat /etc/*-release) == *"ubuntu"* ]]; then
-    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
+# Starship prompt configuration based on Linux distribution
+if [ -e /etc/os-release ]; then
+    linux_distro=$(awk -F= '/^ID=/{print tolower($2)}' /etc/os-release)
 else
-    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+    # fallback to your previous method if /etc/os-release is not available
+    linux_distro=$(lsb_release -si | tr '[:upper:]' '[:lower:]')
 fi
 
-if [[ ! -f $STARSHIP_CONFIG ]]; then
-    echo "Error: The configuration file $STARSHIP_CONFIG is missing!"
+case $linux_distro in
+  arch)
+    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
+    ;;
+  fedora)
+    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
+    ;;
+  debian)
+    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
+    ;;
+    ubuntu)
+    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
+    ;;
+  *)
+    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+    ;;
+esac
+
+if [[ ! -r $STARSHIP_CONFIG ]]; then
+    echo "Error: The configuration file $STARSHIP_CONFIG is not readable!"
 fi
 eval "$(starship init bash)"
