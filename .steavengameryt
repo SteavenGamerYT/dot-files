@@ -311,3 +311,38 @@ if command -v colorscript &> /dev/null; then
 else
   echo "Can't find the Shell Color script"
 fi
+stv-install() {
+    if [[ $1 == "-v" ]]; then
+        x=$@
+        if [[ $2 == "arch" ]]; then
+            x=${x/-v arch/}
+            distrobox-enter -H arch -- sudo pacman $x
+        elif [[ $2 == "ubuntu" ]]; then
+            x=${x/-v ubuntu/}
+            distrobox-enter -H ubuntu -- sudo apt $x
+        elif [[ $2 == "fedora" ]]; then
+            x=${x/-v fedora/}
+            distrobox-enter -H fedora -- sudo dnf $x
+        else
+            echo "Command Not Found"
+        fi
+    fi
+}
+
+stv() {
+    if [[ $1 == "-v" ]]; then
+        x=$@
+        if [[ $2 == "arch" ]]; then
+            x=${x/-v arch/}
+            distrobox-enter -H arch $x
+        elif [[ $2 == "ubuntu" ]]; then
+            x=${x/-v ubuntu/}
+            distrobox-enter -H ubuntu -- $x
+        elif [[ $2 == "fedora" ]]; then
+            x=${x/-v fedora/}
+            distrobox-enter -H fedora -- $x
+        else
+            echo "Command Not Found"
+        fi
+    fi
+}
