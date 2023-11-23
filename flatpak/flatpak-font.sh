@@ -1,2 +1,1 @@
-flatpak list --app --columns=application,runtime|grep org.gnome.Platform|awk -F '\t' '{print "flatpak run --command=fc-cache " $1 " -f -v "}'|xargs -I % echo "%"|sh
-flatpak list --app --columns=application,runtime|awk -F '\t' '{print "flatpak run --command=fc-cache " $1 " -f -v "}'|xargs -I % echo "%"|sh
+flatpak list --columns=application | grep -v Application | xargs -I {} flatpak run --command=fc-cache {} -f -v
