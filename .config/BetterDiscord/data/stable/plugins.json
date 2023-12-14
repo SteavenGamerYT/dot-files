@@ -1,11 +1,11 @@
 {
     "BDFDB": true,
-    "ZeresPluginLibrary": false,
-    "FreeEmojis": false,
-    "NoSpotifyPause": true,
+    "ZeresPluginLibrary": true,
+    "FreeEmojis": true,
+    "NoSpotifyPause": false,
     "NotificationSounds": true,
-    "SpotifyControls": true,
-    "SpotifyListenAlong": true,
+    "SpotifyControls": false,
+    "SpotifyListenAlong": false,
     "TypingIndicator": true,
     "TypingUsersAvatars": true
 }

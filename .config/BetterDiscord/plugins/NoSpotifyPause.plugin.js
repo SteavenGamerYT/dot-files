@@ -1,7 +1,7 @@
 /**
  * @name NoSpotifyPause
  * @description Prevents Discord from pausing your Spotify when streaming or gaming.
- * @version 0.0.3
+ * @version 0.0.6
  * @author bep
  * @authorId 147077474222604288
  * @authorLink https://github.com/bepvte
@@ -37,7 +37,7 @@ const config = {
     author: "bep",
     authorId: "147077474222604288",
     authorLink: "https://github.com/bepvte",
-    version: "0.0.3",
+    version: "0.0.6",
     description: "Prevents Discord from pausing your Spotify when streaming or gaming.",
     github: "https://github.com/bepvte/bd-addons",
     github_raw: "https://raw.githubusercontent.com/bepvte/bd-addons/main/plugins/NoSpotifyPause.plugin.js",
@@ -47,8 +47,7 @@ const config = {
             type: "fixed",
             items: [
                 "Fixes the plugin for revamped BetterDiscord! You will need the latest 0PluginLibrary for it to work",
-                "Thank you to devilbro for finding the spotify export! I found it through looking at his plugins",
-                "Extra update to cleanup logs"
+                "Finally hides the spotify auto pause notice"
             ]
         }
     ]
@@ -81,19 +80,23 @@ if (!global.ZeresPluginLibrary) {
 }
  
 module.exports = !global.ZeresPluginLibrary ? Dummy : (([Plugin, Api]) => {
-     const plugin = (Plugin, Library) => {
-  const Filters = Library.Filters;
-  const { Patcher, Webpack } = BdApi;
+     const plugin = (Plugin, _Library) => {
+  const { Patcher, Webpack, React } = BdApi;
   return class NoSpotifyPause extends Plugin {
     onStart() {
-      const target = Webpack.getModule(Filters.byCode(/SPOTIFY_PLAYER_PAUSE/), {
-        searchExports: true,
-      });
-      const spotifyModule = Webpack.getModule((x) => Object.values(x).includes(target));
-      const [spotifyExportName] = Object.entries(spotifyModule).find(
-        (entry) => entry[1] === target
-      );
-      Patcher.instead("NoSpotifyPause", spotifyModule, spotifyExportName, function () {});
+      const target = Webpack.getByKeys("pause", "play", "SpotifyAPI");
+      // we dont want to hide the notice if its not working
+      if (target !== undefined) {
+        this.notices = Webpack.getByRegex(/"div",\{className:.\(.\.notice,\{\[.\.isMobile/, {defaultExport: false});
+        Patcher.instead("NoSpotifyPause", this.notices, "default", function (_this, [props], originalFunction) {
+          if (props.children.some(x => x?.props?.noticeType === "SPOTIFY_AUTO_PAUSED")) {
+            return React.createElement(React.Fragment, null);
+          } else {
+            return originalFunction(props)
+          }
+        })
+      }
+      Patcher.instead("NoSpotifyPause", target, "pause", () => {});
     }
     onStop() {
       Patcher.unpatchAll("NoSpotifyPause");
@@ -102,5 +105,4 @@ module.exports = !global.ZeresPluginLibrary ? Dummy : (([Plugin, Api]) => {
 };
      return plugin(Plugin, Api);
 })(global.ZeresPluginLibrary.buildPlugin(config));
-
-/*@end@*/ 
+/*@end@*/
