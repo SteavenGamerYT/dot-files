@@ -352,3 +352,10 @@ stv() {
         fi
     fi
 }
+function ix {
+  curl -F "f:1=@$1" ix.io
+}
+
+function 0x0 {
+  curl -F "file=@$1" https://0x0.st
+}
