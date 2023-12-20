@@ -2,7 +2,7 @@
  * @name BDFDB
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 3.5.6
+ * @version 3.5.7
  * @description Required Library for DevilBro's Plugins
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -620,7 +620,7 @@ module.exports = (_ => {
 				BDFDB.LogUtils.log(BDFDB.LanguageUtils.LibraryStringsFormat("toast_plugin_started", ""), plugin);
 				if (Internal.settings.general.showToasts && !BDFDB.BDUtils.getSettings(BDFDB.BDUtils.settingsIds.showToasts)) BDFDB.NotificationUtils.toast(BDFDB.LanguageUtils.LibraryStringsFormat("toast_plugin_started", `${plugin.name} v${plugin.version}`), {
 					disableInteractions: true,
-					barColor: "var(--status-positive)"
+					barColor: BDFDB.DiscordConstants.ColorsCSS.STATUS_POSITIVE
 				});
 				
 				if (plugin.css) BDFDB.DOMUtils.appendLocalStyle(plugin.name, plugin.css);
@@ -637,7 +637,7 @@ module.exports = (_ => {
 				BDFDB.LogUtils.log(BDFDB.LanguageUtils.LibraryStringsFormat("toast_plugin_stopped", ""), plugin);
 				if (Internal.settings.general.showToasts && !BDFDB.BDUtils.getSettings(BDFDB.BDUtils.settingsIds.showToasts)) BDFDB.NotificationUtils.toast(BDFDB.LanguageUtils.LibraryStringsFormat("toast_plugin_stopped", `${plugin.name} v${plugin.version}`), {
 					disableInteractions: true,
-					barColor: "var(--status-danger)"
+					barColor: BDFDB.DiscordConstants.ColorsCSS.STATUS_DANGER
 				});
 				
 				const url = Internal.getPluginURL(plugin);
@@ -973,7 +973,7 @@ module.exports = (_ => {
 			};
 			BDFDB.PluginUtils.createSettingsPanel = function (addon, props) {
 				if (!window.BDFDB_Global.loaded) return BdApi.React.createElement("div", {
-					style: {"color": "var(--header-secondary)", "white-space": "pre-wrap"},
+					style: {"color": BDFDB.DiscordConstants.ColorsCSS.HEADER_SECONDARY, "white-space": "pre-wrap"},
 					children: [
 						"Could not initiate BDFDB Library Plugin! Can not create Settings Panel!\n\nTry deleting the ",
 						BdApi.React.createElement("strong", {children: dataFileName}),
@@ -3044,9 +3044,9 @@ module.exports = (_ => {
 					status = typeof status == "string" ? status.toLowerCase() : null;
 					let color = "";
 					switch (status) {
-						case "online": color = (useColor ? Internal.DiscordConstants.Colors.GREEN_360 : "var(--status-positive)"); break;
-						case "idle": color = (useColor ? Internal.DiscordConstants.Colors.YELLOW_300 : "var(--status-warning)"); break;
-						case "dnd": color = (useColor ? Internal.DiscordConstants.Colors.RED_400 : "var(--status-danger)"); break;
+						case "online": color = (useColor ? Internal.DiscordConstants.Colors.GREEN_360 : BDFDB.DiscordConstants.ColorsCSS.STATUS_POSITIVE); break;
+						case "idle": color = (useColor ? Internal.DiscordConstants.Colors.YELLOW_300 : BDFDB.DiscordConstants.ColorsCSS.STATUS_WARNING); break;
+						case "dnd": color = (useColor ? Internal.DiscordConstants.Colors.RED_400 : BDFDB.DiscordConstants.ColorsCSS.STATUS_DANGER); break;
 						case "playing": color = (useColor ? Internal.DiscordConstants.Colors.BRAND : "var(--bdfdb-blurple)"); break;
 						case "listening": color = Internal.DiscordConstants.Colors.SPOTIFY; break;
 						case "streaming": color = Internal.DiscordConstants.Colors.TWITCH; break;
@@ -4763,7 +4763,7 @@ module.exports = (_ => {
 							style: {
 								background: Internal.DiscordConstants.Colors.PRIMARY,
 								borderRadius: 5,
-								color: "var(--status-danger)",
+								color: BDFDB.DiscordConstants.ColorsCSS.STATUS_DANGER,
 								fontSize: 12,
 								fontWeight: 600,
 								padding: 6,
@@ -4825,7 +4825,7 @@ module.exports = (_ => {
 						return BDFDB.ReactUtils.createElement("div", {
 							className: BDFDB.DOMUtils.formatClassName(this.props.className, BDFDB.disCN.badgeiconbadge, this.props.shape && Internal.LibraryComponents.Badges.BadgeShapes[this.props.shape] || Internal.LibraryComponents.Badges.BadgeShapes.ROUND),
 							style: Object.assign({
-								backgroundColor: this.props.disableColor ? null : (this.props.color || "var(--status-danger)")
+								backgroundColor: this.props.disableColor ? null : (this.props.color || BDFDB.DiscordConstants.ColorsCSS.STATUS_DANGER)
 							}, this.props.style),
 							children: BDFDB.ReactUtils.createElement(Internal.LibraryComponents.SvgIcon, {
 								className: BDFDB.disCN.badgeicon,
@@ -4845,7 +4845,7 @@ module.exports = (_ => {
 						return BDFDB.ReactUtils.createElement("div", {
 							className: BDFDB.DOMUtils.formatClassName(this.props.className, BDFDB.disCN.badgenumberbadge, this.props.shape && Internal.LibraryComponents.Badges.BadgeShapes[this.props.shape] || Internal.LibraryComponents.Badges.BadgeShapes.ROUND),
 							style: Object.assign({
-								backgroundColor: !this.props.disableColor && (this.props.color || "var(--status-danger)"),
+								backgroundColor: !this.props.disableColor && (this.props.color || BDFDB.DiscordConstants.ColorsCSS.STATUS_DANGER),
 								width: this.getBadgeWidthForValue(this.props.count)
 							}, this.props.style),
 							onClick: this.handleClick.bind(this),
@@ -7426,7 +7426,7 @@ module.exports = (_ => {
 					let mini = props.size == Internal.LibraryComponents.Switch.Sizes.MINI;
 					
 					return BDFDB.ReactUtils.createElement(Internal.LibraryComponents.Animations.animated.div, {
-						className: BDFDB.DOMUtils.formatClassName(props.className, BDFDB.disCN.switch, mini && BDFDB.disCN.switchmini, "default-colors"),
+						className: BDFDB.DOMUtils.formatClassName(props.className, BDFDB.disCN.switch, props.value && BDFDB.disCN.switchchecked, mini && BDFDB.disCN.switchmini),
 						onMouseDown: _ => {
 							return !props.disabled && state[1](true);
 						},
@@ -8042,7 +8042,6 @@ module.exports = (_ => {
 					],
 					after: [
 						"DiscordTag",
-						"UseCopyIdItem",
 						"UserPopoutAvatar"
 					],
 					componentDidMount: [
@@ -8257,7 +8256,10 @@ module.exports = (_ => {
 					e.instance.props.avatar = Internal._processAvatarRender(e.instance.props.user, e.instance.props.avatar) || e.instance.props.avatar;
 				};
 				Internal.processMenu = function (e) {
-					if (e.instance.props && (!e.instance.props.children || BDFDB.ArrayUtils.is(e.instance.props.children) && !e.instance.props.children.length)) Internal.LibraryModules.ContextMenuUtils.closeContextMenu();
+					if (e.instance.props && (e.instance.props.children || BDFDB.ArrayUtils.is(e.instance.props.children) && e.instance.props.children.length)) {
+						let patchCancel = BDFDB.PatchUtils.patch(BDFDB, Internal.LibraryModules.ContextMenuUtils, "closeContextMenu", {instead: e => {}});
+						BDFDB.TimeUtils.timeout(_ => patchCancel(), 1000);
+					}
 				};
 				Internal.processMessageActionsContextMenu = function (e) {
 					e.instance.props.updatePosition = _ => {};
@@ -8275,9 +8277,6 @@ module.exports = (_ => {
 				};
 				Internal.processSearchBar = function (e) {
 					if (typeof e.instance.props.query != "string") e.instance.props.query = "";
-				};
-				Internal.processUseCopyIdItem = function (e) {
-					if (!e.returnvalue) e.returnvalue = false;
 				};
 				Internal.processUserPopoutAvatar = function (e) {
 					if (!e.instance.props.user) return;

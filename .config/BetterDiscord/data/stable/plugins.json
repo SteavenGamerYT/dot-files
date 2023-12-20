@@ -3,7 +3,7 @@
     "ZeresPluginLibrary": true,
     "FreeEmojis": true,
     "NoSpotifyPause": false,
-    "NotificationSounds": false,
+    "NotificationSounds": true,
     "SpotifyControls": false,
     "SpotifyListenAlong": false,
     "TypingIndicator": true,
