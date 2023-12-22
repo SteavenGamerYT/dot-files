@@ -2,7 +2,7 @@
  * @name BDFDB
  * @author DevilBro
  * @authorId 278543574059057154
- * @version 3.5.7
+ * @version 3.5.8
  * @description Required Library for DevilBro's Plugins
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -3990,7 +3990,7 @@ module.exports = (_ => {
 									oldTransitionState = props.transitionState;
 								}
 								componentWillUnmount() {
-									if (props.transitionState == 3) {
+									if (props.transitionState == 2) {
 										for (let cancel of cancels) cancel(modalInstance);
 										config.onClose(modalInstance);
 									}
@@ -6039,7 +6039,7 @@ module.exports = (_ => {
 							children: BDFDB.ReactUtils.createElement(Internal.LibraryComponents.EmojiButton, {
 								className: BDFDB.DOMUtils.formatClassName(this.props.className, BDFDB.disCN.emojiinputbutton),
 								renderButtonContents: this.props.emoji ? _ => BDFDB.ReactUtils.createElement(Internal.LibraryComponents.Emoji, {
-									className: BDFDB.disCN.emoji,
+									className: BDFDB.disCN.emojiinputbuttonemoji,
 									emojiId: this.props.emoji.id,
 									emojiName: this.props.emoji.name
 								}) : null
@@ -8258,7 +8258,7 @@ module.exports = (_ => {
 				Internal.processMenu = function (e) {
 					if (e.instance.props && (e.instance.props.children || BDFDB.ArrayUtils.is(e.instance.props.children) && e.instance.props.children.length)) {
 						let patchCancel = BDFDB.PatchUtils.patch(BDFDB, Internal.LibraryModules.ContextMenuUtils, "closeContextMenu", {instead: e => {}});
-						BDFDB.TimeUtils.timeout(_ => patchCancel(), 1000);
+						BDFDB.TimeUtils.timeout(_ => patchCancel());
 					}
 				};
 				Internal.processMessageActionsContextMenu = function (e) {
