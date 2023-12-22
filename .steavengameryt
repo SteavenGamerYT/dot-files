@@ -359,3 +359,7 @@ function ix {
 function 0x0 {
   curl -F "file=@$1" https://0x0.st
 }
+
+# Audio / Sound (I got sick of searching for it in my discord server at #🔥linux-tips)
+alias combine-audio='pactl load-module module-combine-sink'
+alias uncombine-audio='pactl unload-module module-combine-sink'
