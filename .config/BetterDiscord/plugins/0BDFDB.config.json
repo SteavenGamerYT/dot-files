@@ -1,8 +1,8 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.5.8",
-			"NotificationSounds": "3.8.8",
+			"BDFDB": "3.5.9",
+			"NotificationSounds": "3.9.0",
 			"SplitLargeMessages": "1.8.1",
 			"SpotifyControls": "1.3.4"
 		},
@@ -16,7 +16,7 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "3e036123d2bd75d2710811a734275fa43f95c8bd",
+			"0BDFDB.data.json": "37e2001d7e6dc1d3d771e222cd9a1cf2bd43da63",
 			"0BDFDB.raw.css": "8c083e2a87a82aded5f3b2e27fb8b2f816b5f74a"
 		}
 	}

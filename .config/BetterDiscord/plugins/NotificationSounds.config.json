@@ -357,6 +357,14 @@
 				"sound": "---",
 				"streamMute": false,
 				"volume": 100
+			},
+			"message3": {
+				"category": "---",
+				"invisibleMute": false,
+				"mute": false,
+				"sound": "---",
+				"streamMute": false,
+				"volume": 100
 			}
 		},
 		"volumes": {
