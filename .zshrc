@@ -66,4 +66,5 @@ setopt extendedhistory
 unsetopt nomatch
 
 # Cleanup of home dicrictory
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+autoload -U compinit
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
