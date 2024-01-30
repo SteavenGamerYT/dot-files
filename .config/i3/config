@@ -16,7 +16,7 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 &
 exec_always --no-startup-id xdg-desktop-portal-kde &
-exec_always --no-startup-id kwalletd5
+#exec --no-startup-id kwalletd5
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/lib/kdeconnectd &
@@ -29,7 +29,7 @@ exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Return exec konsole
 bindsym $mod+x exec konsole
-bindsym $mod+b exec "google-chrome-stable --enable-blink-features=MiddleClickAutoscroll"
+bindsym $mod+b exec "google-chrome-stable --enable-blink-features=MiddleClickAutoscroll --password-store=kwallet5"
 bindsym $mod+z exec dolphin
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
