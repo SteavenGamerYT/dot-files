@@ -14,22 +14,23 @@ exec_always --no-startup-id ~/.config/i3/setup-monitors.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec_always --no-startup-id /usr/libexec/xdg-desktop-portal-gtk &
+exec_always --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 &
+exec_always --no-startup-id xdg-desktop-portal-kde &
 exec_always --no-startup-id kwalletd5
+exec --no-startup-id /usr/lib/pam_kwallet_init
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/lib/kdeconnectd &
 exec_always --no-startup-id dunst
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id mpv --no-video "$(find ~/Documents/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
+exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Return exec konsole
 bindsym $mod+x exec konsole
-bindsym $mod+b exec "thorium-browser"
-bindsym $mod+z exec nemo
+bindsym $mod+b exec "google-chrome-stable --enable-blink-features=MiddleClickAutoscroll"
+bindsym $mod+z exec dolphin
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
@@ -141,14 +142,41 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 #    | |    | |    | |    | | | |    | |__     | |_) | /  \  | |__) | (___  
 #    | |    | |    | |    | | | |    |  __|    |  _ < / /\ \ |  _  / \___ \ 
 #    | |   _| |_   | |   _| |_| |____| |____   | |_) / ____ \| | \ \ ____) |
-#    |_|  |_____|  |_|  |_____|______|______|  |____/_/    \_\_|  \_\_____/                                                                            
+#    |_|  |_____|  |_|  |_____|______|______|  |____/_/    \_\_|  \_\_____/      
+set $rosewater #f5e0dc
+set $flamingo  #f2cdcd
+set $pink      #f5c2e7
+set $mauve     #cba6f7
+set $red       #f38ba8
+set $maroon    #eba0ac
+set $peach     #fab387
+set $yellow    #f9e2af
+set $green     #a6e3a1
+set $teal      #94e2d5
+set $sky       #89dceb
+set $sapphire  #74c7ec
+set $blue      #89b4fa
+set $lavender  #b4befe
+set $text      #cdd6f4
+set $subtext1  #bac2de
+set $subtext0  #a6adc8
+set $overlay2  #9399b2
+set $overlay1  #7f849c
+set $overlay0  #6c7086
+set $surface2  #585b70
+set $surface1  #45475a
+set $surface0  #313244
+set $base      #1e1e2e
+set $mantle    #181825
+set $crust     #11111b                                                                      
 # class                 border  bground text    indicator child_border
-client.focused          #4C566A #4C566A #FFFFFF #2E9EF4   #B5BCC2
-client.focused_inactive #333333 #2E3440 #FFFFFF #484E50   #8B9092
-client.unfocused        #4C566A #4C566A #888888 #292D2E   #222222
-client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
-client.background       #FFFFFF
+# target                 title     bg    text   indicator  border
+client.focused           $blue $base $text  $rosewater $blue
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 #   _____          _____   _____ 
 #  / ____|   /\   |  __ \ / ____|
