@@ -36,7 +36,8 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scr
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym --release Print exec scrot -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
-bindsym $mod+Shift+s exec scrot -s -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
+#bindsym $mod+Shift+s exec scrot -s -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
+bindsym --release Mod+Shift+Print exec flameshot gui
 
 
 # █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀
