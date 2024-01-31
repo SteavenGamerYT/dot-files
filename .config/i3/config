@@ -16,7 +16,6 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 &
 exec_always --no-startup-id xdg-desktop-portal-kde &
-#exec --no-startup-id kwalletd5
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/lib/kdeconnectd &
@@ -36,8 +35,9 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scr
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym --release Print exec scrot -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
-#bindsym $mod+Shift+s exec scrot -s -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
-bindsym --release Mod+Shift+Print exec flameshot gui
+bindsym --release $mod+Shift+s exec flameshot gui
+# Switch between English (US) and Arabic (Egypt) keyboard layouts
+exec_always "setxkbmap -layout us,ara -option grp:ctrl_space_toggle"
 
 
 # █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀
