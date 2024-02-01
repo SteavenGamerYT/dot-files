@@ -2,7 +2,8 @@
 	"all": {
 		"changeLogs": {
 			"BDFDB": "3.5.9",
-			"NotificationSounds": "3.9.0",
+			"BetterFriendList": "1.5.5",
+			"NotificationSounds": "3.9.1",
 			"SplitLargeMessages": "1.8.1",
 			"SpotifyControls": "1.3.4"
 		},
