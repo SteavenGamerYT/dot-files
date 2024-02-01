@@ -34,8 +34,9 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym --release Print exec scrot -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
-bindsym --release $mod+Shift+s exec flameshot gui
+# Screenshots
+bindsym --release Print exec scrot "$HOME/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png" -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
+bindsym --release $mod+Shift+s exec flameshot gui -p ~/Pictures/Screenshots -c
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
 exec_always "setxkbmap -layout us,ara -option grp:ctrl_space_toggle"
 
