@@ -25,6 +25,7 @@ exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -t
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
 
 # Keybindings
+bindsym XF86Launch1 exec rog-control-center
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Return exec konsole
 bindsym $mod+x exec konsole
