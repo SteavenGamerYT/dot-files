@@ -11,6 +11,7 @@ exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 exec_always --no-startup-id ~/.config/i3/setup-monitors.sh
 
 # Startup Applications
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 "~/.config/i3/lockscreen.sh" ""
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
@@ -23,6 +24,9 @@ exec_always --no-startup-id dunst
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
+# Keyboard blacklight
+exec_always --no-startup-id sudo -A rogauracore single_static 89b4fa
+exec_always --no-startup-id sudo -A rogauracore brightness 3
 
 # Keybindings
 bindsym XF86Launch1 exec rog-control-center
