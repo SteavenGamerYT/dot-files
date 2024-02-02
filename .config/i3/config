@@ -11,6 +11,7 @@ exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 exec_always --no-startup-id ~/.config/i3/setup-monitors.sh
 
 # Startup Applications
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 "~/.config/i3/lockscreen.sh" ""
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom
 exec_always --no-startup-id nm-applet
