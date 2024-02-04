@@ -8,5 +8,6 @@
     "SpotifyListenAlong": false,
     "TypingIndicator": true,
     "TypingUsersAvatars": true,
-    "SplitLargeMessages": true
+    "SplitLargeMessages": true,
+    "BetterFriendList": false
 }
