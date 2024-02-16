@@ -50,7 +50,7 @@ yay -Syu --noconfirm --needed polybar picom i3 dunst optimus-manager firefox  di
 Installation, make sure that you don't have any of this files already first!, if so remove them
 
 # Install
-```
+```sh
 yay -Syu --noconfirm --needed starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions zsh-completions neofetch xclip lolcat git trash-cli bat
 mkdir -p ~/Documents/GitHub
 mkdir -p ~/.zsh/plugins/
@@ -85,4 +85,9 @@ ln -s ~/Documents/GitHub/dot-files/.config/dunst ~/.config/dunst
 ln -s ~/Documents/GitHub/dot-files/.config/swaylock ~/.config/swaylock
 ln -s ~/Documents/GitHub/dot-files/.config/rofi ~/.config/rofi
 chsh -s $(which zsh)
+```
+
+```sh
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 ```
