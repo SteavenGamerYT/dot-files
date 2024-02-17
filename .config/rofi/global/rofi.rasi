@@ -41,7 +41,7 @@ prompt {
 button {
     action: "ok";
     str: " ";
-    font: "FantasqueSansMono Nerd Font 16";
+    font: "RobotoMono Nerd Font 16";
     expand: false;
     text-color: #6e6a86;
     background-color: @transparent;
