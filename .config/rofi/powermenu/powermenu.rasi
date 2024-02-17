@@ -1,5 +1,5 @@
 configuration {
-	font: "JetBrainsMono Nerd Font 36";
+	font: "RobotoMono Nerd Font 36";
 	drun-display-format: "{name}";
 	fullscreen: false;
 	threads: 0;
