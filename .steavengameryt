@@ -35,6 +35,7 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$DOT_FOLLDER"/java
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
 
 # Terminal Settings
 export TERM="xterm-256color"
