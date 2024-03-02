@@ -60,3 +60,4 @@ if ! [[ -r "$STARSHIP_CONFIG" ]]; then
 fi
 
 eval "$(starship init bash)"
+#eval "$(atuin init bash)"

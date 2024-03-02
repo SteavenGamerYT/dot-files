@@ -1,3 +1,4 @@
 {
-	"removemake": "yes"
+	"removemake": "yes",
+	"sudoloop": true
 }
