@@ -87,7 +87,7 @@ alias gedit='gnome-text-editor'
 alias sudo-gedit='sudo gnome-text-editor'
 
 # Neofetch Fix
-alias neofetch='/bin/neofetch --ascii ~/.config/neofetch/cat.txt | lolcat'
+alias neofetch-big='/bin/neofetch --ascii ~/.config/neofetch/cat.txt | lolcat'
 alias neofetch-small='/bin/neofetch --ascii ~/.config/neofetch/cat2.txt | lolcat'
 
 # Antivirus Update
