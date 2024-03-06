@@ -1,0 +1,165 @@
+* {
+    Rosewater: #f5e0dc;
+    Flamingo: #f2cdcd;
+    Pink: #f5c2e7;
+    Mauve: #cba6f7;
+    Red: #f38ba8;
+    Maroon: #eba0ac;
+    Peach: #fab387;
+    Yellow: #f9e2af;
+    Green: #a6e3a1;
+    Teal: #94e2d5;
+    Sky: #89dceb;
+    Sapphire: #74c7ec;
+    Blue: #89b4fa;
+    Lavender: #b4befe;
+    Text: #dce0e8;
+    Subtext1: #bac2de;
+    Subtext0: #a6adc8;
+    Overlay2: #7287fd;
+    Overlay1: #7f849c;
+    Overlay0: #6c7086;
+    Surface2: #585b70;
+    Surface1: #45475a;
+    Surface0: #d20f39;
+    Base: #1e1e2e;
+    Mantle: #181825;
+    Crust: #11111b;
+    Blue2: #1e66f5;
+
+    spacing: 2;
+    background-color: var(Surface0);
+
+    background: var(Surface0);
+    foreground: var(Text);
+
+    normal-background: var(background);
+    normal-foreground: var(foreground);
+    alternate-normal-background: var(background);
+    alternate-normal-foreground: var(foreground);
+    selected-normal-background: var(Blue2);  /* Catppuccino Mocha Blue background */
+    selected-normal-foreground: var(Text);
+
+    active-background: var(background);
+    active-foreground: var(Sky);
+    alternate-active-background: var(background);
+    alternate-active-foreground: var(Sky);
+    selected-active-background: var(Sky);
+    selected-active-foreground: var(background);
+
+    urgent-background: var(background);
+    urgent-foreground: var(Red);
+    alternate-urgent-background: var(background);
+    alternate-urgent-foreground: var(Red);
+    selected-urgent-background: var(Red);
+    selected-urgent-foreground: var(background);
+}
+
+element {
+    padding: 0px 0px 0px 7px;
+    spacing: 5px;
+    border:  0;
+    cursor:  pointer;
+}
+element normal.normal {
+    background-color: var(normal-background);
+    text-color: var(normal-foreground);
+}
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color: var(urgent-foreground);
+}
+element normal.active {
+    background-color: var(active-background);
+    text-color: var(active-foreground);
+}
+element selected.normal {
+    background-color: var(selected-normal-background);
+    text-color: var(selected-normal-foreground);
+}
+element selected.urgent {
+    background-color: var(selected-urgent-background);
+    text-color: var(selected-urgent-foreground);
+}
+element selected.active {
+    background-color: var(selected-active-background);
+    text-color: var(selected-active-foreground);
+}
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color: var(alternate-normal-foreground);
+}
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color: var(alternate-urgent-foreground);
+}
+element alternate.active {
+    background-color: var(alternate-active-background);
+    text-color: var(alternate-active-foreground);
+}
+element-text {
+    background-color: rgba(0, 0, 0, 0%);
+    text-color: inherit;
+    highlight: inherit;
+    cursor: inherit;
+}
+element-icon {
+    background-color: rgba(0, 0, 0, 0%);
+    size: 1.0000em;
+    text-color: inherit;
+    cursor: inherit;
+}
+window {
+    padding: 0;
+    border: 0;
+    background-color: var(background);
+}
+mainbox {
+    padding: 0;
+    border: 0;
+}
+message {
+    margin: 0px 7px;
+}
+textbox {
+    text-color: var(foreground);
+}
+listview {
+    margin: 0px 0px 5px;
+    scrollbar: true;
+    spacing: 2px;
+    fixed-height: 0;
+}
+scrollbar {
+    padding: 0;
+    handle-width: 14px;
+    border: 0;
+    handle-color: var(Overlay2); /* Catppuccino Mocha Blue handle color */
+}
+
+button {
+    spacing: 0;
+    text-color: var(normal-foreground);
+    cursor: pointer;
+}
+
+button selected {
+    background-color: var(selected-normal-background);
+    text-color: var(selected-normal-foreground);
+}
+
+inputbar {
+    padding: 7px;
+    margin: 7px;
+    spacing: 0;
+    text-color: var(normal-foreground);
+    background-color: var(Overlay2); /* Catppuccino Mocha Blue background color */
+    children: [ entry ];
+}
+
+entry {
+    spacing: 0;
+    cursor: text;
+    text-color: var(normal-foreground);
+    background-color: var(Overlay2); /* Catppuccino Mocha Blue background color */
+}

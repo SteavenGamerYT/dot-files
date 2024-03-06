@@ -1,0 +1,37 @@
+env = ICON_THEME,Papirus-Dark
+exec = hyprctl setcursor WhiteSur-cursors 24
+env = GTK_THEME,Nordic
+exec = gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
+exec = gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
+
+general {
+  gaps_in = 5
+  gaps_out = 5
+  border_size = 2
+  col.active_border = 0xFF81A1C1
+  col.inactive_border = 0xFF617487
+  layout = dwindle
+}
+
+decoration {
+  rounding = 8
+  active_opacity = 1.0
+  inactive_opacity = 1.0
+  drop_shadow = true
+  shadow_ignore_window = true
+  shadow_offset = 2 2
+  shadow_range = 4
+  shadow_render_power = 2
+  col.shadow = 0x66000000
+  blurls = gtk-layer-shell
+  blurls = rofi
+  # blurls = waybar
+  blurls = lockscreen
+  blur {
+    enabled = true
+    size = 4
+    passes = 2
+    new_optimizations = true
+  }
+}
+bind = SUPER, D, exec, killall rofi || rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/material.rasi
