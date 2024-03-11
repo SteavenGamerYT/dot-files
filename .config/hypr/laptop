@@ -1,0 +1,3 @@
+exec = sudo -A rogauracore brightness 3
+#exec = sudo -A rogauracore single_static B48EAD 
+exec = sudo -A rogauracore single_static ff000d
