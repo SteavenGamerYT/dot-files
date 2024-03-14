@@ -61,3 +61,4 @@ fi
 
 eval "$(starship init bash)"
 #eval "$(atuin init bash)"
+eval "$(zoxide init bash)"

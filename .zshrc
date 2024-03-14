@@ -69,3 +69,4 @@ unsetopt nomatch
 autoload -U compinit
 compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 eval "$(atuin init zsh)"
+eval "$(zoxide init zsh)"
