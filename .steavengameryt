@@ -169,15 +169,15 @@ alias gcommit='gitcommit'
 
 # Directory and Navigation Aliases
 cdgit() {
-    cd ~/Documents/GitHub/"$1"
+    z ~/Documents/GitHub/"$1"
 }
 
-alias cdgitf='cd ~/Documents/GitHub'
-alias cddot='cd ~/Documents/GitHub/dot-files'
+alias cdgitf='z ~/Documents/GitHub'
+alias cddot='z ~/Documents/GitHub/dot-files'
 
 # Change directory aliases
-alias web='cd /var/www/html'
-alias home='cd ~'
+alias web='z /var/www/html'
+alias home='z ~'
 
 # cd into the old directory
 alias bd='cd "$OLDPWD"'
