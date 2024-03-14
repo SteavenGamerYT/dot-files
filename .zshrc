@@ -68,4 +68,4 @@ unsetopt nomatch
 # Cleanup of home dicrictory
 autoload -U compinit
 compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
-#eval "$(atuin init zsh)"
+eval "$(atuin init zsh)"
