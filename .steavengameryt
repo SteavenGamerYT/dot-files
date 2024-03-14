@@ -223,7 +223,7 @@ alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-fo
 updatearch="yay -Syu --noconfirm --needed && sudo flatpak update -y"
 updatefedora="sudo dnf update -y && sudo flatpak update -y"
 updatedebian="sudo nala upgrade -y && sudo flatpak update -y"
-alias update-all="ssh -t dell '${updatearch}' && ssh -t asus '${updatefedora}' && ssh -t hp '${updatedebian}'"
+alias update-all="ssh -t omar-pc '${updatearch}' && ssh -t omar-gaminglaptop '${updatearch}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
 alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}'"
 
