@@ -225,7 +225,7 @@ updatefedora="sudo dnf update -y && sudo flatpak update -y"
 updatedebian="sudo nala upgrade -y && sudo flatpak update -y"
 alias update-all="ssh -t omar-pc '${updatearch}' && ssh -t omar-gaminglaptop '${updatearch}'"
 dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
-alias update-dotfiles="ssh -t dell '${dotfiles}' && ssh -t asus '${dotfiles}' && ssh -t hp '${dotfiles}'"
+alias update-dotfiles="ssh -t omar-pc '${dotfiles}' && ssh -t omar-gaminglaptop '${dotfiles}'"
 
 # Cache Fix
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
