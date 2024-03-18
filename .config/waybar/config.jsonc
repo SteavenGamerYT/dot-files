@@ -66,8 +66,9 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %I:%M %p}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      //  "format": "{: %I:%M %p}",
+      "format": "{:%I:%M %p}",  
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {
         "device": "intel_backlight",
