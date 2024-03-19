@@ -53,6 +53,7 @@ tooltip {
 #custom-caffeine,
 #custom-weather,
 #custom-power,
+#custom-notification,
 #window,
 #clock,
 #battery,
@@ -151,6 +152,12 @@ tooltip {
     margin-left: 0px;
 }
 #custom-power {
+    border-radius: 0px 0px 0px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+}
+#custom-notification {
+    font-family: "RobotoMono Nerd Font";
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;
