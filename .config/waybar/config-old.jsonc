@@ -7,23 +7,25 @@
     "gtk-layer-shell": true,
     "height": 0,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "clock",
+ //       "custom/weather",
+        "hyprland/workspaces"
     ],
+    "modules-center": ["hyprland/window"],
     "modules-right": [
+        "tray",
         "custom/updates",
         "custom/language",
+        "battery",
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
-        "battery",
         "bluetooth",
         "network",
-        "clock",
         "custom/power",
-        "custom/notification",
-        "tray"
+        "custom/notification"
     ],
+
     "hyprland/window": {
         "format": "{}"
     },
@@ -32,20 +34,17 @@
         "all-outputs": true,
         "on-click": "activate",
         //"format": "{icon}",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "󰉋",
-            "9": "󰙯",
-            "10": "",
-            "11": "󰅨",
-            "12": "",
-        
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
         }
     },
     "custom/updates": {
@@ -69,7 +68,7 @@
     },
     "clock": {
       //  "format": "{: %I:%M %p}",
-      "format": "<span > </span><span>{:%I:%M %p}</span>",  
+      "format": "<span > </span><span>{:%I:%M %p}</span>",  
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {

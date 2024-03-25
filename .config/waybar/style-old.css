@@ -1,16 +1,3 @@
-@define-color background #FFFFFF;
-@define-color foreground #F5F5F5;
-@define-color foreground-alt #141C21;
-@define-color alpha #39444f;
-@define-color shade1 #1A237E;
-@define-color shade2 #283593;
-@define-color shade3 #303F9F;
-@define-color shade4 #3949AB;
-@define-color shade5 #3F51B5;
-@define-color shade6 #5C6BC0;
-@define-color shade7 #7986CB;
-@define-color shade8 #9FA8DA;
-
 * {
     border: none;
     border-radius: 0;
@@ -23,8 +10,6 @@
 window#waybar {
     background: rgba(21, 18, 27, 0);
     color: #cdd6f4;
-    background-color: #1e1e2e;
-    transition-property: background-color;
 }
 
 tooltip {
@@ -35,44 +20,33 @@ tooltip {
     border-color: #11111b;
 }
 
-#workspaces {
-    background-color: @background;
-    color: @foreground;
-    border-right: 0px;
-    border-left: 0px;
-    padding: 2px;
-  }
-  
-  #workspaces button {
+#workspaces button {
     padding: 5px;
-    background-color: @background;
-    color: @foreground-alt;
-  }
-  
-  #workspaces button.active {
-    background-color: @shade8;
-    color: #0a0a0a;
-  }
-  
-  #workspaces button.focused {
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
     color: #a6adc8;
-    background-color: #eba0ac;
-  }
-  
-  #workspaces button.urgent {
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
     color: #11111b;
-    background-color: @background;
-    background-color: #CC6666;
-  }
-  
-  #workspaces button:hover {
-    background-color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
     color: #cdd6f4;
-  }
-  #workspaces button.occupied {
-    color: @foreground-alt;
-    background-color: @background;
-  }
+    border-radius: 10px;
+}
 
 #custom-language,
 #custom-updates,
@@ -97,15 +71,23 @@ tooltip {
 }
 
 #tray {
-    border-right: 0px;
-    border-left: 0px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
 }
 
 #custom-caffeine {
     color: #89dceb;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 10px 0px 0px 10px;
     border-right: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 #custom-language {
@@ -121,21 +103,20 @@ tooltip {
 }
 
 #window {
-    border-right: 0px;
-    border-left: 0px;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 #clock {
-    color: @foreground;
-    background: @shade3;
-    border-radius: 0px 0px 0px 0px;
+    color: #fab387;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 0px;
     border-right: 0px;
-    border-left: 0px;
 }
 
 #network {
-    background: @shade4;
-    color: @foreground;
+    color: #f9e2af;
     border-left: 0px;
     border-right: 0px;
 }
@@ -147,21 +128,17 @@ tooltip {
 }
 
 #pulseaudio {
-    background: @shade4;
+    color: #89b4fa;
     border-left: 0px;
     border-right: 0px;
 }
-#pulseaudio.muted {
-    color: @foreground; /* Change to desired color when muted */
-}
+
 #pulseaudio.microphone {
-    background: @shade4;
+    color: #cba6f7;
     border-left: 0px;
     border-right: 0px;
 }
-#pulseaudio.microphone:not(.muted) {
-    /* Add any specific styling for microphone control here */
-}
+
 #battery {
     color: #a6e3a1;
     border-radius: 0 10px 10px 0;
@@ -181,7 +158,7 @@ tooltip {
 }
 #custom-notification {
     font-family: "RobotoMono Nerd Font";
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     border-left: 0px;
 }
