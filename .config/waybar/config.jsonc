@@ -38,13 +38,14 @@
         "max-length": 10
    },
    "custom/disks": {
-    "exec": "/home/omarhanykasban/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
+    "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
     "interval": 1,
     "format": "  {} "
   },
 
     "custom/language": {
-        "exec": "swaymsg -t get_inputs | grep layout_name | grep -v En | awk 'END{if(NR == 0){print \"EN\"}else{print toupper(substr($2,2,2))}}'",
+        "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/get-lang.sh",
+        "on-click": "~/Documents/GitHub/dot-files/.config/waybar/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
         "format": "  {}"
       },
