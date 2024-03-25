@@ -5,27 +5,51 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 0,
+    "output": "DP-1",
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
     ],
     "modules-right": [
-        "custom/updates",
-        "custom/language",
+        "custom/disks",
+        "cpu",
+        "memory",
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
+        "custom/language",
         "battery",
         "bluetooth",
         "network",
         "clock",
-        "custom/power",
+        "custom/updates",
         "custom/notification",
+        "custom/power",
         "tray"
     ],
+    "memory": {
+        "interval": 30,
+        "format": "  {percentage}%",
+        "max-length": 10
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "  {usage}%",
+        "max-length": 10
+   },
+   "custom/disks": {
+    "exec": "/home/omarhanykasban/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
+    "interval": 1,
+    "format": "  {} "
+  },
+
+    "custom/language": {
+        "exec": "swaymsg -t get_inputs | grep layout_name | grep -v En | awk 'END{if(NR == 0){print \"EN\"}else{print toupper(substr($2,2,2))}}'",
+        "interval": 1,
+        "format": "  {}"
+      },
     "hyprland/window": {
-        "format": "{}"
+        "format": " {}"
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -69,7 +93,7 @@
     },
     "clock": {
       //  "format": "{: %I:%M %p}",
-      "format": "<span > </span><span>{:%I:%M %p}</span>",  
+      "format": "<span >  </span><span>{:%I:%M %p}</span>",  
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {
@@ -95,19 +119,19 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
-        "format-muted": " Muted",
+        "format-muted": "  Muted",
         "on-click": "pamixer -t",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
         "scroll-step": 5,
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", " "]
         }
     },
     "pulseaudio#microphone": {
@@ -122,16 +146,16 @@
     "network": {
 //        "interface": "wl*",
         "format": "{ifname}",
-        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-wifi": "直 {essid} ({signalStrength}%)",
       //  "format-wifi": "⇡{bandwidthUpBytes} ⇣{bandwidthDownBytes} {essid} ({signalStrength}%) ",
         // "format-ethernet": "{ifname} ",
-        "format-ethernet": " {icon} {ifname}",
+        "format-ethernet": "󰈀 {icon} {ipaddr}",
         // "format-ethernet": "{icon} {ifname} ⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}",
        // "format-disconnected": "", //An empty format will hide the module.
         "format-disconnected": "",
         "tooltip-format": "{ifname}",
         "tooltip-format-wifi": " {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": " {ifname}",
+        "tooltip-format-ethernet": "󰈀 {ipaddr}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
         "on-click": "~/Documents/GitHub/dot-files/.config/rofi/rofi-network-manager/rofi-network-manager.sh"

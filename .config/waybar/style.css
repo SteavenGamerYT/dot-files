@@ -12,9 +12,8 @@
 @define-color shade8 #9FA8DA;
 
 * {
-    border: none;
     border-radius: 0;
-    font-family: RobotoMono Nerd Font, monospace;
+    font-family: Iosevka Nerd Font;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -23,7 +22,7 @@
 window#waybar {
     background: rgba(21, 18, 27, 0);
     color: #cdd6f4;
-    background-color: #1e1e2e;
+    background-color: @alpha;
     transition-property: background-color;
 }
 
@@ -34,17 +33,13 @@ tooltip {
     border-style: solid;
     border-color: #11111b;
 }
-
-#workspaces {
-    background-color: @background;
-    color: @foreground;
-    border-right: 0px;
-    border-left: 0px;
-    padding: 2px;
-  }
   
   #workspaces button {
-    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+    border-width: 0px;
+    padding: 10px 10px;
     background-color: @background;
     color: @foreground-alt;
   }
@@ -64,16 +59,18 @@ tooltip {
     background-color: @background;
     background-color: #CC6666;
   }
-  
-  #workspaces button:hover {
-    background-color: #11111b;
-    color: #cdd6f4;
-  }
   #workspaces button.occupied {
     color: @foreground-alt;
     background-color: @background;
   }
-
+#custom-disk-root,
+#custom-disk-home,
+#custom-disk-hdd,
+#custom-disk-hdd2,
+#custom-disk-hdd3,
+#cpu,
+#memory,
+#backlight,
 #custom-language,
 #custom-updates,
 #custom-caffeine,
@@ -88,100 +85,87 @@ tooltip {
 #bluetooth,
 #workspaces,
 #tray,
-#backlight {
-    background: #1e1e2e;
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
+
+#cpu {
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: @shade8;
+    color: @foreground;
 }
+#memory {
+    background: @shade7;
+}
+#backlight {
+    background: #1e1e2e;}
 
 #tray {
-    border-right: 0px;
-    border-left: 0px;
+    background-color: @background;
+    color: @foreground;
 }
 
 #custom-caffeine {
     color: #89dceb;
-    border-radius: 0px 0px 0px 0px;
-    border-right: 0px;
-    margin-left: 0px;
 }
 
 #custom-language {
-    color: #f38ba8;
-    border-left: 0px;
-    border-right: 0px;
+    background: @shade5;
+    color: @foreground;
 }
 
 #custom-updates {
-    color: #f5c2e7;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#window {
-    border-right: 0px;
-    border-left: 0px;
+    background-color: @background;
+    color: @shade4;
 }
 
 #clock {
     color: @foreground;
     background: @shade3;
-    border-radius: 0px 0px 0px 0px;
-    border-right: 0px;
-    border-left: 0px;
 }
 
 #network {
     background: @shade4;
     color: @foreground;
-    border-left: 0px;
-    border-right: 0px;
 }
 
 #bluetooth {
-    color: #f9e2af;
-    border-left: 0px;
-    border-right: 0px;
+    background: @shade4;
 }
 
 #pulseaudio {
     background: @shade4;
-    border-left: 0px;
-    border-right: 0px;
-}
-#pulseaudio.muted {
-    color: @foreground; /* Change to desired color when muted */
 }
 #pulseaudio.microphone {
     background: @shade4;
-    border-left: 0px;
-    border-right: 0px;
 }
-#pulseaudio.microphone:not(.muted) {
-    /* Add any specific styling for microphone control here */
-}
+
 #battery {
     color: #a6e3a1;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-    border-left: 0px;
 }
 
 #custom-weather {
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
+    background-color: @background;
+    color: @shade4;
 }
 #custom-power {
-    border-radius: 0px 0px 0px 0px;
-    border-right: 0px;
-    border-left: 0px;
+    background-color: @background;
+    color: @shade4;
 }
 #custom-notification {
-    font-family: "RobotoMono Nerd Font";
-    border-radius: 0px 0px 0px 0px;
-    border-right: 0px;
-    border-left: 0px;
+    background-color: @background;
+    color: @shade4;
 }
+
+#custom-disks {
+    background: @shade6;
+}
+#window {
+    padding: 1px;
+    color: #ffffff;
+    background: #333333;
+}
+#workspaces {
+    background-color: @background;
+    color: @foreground;
+    padding: 2px;
+  }
