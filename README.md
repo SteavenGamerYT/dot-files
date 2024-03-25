@@ -1,6 +1,8 @@
 # SteavenGamerYT's Dotfiles
 
-![](https://github.com/SteavenGamerYT/dot-files/blob/main/screenshot.png?raw=true)
+![](httpshttps://github.com/SteavenGamerYT/dot-files/blob/main/Screenshots/hyprland.png?raw=true)
+
+![](https://github.com/SteavenGamerYT/dot-files/blob/main/Screenshots/i3.png?raw=true)
 
 # Table of Contents
 
