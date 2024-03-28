@@ -34,4 +34,8 @@ decoration {
     new_optimizations = true
   }
 }
-bind = SUPER, D, exec, killall rofi || rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/material.rasi
+bind = SUPER, D, exec, killall rofi || rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi
+bind = SUPER, period, exec, killall rofi || rofi -show emoji -emoji-format "{emoji}" -modi emoji -theme ~/.config/polybar/scripts/rofi/nord.rasi
+
+
+
