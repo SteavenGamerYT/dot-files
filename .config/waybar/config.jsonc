@@ -40,7 +40,7 @@
    "custom/disks": {
     "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
     "interval": 1,
-    "format": "  {} "
+    "format": " {}"
   },
 
     "custom/language": {
@@ -50,7 +50,7 @@
         "format": "  {}"
       },
     "hyprland/window": {
-        "format": " {}"
+        "format": "{}"
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
