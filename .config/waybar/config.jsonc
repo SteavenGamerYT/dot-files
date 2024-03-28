@@ -23,9 +23,9 @@
         "network",
         "clock",
         "custom/updates",
-        "custom/notification",
+        "tray",
         "custom/power",
-        "tray"
+        "custom/notification"
     ],
     "memory": {
         "interval": 30,
