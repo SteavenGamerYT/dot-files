@@ -169,18 +169,17 @@ tooltip {
     padding-right: 12px;
 }
 
-
-#tray {
+#custom-power {
     background-color: @background;
-    color: @foreground;
+    color: @shade4;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
 }
 
-#custom-power {
+#tray {
     background-color: @background;
-    color: @shade4;
+    color: @foreground;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;

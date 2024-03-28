@@ -23,8 +23,8 @@
         "network",
         "clock",
         "custom/updates",
-        "tray",
         "custom/power",
+        "tray",
         "custom/notification"
     ],
     "memory": {
