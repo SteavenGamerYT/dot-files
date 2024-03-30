@@ -75,7 +75,7 @@
     },
     "custom/updates": {
         "format": " {}",
-        "interval": 7200,                     // every two hours
+        "interval": 300,                     // every 5 minutes
         "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
         "exec-if": "exit 0",                  // always run; consider advanced run conditions
         "on-click": "~/Documents/GitHub/dot-files/.config/waybar/update.sh", // update system
