@@ -1,64 +1,91 @@
-# Sourcing custom settings
-if [[ -r ~/.bash-default ]]; then
-  source ~/.bash-default
-else
-  echo "Error: Can't find the bash-default script"
-fi
+# Sourcing custom settings with error handling
+source_custom() {
+  # Check if the file is readable
+  if [[ -r "$1" ]]; then
+    # If the file is readable, source it
+    source "$1"
+  else
+    # If the file is not found, output an error message
+    echo "Error: Can't find the script $1"
+  fi
+}
 
-# Autojump setup
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-  . /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-  . /usr/share/autojump/autojump.bash
-else
-  echo "Error: Can't find the autojump script"
-fi
+# Source the default bash settings and a custom script
+source_custom ~/.bash-default
+source_custom ~/.steavengameryt
 
-# Sourcing additional custom settings
-if [[ -r ~/.steavengameryt ]]; then
-  source ~/.steavengameryt
-else
-  echo "Error: Can't find the steavengameryt script"
-fi
+# Autojump setup with improved error handling
+autojump_setup() {
+  # Define possible locations of the autojump script
+  local autojump_paths=("/usr/share/autojump/autojump.sh" "/usr/share/autojump/autojump.bash")
+  local script_found=false
+
+  # Iterate through the possible paths
+  for path in "${autojump_paths[@]}"; do
+    # Check if the script exists at the current path
+    if [[ -f "$path" ]]; then
+      # Source the script and mark it as found
+      . "$path"
+      script_found=true
+      break
+    fi
+  done
+
+  # If the script wasn't found, output an error message
+  if ! $script_found; then
+    echo "Error: Can't find the autojump script"
+  fi
+}
+
+# Initialize the autojump feature
+autojump_setup
 
 # History settings
-HISTFILE=~/.bash-history
-HISTSIZE=SAVEHIST=10000
+HISTFILE=~/.bash-history  # Set the file where history is stored
+HISTSIZE=10000            # Set the number of commands to remember in the history
+SAVEHIST=10000            # Set the number of commands to save in the history file
 
 # Starship prompt configuration based on Linux distribution
-if [ -e /etc/os-release ]; then
-    linux_distro=$(awk -F= '/^ID=/{gsub(/"/, "", $2); print tolower($2)}' /etc/os-release)
+determine_linux_distro() {
+  # Check if the OS release file exists
+  if [ -e /etc/os-release ]; then
+    # Extract the distribution ID from the OS release file
+    awk -F= '/^ID=/{gsub(/"/, "", $2); print tolower($2)}' /etc/os-release
+  else
+    # Use lsb_release as a fallback to determine the distribution
+    lsb_release -si | tr '[:upper:]' '[:lower:]'
+  fi
+}
+
+# Determine the Linux distribution
+linux_distro=$(determine_linux_distro)
+
+# Define configurations for Starship prompt based on the distribution
+declare -A starship_configs=(
+  [arch]="~/.config/starship/starship-arch.toml"
+  [fedora]="~/.config/starship/starship-fedora.toml"
+  [debian]="~/.config/starship/starship-debian.toml"
+  [ubuntu]="~/.config/starship/starship-ubuntu.toml"
+  [opensuse-tumbleweed]="~/.config/starship/starship-opensuse.toml"
+  [default]="~/.config/starship/starship.toml"
+)
+
+# Set the Starship configuration file based on the detected distribution
+STARSHIP_CONFIG="${starship_configs[$linux_distro]:-${starship_configs[default]}}"
+
+# Expand the path to the Starship configuration file to handle tilde expansion
+STARSHIP_CONFIG=$(eval echo $STARSHIP_CONFIG)
+
+# Check if the Starship configuration file is readable before initializing
+if [[ -r "$STARSHIP_CONFIG" ]]; then
+  # Initialize Starship prompt
+  eval "$(starship init bash)"
 else
-    # fallback to your previous method if /etc/os-release is not available
-    linux_distro=$(lsb_release -si | tr '[:upper:]' '[:lower:]')
+  # Output an error message if the configuration file is not readable
+  echo "Error: Unable to read the configuration file $STARSHIP_CONFIG!"
 fi
 
-case $linux_distro in
-  arch)
-    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
-    ;;
-  fedora)
-    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
-    ;;
-  debian)
-    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
-    ;;
-  ubuntu)
-    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
-    ;;
-  opensuse-tumbleweed)
-    export STARSHIP_CONFIG=~/.config/starship/starship-opensuse.toml
-    ;;
-  *)
-    export STARSHIP_CONFIG=~/.config/starship/starship.toml
-    ;;
-esac
+# Additional utilities initialization
+eval "$(zoxide init bash)"  # Initialize zoxide for smarter directory navigation
+colorscript -r  # Run a random color script for terminal aesthetics
 
-# Check if Starship configuration is readable before initializing
-if ! [[ -r "$STARSHIP_CONFIG" ]]; then
-    echo "Error: The configuration file $STARSHIP_CONFIG is not readable!"
-fi
-
-eval "$(starship init bash)"
-#eval "$(atuin init bash)"
-eval "$(zoxide init bash)"

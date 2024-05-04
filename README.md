@@ -54,19 +54,17 @@ Installation, make sure that you don't have any of this files already first!, if
 # Install
 ```sh
 yay -Syu --noconfirm --needed starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions zsh-completions neofetch xclip lolcat git trash-cli bat
-mkdir -p ~/Documents/GitHub
-mkdir -p ~/.zsh/plugins/
-mkdir ~/.ssh
-mkdir ~/.config
+mkdir -p ~/Documents/GitHub ~/.zsh/plugins/ ~/.ssh ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync
+git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
+rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync ~/.zprofile
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
 ln -s ~/Documents/GitHub/dot-files/.bashrc ~/.bashrc
 ln -s ~/Documents/GitHub/dot-files/.profile ~/.profile
+ln -s ~/Documents/GitHub/dot-files/.zprofile ~/.zprofile
 ln -s ~/Documents/GitHub/dot-files/.zshenv ~/.zshenv
 ln -s ~/Documents/GitHub/dot-files/.p10k.zsh ~/.p10k.zsh
 ln -s ~/Documents/GitHub/dot-files/.config/i3 ~/.config/i3

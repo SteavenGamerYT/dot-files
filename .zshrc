@@ -1,72 +1,81 @@
 # Function to source a plugin with error handling
 source_plugin() {
+    # Check if the file is readable
     if [[ -r "$1" ]]; then
+        # If the file is readable, source it
         source "$1"
     else
-        echo "Can't find the necessary script: $1"
+        # If the file is not found, output an error message
+        echo "Error: Unable to locate the script: $1"
     fi
 }
 
 # Sourcing plugins
-source_plugin ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source_plugin ~/.steavengameryt
+source_plugin ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh  # Source the zsh-autocomplete plugin
+source_plugin ~/.steavengameryt  # Attempt to source a file that seems to be missing its extension or path
 
 # Starship prompt configuration based on Linux distribution
 if [ -e /etc/os-release ]; then
+    # If /etc/os-release exists, use awk to parse the distribution ID
     linux_distro=$(awk -F= '/^ID=/{gsub(/"/, "", $2); print tolower($2)}' /etc/os-release)
 else
-    # fallback to your previous method if /etc/os-release is not available
+    # If /etc/os-release does not exist, use lsb_release as a fallback
     linux_distro=$(lsb_release -si | tr '[:upper:]' '[:lower:]')
 fi
 
+# Set the Starship configuration file based on the detected Linux distribution
 case $linux_distro in
   arch)
-    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml  # Arch Linux configuration
     ;;
   fedora)
-    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml  # Fedora configuration
     ;;
   debian)
-    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml  # Debian configuration
     ;;
   ubuntu)
-    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml  # Ubuntu configuration
     ;;
   opensuse-tumbleweed)
-    export STARSHIP_CONFIG=~/.config/starship/starship-opensuse.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship-opensuse.toml  # OpenSUSE Tumbleweed configuration
     ;;
   *)
-    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+    export STARSHIP_CONFIG=~/.config/starship/starship.toml  # Default configuration for other distributions
     ;;
 esac
 
-# Check if Starship configuration is readable before initializing
+# Validate Starship configuration readability before initialization
 if ! [[ -r "$STARSHIP_CONFIG" ]]; then
-    echo "Error: The configuration file $STARSHIP_CONFIG is not readable!"
+    # If the configuration file is not readable, output an error message
+    echo "Error: Unable to read the configuration file $STARSHIP_CONFIG!"
 fi
-eval "$(starship init zsh)"
-
+eval "$(starship init zsh)"  # Initialize Starship prompt
 
 # Autojump setup with error handling
 if [ -f "/usr/share/autojump/autojump.sh" ]; then
+    # If autojump.sh exists, source it
     . /usr/share/autojump/autojump.sh
 elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+    # If autojump.bash exists, source it
     . /usr/share/autojump/autojump.bash
 else
-    echo "Can't find the autojump script."
+    # If neither file exists, output an error message
+    echo "Error: Autojump script not found."
 fi
 
 # History configuration
-HISTFILE=~/.zhistory
-HISTSIZE=SAVEHIST=10000
-setopt sharehistory
-setopt extendedhistory
+HISTFILE=~/.zhistory  # Set the history file location
+HISTSIZE=SAVEHIST=10000  # Set the history size and save history size
+setopt sharehistory  # Share history across all sessions
+setopt extendedhistory  # Record timestamp of command in history file
 
-# Unset nomatch option
-unsetopt nomatch
+# Disable nomatch option
+unsetopt nomatch  # If a pattern does not match any files, treat it as a normal string
 
-# Cleanup of home dicrictory
-autoload -U compinit
-compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
-eval "$(atuin init zsh)"
-eval "$(zoxide init zsh)"
+# Home directory cleanup
+autoload -U compinit  # Load the complete initialization function
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"  # Initialize completion using cache file
+eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
+eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
+colorscript -r  # Run a random color script for terminal aesthetics
