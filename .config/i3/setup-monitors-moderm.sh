@@ -17,6 +17,11 @@ if sudo lshw | grep -q "Dell G15 5510"; then
 # Check if it's an HP 350 G1
 elif sudo lshw | grep -q "HP 350 G1"; then
     echo "ah"
+
+# Check if it's an MS-7C96
+elif sudo lshw | grep -q "MS-7C96"; then
+    DISPLAY=$display xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
+    
 else
     echo "Unknown laptop model"
 fi

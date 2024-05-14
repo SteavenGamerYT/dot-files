@@ -9,6 +9,7 @@ exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 
 # Dual Monitors settings
 exec_always --no-startup-id ~/.config/i3/setup-monitors.sh
+exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
 # Startup Applications
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 "~/.config/i3/lockscreen.sh" ""
@@ -22,15 +23,15 @@ exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/lib/kdeconnectd &
 exec_always --no-startup-id dunst
 exec_always --no-startup-id numlockx on
-exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
+exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Return exec konsole
 bindsym $mod+x exec konsole
-bindsym $mod+b exec "google-chrome-stable --enable-blink-features=MiddleClickAutoscroll --password-store=kwallet5"
-bindsym $mod+z exec dolphin
+bindsym $mod+b exec "flatpak run org.mozilla.firefox"
+bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
@@ -39,8 +40,7 @@ bindsym $mod+Shift+r restart
 bindsym --release Print exec scrot "$HOME/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png" -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
 bindsym --release $mod+Shift+s exec flameshot gui -p ~/Pictures/Screenshots -c
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
-exec_always "setxkbmap -layout us,ara -option grp:ctrl_space_toggle"
-
+exec_always "setxkbmap -layout us,ara -option grp:alt_shift_toggle,grp:alt_caps_toggle,grp:ctrl_space_toggle"
 
 # █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀
 # ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █░▀░█ █▀█ █░▀█ █▀█ █▄█ █░▀░█ ██▄ █░▀█ ░█░
@@ -92,8 +92,8 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-bindsym $mod+Shift+z floating toggle
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating toggle
+bindsym $mod+Shift+z focus mode_toggle
 bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 set $ws1 "1"

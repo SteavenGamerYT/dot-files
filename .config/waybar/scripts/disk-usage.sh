@@ -2,9 +2,9 @@
 
 # Array of mount points to monitor
 mount_points=(
-    "/media/hdd"
-    "/media/hdd2"
-    "/media/hdd3"
+    "/mnt/hdd"
+    "/mnt/hdd2"
+    "/mnt/hdd3"
     "/home"
     "/"
 )

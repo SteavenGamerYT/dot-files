@@ -22,7 +22,6 @@ LINUXBREW_DIR="/home/linuxbrew/.linuxbrew/bin"
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
 fi
-export QT_QPA_PLATFORMTHEME=qt5ct
 export __GL_SHADER_DISK_CACHE=1
 export __GL_SHADER_DISK_CACHE_SIZE=100000000000 
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
