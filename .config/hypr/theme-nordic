@@ -1,5 +1,6 @@
 env = QT_QPA_PLATFORMTHEME,qt5ct
 env = QT_STYLE_OVERRIDE,kvantum-dark
+env = KVANTUM_THEME,Nordic
 env = ICON_THEME,Nordic-bluish
 env = GTK_THEME,Nordic
 env = CURSOR_THEME,WhiteSur-cursors 
