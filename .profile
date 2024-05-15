@@ -18,11 +18,11 @@ done
 # If the desktop session is i3, set the GTK theme to Nordic
 [ "$XDG_SESSION_DESKTOP" = "i3" ] && export GTK_THEME=Nordic
 
-# If the desktop session is i3, set the cursor theme to WhiteSur-cursors
-[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_THEME=WhiteSur-cursors
+# If the desktop session is i3, set the cursor theme to WhiteSur-cursors for GTK, Qt5, and Qt6
+[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_THEME=WhiteSur-cursors && export QT_QT_CURSORTHEME=WhiteSur-cursors && export QT_QT5_CURSORTHEME=WhiteSur-cursors && export QT_QT6_CURSORTHEME=WhiteSur-cursors  && export XCURSOR_THEME=WhiteSur-cursors
 
-# If the desktop session is i3, set the cursor size to 24
-[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_SIZE=24
+# If the desktop session is i3, set the cursor size to 24 for GTK, Qt5, and Qt6
+[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_SIZE=24 && export QT_QT_CURSORSIZE=24 && export QT_QT5_CURSORSIZE=24 && export QT_QT6_CURSORSIZE=24 && export XCURSOR_SIZE=24
 
 # Additional environment variable settings can be configured below
 export __GL_SHADER_DISK_CACHE=1  # Enable disk caching for GL shaders
