@@ -66,9 +66,9 @@ mode "resize" {
         bindsym Right resize grow width 10 px or 10 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        #bindsym $mod+r mode "default"
 }
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
 
 # Focus and move focus
 
