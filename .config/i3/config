@@ -36,7 +36,7 @@ exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittor
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 24
-exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Nordic-bluish'
+exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l

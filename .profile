@@ -19,7 +19,8 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ];
   export KVANTUM_THEME=Nordic
 
   # Set the icon theme for the desktop environment
-  export ICON_THEME=Nordic-bluish
+  export ICON_THEME=Papirus-Dark
+  export QT_QPA_ICONTHEME=Papirus-Dark
   
   # Set the GTK theme to use for applications
   export GTK_THEME=Nordic

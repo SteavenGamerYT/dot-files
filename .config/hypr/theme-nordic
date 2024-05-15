@@ -1,7 +1,8 @@
 env = QT_QPA_PLATFORMTHEME,qt5ct
 env = QT_STYLE_OVERRIDE,kvantum-dark
 env = KVANTUM_THEME,Nordic
-env = ICON_THEME,Nordic-bluish
+env = ICON_THEME,Papirus-Dark
+env = QT_QPA_ICONTHEME,Papirus-Dark
 env = GTK_THEME,Nordic
 env = CURSOR_THEME,WhiteSur-cursors 
 env = QT_QT_CURSORTHEME,WhiteSur-cursors
@@ -17,7 +18,7 @@ exec = hyprctl setcursor WhiteSur-cursors 24
 exec = gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec = gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 exec = gsettings set org.gnome.desktop.interface cursor-size 24
-exec = gsettings set org.gnome.desktop.interface icon-theme 'Nordic-bluish'
+exec = gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 general {
   gaps_in = 5
