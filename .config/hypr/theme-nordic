@@ -1,8 +1,9 @@
-env = ICON_THEME,Papirus-Dark
+env = ICON_THEME,Nordic-bluish
 exec = hyprctl setcursor WhiteSur-cursors 24
 env = GTK_THEME,Nordic
 exec = gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec = gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
+exec = gsettings set org.gnome.desktop.interface cursor-size 24
 
 general {
   gaps_in = 5
