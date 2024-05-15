@@ -214,7 +214,7 @@ stv() {
 }
 
 # Define commands to update Arch-based systems and Flatpak applications
-updatearch="yay -Syu --noconfirm --needed && sudo flatpak update -y"
+updatearch="topgrade"
 
 # Define commands to update Fedora-based systems and Flatpak applications
 updatefedora="sudo dnf update -y && sudo flatpak update -y"
