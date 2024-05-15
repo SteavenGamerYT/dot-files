@@ -18,6 +18,12 @@ done
 # If the desktop session is i3, set the GTK theme to Nordic
 [ "$XDG_SESSION_DESKTOP" = "i3" ] && export GTK_THEME=Nordic
 
+# If the desktop session is i3, set the cursor theme to WhiteSur-cursors
+[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_THEME=WhiteSur-cursors
+
+# If the desktop session is i3, set the cursor size to 24
+[ "$XDG_SESSION_DESKTOP" = "i3" ] && export CURSOR_SIZE=24
+
 # Additional environment variable settings can be configured below
 export __GL_SHADER_DISK_CACHE=1  # Enable disk caching for GL shaders
 export __GL_SHADER_DISK_CACHE_SIZE=100000000000  # Set the maximum size for the GL shader disk cache
