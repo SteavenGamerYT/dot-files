@@ -79,4 +79,11 @@ compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"  # Initialize completio
 eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
 eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
-fastfetch
+
+if [ "$TERM" = "xterm-kitty" ]; then
+  fastfetch
+fi
+
+if [ "$TERM" = "xterm-256color" ]; then
+  neofetch-image
+fi

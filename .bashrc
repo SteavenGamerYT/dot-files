@@ -88,4 +88,11 @@ fi
 # Additional utilities initialization
 eval "$(zoxide init bash)"  # Initialize zoxide for smarter directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
-fastfetch
+
+if [ "$TERM" = "xterm-kitty" ]; then
+  fastfetch
+fi
+
+if [ "$TERM" = "xterm-256color" ]; then
+  neofetch-image
+fi
