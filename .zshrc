@@ -79,3 +79,4 @@ compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"  # Initialize completio
 eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
 eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
+fastfetch

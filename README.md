@@ -58,7 +58,7 @@ mkdir -p ~/Documents/GitHub ~/.zsh/plugins/ ~/.ssh ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync ~/.zprofile
+rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync ~/.zprofile ~/.config/fastfetch
 ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
 ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
 ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
@@ -85,10 +85,13 @@ ln -s ~/Documents/GitHub/dot-files/.config/dunst ~/.config/dunst
 ln -s ~/Documents/GitHub/dot-files/.config/swaylock ~/.config/swaylock
 ln -s ~/Documents/GitHub/dot-files/.config/rofi ~/.config/rofi
 ln -s ~/Documents/GitHub/dot-files/.config/swaync ~/.config/swaync
+ln -s ~/Documents/GitHub/dot-files/.config/fastfetch ~/.config/fastfetch
 chsh -s $(which zsh)
 ```
 
 ```sh
-gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
+gsettings set org.gnome.desktop.interface cursor-size 24
+gsettings set org.gnome.desktop.interface icon-theme 'Nordic-bluish'
 ```

@@ -4,6 +4,7 @@ env = GTK_THEME,Nordic
 exec = gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec = gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 exec = gsettings set org.gnome.desktop.interface cursor-size 24
+exec = gsettings set org.gnome.desktop.interface icon-theme 'Nordic-bluish'
 
 general {
   gaps_in = 5
