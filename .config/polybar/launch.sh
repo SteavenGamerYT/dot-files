@@ -9,3 +9,8 @@ killall -q polybar
 polybar --config-path=~/.config/polybar/config.ini steaven 2>&1 | tee -a /tmp/polybar.log & disown
 
 echo "Polybar launched..."
+
+wait 10
+
+syncthingtray & disown
+
