@@ -2,6 +2,7 @@
 
 # Terminate already running bar instances
 killall -q polybar
+killall -q syncthingtray
 # If all your bars have ipc enabled, you can also use
 # polybar-msg cmd quit
 

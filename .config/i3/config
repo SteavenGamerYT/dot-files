@@ -25,8 +25,9 @@ exec_always --no-startup-id dunst &
 exec_always --no-startup-id numlockx on &
 exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh &
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' '' &
 exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord --start-minimized &
-exec --no-startup-id flatpak run --command=easyeffects com.github.wwmm.easyeffects --gapplication-service &
+exec_always --no-startup-id flatpak run --command=easyeffects com.github.wwmm.easyeffects --gapplication-service &
 exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam -silent &
 exec --no-startup-id dropbox &
 exec --no-startup-id /opt/freedownloadmanager/fdm --hidden &

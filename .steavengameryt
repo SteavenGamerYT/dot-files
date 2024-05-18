@@ -133,6 +133,7 @@ alias cat='batcat'  # Use batcat instead of cat for syntax highlighting
 # Aliases for managing audio combining and uncombining
 alias combine-audio='pactl load-module module-combine-sink'  # Load the module for combining audio streams
 alias uncombine-audio='pactl unload-module module-combine-sink'  # Unload the module for combining audio streams
+alias combine-everything="flatpak run com.github.wwmm.easyeffects -q && pactl load-module module-combine-sink && xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal && ~/.config/polybar/launch.sh"
 
 # Functions
 # Define functions for git operations and system updates

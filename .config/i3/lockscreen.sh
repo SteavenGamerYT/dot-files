@@ -1,3 +1,2 @@
-#!/bin/bash
-BETTERLOCKSCREEN_PATH="/bin/betterlockscreen"  # Change this to the actual path
-$BETTERLOCKSCREEN_PATH -l
+#!/usr/bin/bash
+xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l'
