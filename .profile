@@ -6,6 +6,7 @@ done
 # Enable Wayland support in Firefox if the session type is Wayland
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
   export MOZ_ENABLE_WAYLAND=1
+#  export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
 
 if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
