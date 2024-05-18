@@ -25,7 +25,8 @@
         "custom/updates",
         "custom/power",
         "tray",
-        "custom/notification"
+        "custom/notification",
+        "custom/settings"
     ],
     "memory": {
         "interval": 30,
@@ -194,5 +195,10 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
-  }
+  },
+"custom/settings": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/polybar/scripts/settings.sh"
+}
 }

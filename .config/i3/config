@@ -21,7 +21,7 @@ exec_always --no-startup-id xdg-desktop-portal-kde &
 exec --no-startup-id /usr/lib/pam_kwallet_init &
 exec_always --no-startup-id dex --autostart --environment i3 &
 exec_always --no-startup-id /usr/lib/kdeconnectd &
-exec_always --no-startup-id dunst &
+exec --no-startup-id dunst &
 exec_always --no-startup-id numlockx on &
 exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 exec_always --no-startup-id ~/.config/i3/wallpaper2.sh &
@@ -138,10 +138,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 floating_modifier $mod
 
 # Audio and brightness controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/hypr/scripts/volume --inc 
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/hypr/scripts/volume --dec 
+bindsym XF86AudioMute exec --no-startup-id ~/.config/hypr/scripts/volume --toggle
+bindsym XF86AudioMicMute exec --no-startup-id ~/.config/hypr/scripts/volume --toggle-mic 
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next

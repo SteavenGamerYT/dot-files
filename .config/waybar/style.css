@@ -194,6 +194,14 @@ tooltip {
     padding-right: 12px;
 }
 
+#custom-settings {
+    background-color: @background;
+    color: @shade4;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 #custom-caffeine {
     color: #89dceb;
     padding: 2px;
