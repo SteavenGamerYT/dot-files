@@ -14,7 +14,7 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ];
   export QT_QPA_PLATFORMTHEME=qt5ct
   
   # Override the default style for QT applications
-  export QT_STYLE_OVERRIDE=kvantum
+  export QT_STYLE_OVERRIDE=kvantum-dark
   
   # Set Kvantum theme
   export KVANTUM_THEME=Nordic
