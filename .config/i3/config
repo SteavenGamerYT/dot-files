@@ -32,7 +32,7 @@ exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bi
 exec --no-startup-id dropbox &
 exec --no-startup-id /opt/freedownloadmanager/fdm --hidden &
 exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent &
-
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Theme
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
