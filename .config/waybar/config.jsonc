@@ -8,7 +8,7 @@
     "output": "DP-1",
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
+        "hyprland/window"
     ],
     "modules-right": [
         "custom/disks",
@@ -70,8 +70,7 @@
             "9": "󰙯",
             "10": "",
             "11": "󰅨",
-            "12": "",
-        
+            "12": ""
         }
     },
     "custom/updates": {
