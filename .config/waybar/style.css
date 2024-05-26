@@ -38,7 +38,7 @@ tooltip {
     background-color: @background;
     color: @foreground;
     padding: 0px;
-  }
+}
 
 #workspaces button {
     padding-left: 0px;
@@ -79,8 +79,6 @@ tooltip {
     background: #333333;
 }
 
-
-
 #custom-disks {
     background: @shade6;
     padding: 2px;
@@ -95,12 +93,14 @@ tooltip {
     background: @shade8;
     color: @foreground;
 }
+
 #memory {
     background: @shade7;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
 }
+
 #backlight {
     background: @shade5;
     color: @foreground;
@@ -115,6 +115,7 @@ tooltip {
     padding-left: 12px;
     padding-right: 12px;
 }
+
 #pulseaudio.microphone {
     background: @shade4;
     padding: 2px;
@@ -208,7 +209,6 @@ tooltip {
     padding-left: 12px;
     padding-right: 12px;
 }
-
 
 #custom-weather {
     background-color: @background;
