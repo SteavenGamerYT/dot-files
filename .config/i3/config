@@ -194,3 +194,5 @@ default_border pixel 5
 # for_window [class="^.*"] border pixel 2
 #floating_minimum_size 75 x 50
 #floating_maximum_size 1280 x 720
+
+for_window [class="Lutris" title="Add a new game"] floating enable
