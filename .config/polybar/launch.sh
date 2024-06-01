@@ -11,7 +11,7 @@ polybar --config-path=~/.config/polybar/config.ini steaven 2>&1 | tee -a /tmp/po
 
 echo "Polybar launched..."
 
-wait 10
+wait 20
 
 syncthingtray & disown
 
