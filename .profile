@@ -4,8 +4,8 @@ for dir in "$HOME/.bin" "$HOME/.local/bin" "$HOME/Applications" "/var/lib/flatpa
 done
 
 # Enable Wayland support in Firefox if the session type is Wayland
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-  export MOZ_ENABLE_WAYLAND=1
+ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  export MOZ_ENABLE_WAYLAND=0
 #  export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
 
@@ -46,3 +46,4 @@ export __GL_SHADER_DISK_CACHE=1  # Enable disk caching for GL shaders
 export __GL_SHADER_DISK_CACHE_SIZE=100000000000  # Set the maximum size for the GL shader disk cache
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1  # Prevent cleanup of the GL shader disk cache
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
+. "$HOME/.cargo/env"

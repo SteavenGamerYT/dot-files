@@ -96,3 +96,7 @@ fi
 if [ "$TERM" = "xterm-256color" ]; then
   neofetch-image
 fi
+. "$HOME/.cargo/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
