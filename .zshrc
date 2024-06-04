@@ -85,5 +85,5 @@ if [ "$TERM" = "xterm-kitty" ]; then
 fi
 
 if [ "$TERM" = "xterm-256color" ]; then
-  neofetch-image
+
 fi
