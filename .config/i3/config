@@ -8,37 +8,37 @@ font pango:Roboto Regular 10
 exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 
 # Dual Monitors settings
-exec_always --no-startup-id ~/.config/i3/setup-monitors.sh
+exec_always --no-startup-id ~/.config/i3/setup-moanitors.sh
 exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
-# Startup Applications
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 "~/.config/i3/lockscreen.sh" ""
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
-exec_always --no-startup-id picom &
-exec_always --no-startup-id nm-applet &
-exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec_always --no-startup-id xdg-desktop-portal-kde &
-exec --no-startup-id /usr/lib/pam_kwallet_init &
-exec_always --no-startup-id dex --autostart --environment i3 &
-exec_always --no-startup-id /usr/lib/kdeconnectd &
-exec --no-startup-id dunst &
-exec_always --no-startup-id numlockx on &
-exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
-exec_always --no-startup-id ~/.config/i3/wallpaper2.sh &
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' '' &
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord --start-minimized &
-exec_always --no-startup-id flatpak run --command=easyeffects com.github.wwmm.easyeffects --gapplication-service &
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam -silent &
-exec --no-startup-id dropbox &
-exec --no-startup-id /opt/freedownloadmanager/fdm --hidden &
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent &
-exec_always --no-startup-id ~/Scripts/headset.sh
+# Startup
+exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
 # Theme
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 24
 exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+
+# System Utitles
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/pam_kwallet_init
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' ''
+exec --no-startup-id picom
+exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id dunst
+exec --no-startup-id numlockx on
+exec --no-startup-id ~/.config/i3/wallpaper2.sh &
+exec --no-startup-id flatpak run --command=easyeffects com.github.wwmm.easyeffects --gapplication-service
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Applications
+exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord --start-minimized
+exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam -silent
+exec --no-startup-id dropbox
+exec --no-startup-id /opt/freedownloadmanager/fdm --hidden
+exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l
