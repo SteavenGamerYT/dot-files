@@ -5,7 +5,6 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "output": "DP-1",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -25,9 +24,8 @@
         "custom/updates",
         "custom/power",
         "tray",
-        "custom/notification",
-        "custom/settings"
-    ],
+        "custom/notification"
+        ],
     "memory": {
         "interval": 30,
         "format": "  {percentage}%",
