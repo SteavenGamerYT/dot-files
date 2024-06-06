@@ -8,8 +8,9 @@ font pango:Roboto Regular 10
 exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 
 # Dual Monitors settings
-exec_always --no-startup-id ~/.config/i3/setup-moanitors.sh
-exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
+#exec_always --no-startup-id ~/.config/i3/setup-moanitors.sh
+#exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
+exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x768 --rotate normal --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
 # Startup
 exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
@@ -50,9 +51,11 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
+
 # Screenshots
 bindsym --release Print exec scrot "$HOME/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png" -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
 bindsym --release $mod+Shift+s exec flameshot gui -p ~/Pictures/Screenshots -c
+
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
 exec_always "setxkbmap -layout us,ara -option grp:alt_shift_toggle,grp:alt_caps_toggle,grp:ctrl_space_toggle"
 
