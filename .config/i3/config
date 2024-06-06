@@ -9,7 +9,7 @@ exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 
 # Dual Monitors settings
 #exec_always --no-startup-id ~/.config/i3/setup-moanitors.sh
-#exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
+exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x768 --rotate normal --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
 # Startup
