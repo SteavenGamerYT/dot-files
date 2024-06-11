@@ -21,20 +21,17 @@
         "bluetooth",
         "network",
         "clock",
-        "custom/updates",
         "custom/power",
         "tray",
         "custom/notification"
         ],
     "memory": {
         "interval": 30,
-        "format": "  {percentage}%",
-        "max-length": 10
+        "format": "  {percentage}%"
     },
     "cpu": {
         "interval": 10,
-        "format": "  {usage}%",
-        "max-length": 10
+        "format": "  {usage}%"
    },
    "custom/disks": {
     "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
@@ -156,7 +153,6 @@
         "tooltip-format-wifi": " {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "󰈀 {ipaddr}",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50,
         "on-click": "~/Documents/GitHub/dot-files/.config/rofi/rofi-network-manager/rofi-network-manager.sh"
    },
    "bluetooth": {
