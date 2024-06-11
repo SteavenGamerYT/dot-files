@@ -39,7 +39,7 @@ exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=com.dis
 exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam -silent
 exec --no-startup-id dropbox
 exec --no-startup-id /opt/freedownloadmanager/fdm --hidden
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent
+exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent --minimized
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l
