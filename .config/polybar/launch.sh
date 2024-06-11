@@ -13,5 +13,5 @@ echo "Polybar launched..."
 
 wait 20
 
-syncthingtray & disown
+syncthingtray-qt6 & disown
 
