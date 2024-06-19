@@ -128,7 +128,7 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'  # Remove the lock file for pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # Remove orphaned packages using pacman
 alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-system'  # Install system-wide flatpak themes
 alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'  # Update font cache for flatpak
-alias cat='batcat'  # Use batcat instead of cat for syntax highlighting
+alias cat='bat'  # Use batcat instead of cat for syntax highlighting
 alias convert='magick'
 # Audio Management
 # Aliases for managing audio combining and uncombining

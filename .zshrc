@@ -83,7 +83,3 @@ colorscript -r  # Run a random color script for terminal aesthetics
 if [ "$TERM" = "xterm-kitty" ]; then
   fastfetch
 fi
-
-if [ "$TERM" = "xterm-256color" ]; then
-
-fi
