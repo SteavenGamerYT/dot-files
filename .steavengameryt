@@ -32,14 +32,15 @@ alias ping='ping -c 10'  # Send 10 echo requests to network hosts
 alias less='less -R'  # View file contents with raw control characters
 case "$TERM" in
   "xterm-kitty")
-    alias cls='clear && colorscript -r && fastfetch'  # Clear the screen and run a random color script
-    alias clear='/bin/clear && colorscript -r && fastfetch'  # Clear the screen and run a random color script
+    alias cls='clear && colorscript -r && /usr/bin/fastfetch --gpu-detection-method pci'  # Clear the screen and run a random color script
+    alias clear='/bin/clear && colorscript -r && /usr/bin/fastfetch --gpu-detection-method pci'  # Clear the screen and run a random color script
     ;;
   "xterm-256color")
     alias cls='clear && colorscript -r && neofetch-image'  # Clear the screen and run a random color script
     alias clear='/bin/clear && colorscript -r && neofetch-image'  # Clear the screen and run a random color script
     ;;
 esac
+alias fastfetch='/usr/bin/fastfetch --gpu-detection-method pci'
 alias multitail='multitail --no-repeat -c'  # View multiple log files in a single window
 alias freshclam='sudo freshclam'  # Update ClamAV virus databases with superuser privileges
 alias vi='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'  # Use Neovim with a specific configuration

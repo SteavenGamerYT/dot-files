@@ -81,5 +81,5 @@ eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
 if [ "$TERM" = "xterm-kitty" ]; then
-  fastfetch
+  /usr/bin/fastfetch --gpu-detection-method pci
 fi
