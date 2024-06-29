@@ -88,7 +88,8 @@
         },
         {
             "type": "gpu",
-            "key": "  "
+            "key": "  ",
+            "detectionMethod": "pci"
         },
         {
             "type": "disk",
