@@ -88,7 +88,7 @@ alias ytv-best-audio="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thu
 alias playavi='vlc *.avi'  # Play AVI files with VLC
 alias playmov='vlc *.mov'  # Play MOV files with VLC
 alias playmp4='vlc *.mp4'  # Play MP4 files with VLC
-alias df='df -h'  # Display disk space usage in human-readable format
+alias df='df -hT'  # Display disk space usage in human-readable format and show file system
 alias free='free -m'  # Display memory usage in MB
 alias udo='sudo'  # Alias for sudo
 alias grep='grep --color=auto'  # Grep with colored output
