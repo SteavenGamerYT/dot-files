@@ -278,3 +278,5 @@ alias update-all="ssh -t omar-pc '${updatearch}' && ssh -t omar-gaminglaptop '${
 
 # Create an alias to update dotfiles on all specified systems via SSH, executing the dotfiles update commands remotely
 alias update-dotfiles="ssh -t omar-pc '${dotfiles}' && ssh -t omar-gaminglaptop '${dotfiles}'"  # Remotely update dotfiles on both omar-pc and omar-gaminglaptop
+
+export MAKEFLAGS="-j$(nproc)" # Sets the MAKEFLAGS environment variable to use all available CPU cores for parallel compilation with make.
