@@ -13,7 +13,7 @@ exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode
 exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x768 --rotate normal --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
 # Startup
-exec_always --no-startup-id flatpak run io.mpv.Mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
+exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
 # Theme
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
@@ -31,21 +31,21 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/wallpaper2.sh &
-exec --no-startup-id flatpak run --command=easyeffects com.github.wwmm.easyeffects --gapplication-service
+exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Applications
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord --start-minimized
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=/app/bin/steam --file-forwarding com.valvesoftware.Steam -silent
+exec --no-startup-id discord --start-minimized
+exec --no-startup-id steam silent
 exec --no-startup-id dropbox
 exec --no-startup-id /opt/freedownloadmanager/fdm --hidden
-exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=qbittorrent --file-forwarding org.qbittorrent.qBittorrent
+exec --no-startup-id qbittorrent
 
 # Keybindings
 bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec "flatpak run org.mozilla.firefox"
+bindsym $mod+b exec firefox
 bindsym $mod+z exec nemo
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
