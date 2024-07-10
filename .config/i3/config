@@ -7,11 +7,6 @@ font pango:Roboto Regular 10
 # Autodetect and configure touchpad and mouse settings
 exec_always --no-startup-id ~/.config/i3/touchpad-mouse-config.sh
 
-# Dual Monitors settings
-#exec_always --no-startup-id ~/.config/i3/setup-moanitors.sh
-exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
-exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x768 --rotate normal --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
-
 # Startup
 exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
@@ -24,6 +19,7 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papir
 # System Utitles
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/pam_kwallet_init
+exec --no-startup-id qdbus org.kde.kwalletd6 /modules/kwalletd6 open kdewallet 0 $0
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' ''
 exec --no-startup-id picom
 exec --no-startup-id nm-applet
@@ -33,10 +29,11 @@ exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/wallpaper2.sh &
 exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id systemctl --user restart headset
 
 # Applications
 exec --no-startup-id discord --start-minimized
-exec --no-startup-id steam silent
+exec --no-startup-id steam -silent
 exec --no-startup-id dropbox
 exec --no-startup-id /opt/freedownloadmanager/fdm --hidden
 exec --no-startup-id qbittorrent
@@ -47,6 +44,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
 bindsym $mod+b exec firefox
 bindsym $mod+z exec nemo
+bindsym $mod+c exec looking-glass-client
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
