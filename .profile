@@ -46,3 +46,6 @@ export __GL_SHADER_DISK_CACHE=1  # Enable disk caching for GL shaders
 export __GL_SHADER_DISK_CACHE_SIZE=100000000000  # Set the maximum size for the GL shader disk cache
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1  # Prevent cleanup of the GL shader disk cache
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
+export EDITOR=nano
+export MANGOHUD=1
+export ENABLE_VKBASALT=1
