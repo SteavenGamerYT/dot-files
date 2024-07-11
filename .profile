@@ -49,3 +49,4 @@ export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing
 export EDITOR=nano
 export MANGOHUD=1
 export ENABLE_VKBASALT=1
+export OBS_VKCAPTURE=1
