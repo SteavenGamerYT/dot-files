@@ -31,17 +31,17 @@ exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/wallpaper2.sh &
 exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id systemctl --user restart headset
+exec_always --no-startup-id "systemctl --user restart headset"
 
 # Applications
-exec --no-startup-id discord --start-minimized
-exec --no-startup-id steam -silent
+exec --no-startup-id "discord --start-minimized"
+exec --no-startup-id "steam -silent"
 exec --no-startup-id dropbox
-exec --no-startup-id /opt/freedownloadmanager/fdm --hidden
+exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
 exec --no-startup-id qbittorrent
 
 # Keybindings
-bindsym $mod+l exec betterlockscreen -l
+bindsym $mod+l exec "betterlockscreen -l"
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
 bindsym $mod+b exec firefox
@@ -57,7 +57,7 @@ bindsym --release Print exec scrot "$HOME/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S
 bindsym --release $mod+Shift+s exec flameshot gui -p ~/Pictures/Screenshots -c
 
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
-exec_always "setxkbmap -layout us,ara -option grp:alt_shift_toggle,grp:alt_caps_toggle,grp:ctrl_space_toggle"
+exec_always "setxkbmap -layout us,ara -option grp:alt_shift_toggle"
 
 # Resize mode
 mode "resize" {
