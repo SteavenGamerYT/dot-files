@@ -48,7 +48,8 @@ bindsym $mod+b exec firefox
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
+bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
+#bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 

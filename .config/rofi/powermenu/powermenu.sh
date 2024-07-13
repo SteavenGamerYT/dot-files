@@ -1,70 +1,115 @@
 #!/usr/bin/env bash
 
-## Author  : Aditya Shakya
-## Mail    : adi1090x@gmail.com
-## Github  : @adi1090x
-## Twitter : @adi1090x
-
-# Available Styles
-# >> Created and tested on : rofi 1.6.0-1
+## Author : Aditya Shakya (adi1090x)
+## Github : @adi1090x
 #
-# column_circle     column_square     column_rounded     column_alt
-# card_circle     card_square     card_rounded     card_alt
-# dock_circle     dock_square     dock_rounded     dock_alt
-# drop_circle     drop_square     drop_rounded     drop_alt
-# full_circle     full_square     full_rounded     full_alt
-# row_circle      row_square      row_rounded      row_alt
+## Rofi   : Power Menu
+#
+## Available Styles
+#
+## style-1   style-2   style-3   style-4   style-5
+## style-6   style-7   style-8   style-9   style-10
 
-theme="drop_square"
+# Current Theme
 dir="$HOME/.config/rofi/powermenu"
+theme='style-1'
 
-
-uptime=$(uptime -p | sed -e 's/up //g')
-
-rofi_command="rofi -theme $dir/$theme"
+# CMDs
+uptime="`uptime -p | sed -e 's/up //g'`"
+host="hostname"
 
 # Options
-shutdown=""
-reboot=""
-lock=""
-suspend=""
-logout=""
+shutdown=''
+reboot=''
+lock=''
+suspend=''
+logout=''
+yes=''
+no=''
 
-# Message
-msg() {
-	rofi -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+# Rofi CMD
+rofi_cmd() {
+	rofi -dmenu \
+		-p "Uptime: $uptime" \
+		-mesg "Uptime: $uptime" \
+		-theme ${dir}/${theme}.rasi
 }
 
-# Variable passed to rofi
-options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
+# Confirmation CMD
+confirm_cmd() {
+	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 350px;}' \
+		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
+		-theme-str 'listview {columns: 2; lines: 1;}' \
+		-theme-str 'element-text {horizontal-align: 0.5;}' \
+		-theme-str 'textbox {horizontal-align: 0.5;}' \
+		-dmenu \
+		-p 'Confirmation' \
+		-mesg 'Are you Sure?' \
+		-theme ${dir}/${theme}.rasi
+}
 
-chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 2)"
-case $chosen in
-    $shutdown)
-			systemctl poweroff
-        ;;
-    $reboot)
-			systemctl reboot
-        ;;
-    $lock)
-		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock
-		elif [[ -f /usr/bin/betterlockscreen ]]; then
-			betterlockscreen -l
-		fi
-        ;;
-    $suspend)
+# Ask for confirmation
+confirm_exit() {
+	echo -e "$yes\n$no" | confirm_cmd
+}
+
+# Pass variables to rofi dmenu
+run_rofi() {
+	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
+}
+
+# Execute Command
+run_cmd() {
+	selected="$(confirm_exit)"
+	if [[ "$selected" == "$yes" ]]; then
+		if [[ $1 == '--shutdown' ]]; then
+			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+		elif [[ $1 == '--reboot' ]]; then
+			 mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
 			systemctl suspend
+		elif [[ $1 == '--logout' ]]; then
+			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
+			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
+			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+			elif [[ "$DESKTOP_SESSION" == "hyprland" ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+			fi
+		fi
+	else
+		exit 0
+	fi
+}
+
+# Actions
+chosen="$(run_rofi)"
+case ${chosen} in
+    $shutdown)
+		run_cmd --shutdown
+        ;;
+    $reboot)
+		run_cmd --reboot
+        ;;
+    $lock)
+		if [[ -x '/usr/bin/betterlockscreen' ]]; then
+			betterlockscreen -l
+		elif [[ -x '/usr/bin/i3lock' ]]; then
+			i3lock
+		elif [[ -f /usr/bin/swaylock ]]; then
+			swaylock
+		fi
+        ;;
+    $suspend)
+		run_cmd --suspend
         ;;
     $logout)
-			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
-				openbox --exit
-			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
-				bspc quit
-			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
-				i3-msg exit
-			fi
+		run_cmd --logout
         ;;
 esac
