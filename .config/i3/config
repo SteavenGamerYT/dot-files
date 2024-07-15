@@ -44,7 +44,7 @@ exec --no-startup-id qbittorrent
 bindsym $mod+l exec "betterlockscreen -l"
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec firefox
+bindsym $mod+b exec firefox-esr
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill
