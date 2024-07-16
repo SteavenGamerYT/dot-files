@@ -29,6 +29,7 @@ alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias l.='eza -al --color=always --group-directories-first ../' # ls on the PARENT directory
 alias l..='eza -al --color=always --group-directories-first ../../' # ls on directory 2 levels up
 alias l...='eza -al --color=always --group-directories-first ../../../' # ls on directory 3 levels up
+alias cd='z'
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'  # wget with HSTS file support
 alias cp='cp -i'  # Copy files with prompt before overwrite
 alias mv='mv -i'  # Move files with prompt before overwrite
