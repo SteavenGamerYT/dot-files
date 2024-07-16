@@ -21,8 +21,15 @@ done
 
 # Aliases Setup
 # Define aliases for system operations, file handling, and application shortcuts
+# Changing "ls" to "eza"
+alias ls='eza -al --color=always --group-directories-first' # my preferred listing
+alias la='eza -a --color=always --group-directories-first'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first'  # long format
+alias lt='eza -aT --color=always --group-directories-first' # tree listing
+alias l.='eza -al --color=always --group-directories-first ../' # ls on the PARENT directory
+alias l..='eza -al --color=always --group-directories-first ../../' # ls on directory 2 levels up
+alias l...='eza -al --color=always --group-directories-first ../../../' # ls on directory 3 levels up
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'  # wget with HSTS file support
-alias ll='ls -all --color=auto -h'  # List detailed directory contents with human-readable sizes and colors
 alias cp='cp -i'  # Copy files with prompt before overwrite
 alias mv='mv -i'  # Move files with prompt before overwrite
 alias rm='trash -v'  # Use 'trash' instead of 'rm' for safer file deletion

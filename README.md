@@ -53,7 +53,7 @@ Installation, make sure that you don't have any of this files already first!, if
 
 # Install
 ```sh
-yay -Syu --noconfirm --needed starship zoxide atuin autojump trash-cli bat shell-color-scripts zsh zsh-syntax-highlighting autojump zsh-autosuggestions zsh-completions fastfetch neofetch lolcat xclip hyfetch
+yay -Syu --noconfirm --needed starship zoxide atuin autojump trash-cli bat shell-color-scripts zsh zsh-syntax-highlighting autojump zsh-autosuggestions zsh-completions fastfetch neofetch lolcat xclip hyfetch eza
 mkdir -p ~/Documents/GitHub ~/.zsh/plugins/ ~/.ssh ~/.config
 git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
