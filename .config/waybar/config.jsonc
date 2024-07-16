@@ -11,6 +11,8 @@
     ],
     "modules-right": [
         "custom/disks",
+        "custom/gpuusage",
+        "custom/vramusage",
         "cpu",
         "memory",
         "backlight",
@@ -25,9 +27,19 @@
         "tray",
         "custom/notification"
         ],
+   "custom/vramusage": {
+    "exec": "~/.config/waybar/scripts/vram-usage.sh",
+    "interval": 1,
+    "format": "  {}"
+  },
+   "custom/gpuusage": {
+    "exec": "~/.config/waybar/scripts/nvidia-smi.sh",
+    "interval": 1,
+    "format": "󰍹 {}%"
+  },
     "memory": {
         "interval": 30,
-        "format": "  {percentage}%"
+        "format": "  {used} GiB"
     },
     "cpu": {
         "interval": 10,
@@ -40,8 +52,8 @@
   },
 
     "custom/language": {
-        "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/get-lang.sh",
-        "on-click": "~/Documents/GitHub/dot-files/.config/waybar/scripts/toggle-keyboard-layout.sh", // update system
+        "exec": "~/.config/waybar/scripts/get-lang.sh",
+        "on-click": "~/.config/waybar/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
         "format": "  {}"
       },
@@ -73,7 +85,7 @@
         "interval": 300,                     // every 5 minutes
         "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
         "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "~/Documents/GitHub/dot-files/.config/waybar/update.sh", // update system
+        "on-click": "~/.config/waybar/update.sh", // update system
         "signal": 8
     },
    "custom/weather" : {
@@ -162,12 +174,11 @@
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}",
-    "on-click": "~/Documents/GitHub/dot-files/.config/rofi/rofi-bluetooth"
 },
    "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "~/.config/polybar/scripts/powermenu.sh"
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh"
 },
 "custom/notification": {
     "tooltip": false,
