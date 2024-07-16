@@ -26,3 +26,4 @@ export __GL_SHADER_DISK_CACHE=1
 export __GL_SHADER_DISK_CACHE_SIZE=100000000000 
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
+skip_global_compinit=1

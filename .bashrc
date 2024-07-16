@@ -85,9 +85,14 @@ fi
 eval "$(zoxide init bash)"  # Initialize zoxide for smarter directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
-if [ "$TERM" = "xterm-kitty" ]; then
-  fastfetch
-fi
+case "$TERM" in
+  "xterm-kitty")
+    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
+    ;;
+  "xterm-256color")
+    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
+    ;;
+esac
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
