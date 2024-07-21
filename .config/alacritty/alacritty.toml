@@ -9,7 +9,7 @@ import = [
 
 [window]
 title = "Alacritty"
-decorations = "none"
+#decorations = "none"
 blur = true
 opacity = 0.9
 padding.x = 10

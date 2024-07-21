@@ -29,7 +29,7 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/wallpaper2.sh &
-exec --no-startup-id easyeffects --gapplication-service
+#exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id "systemctl --user restart headset"
 
