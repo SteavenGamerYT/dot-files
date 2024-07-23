@@ -50,3 +50,4 @@ export EDITOR=nano
 export MANGOHUD=1
 export ENABLE_VKBASALT=1
 export OBS_VKCAPTURE=1
+export DXVK_HUD=compiler
