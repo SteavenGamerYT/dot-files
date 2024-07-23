@@ -111,7 +111,8 @@ tooltip {
 }
 
 #memory {
-    background: @shade7;
+    background: @shade8;
+    color: @foreground;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
@@ -126,14 +127,16 @@ tooltip {
 }
 
 #pulseaudio {
-    background: @shade4;
+    background: @shade8;
+    color: @foreground;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
 }
 
 #pulseaudio.microphone {
-    background: @shade4;
+    background: @shade8;
+    color: @foreground;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
