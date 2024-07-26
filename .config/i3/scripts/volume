@@ -31,13 +31,35 @@ notify_user() {
 	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume : $(get_volume) %"
 }
 
+
+# Increase Volume on Redragon
+inc_volume-redragon() {
+	amixer -c headset set PCM 5%+
+	amixer -c headset set PCM,1 5%+
+	amixer -c Headset set PCM 5%+
+	amixer -c Headset set PCM,1 5%+
+	notify_user
+}
+
+# Decrease Volume on Redragon
+dec_volume-redragon() {
+	amixer -c headset set PCM 5%-
+	amixer -c headset set PCM,1 5%-
+	amixer -c Headset set PCM 5%-
+	amixer -c Headset set PCM,1 5%-
+	notify_user
+}
+
+
 # Increase Volume
 inc_volume() {
+	#amixer set Master 5%+ && notify_user
 	pactl set-sink-volume @DEFAULT_SINK@ +5% && notify_user
 }
 
 # Decrease Volume
 dec_volume() {
+	#amixer set Master 5%- && notify_user
 	pactl set-sink-volume @DEFAULT_SINK@ -5% && notify_user
 }
 
@@ -82,7 +104,7 @@ notify_mic_user() {
 inc_mic_volume() {
 	pamixer --default-source -i 5 && notify_mic_user
 }
-
+2
 # Decrease MIC Volume
 dec_mic_volume() {
 	pamixer --default-source -d 5 && notify_mic_user
