@@ -143,9 +143,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 floating_modifier $mod
 
 # Audio and brightness controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume --inc 
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume --dec 
-bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume --toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume --inc && systemctl --user restart headset
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume --dec && systemctl --user restart headset
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume --toggle && systemctl --user restart headset
 bindsym XF86AudioMicMute exec --no-startup-id ~/.config/i3/scripts/volume --toggle-mic 
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
