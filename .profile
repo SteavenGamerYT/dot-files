@@ -9,6 +9,8 @@ done
 #  export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
 
+export XDG_SESSION_DESKTOP=i3
+
 if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct

@@ -20,8 +20,8 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papir
 
 # System Utitles
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id /usr/lib/pam_kwallet_init
-exec --no-startup-id qdbus org.kde.kwalletd6 /modules/kwalletd6 open kdewallet 0 $0
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
+exec --no-startup-id ~/.config/i3/scripts/kwallet
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' ''
 exec --no-startup-id picom
 exec --no-startup-id nm-applet
@@ -29,6 +29,8 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/scripts/wallpaper2.sh &
+exec --no-startup-id flameshot
+exec --no-startup-id copyq
 #exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id "systemctl --user restart headset"
@@ -42,9 +44,9 @@ exec --no-startup-id qbittorrent
 
 # Keybindings
 bindsym $mod+l exec "betterlockscreen -l"
-bindsym $mod+Return exec alacritty
-bindsym $mod+x exec alacritty
-bindsym $mod+b exec firefox-esr
+bindsym $mod+Return exec kitty
+bindsym $mod+x exec kitty
+bindsym $mod+b exec firefox
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill
