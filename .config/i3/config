@@ -22,6 +22,7 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papir
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
 exec --no-startup-id ~/.config/i3/scripts/kwallet
+exec --no-startup-id ~/.config/i3/scripts/xdg-portal-gtk
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' ''
 exec --no-startup-id picom
 exec --no-startup-id nm-applet

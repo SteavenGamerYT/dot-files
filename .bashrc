@@ -14,32 +14,6 @@ source_custom() {
 source_custom ~/.bash-default
 source_custom ~/.steavengameryt
 
-# Autojump setup with improved error handling
-autojump_setup() {
-  # Define possible locations of the autojump script
-  local autojump_paths=("/usr/share/autojump/autojump.sh" "/usr/share/autojump/autojump.bash")
-  local script_found=false
-
-  # Iterate through the possible paths
-  for path in "${autojump_paths[@]}"; do
-    # Check if the script exists at the current path
-    if [[ -f "$path" ]]; then
-      # Source the script and mark it as found
-      . "$path"
-      script_found=true
-      break
-    fi
-  done
-
-  # If the script wasn't found, output an error message
-  if ! $script_found; then
-    echo "Error: Can't find the autojump script"
-  fi
-}
-
-# Initialize the autojump feature
-autojump_setup
-
 # History settings
 HISTFILE=~/.bash-history  # Set the file where history is stored
 HISTSIZE=10000            # Set the number of commands to remember in the history

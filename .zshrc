@@ -52,18 +52,6 @@ if ! [[ -r "$STARSHIP_CONFIG" ]]; then
 fi
 eval "$(starship init zsh)"  # Initialize Starship prompt
 
-# Autojump setup with error handling
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-    # If autojump.sh exists, source it
-    . /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-    # If autojump.bash exists, source it
-    . /usr/share/autojump/autojump.bash
-else
-    # If neither file exists, output an error message
-    echo "Error: Autojump script not found."
-fi
-
 # History configuration
 HISTFILE=~/.zhistory  # Set the history file location
 HISTSIZE=SAVEHIST=10000  # Set the history size and save history size
