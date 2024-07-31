@@ -203,3 +203,11 @@ default_border pixel 5
 #floating_maximum_size 1280 x 720
 
 for_window [class="Lutris" title="Add a new game"] floating enable
+for_window [class="Lutris" title="Add games to Lutris"] floating enable
+
+# Automatically move Forza Horizon 5 black window to workspace 10
+#for_window [class="steam_app_480" title=" "] move container to workspace 10
+#for_window [class="steam_app_480" _NET_WM_STATE="fullscreen"] floating enable, move container to workspace 10
+
+# Force Forza Horizon 5 to float, go fullscreen, and get focused
+#for_window [class="steam_app_480" title="Forza Horizon 5"] floating enable, fullscreen enable, focus
