@@ -53,3 +53,15 @@ export MANGOHUD=1
 export ENABLE_VKBASALT=1
 export OBS_VKCAPTURE=1
 export DXVK_HUD=compiler
+
+#!/bin/bash
+
+# Get the GPU model
+GPU_MODEL=$(lspci | grep -i 'vga' | grep -oP '(?<=NVIDIA Corporation ).*')
+
+# Check the GPU model and set the MANGOHUD_CONFIG variable
+if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
+    export MANGOHUD_CONFIG="preset=2"
+elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
+    export MANGOHUD_CONFIG="preset=3"
+fi
