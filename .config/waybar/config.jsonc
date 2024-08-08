@@ -5,6 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
+    "output": "DP-1",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -102,6 +103,7 @@
     "clock": {
       //  "format": "{: %I:%M %p}",
       "format": "<span >  </span><span>{:%I:%M %p}</span>",  
+      "format-alt": "<span >  </span><span>{:%a, %d %b %Y}</span>",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {

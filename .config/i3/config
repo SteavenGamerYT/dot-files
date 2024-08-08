@@ -35,6 +35,7 @@ exec --no-startup-id copyq
 #exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id "systemctl --user restart headset"
+exec_always autotiling
 
 # Applications
 exec --no-startup-id "discord --start-minimized"

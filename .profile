@@ -9,32 +9,30 @@ done
 #  export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
 
-export XDG_SESSION_DESKTOP=i3
-
 if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct
-  
+
   # Override the default style for QT applications
   export QT_STYLE_OVERRIDE=kvantum-dark
-  
+
   # Set Kvantum theme
   export KVANTUM_THEME=Nordic
 
   # Set the icon theme for the desktop environment
   export ICON_THEME=Papirus-Dark
   export QT_QPA_ICONTHEME=Papirus-Dark
-  
+
   # Set the GTK theme to use for applications
   export GTK_THEME=Nordic
-  
+
   # Set the cursor theme across various environments
   export CURSOR_THEME=WhiteSur-cursors
   export QT_QT_CURSORTHEME=WhiteSur-cursors
   export QT_QT5_CURSORTHEME=WhiteSur-cursors
   export QT_QT6_CURSORTHEME=WhiteSur-cursors
   export XCURSOR_THEME=WhiteSur-cursors
-  
+
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
   export QT_QT_CURSORSIZE=24
