@@ -53,12 +53,14 @@ dec_volume-redragon() {
 
 # Increase Volume
 inc_volume() {
-	amixer set Master 5%+ && notify_user
+	#amixer set Master 5%+ && notify_user
+	pactl set-sink-volume @DEFAULT_SINK@ +5% && notify_user
 }
 
 # Decrease Volume
 dec_volume() {
-	amixer set Master 5%- && notify_user
+	#amixer set Master 5%- && notify_user
+	pactl set-sink-volume @DEFAULT_SINK@ -5% && notify_user
 }
 
 # Toggle Mute
