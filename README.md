@@ -31,7 +31,8 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch)   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud) |
 | [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar)   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar) |
 | [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi)     | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty) |
-| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom)   | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst) |
+| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom)   | [alacritty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/alacritty) |
+| [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst)   | [swaync](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/swaync) |
 
 # Using
 
