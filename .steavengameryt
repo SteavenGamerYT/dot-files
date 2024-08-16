@@ -101,6 +101,8 @@ alias yta-wav="yt-dlp --extract-audio --audio-format wav --embed-metadata --embe
 alias ytv-best="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thumbnail --embed-chapters --audio-multistreams"  # Download best quality video and audio
 alias ytv-best-mp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters --audio-multistreams'  # Download best MP4 video and audio
 alias ytv-best-mp4-1080p='yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters'  # Download 1080p MP4 video and audio
+alias ytv-best-mp4-720p='yt-dlp -f "bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters' # Download 720p MP4 video and audio
+alias ytv-best-h265-720p='yt-dlp -f "bestvideo[height<=720][vcodec^=hevc]+bestaudio[ext=m4a]/best[ext=mp4]/best" --embed-metadata --embed-thumbnail --embed-chapters' # Download 720p h265 video and audio
 alias ytv-best-audio="yt-dlp -f bestvideo+bestaudio --embed-metadata --embed-thumbnail --embed-chapters --merge-output-format mkv"  # Download best video and audio in MKV format
 alias playavi='vlc *.avi'  # Play AVI files with VLC
 alias playmov='vlc *.mov'  # Play MOV files with VLC
