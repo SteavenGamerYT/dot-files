@@ -35,9 +35,6 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ];
 
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
-  export QT_QT_CURSORSIZE=24
-  export QT_QT5_CURSORSIZE=24
-  export QT_QT6_CURSORSIZE=24
   export XCURSOR_SIZE=24
 fi
 
