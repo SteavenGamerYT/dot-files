@@ -25,4 +25,4 @@ time_left=$((timestamp2025 - current))
 days_left=$((time_left / 86400))
 
 # Output the number of days passed and days left
-echo "$days_left"
+echo "$days_left" days
