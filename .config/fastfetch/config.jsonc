@@ -121,12 +121,30 @@
         },
         {
             "type": "command",
-            "key": "  OS Age ",
+            "key": "  Root disk Age ",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
             "key": "  Uptime "
+        },
+        {
+            "type": "command",
+            "shell": "/bin/bash",
+            "key": "  Time Start ",
+            "text": "echo 08/09/2024 3:23PM"
+        },
+        {
+            "type": "command",
+            "shell": "/bin/bash",
+            "key": "  Days Done ",
+            "text": "~/.config/fastfetch/progress.sh"
+        },
+        {
+            "type": "command",
+            "shell": "/bin/bash",
+            "key": "  Days left ",
+            "text": "~/.config/fastfetch/date.sh"
         },
         {
             "type": "custom", // InformationEnd
