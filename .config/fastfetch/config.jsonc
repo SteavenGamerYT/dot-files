@@ -117,7 +117,7 @@
         },
         {
             "type": "custom", // HardwareStart
-            "format": "┣━━━━━━━━━━━━━━━━━━ AGE / Uptime ━━━━━━━━━━━━━━━━━━┫"
+            "format": "┣━━━━━━━━━━━━━━━━━━ AGE / Uptime / Days ━━━━━━━━━━━━━━━━━━┫"
         },
         {
             "type": "command",
