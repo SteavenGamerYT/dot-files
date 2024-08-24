@@ -96,5 +96,7 @@ chsh -s $(which zsh)
 gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 gsettings set org.gnome.desktop.interface cursor-size 24
-gsettings set org.gnome.desktop.interface icon-theme 'Nordic-bluish'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+hyprctl setcursor WhiteSur-cursors 24
 ```

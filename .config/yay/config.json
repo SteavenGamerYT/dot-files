@@ -1,4 +1,5 @@
 {
 	"removemake": "yes",
-	"sudoloop": true
+	"sudoloop": true,
+	"devel": true
 }
