@@ -77,7 +77,7 @@ run_cmd() {
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
 			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
-			elif [[ "$DESKTOP_SESSION" == "hyprland" ]]; then
+			elif [[ "$DESKTOP_SESSION" == "Hyprland" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
