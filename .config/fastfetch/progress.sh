@@ -1,4 +1,4 @@
-time1="08/09/2024 3:23PM"
+time1="08/27/2024 3:23PM"
 let current=$(date +%s)
 timestamp1=$(date -d "$time1" +%s)
 time_progression=$((current - timestamp1))

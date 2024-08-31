@@ -38,16 +38,8 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ];
   export XCURSOR_SIZE=24
 fi
 
-# Additional environment variable settings can be configured below
-export __GL_SHADER_DISK_CACHE=1  # Enable disk caching for GL shaders
-export __GL_SHADER_DISK_CACHE_SIZE=100000000000  # Set the maximum size for the GL shader disk cache
-export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1  # Prevent cleanup of the GL shader disk cache
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
-export MANGOHUD=1
-export ENABLE_VKBASALT=1
-export OBS_VKCAPTURE=1
-export DXVK_HUD=compiler
 
 #!/bin/bash
 
@@ -60,5 +52,3 @@ if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
 elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
     export MANGOHUD_CONFIG="preset=3"
 fi
-
-. "$HOME/.atuin/bin/env"

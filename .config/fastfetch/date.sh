@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input date
-time1="08/09/2024 3:23PM"
+time1="08/27/2024 3:23PM"
 
 # Convert current time to Unix timestamp
 current=$(date +%s)
@@ -16,7 +16,7 @@ time_progression=$((current - timestamp1))
 days_done=$((time_progression / 86400))
 
 # Calculate the timestamp for January 1, 2025
-timestamp2025=$(date -d "08/09/2025" +%s)
+timestamp2025=$(date -d "08/27/2025" +%s)
 
 # Calculate the number of seconds left until 2025
 time_left=$((timestamp2025 - current))

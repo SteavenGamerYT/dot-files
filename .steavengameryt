@@ -4,10 +4,6 @@ export XDG_DATA_HOME="$HOME/.local/share"  # Directory for user-specific data fi
 export XDG_CONFIG_HOME="$HOME/.config"  # Directory for user-specific configuration files
 export XDG_STATE_HOME="$HOME/.local/state"  # Directory for user-specific state files
 export XDG_CACHE_HOME="$HOME/.cache"  # Directory for user-specific non-essential data files
-export DOT_FOLDER="$HOME/.dot-folders"  # Directory for storing dot files and folders
-export ANDROID_HOME="$DOT_FOLDER/android"  # Android SDK directory
-export WINEPREFIX="$DOT_FOLDER/wine"  # Wine configuration and data directory
-export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$DOT_FOLDER/java"  # Java preferences directory
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"  # CUDA cache directory
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"  # GTK2 configuration file
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
@@ -29,7 +25,6 @@ alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias l.='eza -al --color=always --group-directories-first ../' # ls on the PARENT directory
 alias l..='eza -al --color=always --group-directories-first ../../' # ls on directory 2 levels up
 alias l...='eza -al --color=always --group-directories-first ../../../' # ls on directory 3 levels up
-alias cd='z'
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'  # wget with HSTS file support
 alias cp='cp -i'  # Copy files with prompt before overwrite
 alias mv='mv -i'  # Move files with prompt before overwrite
@@ -90,6 +85,8 @@ alias looking-glass-egl='looking-glass-client -m 97 -g EGL'  # Run Looking Glass
 alias gpulinux='supergfxctl -m Hybrid && logout'  # Switch to hybrid graphics mode and logout
 alias gpudis='supergfxctl -m Integrated && logout'  # Switch to integrated graphics mode and logout
 alias gpuwindows='supergfxctl -m Vfio'  # Switch to VFIO graphics mode
+alias yt-music-no-playlist="yt-music --no-playlist"
+alias yt-music="yt-dlp -f bestaudio --extract-audio --audio-format aac --embed-metadata --embed-thumbnail --audio-quality 0"
 alias yta-aac="yt-dlp --extract-audio --audio-format aac --embed-metadata --embed-thumbnail "  # Extract AAC audio from video
 alias yta-best="yt-dlp --extract-audio --audio-format best --embed-metadata --embed-thumbnail "  # Extract best quality audio from video
 alias yta-flac="yt-dlp --extract-audio --audio-format flac --embed-metadata --embed-thumbnail "  # Extract FLAC audio from video

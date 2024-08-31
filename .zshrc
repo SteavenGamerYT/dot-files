@@ -76,5 +76,3 @@ case "$TERM" in
     /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
     ;;
 esac
-
-. "$HOME/.atuin/bin/env"
