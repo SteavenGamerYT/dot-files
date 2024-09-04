@@ -31,10 +31,3 @@ ln -s ~/GitHub/dot-files/.config/fastfetch ~/.config/fastfetch
 ln -s ~/GitHub/dot-files/.config/betterlockscreen ~/.config/betterlockscreen
 ln -s ~/GitHub/dot-files/.config/alacritty ~/.config/alacritty
 ln -s ~/GitHub/dot-files/.config/sway ~/.config/sway
-
-
-sudo pacman -S starship zoxide fastfetch trash-cli bat speedtest-cli neovim vim nano unzip unrar neofetch hyfetch xclip lolcat eza
-
-
-sudo pacman -S i3-wm polybar rofi polkit-gnome nemo nemo-fileroller firefox mpv vlc xdg-desktop-portal-gtk xdg-desktop-portal kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot nordic-theme lxappearance kvantum kvantum-qt5 papirus-folders papirus-icon-theme
-paru -S whitesur-cursor-theme-git
