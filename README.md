@@ -37,63 +37,11 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom)   | [alacritty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/alacritty) |
 | [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst)   | [swaync](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/swaync) |
 
-# Using
-
-
-to use them you need this packages installed 
-
-## Hyprland Only (Packages)
-```sh
-yay -Syu --noconfirm --needed hyprland-nvidia rofi-lbonn-wayland-git pavucontrol nwg-look-bin dunst waybar-hyprland wlogout swaylock-effects pamixer noise-suppression-for-voice swaybg grimblast-git  playerctl wl-clipboard wf-recorder viewnior xdg-desktop-portal xdg-desktop-portal-hyprland-git
-```
-
-## I3 with ALMOST everything I use
-```sh
-yay -Syu --noconfirm --needed polybar picom i3 dunst optimus-manager firefox  discord  nemo nemo-fileroller network-manager-applet nemo konsole kwalletd scrot polkit polkit-gnome sddm-git playerctl brightnessctl rofi xdg-desktop-portal xdg-desktop-portal-gtk pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-jack lib32-pipewire-jack kvantum-theme-nordic-git nordic-theme papirus-icon-theme kvantum qt5ct qt6ct lxappearance gnome-system-monitor gnome-disk-utility fwupd fwupd-efi flatseal starship zsh zsh-syntax-highlighting autojump zsh-autosuggestions neofetch xclip lolcat git github-desktop-bin visual-studio-code-bin xorg-xinit xorg-xinput xinput-gui pavucontrol opensshserver gvfs-smb find-the-command shell-color-scripts xclip numlockx
-```
-
 
 Installation, make sure that you don't have any of this files already first!, if so remove them
 
 # Install
-```sh
-yay -Syu --noconfirm --needed starship zoxide atuin autojump trash-cli bat shell-color-scripts zsh zsh-syntax-highlighting autojump zsh-autosuggestions zsh-completions fastfetch neofetch lolcat xclip hyfetch eza
-mkdir -p ~/Documents/GitHub ~/.zsh/plugins/ ~/.ssh ~/.config
-git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-files
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
-git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
-rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync ~/.zprofile ~/.config/fastfetch ~/.config/betterlockscreen ~/.config/alacritty
-ln -s ~/GitHub/dot-files/.steavengameryt ~/.steavengameryt
-ln -s ~/GitHub/dot-files/.bash-default ~/.bash-default
-ln -s ~/GitHub/dot-files/.zshrc ~/.zshrc
-ln -s ~/GitHub/dot-files/.bashrc ~/.bashrc
-ln -s ~/GitHub/dot-files/.profile ~/.profile
-ln -s ~/GitHub/dot-files/.zprofile ~/.zprofile
-ln -s ~/GitHub/dot-files/.zshenv ~/.zshenv
-ln -s ~/GitHub/dot-files/.p10k.zsh ~/.p10k.zsh
-ln -s ~/GitHub/dot-files/.config/i3 ~/.config/i3
-ln -s ~/GitHub/dot-files/.config/picom ~/.config/picom
-ln -s ~/GitHub/dot-files/.config/neofetch/ ~/.config/neofetch
-ln -s ~/GitHub/dot-files/.config/polybar ~/.config/polybar
-ln -s ~/GitHub/dot-files/.config/kitty ~/.config/kitty
-ln -s ~/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
-ln -s ~/GitHub/dot-files/.config/hypr ~/.config/hypr
-ln -s ~/GitHub/dot-files/.config/waybar ~/.config/waybar
-ln -s ~/GitHub/dot-files/.config/starship ~/.config/starship
-ln -s ~/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
-ln -s ~/GitHub/dot-files/.config/yay ~/.config/yay
-ln -s ~/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
-ln -s ~/GitHub/dot-files/.ssh/config ~/.ssh/config
-ln -s ~/GitHub/dot-files/.config/fish ~/.config/fish
-ln -s ~/GitHub/dot-files/.config/dunst ~/.config/dunst
-ln -s ~/GitHub/dot-files/.config/swaylock ~/.config/swaylock
-ln -s ~/GitHub/dot-files/.config/rofi ~/.config/rofi
-ln -s ~/GitHub/dot-files/.config/swaync ~/.config/swaync
-ln -s ~/GitHub/dot-files/.config/fastfetch ~/.config/fastfetch
-ln -s ~/GitHub/dot-files/.config/betterlockscreen ~/.config/betterlockscreen
-ln -s ~/GitHub/dot-files/.config/alacritty ~/.config/alacritty
-chsh -s $(which zsh)
-```
+run install.sh
 
 ```sh
 gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
