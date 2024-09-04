@@ -60,35 +60,35 @@ git clone https://github.com/SteavenGamerYT/dot-files ~/Documents/GitHub/dot-fil
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
 rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship /.config/swaync ~/.zprofile ~/.config/fastfetch ~/.config/betterlockscreen ~/.config/alacritty
-ln -s ~/Documents/GitHub/dot-files/.steavengameryt ~/.steavengameryt
-ln -s ~/Documents/GitHub/dot-files/.bash-default ~/.bash-default
-ln -s ~/Documents/GitHub/dot-files/.zshrc ~/.zshrc
-ln -s ~/Documents/GitHub/dot-files/.bashrc ~/.bashrc
-ln -s ~/Documents/GitHub/dot-files/.profile ~/.profile
-ln -s ~/Documents/GitHub/dot-files/.zprofile ~/.zprofile
-ln -s ~/Documents/GitHub/dot-files/.zshenv ~/.zshenv
-ln -s ~/Documents/GitHub/dot-files/.p10k.zsh ~/.p10k.zsh
-ln -s ~/Documents/GitHub/dot-files/.config/i3 ~/.config/i3
-ln -s ~/Documents/GitHub/dot-files/.config/picom ~/.config/picom
-ln -s ~/Documents/GitHub/dot-files/.config/neofetch/ ~/.config/neofetch
-ln -s ~/Documents/GitHub/dot-files/.config/polybar ~/.config/polybar
-ln -s ~/Documents/GitHub/dot-files/.config/kitty ~/.config/kitty
-ln -s ~/Documents/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
-ln -s ~/Documents/GitHub/dot-files/.config/hypr ~/.config/hypr
-ln -s ~/Documents/GitHub/dot-files/.config/waybar ~/.config/waybar
-ln -s ~/Documents/GitHub/dot-files/.config/starship ~/.config/starship
-ln -s ~/Documents/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
-ln -s ~/Documents/GitHub/dot-files/.config/yay ~/.config/yay
-ln -s ~/Documents/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
-ln -s ~/Documents/GitHub/dot-files/.ssh/config ~/.ssh/config
-ln -s ~/Documents/GitHub/dot-files/.config/fish ~/.config/fish
-ln -s ~/Documents/GitHub/dot-files/.config/dunst ~/.config/dunst
-ln -s ~/Documents/GitHub/dot-files/.config/swaylock ~/.config/swaylock
-ln -s ~/Documents/GitHub/dot-files/.config/rofi ~/.config/rofi
-ln -s ~/Documents/GitHub/dot-files/.config/swaync ~/.config/swaync
-ln -s ~/Documents/GitHub/dot-files/.config/fastfetch ~/.config/fastfetch
-ln -s ~/Documents/GitHub/dot-files/.config/betterlockscreen ~/.config/betterlockscreen
-ln -s ~/Documents/GitHub/dot-files/.config/alacritty ~/.config/alacritty
+ln -s ~/GitHub/dot-files/.steavengameryt ~/.steavengameryt
+ln -s ~/GitHub/dot-files/.bash-default ~/.bash-default
+ln -s ~/GitHub/dot-files/.zshrc ~/.zshrc
+ln -s ~/GitHub/dot-files/.bashrc ~/.bashrc
+ln -s ~/GitHub/dot-files/.profile ~/.profile
+ln -s ~/GitHub/dot-files/.zprofile ~/.zprofile
+ln -s ~/GitHub/dot-files/.zshenv ~/.zshenv
+ln -s ~/GitHub/dot-files/.p10k.zsh ~/.p10k.zsh
+ln -s ~/GitHub/dot-files/.config/i3 ~/.config/i3
+ln -s ~/GitHub/dot-files/.config/picom ~/.config/picom
+ln -s ~/GitHub/dot-files/.config/neofetch/ ~/.config/neofetch
+ln -s ~/GitHub/dot-files/.config/polybar ~/.config/polybar
+ln -s ~/GitHub/dot-files/.config/kitty ~/.config/kitty
+ln -s ~/GitHub/dot-files/.config/BetterDiscord ~/.config/BetterDiscord
+ln -s ~/GitHub/dot-files/.config/hypr ~/.config/hypr
+ln -s ~/GitHub/dot-files/.config/waybar ~/.config/waybar
+ln -s ~/GitHub/dot-files/.config/starship ~/.config/starship
+ln -s ~/GitHub/dot-files/.config/ulauncher ~/.config/ulauncher
+ln -s ~/GitHub/dot-files/.config/yay ~/.config/yay
+ln -s ~/GitHub/dot-files/.config/MangoHud ~/.config/MangoHud
+ln -s ~/GitHub/dot-files/.ssh/config ~/.ssh/config
+ln -s ~/GitHub/dot-files/.config/fish ~/.config/fish
+ln -s ~/GitHub/dot-files/.config/dunst ~/.config/dunst
+ln -s ~/GitHub/dot-files/.config/swaylock ~/.config/swaylock
+ln -s ~/GitHub/dot-files/.config/rofi ~/.config/rofi
+ln -s ~/GitHub/dot-files/.config/swaync ~/.config/swaync
+ln -s ~/GitHub/dot-files/.config/fastfetch ~/.config/fastfetch
+ln -s ~/GitHub/dot-files/.config/betterlockscreen ~/.config/betterlockscreen
+ln -s ~/GitHub/dot-files/.config/alacritty ~/.config/alacritty
 chsh -s $(which zsh)
 ```
 

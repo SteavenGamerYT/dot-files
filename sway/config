@@ -4,8 +4,14 @@ set $mod Mod4
 # Set font
 font pango:Roboto Regular 10
 
-# Autodetect and configure touchpad and mouse settings
-exec_always --no-startup-id ~/.config/i3/scripts/touchpad-mouse-config.sh
+# Configure touchpad and mouse settings
+input * {
+    dwt true
+    acceleration_profile flat
+    accel_speed 0
+    tap enabled
+    natural_scroll enabled
+}
 
 # Workspace
 workspace 1 output HDMI-0
@@ -22,12 +28,11 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface color-scheme 'pre
 # System Utitles
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
-#exec --no-startup-id ~/.config/i3/scripts/kwallet
-#exec --no-startup-id ~/.config/i3/scripts/xdg-portal-gtk
-exec --no-startup-id ~/.config/i3/scripts/display
-exec_always --no-startup-id ~/.config/i3/scripts/headset
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l' ''
-exec --no-startup-id picom
+exec_always --no-startup-id ~/.config/sway/scripts/headset
+exec swayidle -w \
+          timeout 240 'swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2' \
+          before-sleep 'swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2'
+
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id dunst
@@ -35,7 +40,7 @@ exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/scripts/wallpaper2.sh &
 exec --no-startup-id flameshot
 #exec --no-startup-id easyeffects --gapplication-service
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id pkill waybar & sleep 0.5 && waybar
 
 # Applications
 exec --no-startup-id "discord --start-minimized"
@@ -45,7 +50,7 @@ exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
 exec --no-startup-id qbittorrent
 
 # Keybindings
-bindsym $mod+l exec "betterlockscreen -l"
+bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
 bindsym $mod+b exec firefox
