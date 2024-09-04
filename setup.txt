@@ -1,5 +1,5 @@
 # Basic Packages
-pacman -S base base-devel git linux-vfio-lts linux-vfio-lts-headers linux-firmware efibootmgr plymouth
+pacman -S base base-devel git linux-vfio-lts linux-vfio-lts-headers linux-firmware efibootmgr plymouth mkinitcpio-firmware
 systemctl enable fstrim.timer
 
 # Start Packages
@@ -96,8 +96,7 @@ pacman -S gimp kdenlive mediainfo mediainfo-gui
 pacman -S qbittorrent freedownloadmanager
 
 # Add user to more groups
-usermod -a -G wheel,audio,disk,input,kvm,lp,render,storage,uucp,video,gamemode,libvirt omarhanykasban
-
+  
 # Copy desktop files
 cp /usr/share/applications/rpcs3.desktop /home/omarhanykasban/.local/share/applications/rpcs3.desktop
 cp /usr/share/applications/ryujinx.desktop /home/omarhanykasban/.local/share/applications/ryujinx.desktop
