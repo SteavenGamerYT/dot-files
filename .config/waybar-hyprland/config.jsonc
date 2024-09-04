@@ -6,8 +6,8 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "modules-left": [
-        "sway/workspaces",
-        "sway/window"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-right": [
         "custom/disks",
@@ -57,10 +57,10 @@
         "interval": 1,
         "format": "  {}"
       },
-    "sway/window": {
+    "hyprland/window": {
         "format": "{}"
     },
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
