@@ -25,7 +25,6 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config) |
 | :---------------------------------------------------------------------- |
 | [Sway](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/sway/config) |
-| :---------------------------------------------------------------------- |
 | [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf) |
 
 # Other Popular Configs Of Mine
