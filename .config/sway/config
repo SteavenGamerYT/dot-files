@@ -1,9 +1,6 @@
 # Set Mod key
 set $mod Mod4
 
-# this is sway
-set $desktop_environment sway
-
 # Set font
 font pango:Roboto Regular 10
 

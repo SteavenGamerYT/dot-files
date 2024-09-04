@@ -33,7 +33,7 @@ for file in "${FILES[@]}"; do
   fi
 
   # Create the new Exec line
-  new_exec="Exec=bash -c 'killpicom game-run $current_exec'"
+  new_exec="Exec=bash -c 'game-run $current_exec'"
 
   # Replace the old Exec line with the new one
   sed -i "s|^Exec=.*|$new_exec|" "$desktop_file"
