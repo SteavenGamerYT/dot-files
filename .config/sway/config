@@ -1,8 +1,13 @@
+include /etc/sway/config.d/*
+
 # Set Mod key
 set $mod Mod4
 
 # Set font
 font pango:Roboto Regular 10
+
+# display
+output eDP-1 scale 1.2
 
 # Configure touchpad and mouse settings
 input * {
@@ -12,8 +17,6 @@ input * {
     tap enabled
     natural_scroll enabled
 }
-# Workspace
-workspace 1 output HDMI-0
 # Startup
 exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
@@ -36,8 +39,8 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
 exec_always --no-startup-id ~/.config/sway/scripts/headset
 exec swayidle -w \
-          timeout 240 'swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2' \
-          before-sleep 'swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2'
+          timeout 240 '~/.config/sway/scripts/lockscreen.sh' \
+          before-sleep '~/.config/sway/scripts/lockscreen.sh'
 
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/kdeconnectd

@@ -1,7 +1,19 @@
-#!/usr/bin/bash
-img=(`find ~/Pictures/SteavenGamerYT/ -name '*' -exec file {} \; | grep -o -P '^.+: \w+ image' | cut -d':' -f1`)
-while true
-do
-   swaybg -m fill -i "${img[$RANDOM % ${#img[@]} ]}"
-sleep 10m
+#!/bin/bash
+
+# Find all image files in the specified directory
+img=($(find ~/Pictures/SteavenGamerYT/ -type f -exec file {} \; | grep -oP '^.+: \w+ image' | cut -d':' -f1))
+
+while true; do
+  # Randomly select an image from the array
+  selected_image="${img[RANDOM % ${#img[@]}]}"
+
+  # Set the selected image as the wallpaper using swaybg
+  swaybg -m fill -i "$selected_image"
+
+  # Save the path of the current wallpaper to the configuration file
+  echo "WALLPAPER_PATH=$selected_image" > ~/.config/sway/wallpaper.conf
+
+  # Wait for 10 minutes before changing the wallpaper
+  sleep 10m
 done
+

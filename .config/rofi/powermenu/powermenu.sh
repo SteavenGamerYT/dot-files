@@ -65,23 +65,36 @@ run_cmd() {
 		if [[ $1 == '--shutdown' ]]; then
 			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			 mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			systemctl suspend
+			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
+			if [[ "$XDG_SESSION_DESKTOP" == "Openbox" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
-			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
+			elif [[ "$XDG_SESSION_DESKTOP" == "bspwm" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
-			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
+			elif [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
-			elif [[ "$DESKTOP_SESSION" == "Hyprland" ]]; then
+			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
+				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
+			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
-			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
+			elif [[ "$XDG_SESSION_DESKTOP" == 'plasma' ]]; then
 				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 			fi
+		elif [[ $1 == '--lock' ]]; then
+			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
+				betterlockscreen -l
+			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
+				~/.config/sway/scripts/lockscreen.sh
+			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
+				~/.config/hypr/scripts/lockscreen.sh
+			fi
+		else
+			echo "Invalid option: $1"
+			exit 1
 		fi
 	else
 		exit 0
@@ -98,13 +111,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
-		elif [[ -f /usr/bin/swaylock ]]; then
-			swaylock
-		fi
+		run_cmd --lock
         ;;
     $suspend)
 		run_cmd --suspend
