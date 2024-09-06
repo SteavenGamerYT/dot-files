@@ -41,6 +41,10 @@ systemctl enable cups
 # Disks
 pacman -S gnome-disk-utility gparted dosfstools btrfs-progs ntfs-3g exfatprogs mtools
 
+# preload
+pacman -S preload
+systemctl enable preload
+
 # efibootmgr
 efibootmgr --create \
  --disk /dev/nvme0n1 --part 1 \
@@ -96,7 +100,8 @@ pacman -S gimp kdenlive mediainfo mediainfo-gui
 pacman -S qbittorrent freedownloadmanager
 
 # Add user to more groups
-  
+usermod -a -G wheel,audio,disk,input,kvm,lp,render,storage,uucp,video,gamemode,libvirt omarhanykasban
+
 # Copy desktop files
 cp /usr/share/applications/rpcs3.desktop /home/omarhanykasban/.local/share/applications/rpcs3.desktop
 cp /usr/share/applications/ryujinx.desktop /home/omarhanykasban/.local/share/applications/ryujinx.desktop
