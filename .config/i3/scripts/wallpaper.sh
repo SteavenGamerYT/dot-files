@@ -7,11 +7,11 @@ while true; do
   # Randomly select an image from the array
   selected_image="${img[RANDOM % ${#img[@]}]}"
 
-  # Set the selected image as the wallpaper using swaybg
-     feh --bg-scale --randomize --no-fehbg "$selected_image"
-
   # Save the path of the current wallpaper to the configuration file
   echo "WALLPAPER_PATH=$selected_image" > ~/.config/i3/wallpaper.conf
+
+  # Set the selected image as the wallpaper using feh
+  feh --bg-scale --randomize --no-fehbg "$selected_image"
 
   # Wait for 10 minutes before changing the wallpaper
   sleep 10m
