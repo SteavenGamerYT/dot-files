@@ -39,7 +39,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
 exec_always --no-startup-id ~/.config/sway/scripts/headset
 exec swayidle -w \
-          timeout 240 '~/.config/sway/scripts/lockscreen.sh' \
+          timeout 300 '~/.config/sway/scripts/lockscreen.sh' \
           before-sleep '~/.config/sway/scripts/lockscreen.sh'
 
 exec --no-startup-id ~/.config/sway/scripts/kwallet
