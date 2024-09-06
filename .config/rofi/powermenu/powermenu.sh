@@ -86,7 +86,7 @@ run_cmd() {
 			fi
 		elif [[ $1 == '--lock' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
-				betterlockscreen -l
+				~/.config/i3/scripts/lockscreen.sh
 			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
 				~/.config/sway/scripts/lockscreen.sh
 			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then

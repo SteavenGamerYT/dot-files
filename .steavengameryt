@@ -177,7 +177,7 @@ gitcommit() {
 }
 
 cdgit() {
-    z ~/Documents/GitHub/"$1"  # Change directory to a specific GitHub repository
+    z ~/GitHub/"$1"  # Change directory to a specific GitHub repository
 }
 
 bash_in_konsole() {
