@@ -3,3 +3,6 @@ temp
 .log
 .config/ulauncher/user-themes/libadwaita/
 .config/i3/blurred_wallpaper.jpg
+.config/i3/wallpaper.conf
+.config/sway/wallpaper.conf
+.config/hypr/wallpaper.conf
