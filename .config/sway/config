@@ -42,6 +42,7 @@ exec swayidle -w \
           timeout 240 '~/.config/sway/scripts/lockscreen.sh' \
           before-sleep '~/.config/sway/scripts/lockscreen.sh'
 
+exec --no-startup-id ~/.config/sway/scripts/kwallet
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id swaync
