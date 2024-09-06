@@ -2,5 +2,21 @@ swaymsg -t get_inputs | jq -r '.[] | select(.type == "keyboard") | .xkb_active_l
 awk '{print tolower($0)}' | \
 grep -oE '[a-z]{2,}' | \
 sort | uniq | head -n 1 | \
-awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}'
-
+awk '
+    BEGIN {
+        # Define the mapping
+        map["english"] = "us";
+        map["arabic"] = "eg";
+        # Add more mappings as needed
+    }
+    {
+        # Convert the input to lowercase
+        lang = tolower($0);
+        # Output the mapped short code or the original value if not mapped
+        if (lang in map) {
+            print map[lang];
+        } else {
+            print lang;
+        }
+    }
+'
