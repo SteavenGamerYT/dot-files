@@ -25,7 +25,7 @@ passwd
 passwd omarhanykasban
 
 # Audio
-pacman -S pipewire lib32-pipewire helvum pavucontrol pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack wireplumber alsa-utils pamixerq
+pacman -S pipewire lib32-pipewire helvum pavucontrol pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack wireplumber alsa-utils pamixer playerctl
 
 # Display Server
 pacman -S xorg xorg-server xorg-apps xorg-xinit
