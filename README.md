@@ -22,20 +22,20 @@
 Dotfiles are the customization files that are used to personalize your Linux or other Unix-based system.  You can tell that a file is a dotfile because the name of the file will begin with a period–a dot!  The period at the beginning of a filename or directory name indicates that it is a hidden file or directory.  This repository contains my personal dotfiles.  They are stored here for convenience so that I may quickly access them on new machines or new installs.  Also, others may find some of my configurations helpful in customizing their own dotfiles.
 
 # My Window Manager Configs
-| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/i3/config) |
+| [i3](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/i3/config) |
 | :---------------------------------------------------------------------- |
-| [Sway](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/sway/config) |
-| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/hypr/hyprland.conf) |
+| [Sway](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/sway/config) |
+| [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/hypr/hyprland.conf) |
 
 # Other Popular Configs Of Mine
-| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/.bashrc)   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/.zshr)    |
+| [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.bashrc)   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.zshr)    |
 | :---------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/.steavengameryt) | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/fish) |
-| [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/neofetch)   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/MangoHud) |
-| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/polybar)   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/waybar) |
-| [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/rofi)     | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/kitty) |
-| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/picom)   | [alacritty](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/alacritty) |
-| [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/dunst)   | [swaync](https://github.com/SteavenGamerYT/dot-files/blob/main/.config/swaync) |
+| [Bash + Zsh .steavengameryt](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.steavengameryt) | [fish](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/fish) |
+| [neofetch](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/neofetch)   | [mangohud](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/MangoHud) |
+| [Polybar](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/polybar)   | [waybar](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/waybar) |
+| [Rofi](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/rofi)     | [kitty](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/kitty) |
+| [picom](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/picom)   | [alacritty](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/alacritty) |
+| [dunst](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/dunst)   | [swaync](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/swaync) |
 
 
 Installation, make sure that you don't have any of this files already first!, if so remove them
