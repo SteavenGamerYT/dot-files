@@ -49,8 +49,8 @@ systemctl enable preload
 efibootmgr --create \
  --disk /dev/nvme0n1 --part 1 \
  --label "Arch Linux" \
- --loader /vmlinuz-linux-vfio-lts \
- --unicode 'root=PARTUUID=44bfa8dd-d6d9-4b93-97e1-ec344d274408 rw splash quiet amd_iommu=on iommu=pt pcie_port_pm=off vfio-pci.ids=1002:6611,1002:aab0 pcie_acs_override=downstream,multifunction video=1920x1080 initrd=\initramfs-linux-vfio-lts.img'
+ --loader /vmlinuz-linux-cachyos-lts \
+ --unicode 'root=PARTUUID=44bfa8dd-d6d9-4b93-97e1-ec344d274408 rw splash quiet amd_iommu=on iommu=pt pcie_acs_override=downstream,multifunction pcie_port_pm=off video=1920x1080 initrd=\initramfs-linux-cachyos-lts.img'
 
 # Eco System
 pacman -S openssh syncthing syncthingtray-qt6
@@ -100,7 +100,7 @@ pacman -S gimp kdenlive mediainfo mediainfo-gui
 pacman -S qbittorrent freedownloadmanager
 
 # Add user to more groups
-usermod -a -G wheel,audio,disk,input,kvm,lp,render,storage,uucp,video,gamemode,libvirt omarhanykasban
+usermod -a -G wheel,audio,disk,input,kvm,lp,render,storage,uucp,video,gamemode,libvirt,power omarhanykasban
 
 # Copy desktop files
 cp /usr/share/applications/rpcs3.desktop /home/omarhanykasban/.local/share/applications/rpcs3.desktop
