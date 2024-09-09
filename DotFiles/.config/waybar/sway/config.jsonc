@@ -6,8 +6,8 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "sway/workspaces",
+        "sway/window"
     ],
     "modules-right": [
         "custom/disks",
@@ -28,12 +28,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/sway/scripts/vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/sway/scripts/nvidia-smi.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
@@ -52,15 +52,15 @@
   },
 
     "custom/language": {
-        "exec": "~/.config/waybar/scripts/get-lang.sh",
-        "on-click": "~/.config/waybar/scripts/toggle-keyboard-layout.sh", // update system
+        "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
+        "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
         "format": "  {}"
       },
-    "hyprland/window": {
+    "sway/window": {
         "format": "{}"
     },
-    "hyprland/workspaces": {
+    "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
@@ -92,7 +92,7 @@
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "exec" : "~/.config/waybar/sway/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {

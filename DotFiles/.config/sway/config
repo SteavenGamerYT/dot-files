@@ -48,7 +48,7 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id swaync
 exec --no-startup-id ~/.config/sway/scripts/wallpaper2.sh &
 #exec --no-startup-id easyeffects --gapplication-service
-exec_always --no-startup-id pkill waybar & sleep 0.5 && waybar
+exec_always --no-startup-id ~/.config/waybar/launch.sh
 
 # Applications
 exec --no-startup-id "discord --start-minimized"
