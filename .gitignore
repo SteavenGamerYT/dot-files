@@ -1,8 +1,8 @@
 .DS_Store
 temp
 .log
-.config/ulauncher/user-themes/libadwaita/
-.config/i3/blurred_wallpaper.jpg
-.config/i3/wallpaper.conf
-.config/sway/wallpaper.conf
-.config/hypr/wallpaper.conf
+DotFiles/.config/ulauncher/user-themes/libadwaita/
+DotFiles/.config/i3/blurred_wallpaper.jpg
+DotFiles/.config/i3/wallpaper.conf
+DotFiles/.config/sway/wallpaper.conf
+DotFiles/.config/hypr/wallpaper.conf
