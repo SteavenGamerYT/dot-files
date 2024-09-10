@@ -2,7 +2,7 @@
 @define-color foreground #F5F5F5;
 @define-color foreground-alt #FFFFFF;
 @define-color alpha #39444f;
-@define-color shade1 #4C566A;
+@define-color shade1 #434c5e;
 @define-color shade2 #4C566A;
 @define-color shade3 #4C566A;
 @define-color shade4 #4C566A;
@@ -47,17 +47,17 @@ tooltip {
     border-width: 0px;
     padding: 10px 10px;
     background-color: @background;
-    color: @shade8;
+    color: @shade1;
 }
   
 #workspaces button.active {
-    background-color: @shade8;
+    background-color: @shade1;
     color: #F5F5F5;
 }
   
 #workspaces button.focused {
     color: #e5e9f0;
-    background-color: #4c566a;
+    background-color: @shade1;
 }
   
 #workspaces button.urgent {
@@ -75,11 +75,11 @@ tooltip {
     padding-left: 12px;
     padding-right: 12px;
     color: #ffffff;
-    background: #333333;
+    background: @shade2;
 }
 
 #custom-disks {
-    background: @shade8;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -90,7 +90,7 @@ tooltip {
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
-    background: @shade8;
+    background: @shade2;
     color: @foreground;
 }
 
@@ -98,7 +98,7 @@ tooltip {
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
-    background: @shade8;
+    background: @shade1;
     color: @foreground;
 }
 
@@ -106,12 +106,12 @@ tooltip {
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
-    background: @shade8;
+    background: @shade2;
     color: @foreground;
 }
 
 #memory {
-    background: @shade8;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -119,7 +119,7 @@ tooltip {
 }
 
 #backlight {
-    background: @shade5;
+    background: @shade2;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -127,7 +127,7 @@ tooltip {
 }
 
 #pulseaudio {
-    background: @shade8;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -135,7 +135,7 @@ tooltip {
 }
 
 #pulseaudio.microphone {
-    background: @shade8;
+    background: @shade2;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -143,7 +143,7 @@ tooltip {
 }
 
 #custom-language {
-    background: @shade5;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -151,7 +151,7 @@ tooltip {
 }
 
 #battery {
-    background: @shade5;
+    background: @shade2;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -159,7 +159,7 @@ tooltip {
 }
 
 #bluetooth {
-    background: @shade4;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -167,7 +167,7 @@ tooltip {
 }
 
 #network {
-    background: @shade4;
+    background: @shade2;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -175,7 +175,7 @@ tooltip {
 }
 
 #clock {
-    background: @shade5;
+    background: @shade1;
     color: @foreground;
     padding: 2px;
     padding-left: 12px;
@@ -192,7 +192,7 @@ tooltip {
 
 #custom-power {
     background-color: @background;
-    color: @shade4;
+    color: @shade2;
     padding: 2px;
     padding-left: 12px;
     padding-right: 12px;
