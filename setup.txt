@@ -58,7 +58,7 @@ systemctl enable sshd
 systemctl enable syncthing@omarhanykasban
 
 # Window Manager and its apps
-pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal-gtk xdg-desktop-portal kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot
+pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal-gtk xdg-desktop-portal kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool
 
 # Theme
 pacman -S nordic-theme-git lxappearance kvantum kvantum-qt5 papirus-folders papirus-icon-theme qt5ct qt6ct
