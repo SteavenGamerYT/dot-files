@@ -1,4 +1,4 @@
-include /etc/sway/config.d/*
+Winclude /etc/sway/config.d/*
 
 # Set Mod key
 set $mod Mod4
@@ -230,3 +230,5 @@ for_window [class="Lutris" title="Add games to Lutris"] floating enable
 
 # Force Forza Horizon 5 to float, go fullscreen, and get focused
 #for_window [class="steam_app_480" title="Forza Horizon 5"] floating enable, fullscreen enable, focus
+
+for_window [app_id="com.obsproject.Studio"] inhibit_idle 
