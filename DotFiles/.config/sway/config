@@ -1,4 +1,4 @@
-Winclude /etc/sway/config.d/*
+include /etc/sway/config.d/*
 
 # Set Mod key
 set $mod Mod4
