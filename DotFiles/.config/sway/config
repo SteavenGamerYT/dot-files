@@ -6,7 +6,8 @@ set $mod Mod4
 # Set font
 font pango:Roboto Regular 10
 
-# display
+# Display Configuration
+exec_always --no-startup-id ~/.config/sway/scripts/display.sh
 output eDP-1 scale 1.2
 
 # Configure touchpad and mouse settings

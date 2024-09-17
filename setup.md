@@ -53,8 +53,8 @@ paru -S zenergy-dkms-git
 
 # Time/Date/Clock
 ```sh
-sudo ln -sf /usr/share/zoneinfo/Africa/Cairo /etc/localtime`
-sudo hwclock --systohc`
+sudo ln -sf /usr/share/zoneinfo/Africa/Cairo /etc/localtime
+sudo hwclock --systohc
 sudo systemctl enable systemd-timesyncd
 ```
 
@@ -112,10 +112,10 @@ sudo systemctl enable preload
 # efibootmgr
 ```sh
 sudo efibootmgr --create \
- --disk /dev/nvme0n1 --part 1 \
+ --disk /dev/vda --part 1 \
  --label "Arch Linux" \
  --loader /vmlinuz-linux-cachyos \
- --unicode 'root=PARTUUID=44bfa8dd-d6d9-4b93-97e1-ec344d274408 rw splash quiet amd_iommu=on iommu=pt pcie_acs_override=downstream,multifunction pcie_port_pm=off video=1920x1080 initrd=\initramfs-linux-cachyos.img'
+ --unicode 'root=PARTUUID=c253a07f-2299-4a25-bd94-81992cb7de3c rw splash quiet amd_iommu=on iommu=pt pcie_acs_override=downstream,multifunction pcie_port_pm=off video=1920x1080 initrd=\initramfs-linux-cachyos.img'
 ```
 
 # Eco System
@@ -126,8 +126,8 @@ sudo systemctl enable syncthing@omarhanykasban
 ```
 
 # Window Manager and its apps
-i3: `sudo pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool`
-Sway: `sudo pacman -S sway swayidle swaylock swaync greetd waybar rofi-wayland polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr kwallet kwallet-pam kwallet5 kwalletmanager`
+i3: `sudo pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
+Sway: `sudo pacman -S sway swayidle swaylock swaync greetd waybar rofi-wayland polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr kwallet kwallet-pam kwallet5 kwalletmanager timeshift`
 
 # Theme
 ```sh
@@ -159,7 +159,7 @@ paru -S cemu-bin
 ```
 
 # Terminal Apps
-`sydi pacman -S starship zoxide fastfetch trash-cli bat speedtest-cli neovim vim nano unzip unrar neofetch hyfetch xclip lolcat eza github-cli topgrade`
+`sudo pacman -S starship zoxide fastfetch trash-cli bat speedtest-cli neovim vim nano unzip unrar neofetch hyfetch xclip lolcat eza github-cli topgrade`
 
 # Apps that i use
 ```sh
