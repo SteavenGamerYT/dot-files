@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sleep 2
-pkill redshift
+pkill wlsunset
 
 sleep 2
-redshift -l 30.0444:31.2357
+wlsunset -l 30.0444 -L 31.2357
