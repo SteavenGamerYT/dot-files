@@ -127,6 +127,7 @@ sudo systemctl enable syncthing@omarhanykasban
 
 # Window Manager and its apps
 i3: `sudo pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
+Bspwm: `sudo pacman -S bspwm sxhkd greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
 Sway: `sudo pacman -S sway swayidle swaylock swaync greetd waybar rofi-wayland polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr kwallet kwallet-pam kwallet5 kwalletmanager wlsunset`
 
 # Theme
