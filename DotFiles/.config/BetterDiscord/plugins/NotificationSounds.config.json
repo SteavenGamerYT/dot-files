@@ -365,6 +365,22 @@
 				"sound": "---",
 				"streamMute": false,
 				"volume": 100
+			},
+			"call_ringing_snow_halation": {
+				"category": "---",
+				"invisibleMute": false,
+				"mute": null,
+				"sound": "---",
+				"streamMute": false,
+				"volume": 100
+			},
+			"vibing_wumpus": {
+				"category": "---",
+				"invisibleMute": false,
+				"mute": false,
+				"sound": "---",
+				"streamMute": false,
+				"volume": 100
 			}
 		},
 		"volumes": {

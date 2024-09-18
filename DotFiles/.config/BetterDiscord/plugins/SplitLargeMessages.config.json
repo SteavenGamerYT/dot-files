@@ -2,7 +2,7 @@
 	"all": {
 		"amounts": {
 			"splitCounter": 0,
-			"maxPages": 0
+			"maxMessages": 0
 		},
 		"general": {
 			"byNewlines": false

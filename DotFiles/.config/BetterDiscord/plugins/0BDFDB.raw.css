@@ -78,9 +78,6 @@ img:not([src]), img[src=""], img[src="null"] {
 [REPLACE_CLASS_settingsrowcontainer][REPLACE_CLASS_marginbottom60] {
 	margin-bottom: 60px;
 }
-[REPLACE_CLASS_flexdirectionrow] > [REPLACE_CLASS_settingsrowcontainer] + [REPLACE_CLASS_settingsrowcontainer] {
-	margin-left: 8px;
-}
 [REPLACE_CLASS_settingsrowcontainer] [REPLACE_CLASS_settingsrowlabel] {
 	align-items: center;
 }
@@ -95,6 +92,13 @@ img:not([src]), img[src=""], img[src="null"] {
 [REPLACE_CLASS_h5][REPLACE_CLASS_marginreset] {
 	flex: 1 1 auto;
 }
+[REPLACE_CLASS_flexhorizontal] > [REPLACE_CLASS_settingsrow] + [REPLACE_CLASS_settingsrow] {
+	margin-left: 6px;
+}
+
+[REPLACE_CLASS_settingspanel] [REPLACE_CLASS_slidermark] {
+	line-height: 10px;
+}
 
 [REPLACE_CLASS_switch][REPLACE_CLASS_switchmini] {
 	width: 26px;
@@ -108,6 +112,14 @@ img:not([src]), img[src=""], img[src="null"] {
 
 [REPLACE_CLASS_accountinfobutton][REPLACE_CLASS_accountinfobuttondisabled] {
 	opacity: .4;
+}
+
+[REPLACE_CLASS_subtext] {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: var(--header-secondary);
+	line-height: 13px;
 }
 
 [REPLACE_CLASS_marginleft4] {
@@ -470,8 +482,12 @@ img:not([src]), img[src=""], img[src="null"] {
 }
 
 
-[REPLACE_CLASS_userpopoutheaderbottag] {
+[REPLACE_CLASS_userheadernickname] [REPLACE_CLASS_userheaderbottag] {
+	display: inline-flex;
 	margin-top: 4px !important;
+}
+[REPLACE_CLASS_userprofilemodal] [REPLACE_CLASS_userheaderbottag] {
+	margin-top: 6px !important;
 }
 
 [REPLACE_CLASS_avatardisabled] {
@@ -484,6 +500,10 @@ img:not([src]), img[src=""], img[src="null"] {
 [REPLACE_CLASS_messageusername] ~ [REPLACE_CLASS_messagebottagcompact] {
 	margin-right: 0;
 	margin-left: .25rem;
+}
+[REPLACE_CLASS_messagerepliedmessage] [REPLACE_CLASS_messageusername] ~ [REPLACE_CLASS_messagebottagcompact] {
+	margin-right: .25rem;
+	margin-left: 0;
 }
 
 [REPLACE_CLASS_messageavatar][REPLACE_CLASS_bdfdbbadgeavatar] > :not([REPLACE_CLASS_bdfdbbadge]),
@@ -730,6 +750,9 @@ img:not([src]), img[src=""], img[src="null"] {
 	border-left: none;
 	padding-left: 0;
 }
+[REPLACE_CLASS_tableheadercellsorted] {
+	color: var(--text-normal);
+}
 [REPLACE_CLASS_table] [REPLACE_CLASS_tablerow] {
 	position: relative;
 	display: flex;
@@ -753,6 +776,20 @@ img:not([src]), img[src=""], img[src="null"] {
 	align-items: center;
 	justify-content: space-between;
 	flex: 0 0 auto;
+}
+[REPLACE_CLASS_settingstableheader] {
+	margin-bottom: 8px;
+	color: var(--text-normal)
+}
+[REPLACE_CLASS_settingstableheadername] {
+	margin-left: 8px;
+	flex: 1 1 auto
+}
+[REPLACE_CLASS_settingstableheaderoption] {
+	cursor: default;
+	text-align: center;
+	width: 75px;
+	flex: 0 0 auto
 }
 [REPLACE_CLASS_settingstablelist] [REPLACE_CLASS_settingstableheader] {
 	min-height: 10px;
@@ -778,9 +815,6 @@ img:not([src]), img[src=""], img[src="null"] {
 	height: 60px;
 	padding: 0 10px;
 	margin-bottom: 10px;
-}
-[REPLACE_CLASS_settingstablecard][REPLACE_CLASS_cardprimaryoutline] {
-	border: 1px solid var(--background-tertiary);
 }
 [REPLACE_CLASS_settingstablecardlabel] {
 	display: flex;
@@ -816,6 +850,32 @@ img:not([src]), img[src=""], img[src="null"] {
 	align-items: center;
 	flex: 1 1 auto;
 	min-height: 32px;
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2px;
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutchannelname],
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutguildname] {
+	color: var(--header-secondary);
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutchannelname]:hover {
+	color: var(--header-primary);
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutchannelname]:not(:last-child) {
+	margin-right: 10px;
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutchannelname]:not(:last-child)::after {
+	content: "";
+	border-bottom: 1px solid var(--text-muted);
+	width: 100%;
+	margin-left: 10px;
+}
+[REPLACE_CLASS_messagespopoutchannelseparator] [REPLACE_CLASS_messagespopoutguildname] {
+	flex: 0 0 auto;
+	font-size: 12px;
+	width: unset;
 }
 
 [REPLACE_CLASS_charcounter] {
@@ -979,6 +1039,17 @@ input[REPLACE_CLASS_input][REPLACE_CLASS_inputerror] {
 	left: 0;
 }
 
+[REPLACE_CLASS_guildswrapper] [style*="--folder-color"] [REPLACE_CLASS_guildfolderexpandedbackground] {
+	background: var(--folder-color) !important;
+	opacity: 0.2 !important;
+}
+
+
+[REPLACE_CLASS_tooltiplistitem] [REPLACE_CLASS_flowerstarchild] > svg {
+	width: 10px;
+	height: 10px;
+}
+
 [REPLACE_CLASS_svgiconwrapper] {
 	display: flex;
 	justify-content: center;
@@ -1062,13 +1133,31 @@ input[REPLACE_CLASS_input][REPLACE_CLASS_inputerror] {
 	border-top: unset;
 	border-bottom: 1px solid hsla(0,0%,100%,.1);
 }
+[REPLACE_CLASS_tabbar] {
+	max-width: calc(100% - 60px);
+	gap: var(--spacing-32);
+	border-bottom: 1px solid var(--background-modifier-accent);
+}
+[REPLACE_CLASS_tabbaritem] {
+	display: flex;
+	flex-shrink: 1;
+	align-items: center;
+	gap: var(--spacing-8);
+	padding-bottom: var(--spacing-12);
+}
 [REPLACE_CLASS_modal] [REPLACE_CLASS_tabbarcontainer] {
 	background: rgba(0, 0, 0, 0.1);
 	border: none;
+	border-radius: unset;
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+	padding: 12px 16px 0;
 	flex: 1 1 auto;
-	margin: 0;
-	padding: 16px 16px 0 16px;
+}
+[REPLACE_CLASS_modal] [REPLACE_CLASS_tabbar] {
+	border: none;
+}
+[REPLACE_CLASS_modal] [REPLACE_CLASS_tabbaritem] {
+	height: 29px;
 }
 [REPLACE_CLASS_themedark] [REPLACE_CLASS_modal] [REPLACE_CLASS_tabbarcontainer] {
 	background: rgba(0, 0, 0, 0.2);
@@ -1079,6 +1168,47 @@ input[REPLACE_CLASS_input][REPLACE_CLASS_inputerror] {
 }
 [REPLACE_CLASS_changelogfooter] {
 	align-items: center;
+}
+
+[REPLACE_CLASS_emojiinputcontainer] {
+	position: relative;
+}
+[REPLACE_CLASS_emojiinputbuttoncontainer] {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0 var(--custom-custom-status-modal-emoji-margin);
+	height: 100%
+}
+[REPLACE_CLASS_emojiinputbuttonemoji] {
+	width: var(--custom-custom-status-modal-emoji-size);
+	height: var(--custom-custom-status-modal-emoji-size)
+}
+[REPLACE_CLASS_emojiinput] {
+	padding-left: calc(var(--custom-custom-status-modal-emoji-margin) + var(--custom-custom-status-modal-emoji-size) + var(--custom-custom-status-modal-emoji-margin));
+	padding-right: 36px
+}
+[REPLACE_CLASS_emojiinputclearbutton] {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	transition: opacity.2s ease-in-out;
+	line-height: 0;
+	opacity: .6
+}
+[REPLACE_CLASS_emojiinputclearbutton]:hover,
+[REPLACE_CLASS_emojiinputclearbutton]:focus {
+	opacity: 1
+}
+[REPLACE_CLASS_emojiinputclearicon] {
+	width: 16px;
+	height: 16px;
+	color: var(--interactive-normal)
 }
 
 [REPLACE_CLASS_popoutwrapper] {
@@ -1156,12 +1286,16 @@ input[REPLACE_CLASS_input][REPLACE_CLASS_inputerror] {
 	padding-right: 100px;
 	padding-bottom: 0;
 }
+[REPLACE_CLASS__repolistheader] [REPLACE_CLASS_flex] {
+	gap: 6px;
+}
 [REPLACE_CLASS__repolistscroller] {
 	padding-top: 0;
 }
 [REPLACE_CLASS__repolistheader] [REPLACE_CLASS_tabbarcontainer] {
 	display: flex;
 	align-items: flex-start;
+	margin-top: 16px;
 }
 [REPLACE_CLASS__repolistheader] [REPLACE_CLASS_quickselectwrapper] {
 	line-height: 20px;
