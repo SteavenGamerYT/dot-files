@@ -3,7 +3,7 @@ rm -rf ~/DotFiles
 ln -s ~/GitHub/dot-files/DotFiles ~/DotFiles
 
 mkdir ~/.ssh
-rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship ~/.config/swaync ~/.zprofile ~/.config/fastfetch ~/.config/betterlockscreen ~/.config/alacritty ~/.config/sway ~/.config/xdg-desktop-portal
+rm -rf ~/.steavengameryt ~/.bash-default ~/.zshrc ~/.bashrc ~/.profile ~/.zshenv ~/.p10k.zsh ~/.config/i3 ~/.config/picom ~/.config/neofetch ~/.config/polybar ~/.config/kitty ~/.config/BetterDiscord ~/.config/hypr ~/.config/waybar ~/.config/starship.toml ~/.config/ulauncher ~/.config/yay ~/.config/MangoHud ~/.ssh/config ~/.config/fish ~/.config/dunst ~/.config/swaylock ~/.config/rofi ~/.config/starship ~/.config/swaync ~/.zprofile ~/.config/fastfetch ~/.config/betterlockscreen ~/.config/alacritty ~/.config/sway ~/.config/xdg-desktop-portal ~/.config/sxhkd ~/.config/bspwm
 ln -s ~/DotFiles/.steavengameryt ~/.steavengameryt
 ln -s ~/DotFiles/.bash-default ~/.bash-default
 ln -s ~/DotFiles/.zshrc ~/.zshrc
@@ -35,3 +35,5 @@ ln -s ~/DotFiles/.config/betterlockscreen ~/.config/betterlockscreen
 ln -s ~/DotFiles/.config/alacritty ~/.config/alacritty
 ln -s ~/DotFiles/.config/sway ~/.config/sway
 ln -s ~/DotFiles/.config/xdg-desktop-portal ~/.config/xdg-desktop-portal
+ln -s ~/DotFiles/.config/sxhkd ~/.config/sxhkd
+ln -s ~/DotFiles/.config/bspwm ~/.config/bspwm

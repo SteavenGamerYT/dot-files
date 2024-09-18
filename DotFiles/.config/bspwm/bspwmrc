@@ -1,0 +1,106 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+~/.config/polybar/launch.sh &
+mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
+gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors' &
+gsettings set org.gnome.desktop.interface gtk-theme 'Nordic' &
+gsettings set org.gnome.desktop.interface cursor-size 24 &
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark' &
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+~/.config/i3/scripts/kwallet &
+~/.config/i3/scripts/display &
+~/.config/i3/scripts/headset &
+coolercontrol &
+xidlehook --not-when-fullscreen --not-when-audio --timer 300 '~/.config/i3/scripts/lockscreen.sh' '' &
+picom &
+nm-applet &
+/usr/lib/kdeconnectd &
+dunst &
+numlockx on &
+~/.config/i3/scripts/wallpaper2.sh &
+flameshot &
+~/.config/polybar/launch.sh &
+discord --start-minimized &
+steam -silent &
+dropbox &
+/opt/freedownloadmanager/fdm --hidden &
+qbittorrent &
+
+
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc config focus_follows_pointer true
+
+
+
+export ROSEWATER="#f5e0dc"
+export FLAMINGO="#f2cdcd"
+export PINK="#f5c2e7"
+export MAUVE="#cba6f7"
+export RED="#f38ba8"
+export MAROON="#eba0ac"
+export PEACH="#fab387"
+export YELLOW="#f9e2af"
+export GREEN="#a6e3a1"
+export TEAL="#94e2d5"
+export SKY="#89dceb"
+export SAPPHIRE="#74c7ec"
+export BLUE="#89b4fa"
+export LAVENDER="#b4befe"
+export TEXT="#cdd6f4"
+export SUBTEXT1="#bac2de"
+export SUBTEXT0="#a6adc8"
+export OVERLAY2="#9399b2"
+export OVERLAY1="#7f849c"
+export OVERLAY0="#6c7086"
+export SURFACE2="#585b70"
+export SURFACE1="#45475a"
+export SURFACE0="#313244"
+export BASE="#1e1e2e"
+export MANTLE="#181825"
+export CRUST="#11111b"
+bspc config border_width 5
+
+# Window colors
+bspc config focused_border_color $BLUE
+bspc config focused_border_color $BASE
+bspc config focused_border_color $TEXT
+bspc config focused_border_color $ROSEWATER
+bspc config focused_border_color $BLUE
+
+bspc config active_border_color $OVERLAY0
+bspc config active_border_color $BASE
+bspc config active_border_color $TEXT
+bspc config active_border_color $ROSEWATER
+bspc config active_border_color $OVERLAY0
+
+bspc config normal_border_color $OVERLAY0
+bspc config normal_border_color $BASE
+bspc config normal_border_color $TEXT
+bspc config normal_border_color $ROSEWATER
+bspc config normal_border_color $OVERLAY0
+
+bspc config urgent_border_color $PEACH
+bspc config urgent_border_color $BASE
+bspc config urgent_border_color $PEACH
+bspc config urgent_border_color $OVERLAY0
+bspc config urgent_border_color $PEACH
+
+bspc config placeholder_border_color $OVERLAY0
+bspc config placeholder_border_color $BASE
+bspc config placeholder_border_color $TEXT
+bspc config placeholder_border_color $OVERLAY0
+bspc config placeholder_border_color $OVERLAY0
+# Set gaps
+bspc config outer_gap 3
+bspc config inner_gap 3

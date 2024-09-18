@@ -54,10 +54,10 @@ esac
 
 alias multitail='multitail --no-repeat -c'  # View multiple log files in a single window
 alias freshclam='sudo freshclam'  # Update ClamAV virus databases with superuser privileges
-alias vi='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'  # Use Neovim with a specific configuration
+alias vi='nvim -u ~/GitHub/dot-files/vim-nano/nano.vim'  # Use Neovim with a specific configuration
 alias svi='sudo vi'  # Open vi with superuser privileges
-alias vis='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim "+set si"'  # Use Neovim with specific settings
-alias vim='nvim -u ~/Documents/GitHub/dot-files/vim-nano/nano.vim'  # Use Neovim with a specific configuration
+alias vis='nvim -u ~/GitHub/dot-files/vim-nano/nano.vim "+set si"'  # Use Neovim with specific settings
+alias vim='nvim -u ~/GitHub/dot-files/vim-nano/nano.vim'  # Use Neovim with a specific configuration
 alias mktar='tar -cvf'  # Create a tar archive
 alias mkbz2='tar -cvjf'  # Create a bzip2-compressed tar archive
 alias mkgz='tar -cvzf'  # Create a gzip-compressed tar archive
@@ -142,8 +142,8 @@ alias parsua='paru -Sua --noconfirm'  # Update AUR packages using paru without c
 alias parsyu='paru -Syu --noconfirm'  # Update system and AUR packages using paru without confirmation
 alias unlock='sudo rm /var/lib/pacman/db.lck'  # Remove the lock file for pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # Remove orphaned packages using pacman
-alias theme-flatpak='~/Documents/GitHub/dot-files/flatpak/stylepak install-system'  # Install system-wide flatpak themes
-alias flatpak-update-font-cache='~/Documents/GitHub/dot-files/flatpak/flatpak-font.sh'  # Update font cache for flatpak
+alias theme-flatpak='~/GitHub/dot-files/flatpak/stylepak install-system'  # Install system-wide flatpak themes
+alias flatpak-update-font-cache='~/GitHub/dot-files/flatpak/flatpak-font.sh'  # Update font cache for flatpak
 alias cat='bat'  # Use batcat instead of cat for syntax highlighting
 alias convert='magick'
 # Audio Management
@@ -287,7 +287,7 @@ updatefedora="sudo dnf update -y && sudo flatpak update -y"
 updatedebian="sudo nala upgrade -y && sudo flatpak update -y"
 
 # Define command to update dotfiles from a Git repository
-dotfiles='cd ~/Documents/GitHub/dot-files && git pull && cd'
+dotfiles='cd ~/GitHub/dot-files && git pull && cd'
 
 # Create an alias to update all specified systems via SSH, executing the update commands remotely
 alias update-all="ssh -t omar-pc '${updatearch}' && ssh -t omar-gaminglaptop '${updatearch}'"  # Remotely update both omar-pc and omar-gaminglaptop using Arch update commands

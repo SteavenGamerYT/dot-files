@@ -26,6 +26,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 | :---------------------------------------------------------------------- |
 | [Sway](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/sway/config) |
 | [Hyprland](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/hypr/hyprland.conf) |
+| [Bspwm](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.config/bspwm/bspwmrc) |
 
 # Other Popular Configs Of Mine
 | [bash](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.bashrc)   | [zsh](https://github.com/SteavenGamerYT/dot-files/blob/main/DotFiles/.zshr)    |
