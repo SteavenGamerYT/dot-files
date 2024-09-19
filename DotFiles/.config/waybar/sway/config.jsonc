@@ -60,7 +60,7 @@
     "sway/language": {
         "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
-        "format": "  {short} {variant}"
+        "format": "  {}"
       },
     "sway/window": {
         "format": "{}"
