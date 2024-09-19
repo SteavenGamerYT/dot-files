@@ -37,7 +37,6 @@ exec --no-startup-id wl-clip-persist --clipboard regular
 bindsym $mod+v exec cliphist list | rofi -dmenu -theme ~/.config/rofi/nord.rasi | cliphist decode | wl-copy
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 
 exec_always --no-startup-id ~/.config/sway/scripts/headset
 exec swayidle -w \
           timeout 300 '~/.config/sway/scripts/lockscreen.sh' \
