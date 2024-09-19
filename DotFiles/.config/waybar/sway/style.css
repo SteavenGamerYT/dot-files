@@ -142,6 +142,14 @@ tooltip {
     padding-right: 12px;
 }
 
+#custom-language {
+    background: @shade1;
+    color: @foreground;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 #language {
     background: @shade1;
     color: @foreground;
