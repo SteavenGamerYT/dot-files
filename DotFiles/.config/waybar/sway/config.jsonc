@@ -18,7 +18,7 @@
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
-        "custom/language",
+        "sway/language",
         "battery",
         "bluetooth",
         "network",
