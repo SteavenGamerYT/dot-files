@@ -51,17 +51,19 @@
     "format": " {}"
   },
 
-    "custom/language": {
-        "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
-        "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
-        "interval": 1,
-        "format": "  {}"
-      },
-    "sway/language": {
-        "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
-        "interval": 1,
-        "format": "  {}"
-      },
+  "custom/language": {
+    "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "interval": 1,
+    "format": "  {}"
+  },
+  "sway/language": {
+    "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "interval": 1,
+    "format": "  {}"
+  },
+
     "sway/window": {
         "format": "{}"
     },
