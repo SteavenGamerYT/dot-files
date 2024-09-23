@@ -77,12 +77,15 @@ sudo passwd omarhanykasban
 ```
 
 # Audio
-`sudo pacman -S pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber alsa-utils pamixer playerctl pavucontrol helvum lib32-pipewire lib32-pipewire-jack `
+`sudo pacman -S pipewire pipewire-jack pipewire-alsa pipewire-pulse wireplumber alsa-utils pamixer playerctl pavucontrol helvum lib32-pipewire lib32-pipewire-jack`
 
 # Gpu Drivers
 Nvidia: `sudo pacman -S linux-cachyos-nvidia-open nvidia-utils opencl-nvidia nvidia-settings libva-nvidia-driver egl-wayland lib32-nvidia-utils lib32-opencl-nvidia`
 Intel: `sudo pacman -S mesa vulkan-intel intel-media-driver intel-compute-runtime lib32-mesa lib32-vulkan-intel`
 Amd: `sudo pacman -S mesa mesa-vdpau vulkan-radeon libva-mesa-driver rocm-opencl-runtime lib32-mesa lib32-mesa-vdpau lib32-libva-mesa-driver lib32-vulkan-radeon`
+
+# remove amd video encoder for old gpus that doesnt support encoders
+`sudo pacman -Rns libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau`
 
 # Display Server
 Xorg: `sudo pacman -S xorg xorg-server xorg-apps xorg-xinit`
@@ -125,6 +128,9 @@ sudo systemctl enable sshd
 sudo systemctl enable syncthing@omarhanykasban
 ```
 
+# Desktop enviroamnt and its apps
+kde: `sudo pacman -S plasma-desktop plasma-nm plasma-pa kscreen dolphin konsole spectacle sddm sddm-kcm flatpak-kcm kde-gtk-config breeze-gtk kwallet kwallet-pam kwallet5 kwalletmanager`
+
 # Window Manager and its apps
 i3: `sudo pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
 Bspwm: `sudo pacman -S bspwm sxhkd greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
@@ -154,7 +160,7 @@ sudo virsh net-start default
 sudo pacman -S proton-ge-custom wine-staging wine-mono wine-gecko \
 mangohud lib32-mangohud gamemode lib32-gamemode gamescope vulkan-tools protontricks winetricks protonplus \
 steam lutris heroic-games-launcher-bin \
-duckstation-git rpcs3-git ryujinx dolphin-emu pcsx2-git \
+duckstation rpcs3-git ryujinx dolphin-emu pcsx2-git \
 minecraft-launcher prismlauncher lunar-client jre-openjdk jre21-openjdk jre17-openjdk jre8-openjdk 
 paru -S cemu-bin
 ```
@@ -166,12 +172,12 @@ paru -S cemu-bin
 ```sh
 pacman -S nemo nemo-fileroller \
 bitwarden \
-discord whatsie-git whatsie-git element-desktop \
+discord whatsie-git element-desktop \
 visual-studio-code-bin github-desktop \
 libreoffice-fresh okular kcalc kate phonon-qt6-mpv \
 obs-studio-stable obs-vkcapture lib32-obs-vkcapture gstreamer-vaapi obs-gstreamer \
 gimp kdenlive mediainfo mediainfo-gui \
-qbittorrent freedownloadmanager
+qbittorrent freedownloadmanager \
 firefox vlc audacious
 paru -S nemo-mediainfo-tab \
 ente-auth-bin \
