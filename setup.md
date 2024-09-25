@@ -134,7 +134,7 @@ kde: `sudo pacman -S plasma-desktop plasma-nm plasma-pa kscreen dolphin konsole 
 # Window Manager and its apps
 i3: `sudo pacman -S i3-wm greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
 Bspwm: `sudo pacman -S bspwm sxhkd greetd polybar rofi polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk kwallet kwallet-pam kwallet5 kwalletmanager picom dunst numlockx feh flameshot xdotool timeshift`
-Sway: `sudo pacman -S sway swayidle swaylock swaync greetd waybar rofi-wayland polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr kwallet kwallet-pam kwallet5 kwalletmanager wlsunset`
+Sway: `sudo pacman -S sway swayidle swaylock-effects swaync greetd waybar rofi-wayland polkit-gnome nemo nemo-fileroller mpv xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr kwallet kwallet-pam kwallet5 kwalletmanager wlsunset`
 
 # Theme
 ```sh
@@ -143,7 +143,12 @@ paru -S whitesur-cursor-theme-git
 ```
 
 # Fonts
-`sudo pacman -S noto-fonts noto-fonts-ar noto-fonts-cjk noto-fonts-emoji ttf-croscore ttf-roboto ttf-roboto-mono ttf-roboto-mono-nerd`
+`sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-croscore ttf-roboto ttf-roboto-mono ttf-roboto-mono-nerd ttf-ubuntu-font-family ttf-ubuntu-mono-nerd ttf-ubuntu-nerd ttf-fira-code otf-firamono-nerd ttf-firacode-nerd`
+`paru -S noto-fonts-ar ttf-ms-win11-auto`
+
+# Spell Check
+`sudo pacman -S hunspell nuspell ispell hunspell-en_us`
+`paru -S hunspell-ar`
 
 # Qemu/KVM 
 ```sh
