@@ -35,6 +35,7 @@ exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 exec --no-startup-id ~/.config/i3/scripts/wallpaper2.sh &
 exec --no-startup-id flameshot
+exec --no-startup-id autotiling
 #exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
