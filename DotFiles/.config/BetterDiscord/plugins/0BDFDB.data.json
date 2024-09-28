@@ -327,7 +327,7 @@
 		}},
 		"LazyImage": {"protos": ["loadImage", "getRatio", "getSrc"]},
 		"Mask": {"props": "Masks"},
-		"Menu": {"strings": ["Menu API only allows Items and groups of Items as children"]},
+		"Menu": {"strings": ["\"flexible\"", "onFocus:", "menuItemProps"]},
 		"MessageGroup": {"strings": [".ephemeral", "animateAvatar:", "getMessageByReference"]},
 		"MessagesPopoutComponents": {"strings": ["canCloseAllMessages", "loadingMore"], "exported": false, "value": "exports", "map": {
 			"EmptyState": [".emptyPlaceholder", "backgroundImage"],
@@ -421,7 +421,7 @@
 		"ChannelSidebar": {"strings": ["ACCOUNT_PANEL", "RTC_CONNECTION_PANEL", "ACCOUNT_A11Y_LABEL"]},
 		"ChannelsList": {"protos": ["isUnreadVisible", "renderBottomUnread", "getSectionRowsFromChannel"]},
 		"ChannelTextAreaButtons": {"strings": [".buttons", "\"emoji\"", "activeCommandOption"]},
-		"ChannelTextAreaContainer": {"strings": ["TOGGLE_EMOJI_POPOUT", "textValue", "richValue"]},
+		"ChannelTextAreaContainer": {"strings": ["uploadPromptCharacterCount", "onSelectSticker", "handleAutocompleteVisibilityChange"], "noSearch": true},
 		"ChannelTextAreaCounter": {"strings": [".flairContainer", "CHARACTER_COUNT_CLOSE_TO_LIMIT"]},
 		"ChannelTextAreaEditor": {"strings": ["onHideAutocomplete", "onMaybeShowAutocomplete", "uploadPromptCharacterCount", "_focusBlurQueue"]},
 		"ChannelTextAreaForm": {"strings": ["renderApplicationCommandIcon", "handleTextareaChange", "handleSendMessage"]},

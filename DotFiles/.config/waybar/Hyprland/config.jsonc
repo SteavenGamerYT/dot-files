@@ -5,6 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
+    "output":"DP-1",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -28,12 +29,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/hyprland/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/Hyprland/scripts/vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/hyprland/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/Hyprland/scripts/nvidia-smi.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },

@@ -8,7 +8,16 @@ font pango:Roboto Regular 10
 
 # Display Configuration
 exec_always --no-startup-id ~/.config/sway/scripts/display.sh
-output eDP-1 scale 1.2
+# Check if the device is a laptop or desktop
+exec_always {
+    if [ -d /sys/class/power_supply/BAT0 ]; then
+        swaymsg output eDP-1 scale 1.2
+    else
+        swaymsg output "DP-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+        swaymsg output "HDMI-A-1" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+        swaymsg output "DVI-D-1" mode  1920x1080@59.939Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+    fi
+}
 
 # Configure touchpad and mouse settings
 input * {
@@ -16,8 +25,20 @@ input * {
 #    acceleration_profile flat
 #    accel_speed 0
     tap enabled
+    natural_scroll disabled
+}
+input "ELAN1203:00 04F3:307A Touchpad" {
+    dwt true
+    tap enabled
     natural_scroll enabled
 }
+
+input "ELAN1203:00 04F3:307A Mouse" {
+    dwt true
+    tap disabled
+    natural_scroll enabled
+}
+
 # Startup
 exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
@@ -62,7 +83,7 @@ exec --no-startup-id qbittorrent
 bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec firefox
+bindsym $mod+b exec firefox --profile /home/omarhanykasban/.mozilla/firefox/29dx8ujh.default-release
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill
