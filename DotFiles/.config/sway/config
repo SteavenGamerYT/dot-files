@@ -9,6 +9,8 @@ font pango:Roboto Regular 10
 # Display Configuration
 exec_always --no-startup-id ~/.config/sway/scripts/display.sh
 # Check if the device is a laptop or desktop
+workspace 1 output HDMI-A-1
+workspace 11 output DVI-D-1
 exec_always {
     if [ -d /sys/class/power_supply/BAT0 ]; then
         swaymsg output eDP-1 scale 1.2
@@ -16,25 +18,26 @@ exec_always {
         swaymsg output "DP-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "HDMI-A-1" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "DVI-D-1" mode  1920x1080@59.939Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+        swaymsg output "DP-0" disable
     fi
 }
-
 # Configure touchpad and mouse settings
 input * {
-    dwt true
-#    acceleration_profile flat
-#    accel_speed 0
+    dwt enabled
+    accel_profile "flat"
     tap enabled
 }
 input "ELAN1203:00 04F3:307A Touchpad" {
-    dwt true
+    dwt enabled
+    accel_profile "flat"
     tap enabled
     natural_scroll enabled
 }
 
 input "ELAN1203:00 04F3:307A Mouse" {
-    dwt true
-    tap disabled
+    dwt enabled
+    accel_profile "flat"
+    tap enabled
     natural_scroll enabled
 }
 
