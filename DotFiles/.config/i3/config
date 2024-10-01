@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Set font
-font pango:Roboto Regular 10
+font pango:Roboto Regular 12
 
 # Autodetect and configure touchpad and mouse settings
 exec_always --no-startup-id ~/.config/i3/scripts/touchpad-mouse-config.sh

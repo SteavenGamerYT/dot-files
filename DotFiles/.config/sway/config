@@ -4,7 +4,7 @@ include /etc/sway/config.d/*
 set $mod Mod4
 
 # Set font
-font pango:Roboto Regular 10
+font pango:Roboto Regular 12
 
 # Display Configuration
 exec_always --no-startup-id ~/.config/sway/scripts/display.sh
