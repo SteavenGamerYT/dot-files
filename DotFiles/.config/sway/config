@@ -19,6 +19,8 @@ exec_always {
         swaymsg output "HDMI-A-1" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "DVI-D-1" mode  1920x1080@59.939Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "DP-0" disable
+        swaymsg workspace 1 output HDMI-A-1
+        swaymsg workspace 11 output DVI-D-1
     fi
 }
 # Configure touchpad and mouse settings
