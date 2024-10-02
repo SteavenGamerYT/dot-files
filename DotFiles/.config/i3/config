@@ -10,6 +10,9 @@ exec_always --no-startup-id ~/.config/i3/scripts/touchpad-mouse-config.sh
 # Display Configuration
 exec_always --no-startup-id ~/.config/i3/scripts/display.sh
 
+# Audio Configuration
+exec_always --no-startup-id systemctl --user restart audio
+
 # Workspace
 workspace 1 output HDMI-0
 # Startup

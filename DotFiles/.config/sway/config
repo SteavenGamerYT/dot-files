@@ -21,6 +21,7 @@ exec_always {
         swaymsg output "DP-0" disable
         swaymsg workspace 1 output HDMI-A-1
         swaymsg workspace 11 output DVI-D-1
+        systemctl --user restart audio
     fi
 }
 # Configure touchpad and mouse settings
