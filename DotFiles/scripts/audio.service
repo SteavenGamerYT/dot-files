@@ -1,0 +1,11 @@
+[Unit]
+Description=Configure Audio
+After=pipewire.service pipewire-pulse.service wireplumber.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "/home/omarhanykasban/DotFiles/scripts/audio.sh || true"
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
