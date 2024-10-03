@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if xrandr | grep "DVI-D-0 connected"; then
-    xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x768 --rotate normal --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
-elif xrandr | grep "DVI-D-0 disconnected"; then
-    xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
-fi
+xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-1 --primary --mode 1920x1080 --pos 0x768 --rotate normal
 
 sleep 2
 pkill redshift
