@@ -26,19 +26,19 @@ exec_always {
 }
 # Configure touchpad and mouse settings
 input * {
-    dwt enabled
+    dwt disabled
     accel_profile "flat"
     tap enabled
 }
 input "ELAN1203:00 04F3:307A Touchpad" {
-    dwt enabled
+    dwt disabled
     accel_profile "flat"
     tap enabled
     natural_scroll enabled
 }
 
 input "ELAN1203:00 04F3:307A Mouse" {
-    dwt enabled
+    dwt disabled
     accel_profile "flat"
     tap enabled
     natural_scroll enabled
