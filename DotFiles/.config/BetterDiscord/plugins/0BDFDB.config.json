@@ -1,10 +1,10 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.7.9",
+			"BDFDB": "3.8.0",
 			"BetterFriendList": "1.5.5",
 			"NotificationSounds": "3.9.6",
-			"SplitLargeMessages": "1.8.2",
+			"SplitLargeMessages": "1.8.3",
 			"SpotifyControls": "1.3.4"
 		},
 		"choices": {
@@ -17,8 +17,8 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "cdf9c332935abf569238271215c5b59b1d0e179d",
-			"0BDFDB.raw.css": "b760b98b7aaf737ca3088a5aaf68fef220274de0"
+			"0BDFDB.data.json": "9b7ad855c12571fc60f7a0d799368dc9d9386aff",
+			"0BDFDB.raw.css": "81dd52fb9f66039d356f9370779b76d476321e33"
 		}
 	}
 }
