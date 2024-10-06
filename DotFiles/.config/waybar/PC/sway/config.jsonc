@@ -29,12 +29,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/sway/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/PC/sway/scripts/vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/sway/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/PC/sway/scripts/nvidia-smi.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
@@ -53,14 +53,14 @@
   },
 
   "custom/language": {
-    "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
-    "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "exec": "~/.config/waybar/PC/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/PC/sway/scripts/toggle-keyboard-layout.sh", // update system
     "interval": 1,
     "format": "  {}"
   },
   "sway/language": {
-    "exec": "~/.config/waybar/sway/scripts/get-lang.sh",
-    "on-click": "~/.config/waybar/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "exec": "~/.config/waybar/PC/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/PC/sway/scripts/toggle-keyboard-layout.sh", // update system
     "interval": 1,
     "format": "  {}"
   },
@@ -100,7 +100,7 @@
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/sway/scripts/waybar-wttr.py",
+        "exec" : "~/.config/waybar/PC/sway/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {

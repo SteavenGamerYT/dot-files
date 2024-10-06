@@ -29,12 +29,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/Hyprland/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/PC/Hyprland/scripts/vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/Hyprland/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/PC/Hyprland/scripts/nvidia-smi.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
@@ -53,8 +53,8 @@
   },
 
     "custom/language": {
-        "exec": "~/.config/waybar/hyprland/scripts/get-lang.sh",
-        "on-click": "~/.config/waybar/hyprland/scripts/toggle-keyboard-layout.sh", // update system
+        "exec": "~/.config/waybar/PC/Hyprland/scripts/get-lang.sh",
+        "on-click": "~/.config/waybar/PC/Hyprland/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
         "format": "  {}"
       },
@@ -93,7 +93,7 @@
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/hyprland/scripts/waybar-wttr.py",
+        "exec" : "~/.config/waybar/PC/Hyprland/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {
