@@ -13,7 +13,7 @@ workspace 1 output HDMI-A-1
 workspace 11 output DVI-D-1
 exec_always {
     if [ -d /sys/class/power_supply/BAT0 ]; then
-        swaymsg output eDP-1 scale 1.2
+        swaymsg output eDP-1 scale 1.25
     else
         swaymsg output "DP-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "HDMI-A-1" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on

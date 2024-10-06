@@ -10,11 +10,11 @@
         "sway/window"
     ],
     "modules-right": [
-        "custom/disks",
-        "custom/gpuusage",
-        "custom/vramusage",
-        "cpu",
-        "memory",
+//        "custom/disks",
+//        "custom/gpuusage",
+//        "custom/vramusage",
+//        "cpu",
+//        "memory",
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
