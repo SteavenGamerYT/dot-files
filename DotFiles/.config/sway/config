@@ -258,3 +258,7 @@ for_window [class="Lutris" title="Add games to Lutris"] floating enable
 #for_window [class="steam_app_480" title="Forza Horizon 5"] floating enable, fullscreen enable, focus
 
 for_window [app_id="com.obsproject.Studio"] inhibit_idle open
+
+# Fullscreen Waydroid
+for_window [app_id="Waydroid"] fullscreen
+
