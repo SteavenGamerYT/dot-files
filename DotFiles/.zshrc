@@ -11,7 +11,7 @@ source_plugin() {
 }
 
 # Sourcing plugins
-#source_plugin ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh  # Source the zsh-autocomplete plugin
+source_plugin /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh  # Source the zsh-autocomplete plugin
 source_plugin ~/.steavengameryt  # Attempt to source a file that seems to be missing its extension or path
 
 # Starship prompt configuration based on Linux distribution
@@ -68,11 +68,12 @@ eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
 eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
-case "$TERM" in
-  "xterm-kitty")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
-    ;;
-  "xterm-256color")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
-    ;;
-esac
+#case "$TERM" in
+#  "xterm-kitty")
+#    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
+#    ;;
+#  "xterm-256color")
+#    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
+#    ;;
+#esac
+/bin/fastfetch
