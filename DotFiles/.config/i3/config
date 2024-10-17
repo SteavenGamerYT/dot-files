@@ -47,6 +47,7 @@ exec --no-startup-id "steam -silent"
 exec --no-startup-id dropbox
 exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
 exec --no-startup-id qbittorrent
+exec --no-startup-id sunshine
 
 # Keybindings
 bindsym $mod+l exec "betterlockscreen -l"

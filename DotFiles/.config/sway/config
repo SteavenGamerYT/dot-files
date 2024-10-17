@@ -83,6 +83,7 @@ exec --no-startup-id "steam -silent"
 exec --no-startup-id dropbox
 exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
 exec --no-startup-id qbittorrent
+exec --no-startup-id sunshine
 
 # Keybindings
 bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"
