@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Find all image files in the specified directory
-img=($(find ~/Pictures/DistroTube/ -type f -exec file {} \; | grep -oP '^.+: \w+ image' | cut -d':' -f1))
+img=($(find ~/Pictures/SteavenGamerYT/ -type f -exec file {} \; | grep -oP '^.+: \w+ image' | cut -d':' -f1))
 
 while true; do
   # Randomly select an image from the array
