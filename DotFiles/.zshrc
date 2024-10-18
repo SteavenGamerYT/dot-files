@@ -11,7 +11,7 @@ source_plugin() {
 }
 
 # Sourcing plugins
-source_plugin /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh  # Source the zsh-autocomplete plugin
+#source_plugin /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh  # Source the zsh-autocomplete plugin
 source_plugin ~/.steavengameryt  # Attempt to source a file that seems to be missing its extension or path
 
 # Starship prompt configuration based on Linux distribution
