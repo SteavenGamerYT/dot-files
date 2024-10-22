@@ -8,6 +8,7 @@ FILES=(
   "info.cemu.Cemu.desktop"
   "pcsx2.desktop"
   "dolphin-emu.desktop"
+  "dev.suyu_emu.suyu.desktop"
 )
 
 # Directory containing the copied .desktop files

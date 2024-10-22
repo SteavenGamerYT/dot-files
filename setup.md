@@ -223,4 +223,5 @@ cp /usr/share/applications/duckstation.desktop /home/omarhanykasban/.local/share
 cp /usr/share/applications/info.cemu.Cemu.desktop /home/omarhanykasban/.local/share/applications/info.cemu.Cemu.desktop
 cp /usr/share/applications/pcsx2.desktop /home/omarhanykasban/.local/share/applications/pcsx2.desktop
 cp /usr/share/applications/dolphin-emu.desktop /home/omarhanykasban/.local/share/applications/dolphin-emu.desktop
+cp /usr/share/applications/dev.suyu_emu.suyu.desktop /home/omarhanykasban/.local/share/applications/dev.suyu_emu.suyu.desktop
 ```
