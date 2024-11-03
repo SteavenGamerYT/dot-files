@@ -68,12 +68,11 @@ eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
 eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
-#case "$TERM" in
-#  "xterm-kitty")
-#    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
-#    ;;
-#  "xterm-256color")
-#    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
-#    ;;
-#esac
-/bin/fastfetch
+case "$TERM" in
+  "xterm-kitty")
+    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
+    ;;
+  "xterm-256color")
+    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
+    ;;
+esac

@@ -9,7 +9,7 @@ done
 #  export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
 
-if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ] || [ "$XDG_SESSION_DESKTOP" = "GNOME" ]; then
+if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct
 
@@ -53,4 +53,3 @@ elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
     export MANGOHUD_CONFIG="preset=3"
 fi
 export ELECTRON_OZONE_PLATFORM_HINT=auto
-export GTK_THEME=Nordic
