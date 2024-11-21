@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# List of .desktop files to modify
+# List of .desktop files to copy and modify
 FILES=(
   "rpcs3.desktop"
   "ryujinx.desktop"
@@ -11,13 +11,29 @@ FILES=(
   "dev.suyu_emu.suyu.desktop"
 )
 
-# Directory containing the copied .desktop files
-DESKTOP_DIR="$HOME/.local/share/applications"
+# Source and destination directories
+SRC_DIR="/usr/share/applications"
+DEST_DIR="$HOME/.local/share/applications"
 
-# Iterate over each file in the list
+# Step 1: Copy .desktop files
+echo "Copying .desktop files..."
 for file in "${FILES[@]}"; do
-  desktop_file="$DESKTOP_DIR/$file"
-  
+  src_file="$SRC_DIR/$file"
+  dest_file="$DEST_DIR/$file"
+
+  if [ -f "$src_file" ]; then
+    cp "$src_file" "$dest_file"
+    echo "Copied $src_file to $dest_file"
+  else
+    echo "Source file $src_file does not exist, skipping..."
+  fi
+done
+
+# Step 2: Modify the Exec line in each copied .desktop file
+echo "Modifying Exec lines..."
+for file in "${FILES[@]}"; do
+  desktop_file="$DEST_DIR/$file"
+
   # Check if the file exists
   if [ ! -f "$desktop_file" ]; then
     echo "File $desktop_file does not exist, skipping..."
@@ -38,6 +54,8 @@ for file in "${FILES[@]}"; do
 
   # Replace the old Exec line with the new one
   sed -i "s|^Exec=.*|$new_exec|" "$desktop_file"
-  
+
   echo "Updated Exec line in $desktop_file"
 done
+
+echo "All tasks completed."
