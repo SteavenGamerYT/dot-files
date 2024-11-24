@@ -1,9 +1,6 @@
 #!/bin/bash
 set -x
 
-# Wait for PipeWire to fully initialize
-sleep 5
-
 # set audio profiles
 
 # TU116 High Definition Audio Controller
