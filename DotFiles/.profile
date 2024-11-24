@@ -41,8 +41,6 @@ fi
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
 
-#!/bin/bash
-
 # Get the GPU model
 GPU_MODEL=$(lspci | grep -i 'vga' | grep -oP '(?<=NVIDIA Corporation ).*')
 
@@ -52,5 +50,6 @@ if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
 elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
     export MANGOHUD_CONFIG="preset=3"
 fi
+
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 export XCURSOR_THEME=breeze-dark
