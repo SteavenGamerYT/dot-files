@@ -41,8 +41,6 @@ fi
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
 
-#!/bin/bash
-
 # Get the GPU model
 GPU_MODEL=$(lspci | grep -i 'vga' | grep -oP '(?<=NVIDIA Corporation ).*')
 
