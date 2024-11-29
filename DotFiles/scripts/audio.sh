@@ -38,9 +38,9 @@ pw-link alsa_output.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00
 
 # Mic
 # undo first
-pactl list short modules | grep "source=alsa_input.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.mono-fallback" | awk '{print $1}' | xargs -I {} pactl unload-module {}
+# pactl list short modules | grep "source=alsa_input.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.mono-fallback" | awk '{print $1}' | xargs -I {} pactl unload-module {}
 
-sleep 2
+# sleep 2
 
 # do it now
-pactl load-module module-loopback source=alsa_input.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.mono-fallback sink=alsa_output.pci-0000_07_00.6.analog-stereo
+# pactl load-module module-loopback source=alsa_input.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.mono-fallback sink=alsa_output.pci-0000_07_00.6.analog-stereo
