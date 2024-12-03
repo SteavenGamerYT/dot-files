@@ -1,7 +1,7 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.8.1",
+			"BDFDB": "3.8.6",
 			"BetterFriendList": "1.5.5",
 			"NotificationSounds": "3.9.6",
 			"SplitLargeMessages": "1.8.4",
@@ -17,8 +17,8 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "0b6bc6bd9fc424903719b2ec4dfa2c8d46a8d1b0",
-			"0BDFDB.raw.css": "d54c1db8ea68d8dcc12b6ce688e277d5cad65856"
+			"0BDFDB.data.json": "5f192cb31a95e4e6bc1add9f3509f02c943d237e",
+			"0BDFDB.raw.css": "7c6c34a10391702b93af4cfaeb3965fe7b0fdcc7"
 		}
 	}
 }
