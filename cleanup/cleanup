@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Define cleanup functions
+cleanup_pacman() {
+    echo "Running cleanup for Pacman..."
+    if pacman -Qtdq &>/dev/null; then
+        sudo pacman -Rns $(pacman -Qtdq)
+    else
+        echo "No unused packages found for Pacman."
+    fi
+    echo
+}
+
+cleanup_flatpak_user() {
+    echo "Running user-level Flatpak cleanup..."
+    flatpak remove --unused
+    echo
+}
+
+cleanup_flatpak_system() {
+    echo "Running system-level Flatpak cleanup..."
+    sudo flatpak remove --unused
+    echo
+}
+
+cleanup_snap() {
+    echo "Running cleanup for Snap..."
+    sudo snap remove --purge $(snap list --all | awk '/disabled/{print $1" --revision="$2}')
+    echo
+}
+
+cleanup_apt() {
+    echo "Running cleanup for APT..."
+    sudo apt autoremove --purge
+    echo
+}
+
+# Main logic
+if command -v pacman &>/dev/null; then
+    cleanup_pacman
+fi
+
+if command -v apt &>/dev/null; then
+    cleanup_apt
+fi
+
+if command -v flatpak &>/dev/null; then
+    cleanup_flatpak_user
+    cleanup_flatpak_system
+fi
+
+if command -v snap &>/dev/null; then
+    cleanup_snap
+fi
+
+echo "Cleanup complete!"
