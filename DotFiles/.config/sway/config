@@ -1,4 +1,5 @@
 include /etc/sway/config.d/*
+#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_DESKTOP=sway
 
 # Set Mod key
 set $mod Mod4
@@ -9,18 +10,12 @@ font pango:Roboto Regular 12
 # Display Configuration
 exec_always --no-startup-id ~/.config/sway/scripts/display.sh
 # Check if the device is a laptop or desktop
-workspace 1 output HDMI-A-1
-workspace 11 output DVI-D-1
 exec_always {
     if [ -d /sys/class/power_supply/BAT0 ]; then
         swaymsg output eDP-1 scale 1.25
     else
-        swaymsg output "DP-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
-        swaymsg output "HDMI-A-1" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
-        swaymsg output "DVI-D-1" disable
-        swaymsg output "DP-0" disable
-        swaymsg workspace 1 output HDMI-A-1
-        swaymsg workspace 11 output DVI-D-1
+        swaymsg output "HDMI-A-2" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+        swaymsg output "HDMI-A-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         systemctl --user restart audio
     fi
 }
@@ -89,7 +84,7 @@ exec --no-startup-id sunshine
 bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec firefox --profile /home/omarhanykasban/.mozilla/firefox/29dx8ujh.default-release
+bindsym $mod+b exec firefox
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill

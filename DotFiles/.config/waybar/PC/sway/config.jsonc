@@ -5,7 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "output":"DP-1",
+    "output":"HDMI-A-1",
     "modules-left": [
         "sway/workspaces",
         "sway/window"
