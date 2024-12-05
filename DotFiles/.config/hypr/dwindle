@@ -1,0 +1,14 @@
+bind = SUPER, P, pseudo, # dwindle
+bind = SUPER, S, togglesplit, # dwindle
+bind = SUPER, left, movefocus, l
+bind = SUPER, right, movefocus, r
+bind = SUPER, up, movefocus, u
+bind = SUPER, down, movefocus, d
+bind = SUPER SHIFT, left, movewindow, l
+bind = SUPER SHIFT, right, movewindow, r
+bind = SUPER SHIFT, up, movewindow, u
+bind = SUPER SHIFT, down, movewindow, d
+
+general {
+  layout = dwindle
+}
