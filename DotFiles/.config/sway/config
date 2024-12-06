@@ -74,6 +74,7 @@ exec_always --no-startup-id ~/.config/waybar/launch.sh
 
 # Applications
 exec --no-startup-id "discord --start-minimized"
+exec --no-startup-id vesktop
 exec --no-startup-id "steam -silent"
 exec --no-startup-id dropbox
 exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
