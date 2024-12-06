@@ -11,12 +11,12 @@
         "sway/window"
     ],
     "modules-right": [
-        "custom/disks",
-        "custom/gpuusage",
-        "custom/vramusage",
-        "cpu",
-        "memory",
-        "backlight",
+//        "custom/disks",
+//        "custom/gpuusage",
+//        "custom/vramusage",
+//        "cpu",
+//        "memory",
+//        "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
         "custom/language",
