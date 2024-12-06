@@ -13,6 +13,7 @@ exec_always --no-startup-id ~/.config/sway/scripts/display.sh
 exec_always {
     if [ -d /sys/class/power_supply/BAT0 ]; then
         swaymsg output eDP-1 scale 1.25
+        input-remapper-control --command start --device "Asus Keyboard" --preset "right arrow key is broken so i remapped keys"
     else
         swaymsg output "HDMI-A-2" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "HDMI-A-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
