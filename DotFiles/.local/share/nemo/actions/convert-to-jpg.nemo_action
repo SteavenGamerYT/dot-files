@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to JPG
+Comment=Convert the selected image to JPG format
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}.jpg"; magick "$input" "$output"'
+Icon-Name=media-image
+Selection=File
+Extensions=jpeg;png;gif;tiff;bmp;webp;heif;ico;xcf

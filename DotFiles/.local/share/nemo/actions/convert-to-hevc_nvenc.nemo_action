@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to H265 (NVENC)
+Comment=Convert the selected video to H265 format with AAC audio
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}-hevc_nvenc.${input##*.}"; ffmpeg -i "$input" -c:v hevc_nvenc -c:a aac "$output"'
+Icon-Name=media-video
+Selection=File
+Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

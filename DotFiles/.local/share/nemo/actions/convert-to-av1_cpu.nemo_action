@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to AV1 (libaom-av1)
+Comment=Convert the selected video to AV1 format with AAC audio
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}-av1_cpu.${input##*.}"; ffmpeg -i "$input" -c:v libaom-av1 -c:a aac "$output"'
+Icon-Name=media-video
+Selection=File
+Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

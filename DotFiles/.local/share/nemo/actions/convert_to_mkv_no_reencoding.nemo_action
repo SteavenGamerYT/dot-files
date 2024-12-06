@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert Video to MKV
+Comment=Convert the selected video video to MKV file
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}.mkv"; ffmpeg -i "$input" -c copy "$output"'
+Icon-Name=media-video
+Selection=File
+Extensions=avi;mp4;mov;webm;flv;wmv;mpeg;

@@ -1,0 +1,341 @@
+{
+  "toplevel": [
+    {
+      "uuid": "add-desklets.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "sample.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "90_new-workspace.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "91_delete-workspace.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "92_show-expo.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "mount-archive.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "90_new-launcher.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "Convert Video",
+      "type": "submenu",
+      "user-label": "Convert Video",
+      "user-icon": "ffmpeg",
+      "accelerator": null,
+      "children": [
+        {
+          "uuid": "split_audio_and_video.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        },
+        {
+          "uuid": "Discord",
+          "type": "submenu",
+          "user-label": "Discord",
+          "user-icon": "discord",
+          "accelerator": null,
+          "children": [
+            {
+              "uuid": "compress-video-discord26.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            },
+            {
+              "uuid": "compress-video-discord36.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            },
+            {
+              "uuid": "compress-video-discord42.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "uuid": "Encoder",
+          "type": "submenu",
+          "user-label": "Encoder",
+          "user-icon": "gnome-display-properties",
+          "accelerator": null,
+          "children": [
+            {
+              "uuid": "CPU",
+              "type": "submenu",
+              "user-label": "CPU",
+              "user-icon": "org.kde.plasma.systemmonitor.cpu",
+              "accelerator": null,
+              "children": [
+                {
+                  "uuid": "convert-to-hevc_cpu.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-h264_cpu.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-av1_cpu.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                }
+              ]
+            },
+            {
+              "uuid": "Mesa",
+              "type": "submenu",
+              "user-label": "Mesa",
+              "user-icon": "pinguin",
+              "accelerator": null,
+              "children": [
+                {
+                  "uuid": "convert-to-h264_vaapi.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-hevc_vaapi.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-av1_vaapi.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                }
+              ]
+            },
+            {
+              "uuid": "AMD Pro",
+              "type": "submenu",
+              "user-label": "AMD Pro",
+              "user-icon": "amd",
+              "accelerator": null,
+              "children": [
+                {
+                  "uuid": "convert-to-h264_amf.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-hevc_amf.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-av1_amf.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                }
+              ]
+            },
+            {
+              "uuid": "Nvidia",
+              "type": "submenu",
+              "user-label": "Nvidia",
+              "user-icon": "nvidia",
+              "accelerator": null,
+              "children": [
+                {
+                  "uuid": "convert-to-h264_nvenc.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                },
+                {
+                  "uuid": "convert-to-hevc_nvenc.nemo_action",
+                  "type": "action",
+                  "user-label": null,
+                  "user-icon": null,
+                  "accelerator": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "Audio",
+          "type": "submenu",
+          "user-label": "Audio",
+          "user-icon": "xfce4-pulseaudio-plugin",
+          "accelerator": null,
+          "children": [
+            {
+              "uuid": "convert-video-to-aac.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            },
+            {
+              "uuid": "convert-video-to-pcm.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            }
+          ]
+        },
+        {
+          "uuid": "Format",
+          "type": "submenu",
+          "user-label": "Format",
+          "user-icon": "mpv",
+          "accelerator": null,
+          "children": [
+            {
+              "uuid": "convert_to_mp4_no_reencoding.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            },
+            {
+              "uuid": "convert_to_mkv_no_reencoding.nemo_action",
+              "type": "action",
+              "user-label": null,
+              "user-icon": null,
+              "accelerator": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "Convert Audio",
+      "type": "submenu",
+      "user-label": "Convert Audio",
+      "user-icon": "ffmpeg",
+      "accelerator": null,
+      "children": [
+        {
+          "uuid": "convert_to_mp3.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        },
+        {
+          "uuid": "convert_to_aac_m4a.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        },
+        {
+          "uuid": "convert_to_pcm.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        }
+      ]
+    },
+    {
+      "uuid": "Convert Image",
+      "type": "submenu",
+      "user-label": "Convert Image",
+      "user-icon": "magicka-2",
+      "accelerator": null,
+      "children": [
+        {
+          "uuid": "convert-to-jpg.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        },
+        {
+          "uuid": "convert-to-png.nemo_action",
+          "type": "action",
+          "user-label": null,
+          "user-icon": null,
+          "accelerator": null
+        }
+      ]
+    },
+    {
+      "uuid": "set-resolution.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "change-background.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    },
+    {
+      "uuid": "set-as-background.nemo_action",
+      "type": "action",
+      "user-label": null,
+      "user-icon": null,
+      "accelerator": null
+    }
+  ]
+}

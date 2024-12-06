@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to H264 (NVENC)
+Comment=Convert the selected video to H264 format with AAC audio
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}-h264_nvenc.${input##*.}"; ffmpeg -i "$input" -c:v h264_nvenc -c:a aac "$output"'
+Icon-Name=media-video
+Selection=File
+Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

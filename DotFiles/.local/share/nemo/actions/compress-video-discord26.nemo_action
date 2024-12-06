@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Compress Video Discord (CRF 26)
+Comment=Compress Video to fit in discord using NVNEC H264 CRF 26
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}-discord26.mp4"; ffmpeg -i "$input" -c:v h264_nvenc -crf 26  -preset fast -c:a aac -b:a 128k "$output"'
+Icon-Name=media-video
+Selection=File
+Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

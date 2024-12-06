@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to PNG
+Comment=Convert the selected image to PNG format
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}.png"; magick "$input" "$output"'
+Icon-Name=media-image
+Selection=File
+Extensions=jpg;jpeg;gif;tiff;bmp;webp;heif;ico;xcf

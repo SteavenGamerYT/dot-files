@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Split Audio and Video
+Comment=Split the selected Video into separate PCM Audio and Same Video files
+Quote=double
+Exec=kitty sh -c 'input="%F"; video_output="${input%.*}-video.${input##*.}"; audio_output="${input%.*}-audio.wav"; ffmpeg -i "$input" -c:v copy -an "$video_output" -c:a pcm_s16le -vn "$audio_output"'
+Icon-Name=video-mlt-playlist
+Selection=File
+Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

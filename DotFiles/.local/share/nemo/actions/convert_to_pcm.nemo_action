@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to wav (pcm_s16le)
+Comment=Convert the selected Audio or Video file to PCM (audio only, no video)
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}.wav"; ffmpeg -i "$input" -vn -acodec pcm_s16le "$output"'
+Icon-Name=audio-x-adpcm
+Selection=File
+Extensions=mp3;wav;flac;avi;mp4;mkv;mov;webm;flv;wmv;mpeg;m4a;

@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to M4A (aac)
+Comment=Convert the selected Audio or Video file to AAC M4A (audio only, no video)
+Quote=double
+Exec=kitty sh -c 'input="%F"; output="${input%.*}.m4a"; ffmpeg -i "$input" -vn -acodec aac -b:a 192k "$output"'
+Icon-Name=audio-x-adpcm
+Selection=File
+Extensions=mp3;wav;flac;avi;mp4;mkv;mov;webm;flv;wmv;mpeg;m4a;
