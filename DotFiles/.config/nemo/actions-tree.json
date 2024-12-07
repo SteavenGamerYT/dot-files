@@ -108,14 +108,14 @@
               "accelerator": null,
               "children": [
                 {
-                  "uuid": "convert-to-hevc_cpu.nemo_action",
+                  "uuid": "convert-to-h264_cpu.nemo_action",
                   "type": "action",
                   "user-label": null,
                   "user-icon": null,
                   "accelerator": null
                 },
                 {
-                  "uuid": "convert-to-h264_cpu.nemo_action",
+                  "uuid": "convert-to-hevc_cpu.nemo_action",
                   "type": "action",
                   "user-label": null,
                   "user-icon": null,
