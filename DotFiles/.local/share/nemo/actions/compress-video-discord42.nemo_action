@@ -2,7 +2,7 @@
 Name=Compress Video Discord (CRF 42)
 Comment=Compress Video to fit in discord using NVNEC H264 CRF 42
 Quote=double
-Exec=kitty sh -c 'input="%F"; output="${input%.*}-discord42.mp4"; ffmpeg -i "$input" -c:v h264_nvenc -crf 42  -preset fast -c:a aac -b:a 128k "$output"'
+Exec=kitty sh -c 'input=%F; output="${input%.*}-discord42.mp4"; ffmpeg -i "$input" -c:v h264_nvenc -rc constqp -qp 42 -preset fast -c:a aac -b:a 128k "$output"'
 Icon-Name=media-video
 Selection=File
 Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;

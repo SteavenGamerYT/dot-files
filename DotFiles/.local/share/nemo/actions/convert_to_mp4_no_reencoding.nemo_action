@@ -2,7 +2,7 @@
 Name=Convert Video to MP4
 Comment=Convert the selected video video to MP4 file
 Quote=double
-Exec=kitty sh -c 'input="%F"; output="${input%.*}.mp4"; ffmpeg -i "$input" -c copy "$output"'
+Exec=kitty sh -c 'input=%F; output="${input%.*}.mp4"; ffmpeg -i "$input" -c copy "$output"'
 Icon-Name=media-video
 Selection=File
 Extensions=avi;mkv;mov;webm;flv;wmv;mpeg;

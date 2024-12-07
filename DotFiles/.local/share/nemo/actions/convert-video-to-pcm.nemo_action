@@ -2,7 +2,7 @@
 Name=Convert Audio to PCM
 Comment=Convert the selected Video to PCM audio with same Video
 Quote=double
-Exec=kitty sh -c 'input="%F"; output="${input%.*}-pcm.${input##*.}"; ffmpeg -i "$input" -c:v copy -c:a pcm_s16le "$output"'
+Exec=kitty sh -c 'input=%F; output="${input%.*}-pcm.${input##*.}"; ffmpeg -i "$input" -c:v copy -c:a pcm_s16le "$output"'
 Icon-Name=audio-x-adpcm
 Selection=File
 Extensions=avi;mp4;mkv;mov;webm;flv;wmv;mpeg;
