@@ -68,7 +68,7 @@ exec swayidle -w \
 
 exec --no-startup-id ~/.config/sway/scripts/kwallet
 exec --no-startup-id nm-applet
-exec --no-startup-id /usr/lib/kdeconnectd
+exec --no-startup-id /usr/bin/kdeconnectd
 exec --no-startup-id swaync
 exec --no-startup-id coolercontrol
 exec --no-startup-id ~/.config/sway/scripts/wallpaper2.sh &
