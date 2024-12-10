@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the user has provided a file as an argument
+if [ -z "$1" ]; then
+  echo "Usage: fbitrate <video-file>"
+  exit 1
+fi
+
+# Run the ffmpeg command on the given file
+ffmpeg -i "$1" 2>&1 | grep -oP "bitrate:\s+\K[\d.]+(?=\s*kb/s)"
