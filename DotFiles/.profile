@@ -38,6 +38,11 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
   export XCURSOR_SIZE=24
 fi
 
+if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
+  export GTK_THEME=Nordic
+  export XCURSOR_THEME=WhiteSur-cursors
+fi
+
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
 
