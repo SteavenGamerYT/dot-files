@@ -3,4 +3,3 @@ hyprctl devices -j |
   sed -n '6p' |
   cut -c1-2 |
   tr 'A-Z' 'a-z'
-

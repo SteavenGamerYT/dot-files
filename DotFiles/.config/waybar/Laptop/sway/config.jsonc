@@ -28,12 +28,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/Laptop/sway/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/Laptop/sway/scripts/nvidia-vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/Laptop/sway/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/Laptop/sway/scripts/nvidia-usage.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },

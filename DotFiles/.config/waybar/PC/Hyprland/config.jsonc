@@ -11,12 +11,12 @@
         "hyprland/window"
     ],
     "modules-right": [
-//        "custom/disks",
-//        "custom/gpuusage",
-//        "custom/vramusage",
-//        "cpu",
-//        "memory",
-//        "backlight",
+        "custom/disks",
+        "custom/gpuusage",
+        "custom/vramusage",
+        "cpu",
+        "memory",
+        "backlight",
         "pulseaudio",
         "pulseaudio#microphone",
         "custom/language",
@@ -29,21 +29,21 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/PC/Hyprland/scripts/vram-usage.sh",
+    "exec": "~/.config/waybar/PC/Hyprland/scripts/amdgpu-vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/PC/Hyprland/scripts/nvidia-smi.sh",
+    "exec": "~/.config/waybar/PC/Hyprland/scripts/amdgpu-usage.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
     "memory": {
-        "interval": 30,
+        "interval": 1,
         "format": "  {used} GiB"
     },
     "cpu": {
-        "interval": 10,
+        "interval": 1,
         "format": "  {usage}%"
    },
    "custom/disks": {

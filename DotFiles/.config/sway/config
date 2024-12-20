@@ -18,6 +18,7 @@ exec_always {
     else
         swaymsg output "HDMI-A-2" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
         swaymsg output "HDMI-A-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
+        swaymsg output "HDMI-A-3" disable
         xrandr --output HDMI-A-1 --primary
         input-remapper-control --command start --device "SINOWEALTH Wired Gaming Mouse" --preset "mouse extra buttons"
     fi
@@ -261,4 +262,3 @@ for_window [app_id="com.obsproject.Studio"] inhibit_idle open
 
 # Fullscreen Waydroid
 for_window [app_id="Waydroid"] fullscreen
-

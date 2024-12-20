@@ -16,3 +16,4 @@ output "HDMI-A-1" {
     adaptive_sync off
     dpms on
 }
+output "HDMI-A-3" disable
