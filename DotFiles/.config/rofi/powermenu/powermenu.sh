@@ -63,26 +63,26 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
+			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "Openbox" ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "bspwm" ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
 			elif [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
 			elif [[ "$XDG_SESSION_DESKTOP" == 'plasma' ]]; then
-				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 			fi
 		elif [[ $1 == '--lock' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
