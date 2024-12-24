@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/launch.sh &
-mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
+aplay "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)" &
 gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors' &
 gsettings set org.gnome.desktop.interface gtk-theme 'Nordic' &
 gsettings set org.gnome.desktop.interface cursor-size 24 &

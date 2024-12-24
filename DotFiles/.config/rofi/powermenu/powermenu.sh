@@ -63,26 +63,26 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
+			aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "Openbox" ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "bspwm" ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
 			elif [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
 			elif [[ "$XDG_SESSION_DESKTOP" == 'plasma' ]]; then
-				mpv --no-video ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+				aplay ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 			fi
 		elif [[ $1 == '--lock' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then

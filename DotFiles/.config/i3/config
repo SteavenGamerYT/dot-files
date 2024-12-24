@@ -16,7 +16,7 @@ exec_always --no-startup-id systemctl --user restart audio
 # Workspace
 workspace 1 output HDMI-0
 # Startup
-exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
+exec_always --no-startup-id aplay "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
 # Theme
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
