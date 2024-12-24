@@ -44,7 +44,7 @@ input "1267:12410:ELAN1203:00_04F3:307A_Mouse" {
 }
 
 # Startup
-exec_always --no-startup-id mpv --no-video "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
+exec_always --no-startup-id aplay "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
 # Theme
 exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
