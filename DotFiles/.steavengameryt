@@ -117,11 +117,11 @@ alias gp='gitpush'  # Alias for gitpush function
 alias gu='gitupdate'  # Alias for gitupdate function
 alias gpush='git-push'  # Alias for git-push function
 alias gcommit='gitcommit'  # Alias for gitcommit function
-alias cdgitf='z ~/GitHub'  # Change directory to GitHub folder
-alias cddot='z ~/GitHub/dot-files'  # Change directory to dot-files folder
-alias web='z /var/www/html'  # Change directory to web server root
-alias home='z ~'  # Change directory to home
-alias bd='cd "$OLDPWD"'  # Go back to the previous directory
+alias cdgitf='z ~/GitHub && ls'  # Change directory to GitHub folder
+alias cddot='z ~/GitHub/dot-files && ls'  # Change directory to dot-files folder
+alias web='z /var/www/html && ls'  # Change directory to web server root
+alias home='z ~ && ls'  # Change directory to home
+alias bd='cd "$OLDPWD" && ls'  # Go back to the previous directory
 alias f="find . | grep "  # Find files and directories matching a pattern
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"  # Count files, links, and directories
 alias checkcommand="type -t"  # Check if a command exists
@@ -178,7 +178,17 @@ gitcommit() {
 
 cdgit() {
     z ~/GitHub/"$1"  # Change directory to a specific GitHub repository
+    ls
 }
+cd() {
+    if [ -z "$1" ]; then
+        builtin cd ~
+    else
+        z "$1"
+    fi
+    ls
+}
+
 
 bash_in_konsole() {
   local IFS
