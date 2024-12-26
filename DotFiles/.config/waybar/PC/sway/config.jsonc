@@ -47,7 +47,7 @@
         "format": "  {usage}%"
    },
    "custom/disks": {
-    "exec": "~/Documents/GitHub/dot-files/.config/waybar/scripts/disk-usage.sh",
+    "exec": "~/.config/waybar/PC/sway/scripts/disk-usage.sh",
     "interval": 1,
     "format": " {}"
   },
