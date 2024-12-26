@@ -23,6 +23,7 @@ exec_always {
         input-remapper-control --command start --device "SINOWEALTH Wired Gaming Mouse" --preset "mouse extra buttons"
     fi
 }
+include ~/.config/sway/pc-display
 # Configure touchpad and mouse settings
 input * {
     dwt disabled
@@ -82,7 +83,6 @@ exec --no-startup-id "vesktop --start-minimized"
 exec --no-startup-id "steam -silent"
 exec --no-startup-id "dropbox"
 exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
-exec --no-startup-id "qbittorrent"
 exec --no-startup-id "sunshine"
 
 # Keybindings
