@@ -13,12 +13,6 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct
 
-  # Override the default style for QT applications
-  export QT_STYLE_OVERRIDE=kvantum-dark
-
-  # Set Kvantum theme
-  export KVANTUM_THEME=Nordic
-
   # Set the icon theme for the desktop environment
   export ICON_THEME=Papirus-Dark
   export QT_QPA_ICONTHEME=Papirus-Dark
