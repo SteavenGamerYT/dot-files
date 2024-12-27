@@ -66,24 +66,28 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id ~/.config/sway/scripts/headset
 exec swayidle -w \
           timeout 300 '~/.config/sway/scripts/lockscreen.sh' \
+          timeout 600 'systemctl suspend' \
           before-sleep '~/.config/sway/scripts/lockscreen.sh'
 
 exec --no-startup-id ~/.config/sway/scripts/kwallet
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/bin/kdeconnectd
 exec --no-startup-id swaync
-exec --no-startup-id coolercontrol
+exec --no-startup-id "sleep 4 && coolercontrol"
 exec --no-startup-id ~/.config/sway/scripts/wallpaper2.sh &
+exec --no-startup-id xwaylandvideobridge
 #exec --no-startup-id easyeffects --gapplication-service
 exec_always --no-startup-id ~/.config/waybar/launch.sh
 
 # Applications
-exec --no-startup-id "discord --start-minimized"
-exec --no-startup-id "vesktop --start-minimized"
-exec --no-startup-id "steam -silent"
-exec --no-startup-id "dropbox"
-exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
-exec --no-startup-id "sunshine"
+exec --no-startup-id "sleep 4 && discord --start-minimized"
+exec --no-startup-id "sleep 4 && vesktop --start-minimized"
+exec --no-startup-id "sleep 4 && steam -silent"
+exec --no-startup-id "sleep 4 && heroic"
+exec --no-startup-id "sleep 4 && sunshine"
+exec --no-startup-id "sleep 4 && dropbox"
+exec --no-startup-id "sleep 4 && /opt/freedownloadmanager/fdm --hidden"
+exec --no-startup-id "sleep 4 && qbittorrent"
 
 # Keybindings
 bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"

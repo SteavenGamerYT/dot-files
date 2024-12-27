@@ -23,8 +23,3 @@ sleep 5
 
 # Start syncthingtray-qt6 and ensure it runs in the background
 syncthingtray-qt6 --replace & disown
-
-# Check if qbittorrent is already running, otherwise start it
-if ! pgrep -x qbittorrent > /dev/null; then
-    qbittorrent & disown
-fi
