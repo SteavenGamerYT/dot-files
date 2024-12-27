@@ -266,3 +266,24 @@ for_window [app_id="com.obsproject.Studio"] inhibit_idle open
 
 # Fullscreen Waydroid
 for_window [app_id="Waydroid"] fullscreen
+
+# Rules for xwaylandvideobridge
+for_window [title=".*Xwayland Video Bridge.*"] opacity 0
+for_window [title=".*Xwayland Video Bridge.*"] no_focus
+for_window [title=".*Xwayland Video Bridge.*"] floating enable
+for_window [title=".*Xwayland Video Bridge.*"] resize set 1 1
+for_window [title=".*Xwayland Video Bridge.*"] no_blur
+
+# Rules for sharing indicators
+for_window [title=".*is sharing your screen.*"] opacity 0
+for_window [title=".*is sharing your screen.*"] no_focus
+for_window [title=".*is sharing your screen.*"] floating enable
+for_window [title=".*is sharing your screen.*"] size 1x1
+for_window [title=".*is sharing your screen.*"] no_blur
+
+# Rules for Firefox Sharing Indicator
+for_window [title=".*Firefox — Sharing Indicator.*"] opacity 0
+for_window [title=".*Firefox — Sharing Indicator.*"] no_focus
+for_window [title=".*Firefox — Sharing Indicator.*"] floating enable
+for_window [title=".*Firefox — Sharing Indicator.*"] size 1x1
+for_window [title=".*Firefox — Sharing Indicator.*"] no_blur
