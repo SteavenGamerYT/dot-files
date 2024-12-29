@@ -69,4 +69,5 @@ case "$TERM" in
 esac
 
 [[ -f /usr/share/bash-preexec/bash-preexec.sh ]] && source /usr/share/bash-preexec/bash-preexec.sh
+source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
