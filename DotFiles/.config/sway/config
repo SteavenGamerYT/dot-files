@@ -7,23 +7,11 @@ set $mod Mod4
 # Set font
 font pango:Roboto Regular 12
 
-# Display Configuration
-exec_always --no-startup-id ~/.config/sway/scripts/display.sh
-# Check if the device is a laptop or desktop
-exec_always {
-    if [ -d /sys/class/power_supply/BAT0 ]; then
-        swaymsg output eDP-1 scale 1.25
-        swaymsg input "1267:12410:ELAN1203:00_04F3:307A_Touchpad" natural_scroll enabled
-        input-remapper-control --command start --device "Asus Keyboard" --preset "right arrow key is broken so i remapped keys"
-    else
-        swaymsg output "HDMI-A-2" mode  1366x768@59.79Hz pos 0 0 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
-        swaymsg output "HDMI-A-1" mode  1920x1080@60.0Hz pos 0 768 transform normal scale 1.0 scale_filter nearest adaptive_sync off dpms on
-        swaymsg output "HDMI-A-3" disable
-        xrandr --output HDMI-A-1 --primary
-        input-remapper-control --command start --device "SINOWEALTH Wired Gaming Mouse" --preset "mouse extra buttons"
-    fi
-}
+# Hardware Configuration
 include ~/.config/sway/pc-display
+exec_always --no-startup-id ~/.config/sway/hardware.sh
+exec_always --no-startup-id ~/.config/sway/scripts/display.sh
+
 # Configure touchpad and mouse settings
 input * {
     dwt disabled
@@ -63,10 +51,12 @@ exec --no-startup-id wl-clip-persist --clipboard regular
 bindsym $mod+v exec cliphist list | rofi -dmenu -theme ~/.config/rofi/nord.rasi | cliphist decode | wl-copy
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
+
 exec_always --no-startup-id ~/.config/sway/scripts/headset
 exec swayidle -w \
           timeout 300 '~/.config/sway/scripts/lockscreen.sh' \
-          timeout 600 'systemctl suspend' \
+#          timeout 600 'systemctl suspend' \
           before-sleep '~/.config/sway/scripts/lockscreen.sh'
 
 exec --no-startup-id ~/.config/sway/scripts/kwallet
@@ -80,30 +70,29 @@ exec --no-startup-id xwaylandvideobridge
 exec_always --no-startup-id ~/.config/waybar/launch.sh
 
 # Applications
-exec --no-startup-id "sleep 4 && discord --start-minimized"
-exec --no-startup-id "sleep 4 && vesktop --start-minimized"
-exec --no-startup-id "sleep 4 && steam -silent"
-exec --no-startup-id "sleep 4 && heroic"
-exec --no-startup-id "sleep 4 && sunshine"
-exec --no-startup-id "sleep 4 && dropbox"
-exec --no-startup-id "sleep 4 && /opt/freedownloadmanager/fdm --hidden"
-exec --no-startup-id "sleep 4 && qbittorrent"
+exec --no-startup-id "sleep 4 && flatpak run com.discordapp.Discord --start-minimized"
+exec --no-startup-id "sleep 4 && flatpak run dev.vencord.Vesktop --start-minimized"
+exec --no-startup-id "sleep 4 && flatpak run com.valvesoftware.Steam -silent"
+exec --no-startup-id "sleep 4 && flatpak run com.heroicgameslauncher"
+exec --no-startup-id "sleep 4 && flatpak run dev.lizardbyte.app.Sunshine"
+exec --no-startup-id "sleep 4 && flatpak run com.dropbox.Client"
+exec --no-startup-id "sleep 4 && flatpak run org.freedownloadmanager.Manager --hidden"
+exec --no-startup-id "sleep 4 && flatpak run org.qbittorrent.qBittorrent"
 
 # Keybindings
-bindsym $mod+l exec "swaylock -i ~/Pictures/wall2.png --effect-blur 7x5 --line-color 4C566A --ring-color 4C566A --text-color ECEFF4 --key-hl-color A3BE8C --indicator-radius 50 --indicator-thickness 7 --grace 2 --fade-in 0.2"
+bindsym $mod+l exec ~/.config/sway/scripts/lockscreen.sh
 bindsym $mod+Return exec kitty
 bindsym $mod+x exec kitty
-bindsym $mod+b exec firefox
+bindsym $mod+b exec "flatpak run org.mozilla.firefox"
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
-#bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
 bindsym $mod+Shift+r exec swaymsg reload
 
 # Screenshots
-bindsym --release Print exec grimshot --notify savecopy output
-bindsym --release $mod+Shift+s exec grimshot --notify savecopy anything
+bindsym Print exec grimshot --notify savecopy output
+bindsym $mod+Shift+s exec grimshot --notify savecopy anything
 
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
 input type:keyboard {
