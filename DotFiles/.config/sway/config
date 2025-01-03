@@ -9,7 +9,7 @@ font pango:Roboto Regular 12
 
 # Hardware Configuration
 include ~/.config/sway/pc-display
-exec_always --no-startup-id ~/.config/sway/hardware.sh
+exec_always --no-startup-id ~/.config/sway/scripts/hardware.sh
 exec_always --no-startup-id ~/.config/sway/scripts/display.sh
 
 # Configure touchpad and mouse settings
