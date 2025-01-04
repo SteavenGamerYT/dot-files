@@ -18,10 +18,18 @@ done
 # Aliases Setup
 # Define aliases for system operations, file handling, and application shortcuts
 # Changing "ls" to "eza"
-alias ls='eza -al --color=always --group-directories-first' # my preferred listing
-alias la='eza -a --color=always --group-directories-first'  # all files and dirs
-alias ll='eza -l --color=always --group-directories-first'  # long format
-alias lt='eza -aT --color=always --group-directories-first' # tree listing
+if command -v eza &> /dev/null; then
+    alias ls='eza -al --color=always --group-directories-first'  # my preferred listing
+    alias la='eza -a --color=always --group-directories-first'  # all files and dirs
+    alias ll='eza -l --color=always --group-directories-first'  # long format
+    alias lt='eza -aT --color=always --group-directories-first'  # tree listing
+else
+    alias ls='ls -al --color=always --group-directories-first'  # fallback to regular ls
+    alias la='ls -a --color=always --group-directories-first'  # fallback to regular ls
+    alias ll='ls -l --color=always --group-directories-first'  # fallback to regular ls
+    alias lt='ls -aT --color=always --group-directories-first'  # fallback to regular ls
+fi
+
 alias l.='eza -al --color=always --group-directories-first ../' # ls on the PARENT directory
 alias l..='eza -al --color=always --group-directories-first ../../' # ls on directory 2 levels up
 alias l...='eza -al --color=always --group-directories-first ../../../' # ls on directory 3 levels up
@@ -177,14 +185,23 @@ gitcommit() {
 }
 
 cdgit() {
-    z ~/GitHub/"$1"  # Change directory to a specific GitHub repository
+    if command -v z &> /dev/null; then
+        z ~/GitHub/"$1"  # Change directory to a specific GitHub repository using zoxide
+    else
+        cd ~/GitHub/"$1"  # Fallback to regular cd if zoxide is not found
+    fi
     ls
 }
+
 cd() {
     if [ -z "$1" ]; then
         builtin cd ~
     else
-        z "$1"
+        if command -v z &> /dev/null; then
+            z "$1"  # Use zoxide if available
+        else
+            builtin cd "$1"  # Fall back to regular cd if zoxide is not found
+        fi
     fi
     ls
 }

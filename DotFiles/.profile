@@ -42,6 +42,34 @@ if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
   export XCURSOR_THEME=WhiteSur-cursors
 fi
 
+if [ "$XDG_SESSION_DESKTOP" = "gnome" ]; then
+  # Override the default style for QT applications
+  export QT_STYLE_OVERRIDE=kvantum-dark
+  # Set Kvantum theme
+  export KVANTUM_THEME=Nordic-solid
+
+  # Set the platform theme for QT applications
+  export QT_QPA_PLATFORMTHEME=qt5ct
+
+  # Set the icon theme for the desktop environment
+  export ICON_THEME=Papirus-Dark
+  export QT_QPA_ICONTHEME=Papirus-Dark
+
+  # Set the GTK theme to use for applications
+  export GTK_THEME=Nordic
+
+  # Set the cursor theme across various environments
+  export CURSOR_THEME=WhiteSur-cursors
+  export QT_QT_CURSORTHEME=WhiteSur-cursors
+  export QT_QT5_CURSORTHEME=WhiteSur-cursors
+  export QT_QT6_CURSORTHEME=WhiteSur-cursors
+  export XCURSOR_THEME=WhiteSur-cursors
+
+  # Define the cursor size for different environments
+  export CURSOR_SIZE=24
+  export XCURSOR_SIZE=24
+fi
+
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
 
