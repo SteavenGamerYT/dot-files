@@ -59,15 +59,31 @@ fi
 eval "$(zoxide init bash)"  # Initialize zoxide for smarter directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
+# Check for fastfetch in the two locations
+if [ -f "/usr/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/usr/bin/fastfetch"
+elif [ -f "/home/linuxbrew/.linuxbrew/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/home/linuxbrew/.linuxbrew/bin/fastfetch"
+else
+  echo 'fastfetch not found'
+  return  # Exit if fastfetch is not found
+fi
+
+# Terminal-specific commands
 case "$TERM" in
   "xterm-kitty")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
+    $FASTFETCH_BIN --config ~/.config/fastfetch/config-kitty.jsonc
     ;;
   "xterm-256color")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
+    $FASTFETCH_BIN --config ~/.config/fastfetch/config.jsonc
+    ;;
+  *)
+    echo "Unsupported terminal: $TERM"
     ;;
 esac
+
 
 [[ -f /usr/share/bash-preexec/bash-preexec.sh ]] && source /usr/share/bash-preexec/bash-preexec.sh
 source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

@@ -68,11 +68,25 @@ eval "$(atuin init zsh)"  # Initialize Atuin for enhanced shell history
 eval "$(zoxide init zsh)"  # Initialize zoxide for quick directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
+# Check for fastfetch in the two locations
+if [ -f "/usr/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/usr/bin/fastfetch"
+elif [ -f "/home/linuxbrew/.linuxbrew/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/home/linuxbrew/.linuxbrew/bin/fastfetch"
+else
+  echo 'fastfetch not found'
+  return  # Exit if fastfetch is not found
+fi
+
+# Terminal-specific commands
 case "$TERM" in
   "xterm-kitty")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config-kitty.jsonc
+    $FASTFETCH_BIN --config ~/.config/fastfetch/config-kitty.jsonc
     ;;
   "xterm-256color")
-    /usr/bin/fastfetch --config ~/.config/fastfetch/config.jsonc
+    $FASTFETCH_BIN --config ~/.config/fastfetch/config.jsonc
+    ;;
+  *)
+    echo "Unsupported terminal: $TERM"
     ;;
 esac
