@@ -51,4 +51,5 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 hyprctl setcursor WhiteSur-cursors 24
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 ```

@@ -1,0 +1,2 @@
+[Context]
+filesystems=/mnt/hdd2/Games:rw;/mnt/hdd/Games:rw;/mnt/hdd2/SteamLibrary:rw;/mnt/hdd/SteamLibrary:rw

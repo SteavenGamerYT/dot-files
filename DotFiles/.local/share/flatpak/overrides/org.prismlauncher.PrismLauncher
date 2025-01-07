@@ -1,0 +1,7 @@
+[Context]
+filesystems=xdg-config/MangoHud:ro
+
+[Environment]
+QT_QPA_PLATFORMTHEME=gtk3
+QT_STYLE_OVERRIDE=Breeze
+

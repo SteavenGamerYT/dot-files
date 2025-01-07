@@ -1,0 +1,6 @@
+[Context]
+sockets=!wayland
+filesystems=~/GitHub:rw
+
+[Environment]
+ELECTRON_OZONE_PLATFORM_HINT=
