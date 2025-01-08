@@ -1,5 +1,5 @@
 [Context]
-filesystems=~/.icons:ro;~/.themes:ro;xdg-config/Kvantum:ro;xdg-config/gtkrc:ro;xdg-config/fontconfig:ro;xdg-config/gtk-4.0:ro;xdg-config/gtk-3.0:ro;xdg-config/gtkrc-2.0:ro;xdg-config/qt5ct:ro;xdg-config/qt6ct:ro;~/.local/share/icons:ro;~/.local/share/themes:ro;/run/host/usr/share/icons:ro;/run/host/usr/share/themes:ro
+filesystems=/run/host/usr/share/themes:ro;xdg-config/gtk-4.0:ro;xdg-config/qt6ct:ro;~/.icons:ro;xdg-data/themes;xdg-config/fontconfig:ro;xdg-config/gtkrc-2.0:ro;xdg-config/gtkrc:ro;xdg-config/Kvantum:ro;xdg-config/gtk-3.0:ro;~/.themes:ro;xdg-config/qt5ct:ro;~/.local/share/icons:ro;/run/host/usr/share/icons:ro;~/.local/share/themes:ro;
 
 [Environment]
 XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
