@@ -42,7 +42,7 @@ if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
   export XCURSOR_THEME=WhiteSur-cursors
 fi
 
-if [ "$XDG_SESSION_DESKTOP" = "gnome" ]; then
+if [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
   # Override the default style for QT applications
   export QT_STYLE_OVERRIDE=kvantum-dark
   # Set Kvantum theme
