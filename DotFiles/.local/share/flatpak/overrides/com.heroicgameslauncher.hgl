@@ -1,18 +1,2 @@
 [Context]
-filesystems=/mnt/hdd2/Epic Games:rw;/mnt/hdd/Epic Games:rw;~/Games:rw
-sockets=!wayland
-
-[Environment]
-ELECTRON_OZONE_PLATFORM_HINT=
-
-
-
-
-
-
-
-
-
-
-
-
+filesystems=/mnt/nvme/Epic Games:rw;~/Games:rw;/mnt/hdd/Epic Games:rw;/mnt/hdd2/Epic Games:rw

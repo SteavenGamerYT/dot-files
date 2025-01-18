@@ -1,6 +1,2 @@
 [Context]
-sockets=!wayland
 filesystems=~/Music:ro
-
-[Environment]
-ELECTRON_OZONE_PLATFORM_HINT=
