@@ -1,5 +1,4 @@
 include /etc/sway/config.d/*
-#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_DESKTOP=sway
 
 # Set Mod key
 set $mod Mod4

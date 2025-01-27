@@ -1,7 +1,7 @@
 [Context]
 filesystems=~/Music:ro
 
-[Environment]
-QT_QPA_PLATFORMTHEME=gtk3
-QT_STYLE_OVERRIDE=Breeze
+#[Environment]
+#QT_QPA_PLATFORMTHEME=gtk3
+#QT_STYLE_OVERRIDE=Breeze
 

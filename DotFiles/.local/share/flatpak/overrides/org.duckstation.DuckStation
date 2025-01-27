@@ -1,0 +1,2 @@
+[Context]
+filesystems=/mnt/hdd2/Roms/PlayStation 1:ro;~/SaveGames/duckstation:rw
