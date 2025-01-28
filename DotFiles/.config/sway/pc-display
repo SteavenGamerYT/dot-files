@@ -16,6 +16,15 @@ output "HDMI-A-1" {
     adaptive_sync off
     dpms on
 }
+output "DP-2" {
+    mode  1920x1080@60.0Hz
+    pos 1920 984
+    transform normal
+    scale 1.25
+    scale_filter nearest
+    adaptive_sync off
+    dpms on
+}
 output "HDMI-A-3" disable
 workspace 1 output HDMI-A-2
 workspace 2 output HDMI-A-1

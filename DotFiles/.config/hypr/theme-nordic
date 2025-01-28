@@ -13,12 +13,14 @@ env = HYPRCURSOR_THEME,WhiteSur-cursors
 env = CURSOR_SIZE,24 
 env = XCURSOR_SIZE,24
 env = HYPRCURSOR_SIZE,24
+
 exec = uwsm app -- hyprctl setcursor WhiteSur-cursors 24
-exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 exec = uwsm app -- gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
-exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-size 24
 exec = uwsm app -- gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-size 24
 exec = uwsm app -- gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface font-name 'Roboto Regular 12'
 
 general {
   gaps_in = 5

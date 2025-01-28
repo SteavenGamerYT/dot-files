@@ -1,4 +1,6 @@
 include /etc/sway/config.d/*
+exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+exec --no-startup-id dbus-update-activation-environment --all
 
 # Set Mod key
 set $mod Mod4
@@ -35,11 +37,16 @@ input "1267:12410:ELAN1203:00_04F3:307A_Mouse" {
 exec_always --no-startup-id mpv --config-dir=/dev/null --no-video --no-resume-playback "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
 
 # Theme
-exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
-exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
-exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 24
-exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-exec --no-startup-id gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Nordic'
+    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+    gsettings set $gnome-schema cursor-theme 'WhiteSur-cursors'
+    gsettings set $gnome-schema cursor-size 24
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
+    gsettings set $gnome-schema font-name 'Roboto Regular 12'
+}
+seat seat0 xcursor_theme WhiteSur-cursors 24
 
 # Autostart
 # System Utitles
@@ -275,3 +282,32 @@ for_window [title=".*Firefox — Sharing Indicator.*"] no_focus
 for_window [title=".*Firefox — Sharing Indicator.*"] floating enable
 for_window [title=".*Firefox — Sharing Indicator.*"] size 1x1
 for_window [title=".*Firefox — Sharing Indicator.*"] no_blur
+
+# Rules for floating windows
+for_window [window_role = "pop-up"] floating enable
+for_window [window_role = "bubble"] floating enable
+for_window [window_role = "dialog"] floating enable
+for_window [window_type = "dialog"] floating enable
+for_window [window_role = "task_dialog"] floating enable
+for_window [window_type = "menu"] floating enable
+for_window [app_id = "floating"] floating enable
+for_window [app_id = "floating_update"] floating enable, resize set width 1000px height 600px
+for_window [class = "(?i)pinentry"] floating enable
+for_window [title = "Administrator privileges required"] floating enable
+
+# Rules for Firefox
+for_window [title = "About Mozilla Firefox"] floating enable
+for_window [window_role = "About"] floating enable
+for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
+
+# Rules for Steam
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
