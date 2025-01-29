@@ -1,66 +1,44 @@
-# HY3
-bind = SUPER, left, hy3:movefocus, l
-bind = SUPER, right, hy3:movefocus, r
-bind = SUPER, up, hy3:movefocus, u
-bind = SUPER, down, hy3:movefocus, d
-bind = SUPER SHIFT, left, hy3:movewindow, l
-bind = SUPER SHIFT, right, hy3:movewindow, r
-bind = SUPER SHIFT, up, hy3:movewindow, u
-bind = SUPER SHIFT, down, hy3:movewindow, d
-#exec-once = hyprpm reload -n
+# HY3 Keybindings
+bind = SUPER, left, hy3:movefocus, l # Move focus to the left window
+bind = SUPER, right, hy3:movefocus, r # Move focus to the right window
+bind = SUPER, up, hy3:movefocus, u # Move focus to the window above
+bind = SUPER, down, hy3:movefocus, d # Move focus to the window below
+bind = SUPER SHIFT, left, hy3:movewindow, l # Move window to the left
+bind = SUPER SHIFT, right, hy3:movewindow, r # Move window to the right
+bind = SUPER SHIFT, up, hy3:movewindow, u # Move window up
+bind = SUPER SHIFT, down, hy3:movewindow, d # Move window down
+
+# Group Management
+bind = SUPER, S, hy3:makegroup, tab # Set layout to tabbed (stacking group)
+bind = SUPER, W, hy3:makegroup, v # Set layout to vertical split
+bind = SUPER, E, hy3:changegroup, opposite # Toggle between split types (horizontal, vertical, or tabbed)
+
+# Mouse Bindings for HY3
+bindn = , mouse:272, hy3:focustab, mouse # Bind left mouse button to focus tab while allowing window clicks
+
+# HY3 Plugin Configuration
 plugin = /usr/lib/libhy3.so
-
-# Set layout to stacking (tabbed group)
-bind = SUPER, S, hy3:makegroup, tab
-
-# binds hy3:focustab to lmb and still allows windows to receive clicks
-bindn = , mouse:272, hy3:focustab, mouse
 
 plugin {
   hy3 {
-    # autotiling settings
+    # Autotiling Settings
     autotile {
-      # enable autotile
-      enable = true # default: false
-
-
-    # policy controlling what happens when a node is removed from a group,
-    # leaving only a group
-    # 0 = remove the nested group
-    # 1 = keep the nested group
-    # 2 = keep the nested group only if its parent is a tab group
-    node_collapse_policy = 2 # default: 2
-
-      # make autotile-created groups ephemeral
-      ephemeral_groups = true # default: true
-
-      # if a window would be squished smaller than this width, a vertical split will be created
-      # -1 = never automatically split vertically
-      # 0 = always automatically split vertically
-      # <number> = pixel height to split at
-      trigger_width = 0 # default: 0
-
-      # if a window would be squished smaller than this height, a horizontal split will be created
-      # -1 = never automatically split horizontally
-      # 0 = always automatically split horizontally
-      # <number> = pixel height to split at
-      trigger_height = 0 # default: 0
-
-      # a space or comma separated list of workspace ids where autotile should be enabled
-      # it's possible to create an exception rule by prefixing the definition with "not:"
-      # workspaces = 1,2 # autotiling will only be enabled on workspaces 1 and 2
-      # workspaces = not:1,2 # autotiling will be enabled on all workspaces except 1 and 2
-      workspaces = all # default: all
+      enable = true # Enable autotiling
+      ephemeral_groups = true # Make autotile-created groups ephemeral
+      trigger_width = 0 # Always split vertically if width is constrained
+      trigger_height = 0 # Always split horizontally if height is constrained
+      workspaces = all # Enable autotiling on all workspaces
     }
+
+    # Node Collapse Policy
+    # 0 = remove nested group
+    # 1 = keep nested group
+    # 2 = keep nested group only if its parent is a tab group
+    node_collapse_policy = 2 # Default: 2
   }
 }
 
-# Set layout to tabbed (horizontal or vertical split)
-bind = SUPER, W, hy3:makegroup, v
-
-# Toggle between split types (horizontal, vertical, or tabbed)
-bind = SUPER, E, hy3:changegroup, opposite
-
+# General Settings
 general {
-  layout = hy3
+  layout = hy3 # Use HY3 layout
 }

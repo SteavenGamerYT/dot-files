@@ -1,14 +1,21 @@
-bind = SUPER, P, pseudo, # dwindle
-bind = SUPER, S, togglesplit, # dwindle
-bind = SUPER, left, movefocus, l
-bind = SUPER, right, movefocus, r
-bind = SUPER, up, movefocus, u
-bind = SUPER, down, movefocus, d
-bind = SUPER SHIFT, left, movewindow, l
-bind = SUPER SHIFT, right, movewindow, r
-bind = SUPER SHIFT, up, movewindow, u
-bind = SUPER SHIFT, down, movewindow, d
+# Keybindings for window management
+bind = SUPER, P, pseudo, # dwindle (toggle pseudo-tiling)
+bind = SUPER, S, togglesplit, # dwindle (toggle split orientation)
+bind = SUPER, left, movefocus, l # Move focus to the left window
+bind = SUPER, right, movefocus, r # Move focus to the right window
+bind = SUPER, up, movefocus, u # Move focus to the window above
+bind = SUPER, down, movefocus, d # Move focus to the window below
+bind = SUPER SHIFT, left, movewindow, l # Move window to the left
+bind = SUPER SHIFT, right, movewindow, r # Move window to the right
+bind = SUPER SHIFT, up, movewindow, u # Move window up
+bind = SUPER SHIFT, down, movewindow, d # Move window down
 
+# General settings
 general {
-  layout = dwindle
+  layout = dwindle # Use the dwindle layout for tiling
+}
+
+dwindle {
+  pseudotile = true
+  preserve_split = true
 }
