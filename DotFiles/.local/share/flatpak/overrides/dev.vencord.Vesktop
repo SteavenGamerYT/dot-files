@@ -1,2 +1,2 @@
 [Context]
-filesystems=~/Music:ro
+filesystems=~/Music:ro;home
