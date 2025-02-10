@@ -13,24 +13,24 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
   # Override the default style for QT applications
   export QT_STYLE_OVERRIDE=kvantum-dark
   # Set Kvantum theme
-  export KVANTUM_THEME=Nordic
+  export KVANTUM_THEME=FluentDark
 
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct
 
   # Set the icon theme for the desktop environment
-  export ICON_THEME=Papirus-Dark
-  export QT_QPA_ICONTHEME=Papirus-Dark
+  export ICON_THEME=Fluent-dark
+  export QT_QPA_ICONTHEME=Fluent-dark
 
   # Set the GTK theme to use for applications
-  export GTK_THEME=Nordic
+  export GTK_THEME=Fluent-Dark
 
   # Set the cursor theme across various environments
-  export CURSOR_THEME=WhiteSur-cursors
-  export QT_QT_CURSORTHEME=WhiteSur-cursors
-  export QT_QT5_CURSORTHEME=WhiteSur-cursors
-  export QT_QT6_CURSORTHEME=WhiteSur-cursors
-  export XCURSOR_THEME=WhiteSur-cursors
+  export CURSOR_THEME=Fluent-cursors
+  export QT_QT_CURSORTHEME=Fluent-cursors
+  export QT_QT5_CURSORTHEME=Fluent-cursors
+  export QT_QT6_CURSORTHEME=Fluent-cursors
+  export XCURSOR_THEME=Fluent-cursors
 
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
@@ -38,32 +38,32 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
 fi
 
 if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
-  export GTK_THEME=Nordic
-  export XCURSOR_THEME=WhiteSur-cursors
+  export GTK_THEME=Fluent-Dark
+  export XCURSOR_THEME=Fluent-cursors
 fi
 
 if [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
   # Override the default style for QT applications
   export QT_STYLE_OVERRIDE=kvantum-dark
   # Set Kvantum theme
-  export KVANTUM_THEME=Nordic-solid
+  export KVANTUM_THEME=FluentDark
 
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt5ct
 
   # Set the icon theme for the desktop environment
-  export ICON_THEME=Papirus-Dark
-  export QT_QPA_ICONTHEME=Papirus-Dark
+  export ICON_THEME=Fluent-dark
+  export QT_QPA_ICONTHEME=Fluent-dark
 
   # Set the GTK theme to use for applications
-  export GTK_THEME=Nordic
+  export GTK_THEME=Fluent-Dark
 
   # Set the cursor theme across various environments
-  export CURSOR_THEME=WhiteSur-cursors
-  export QT_QT_CURSORTHEME=WhiteSur-cursors
-  export QT_QT5_CURSORTHEME=WhiteSur-cursors
-  export QT_QT6_CURSORTHEME=WhiteSur-cursors
-  export XCURSOR_THEME=WhiteSur-cursors
+  export CURSOR_THEME=Fluent-cursors
+  export QT_QT_CURSORTHEME=Fluent-cursors
+  export QT_QT5_CURSORTHEME=Fluent-cursors
+  export QT_QT6_CURSORTHEME=Fluent-cursors
+  export XCURSOR_THEME=Fluent-cursors
 
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
