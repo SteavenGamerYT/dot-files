@@ -1,15 +1,15 @@
-@define-color background #242424;
-@define-color foreground #FFFFFF;
-@define-color foreground-alt #D1D5DA;
-@define-color alpha #1E1E1E;
-@define-color shade1 #383C3E;
-@define-color shade2 #4A4A4A;
-@define-color shade3 #505050;
-@define-color shade4 #585858;
-@define-color shade5 #606060;
-@define-color shade6 #686868;
-@define-color shade7 #707070;
-@define-color shade8 #787878;
+@define-color background #333333;
+@define-color foreground #F5F5F5;
+@define-color foreground-alt #FFFFFF;
+@define-color alpha #39444f;
+@define-color shade1 #434c5e;
+@define-color shade2 #4C566A;
+@define-color shade3 #4C566A;
+@define-color shade4 #4C566A;
+@define-color shade5 #4C566A;
+@define-color shade6 #4C566A;
+@define-color shade7 #4C566A;
+@define-color shade8 #4C566A;
 
 * {
     border-radius: 0;

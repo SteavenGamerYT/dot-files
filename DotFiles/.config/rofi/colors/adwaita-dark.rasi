@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : CHATGPT (Chatgpt great for everyday tasks)
+ * Site : chatgpt.com
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #1E1E1EFF;
+    background-alt: #2C2C2CFF;
+    foreground:     #E6E6E6FF;
+    selected:       #3584E4FF;
+    active:         #33D17AFF;
+    urgent:         #E01B24FF;
+}

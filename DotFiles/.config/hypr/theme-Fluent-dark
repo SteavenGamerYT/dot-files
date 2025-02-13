@@ -1,0 +1,58 @@
+env = QT_QPA_PLATFORMTHEME,qt5ct
+env = QT_STYLE_OVERRIDE,kvantum-dark
+env = KVANTUM_THEME,FluentDark
+env = ICON_THEME,Fluent-dark
+env = QT_QPA_ICONTHEME,Fluent-dark
+env = GTK_THEME,Fluent-Dark
+env = CURSOR_THEME,Fluent-cursors 
+env = QT_QT_CURSORTHEME,Fluent-cursors
+env = QT_QT5_CURSORTHEME,Fluent-cursors
+env = QT_QT6_CURSORTHEME,Fluent-cursors
+env = XCURSOR_THEME,Fluent-cursors
+env = HYPRCURSOR_THEME,Fluent-cursors
+env = CURSOR_SIZE,24 
+env = XCURSOR_SIZE,24
+env = HYPRCURSOR_SIZE,24
+
+exec = uwsm app -- hyprctl setcursor Fluent-cursors 24
+exec = uwsm app -- gsettings set org.gnome.desktop.interface gtk-theme 'Fluent-Dark'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface icon-theme 'Fluent-dark'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-theme 'Fluent-cursors'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface cursor-size 24
+exec = uwsm app -- gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec = uwsm app -- gsettings set org.gnome.desktop.interface font-name 'Roboto Regular 12'
+
+general {
+  gaps_in = 5
+  gaps_out = 5
+  border_size = 2
+  col.active_border = 0xFF4C566A
+  col.inactive_border = 0xFF3B4252
+#  layout = dwindle
+}
+
+decoration {
+  shadow {
+    enabled = true
+    ignore_window = true
+    offset = 2 2
+    range = 4
+    render_power = 2
+    color = 0x66000000
+  }
+  rounding = 8
+  active_opacity = 1.0
+  inactive_opacity = 1.0
+  blurls = gtk-layer-shell
+  blurls = rofi
+  # blurls = waybar
+  blurls = lockscreen
+  blur {
+    enabled = true
+    size = 4
+    passes = 2
+    new_optimizations = true
+  }
+}
+bind = SUPER, D, exec, uwsm app -- killall rofi || ~/.config/rofi/launcher/launcher.sh
+bind = SUPER, period, exec, uwsm app -- killall rofi || rofi -show emoji -emoji-format "{emoji}" -modi emoji -theme ~/.config/polybar/scripts/rofi/nord.rasi
