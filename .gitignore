@@ -8,4 +8,6 @@ DotFiles/.config/sway/wallpaper.conf
 DotFiles/.config/sway/outputs
 DotFiles/.config/sway/workspaces
 DotFiles/.config/hypr/wallpaper.conf
+DotFiles/.config/hypr/monitors.conf
+DotFiles/.config/hypr/workspaces.conf
 DotFiles/.config/mpv/memo-history.log

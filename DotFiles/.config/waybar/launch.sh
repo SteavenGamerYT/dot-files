@@ -1,7 +1,13 @@
 #!/bin/bash
 
 # Kill all instances of waybar (if any)
-killall -q waybar
+
+kill $(pidof waybar)
+
+if pgrep -x waybar > /dev/null; then
+    syncthingtray-qt6 --replace & disown
+    exit
+fi
 
 # Determine system configuration based on battery presence and desktop environment
 if [ -d /sys/class/power_supply/BAT0 ]; then

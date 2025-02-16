@@ -2,17 +2,17 @@
  * vim: ft=less
  */
 
- @define-color noti-border-color rgba(255, 255, 255, 0.12);
- @define-color noti-bg #1E1E1E;
- @define-color noti-bg-alt #252525;
- @define-color noti-fg #D1D5DB;
- @define-color noti-bg-hover #3A3D41;
- @define-color noti-bg-focus #4F5459;
- @define-color noti-close-bg rgba(255, 255, 255, 0.08);
- @define-color noti-close-bg-hover rgba(255, 255, 255, 0.16);
- @define-color noti-urgent #E75480;
+ @define-color noti-border-color rgba(255, 255, 255, 0.15);
+ @define-color noti-bg #2E3440;
+ @define-color noti-bg-alt #383E4A;
+ @define-color noti-fg #E5E9F0;
+ @define-color noti-bg-hover #81A1C1;
+ @define-color noti-bg-focus #A3BE8C;
+ @define-color noti-close-bg rgba(255, 255, 255, 0.1);
+ @define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
+ @define-color noti-urgent #BF616A;
  
- @define-color bg-selected #0A84FF; 
+ @define-color bg-selected rgb(0, 128, 255);
  
  *{
    color: @noti-fg;

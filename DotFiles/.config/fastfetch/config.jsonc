@@ -86,6 +86,10 @@
             "key": "  "
         },
         {
+            "type": "board",
+            "key": "  "
+        },
+        {
             "type": "cpu",
             "key": "  "
         },
@@ -119,10 +123,10 @@
             "key": "  "
         },
 
-        // Age / Uptime / Days Section
+        // Age / Uptime
         {
             "type": "custom",
-            "format": "┣━━━━━━━━━━━━━━━━━━ AGE / Uptime / Days ━━━━━━━━━━━━━━━━━━┫"
+            "format": "┣━━━━━━━━━━━━━━━━━━ AGE / Uptime ━━━━━━━━━━━━━━━━━━┫"
         },
         {
             "type": "command",
@@ -130,28 +134,14 @@
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); echo $(( (current - birth_install) / 86400 )) days"
         },
         {
+            "type": "command",
+            "key": "  Home Disk Age ",
+            "text": "birth_install=$(stat -c %W /home); current=$(date +%s); echo $(( (current - birth_install) / 86400 )) days"
+        },
+        {
             "type": "uptime",
             "key": "  Uptime "
         },
-        {
-            "type": "command",
-            "shell": "/bin/bash",
-            "key": "  Time Start ",
-            "text": "echo '08/27/2024 3:23PM'"
-        },
-        {
-            "type": "command",
-            "shell": "/bin/bash",
-            "key": "  Days Done ",
-            "text": "~/.config/fastfetch/progress.sh"
-        },
-        {
-            "type": "command",
-            "shell": "/bin/bash",
-            "key": "  Days Left ",
-            "text": "~/.config/fastfetch/date.sh"
-        },
-
         // End Section
         {
             "type": "custom",

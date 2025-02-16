@@ -47,3 +47,9 @@ ln -s ~/DotFiles/.config/Kvantum ~/.config/Kvantum
 ln -s ~/DotFiles/.config/gtk-2.0 ~/.config/gtk-2.0
 ln -s ~/DotFiles/.config/gtk-3.0 ~/.config/gtk-3.0
 ln -s ~/DotFiles/.config/gtk-4.0 ~/.config/gtk-4.0
+
+
+#cp -r ~/DotFiles/.config/Kvantum ~/.config/Kvantum
+#cp -r ~/DotFiles/.config/gtk-2.0 ~/.config/gtk-2.0
+#cp -r ~/DotFiles/.config/gtk-3.0 ~/.config/gtk-3.0
+#cp -r ~/DotFiles/.config/gtk-4.0 ~/.config/gtk-4.0

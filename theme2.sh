@@ -41,6 +41,7 @@ cp ~/DotFiles/.config/waybar/PC/Hyprland/style-adwaita-dark.css ~/DotFiles/.conf
 cp ~/DotFiles/.config/waybar/PC/sway/style-adwaita-dark.css ~/DotFiles/.config/waybar/PC/sway/style.css
 cp ~/DotFiles/.config/waybar/Laptop/Hyprland/style-adwaita-dark.css ~/DotFiles/.config/waybar/Laptop/Hyprland/style.css
 cp ~/DotFiles/.config/waybar/Laptop/sway/style-adwaita-dark.css ~/DotFiles/.config/waybar/Laptop/sway/style.css
+cp ~/DotFiles/.config/swaync/style-adwaita-dark.css ~/DotFiles/.config/swaync/style.css
 hyprctl setcursor Fluent-cursors 24
 gsettings set org.gnome.desktop.interface gtk-theme 'Fluent-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Fluent-dark'
