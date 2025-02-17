@@ -1,2 +1,2 @@
 [Context]
-filesystems=!xdg-config/gtk-3.0;!xdg-config/Kvantum;!xdg-data/themes;!xdg-config/gtk-4.0;~/SaveGames:rw;/mnt/nvme/SteamLibrary:rw;/mnt/nvme/Games:rw;/mnt/hdd/SteamLibrary:rw;/mnt/hdd2/SteamLibrary:rw;/mnt/hdd/Games:rw;/mnt/hdd2/Games:rw
+filesystems=!xdg-config/gtk-3.0;!xdg-config/Kvantum;!xdg-data/themes;!xdg-config/gtk-4.0;~/.local/bin/gameutils:ro;/mnt/hdd2/Games:rw;/mnt/hdd/Games:rw;/mnt/hdd2/SteamLibrary:rw;/mnt/hdd/SteamLibrary:rw;/mnt/nvme/Games:rw;/mnt/nvme/SteamLibrary:rw;~/SaveGames:rw

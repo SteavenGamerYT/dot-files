@@ -42,6 +42,7 @@ cp ~/DotFiles/.config/waybar/PC/sway/style-nordic.css ~/DotFiles/.config/waybar/
 cp ~/DotFiles/.config/waybar/Laptop/Hyprland/style-nordic.css ~/DotFiles/.config/waybar/Laptop/Hyprland/style.css
 cp ~/DotFiles/.config/waybar/Laptop/sway/style-nordic.css ~/DotFiles/.config/waybar/Laptop/sway/style.css
 cp ~/DotFiles/.config/swaync/style-nordic.css ~/DotFiles/.config/swaync/style.css
+cp ~/DotFiles/.config/rofi/clipboard-nord.rasi ~/DotFiles/.config/rofi/clipboard.rasi
 hyprctl setcursor WhiteSur-cursors 24
 gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
