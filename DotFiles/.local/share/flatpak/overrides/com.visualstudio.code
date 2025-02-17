@@ -1,3 +1,3 @@
 [Context]
 sockets=wayland
-filesystems=~/GitHub:rw
+filesystems=~/GitHub:rw;~/GitHub/dot-files:rw

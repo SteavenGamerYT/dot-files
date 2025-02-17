@@ -63,26 +63,26 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
+			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "Openbox" ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "bspwm" ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
 			elif [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
 			elif [[ "$XDG_SESSION_DESKTOP" == 'plasma' ]]; then
-				mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 			fi
 		elif [[ $1 == '--lock' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
