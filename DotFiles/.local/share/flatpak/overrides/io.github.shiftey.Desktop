@@ -1,2 +1,2 @@
 [Context]
-filesystems=~/GitHub:rw
+filesystems=~/GitHub:rw;~/GitHub/dot-files:rw
