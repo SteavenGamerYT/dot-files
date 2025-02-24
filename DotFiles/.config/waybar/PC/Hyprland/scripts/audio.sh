@@ -10,21 +10,31 @@ sinks=(
 # Get the current default sink
 current_sink=$(pactl get-default-sink)
 
-# Find the index of the current sink in the array
+# Filter available sinks
+available_sinks=()
+for sink in "${sinks[@]}"; do
+    if pactl list sinks short | grep -q "$sink"; then
+        available_sinks+=("$sink")
+    fi
+done
+
+# If no available sinks, exit
+if [[ ${#available_sinks[@]} -eq 0 ]]; then
+    echo "No available sinks found!"
+    exit 1
+fi
+
+# Find the index of the current sink in the available sinks
 index=-1
-for i in "${!sinks[@]}"; do
-    if [[ "${sinks[$i]}" == "$current_sink" ]]; then
+for i in "${!available_sinks[@]}"; do
+    if [[ "${available_sinks[$i]}" == "$current_sink" ]]; then
         index=$i
         break
     fi
 done
 
 # Calculate the next sink index (cycling back to 0 if at the end)
-if [[ $index -ge 0 ]]; then
-    next_index=$(( (index + 1) % ${#sinks[@]} ))
-else
-    next_index=0 # Default to the first sink if the current isn't found
-fi
+next_index=$(( (index + 1) % ${#available_sinks[@]} ))
 
 # Set the next sink as default
-pactl set-default-sink "${sinks[$next_index]}"
+pactl set-default-sink "${available_sinks[$next_index]}"

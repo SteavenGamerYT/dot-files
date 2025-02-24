@@ -102,3 +102,69 @@ kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill 
 
 ** (waybar:251263): WARNING **: 00:50:56.787: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
 ./launch.sh: line 31: syncthingtray-qt6: command not found
+
+** (waybar:251263): WARNING **: 01:00:42.709: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:251263): LIBDBUSMENU-GLIB-WARNING **: 01:03:03.658: Getting layout failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownObject: No such object path '/MenuBar'
+
+** (waybar:251263): WARNING **: 01:03:03.659: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:251263): WARNING **: 02:50:23.467: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+ok
+ok
+ok
+ok
+ok
+ok
+● Audio  --aid=1  (pcm_s16le 2ch 22050 Hz 706 kbps)
+AO: [pipewire] 22050Hz stereo 2ch s16
+A: 00:00:00 / 00:00:03 (0%)
+A: 00:00:00 / 00:00:03 (1%)
+A: 00:00:00 / 00:00:03 (3%)
+A: 00:00:00 / 00:00:03 (5%)
+A: 00:00:00 / 00:00:03 (6%)
+A: 00:00:00 / 00:00:03 (7%)
+A: 00:00:00 / 00:00:03 (9%)
+A: 00:00:00 / 00:00:03 (11%)
+A: 00:00:00 / 00:00:03 (12%)
+A: 00:00:00 / 00:00:03 (14%)
+A: 00:00:00 / 00:00:03 (15%)
+A: 00:00:00 / 00:00:03 (17%)
+A: 00:00:00 / 00:00:03 (19%)
+A: 00:00:00 / 00:00:03 (20%)
+A: 00:00:00 / 00:00:03 (23%)
+A: 00:00:01 / 00:00:03 (26%)
+A: 00:00:01 / 00:00:03 (28%)
+A: 00:00:01 / 00:00:03 (30%)
+A: 00:00:01 / 00:00:03 (33%)
+A: 00:00:01 / 00:00:03 (35%)
+A: 00:00:01 / 00:00:03 (38%)
+A: 00:00:01 / 00:00:03 (39%)
+A: 00:00:01 / 00:00:03 (43%)
+A: 00:00:01 / 00:00:03 (44%)
+A: 00:00:01 / 00:00:03 (46%)
+A: 00:00:01 / 00:00:03 (47%)
+A: 00:00:01 / 00:00:03 (50%)
+A: 00:00:02 / 00:00:03 (51%)
+A: 00:00:02 / 00:00:03 (55%)
+A: 00:00:02 / 00:00:03 (57%)
+A: 00:00:02 / 00:00:03 (58%)
+A: 00:00:02 / 00:00:03 (62%)
+A: 00:00:02 / 00:00:03 (63%)
+A: 00:00:02 / 00:00:03 (66%)
+A: 00:00:02 / 00:00:03 (69%)
+A: 00:00:02 / 00:00:03 (71%)
+A: 00:00:02 / 00:00:03 (74%)
+A: 00:00:02 / 00:00:03 (76%)
+A: 00:00:03 / 00:00:03 (78%)
+A: 00:00:03 / 00:00:03 (81%)
+A: 00:00:03 / 00:00:03 (83%)
+A: 00:00:03 / 00:00:03 (86%)
+A: 00:00:03 / 00:00:03 (88%)
+Exiting... (End of file)
+
+** (waybar:251263): WARNING **: 06:01:57.111: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:251263): WARNING **: 06:01:57.117: Status Notifier Item with bus name ':1.20' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-02-24 06:01:57.243] [warning] Failed to update properties: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Remote peer disconnected
+Gdk-Message: 06:02:01.522: Error reading events from display: Broken pipe
