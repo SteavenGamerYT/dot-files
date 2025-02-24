@@ -1,6 +1,7 @@
 .DS_Store
 temp
 .log
+nohup.out
 DotFiles/.config/ulauncher/user-themes/libadwaita/
 DotFiles/.config/i3/blurred_wallpaper.jpg
 DotFiles/.config/i3/wallpaper.conf
