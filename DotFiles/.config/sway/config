@@ -250,8 +250,8 @@ for_window [app_id = "floating_update"] floating enable, resize set width 1000px
 for_window [class = "(?i)pinentry"] floating enable
 for_window [title = "Administrator privileges required"] floating enable
 
-# Rules for Firefox
-for_window [title = "About Mozilla Firefox"] floating enable
+# Rules for LibreWolf
+for_window [title = "About LibreWolf"] floating enable
 for_window [window_role = "About"] floating enable
 for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
 
