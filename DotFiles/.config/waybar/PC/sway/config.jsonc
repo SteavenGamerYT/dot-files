@@ -108,11 +108,12 @@
         "spacing": 10
     },
     "clock": {
-      //  "format": "{: %I:%M %p}",
-      "format": "<span >  </span><span>{:%I:%M %p}</span>",  
-      "format-alt": "<span >  </span><span>{:%a, %d %b %Y}</span>",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
+        //  "format": "{: %I:%M %p}",
+        "format": "<span >  </span><span>{:%I:%M %p}</span>",  
+         "format-alt": "<span >  </span><span>{:%A, %B %d, %Y}</span>",
+     //   "format-alt": "<span >  </span><span>{:%d/%m/%Y}</span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
