@@ -25,7 +25,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 
 
-if [ "$XDG_SESSION_DESKTOP" = "KDE" ] || [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ] || [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
+if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   
   # Set the GTK theme to use for applications
   export GTK_THEME=Fluent-Dark
@@ -56,4 +56,25 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
   export XCURSOR_SIZE=24
+fi
+
+if [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
+  
+  # Set the platform theme for QT applications
+  export QT_QPA_PLATFORMTHEME=qt6ct
+  
+  # Set the GTK theme to use for applications
+ # export GTK_THEME=adw-gtk3-dark
+
+  # Set the Xcursor theme
+  export XCURSOR_THEME=Adwaita
+fi
+
+if [ "$XDG_SESSION_DESKTOP" = "KDE" ]: then
+
+  # Set the GTK theme to use for applications
+  export GTK_THEME=breeze-dark
+
+  # Set the Xcursor theme
+  export XCURSOR_THEME=breeze_cursors
 fi
