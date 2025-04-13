@@ -6,7 +6,7 @@ PartOf=pipewire.service pipewire-pulse.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c "/home/omarhanykasban/DotFiles/scripts/audio.sh || true"
+ExecStart=/bin/bash -c "/home/omarhanykasban/DotFiles/scripts/audio3.sh || true"
 RemainAfterExit=yes
 
 [Install]
