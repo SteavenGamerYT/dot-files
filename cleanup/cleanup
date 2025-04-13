@@ -25,7 +25,10 @@ cleanup_flatpak_system() {
 
 cleanup_snap() {
     echo "Running cleanup for Snap..."
-    sudo snap remove --purge $(snap list --all | awk '/disabled/{print $1" --revision="$2}')
+    sudo snap list --all | awk '/disabled/{print $1, $3}' |
+    while read name rev; do
+        sudo snap remove "$name" --revision="$rev"
+    done
     echo
 }
 
