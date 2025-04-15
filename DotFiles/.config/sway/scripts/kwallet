@@ -5,4 +5,4 @@
 #/usr/lib/pam_kwallet_init & disown
 
 #sleep 5
-qdbus org.kde.kwalletd6 /modules/kwalletd6 open kdewallet 0 $0 & disown
+qdbus org.kde.kwalletd6 /modules/kwalletd6 open "kdewallet" 0 $0 & disown

@@ -1,45 +1,46 @@
 * {
-    adwaita0: #242424;
-    adwaita1: #2e2e2e;
-    adwaita2: #3d3d3d;
-    adwaita3: #535353;
-    adwaita4: #eeeeec;
-    adwaita5: #d3d7cf;
-    adwaita6: #babdb6;
-    adwaita7: #3465a4;
-    adwaita8: #06989a;
-    adwaita9: #4e9a06;
-    adwaita10: #c4a000;
-    adwaita11: #ce5c00;
-    adwaita12: #cc0000;
-    adwaita13: #75507b;
-
+    nord0: #2e3440;
+    nord1: #3b4252;
+    nord2: #434c5e;
+    nord3: #4c566a;
+    nord4: #d8dee9;
+    nord5: #e5e9f0;
+    nord6: #eceff4;
+    nord7: #8fbcbb;
+    nord8: #88c0d0;
+    nord9: #81a1c1;
+    nord10: #5e81ac;
+    nord11: #bf616a;
+    nord12: #d08770;
+    nord13: #ebcb8b;
+    nord14: #a3be8c;
+    nord15: #b48ead;
 
     spacing: 2;
-    background-color: var(adwaita1);
+    background-color: var(nord1);
 
-    background: var(adwaita1);
-    foreground: var(adwaita4);
+    background: var(nord1);
+    foreground: var(nord4);
 
     normal-background: var(background);
     normal-foreground: var(foreground);
     alternate-normal-background: var(background);
     alternate-normal-foreground: var(foreground);
-    selected-normal-background: var(adwaita7);
+    selected-normal-background: var(nord8);
     selected-normal-foreground: var(background);
 
     active-background: var(background);
-    active-foreground: var(adwaita10);
+    active-foreground: var(nord10);
     alternate-active-background: var(background);
-    alternate-active-foreground: var(adwaita10);
-    selected-active-background: var(adwaita10);
+    alternate-active-foreground: var(nord10);
+    selected-active-background: var(nord10);
     selected-active-foreground: var(background);
 
     urgent-background: var(background);
-    urgent-foreground: var(adwaita11);
+    urgent-foreground: var(nord11);
     alternate-urgent-background: var(background);
-    alternate-urgent-foreground: var(adwaita11);
-    selected-urgent-background: var(adwaita11);
+    alternate-urgent-foreground: var(nord11);
+    selected-urgent-background: var(nord11);
     selected-urgent-foreground: var(background);
 }
 element {
@@ -121,7 +122,7 @@ scrollbar {
     padding: 0;
     handle-width: 14px;
     border: 0;
-    handle-color: var(adwaita3);
+    handle-color: var(nord3);
 }
 button {
     spacing: 0;
@@ -137,12 +138,12 @@ inputbar {
     margin: 7px;
     spacing: 0;
     text-color: var(normal-foreground);
-    background-color: var(adwaita3);
+    background-color: var(nord3);
     children: [ entry ];
 }
 entry {
     spacing: 0;
     cursor: text;
     text-color: var(normal-foreground);
-    background-color: var(adwaita3);
+    background-color: var(nord3);
 }

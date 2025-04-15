@@ -1,4 +1,4 @@
 configuration {
     show-icons: true;
-    icon-theme: "Fluent-dark";
+    icon-theme: "Papirus-Dark";
 }

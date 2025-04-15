@@ -1,5 +1,5 @@
 #!/bin/bash
-swaylock -i "$(grep '^WALLPAPER_PATH=' ~/.config/sway/wallpaper.conf | cut -d'=' -f2)" \
+swaylock -i "$(grep '^WALLPAPER_PATH=' ~/.config/hypr/wallpaper.conf | cut -d'=' -f2)" \
   --effect-blur 7x5 \
   --line-color 181818 \
   --ring-color 222831 \

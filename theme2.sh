@@ -32,7 +32,7 @@ sed -i 's|\(Net/ThemeName "\)[^"]*|\1Fluent-Dark|' ~/.config/xsettingsd/xsetting
 sed -i 's|\(Gtk/CursorThemeName "\)[^"]*|\1Fluent-cursors|' ~/.config/xsettingsd/xsettingsd.conf
 sed -i 's|\(Net/IconThemeName "\)[^"]*|\1Fluent-dark|' ~/.config/xsettingsd/xsettingsd.conf
 sed -i 's|\(name=\).*|\1Fluent-dark|' ~/.config/kdedefaults/plasmarc
-sed -i 's|^include ~/.config/sway/theme-.*$|include ~/.config/sway/theme-Fluent-dark|' ~/.config/sway/config
+sed -i 's|^include *= *~/.config/sway/configs/theme-[^[:space:]]*|include = ~/.config/sway/configs/theme-Fluent-dark|' ~/.config/sway/config
 sed -i 's/^\(\s*\)icon-theme: ".*/\1icon-theme: "Fluent-dark";/' ~/DotFiles/.config/rofi/config.rasi
 sed -i 's|\(@import "~/.config/rofi/colors/\)[^"]*|\1adwaita-dark.rasi|' ~/DotFiles/.config/rofi/launcher/shared/colors.rasi
 sed -i 's|\(@import "~/.config/rofi/colors/\)[^"]*|\1adwaita-dark.rasi|' ~/DotFiles/.config/rofi/powermenu/shared/colors.rasi
@@ -53,4 +53,4 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface font-name 'Roboto Regular 12'
 hyprctl reload
-swayctl reload
+swaymsg reload

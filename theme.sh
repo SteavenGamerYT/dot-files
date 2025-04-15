@@ -32,7 +32,7 @@ sed -i 's|\(Gtk/CursorThemeName "\)[^"]*|\1WhiteSur-cursors|' ~/.config/xsetting
 sed -i 's|\(Net/IconThemeName "\)[^"]*|\1Papirus-Dark|' ~/.config/xsettingsd/xsettingsd.conf
 sed -i 's|\(name=\).*|\1Nordic|' ~/.config/kdedefaults/plasmarc
 sed -i 's|\(^\s*source = ~/.config/hypr/config/theme-\)[^/]*|\1Nordic.conf|' ~/DotFiles/.config/hypr/hyprland.conf
-sed -i 's|^include ~/.config/sway/theme-.*$|include ~/.config/sway/theme-nordic|' ~/.config/sway/config
+sed -i 's|^include *= *~/.config/sway/configs/theme-[^[:space:]]*|include = ~/.config/sway/configs/theme-Nordic|' ~/.config/sway/config
 sed -i 's/^\(\s*\)icon-theme: ".*/\1icon-theme: "Papirus-Dark";/' ~/DotFiles/.config/rofi/config.rasi
 sed -i 's|\(@import "~/.config/rofi/colors/\)[^"]*|\1nord.rasi|' ~/DotFiles/.config/rofi/launcher/shared/colors.rasi
 sed -i 's|\(@import "~/.config/rofi/colors/\)[^"]*|\1nord.rasi|' ~/DotFiles/.config/rofi/powermenu/shared/colors.rasi
@@ -53,4 +53,4 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface font-name 'Roboto Regular 12'
 hyprctl reload
-swayctl reload
+swaymsg reload

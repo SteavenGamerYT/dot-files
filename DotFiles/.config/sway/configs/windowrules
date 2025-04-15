@@ -1,0 +1,68 @@
+# for_window [class="^.*"] border pixel 2
+#floating_minimum_size 75 x 50
+#floating_maximum_size 1280 x 720
+
+for_window [class="Lutris" title="Add a new game"] floating enable
+for_window [class="Lutris" title="Add games to Lutris"] floating enable
+
+# Automatically move Forza Horizon 5 black window to workspace 10
+#for_window [class="steam_app_480" title=" "] move container to workspace 10
+#for_window [class="steam_app_480" _NET_WM_STATE="fullscreen"] floating enable, move container to workspace 10
+
+# Force Forza Horizon 5 to float, go fullscreen, and get focused
+#for_window [class="steam_app_480" title="Forza Horizon 5"] floating enable, fullscreen enable, focus
+
+for_window [app_id="com.obsproject.Studio"] inhibit_idle open
+
+# Fullscreen Waydroid
+for_window [app_id="Waydroid"] fullscreen
+
+# Rules for xwaylandvideobridge
+for_window [title=".*Xwayland Video Bridge.*"] opacity 0
+for_window [title=".*Xwayland Video Bridge.*"] no_focus
+for_window [title=".*Xwayland Video Bridge.*"] floating enable
+for_window [title=".*Xwayland Video Bridge.*"] resize set 1 1
+for_window [title=".*Xwayland Video Bridge.*"] no_blur
+
+# Rules for sharing indicators
+for_window [title=".*is sharing your screen.*"] opacity 0
+for_window [title=".*is sharing your screen.*"] no_focus
+for_window [title=".*is sharing your screen.*"] floating enable
+for_window [title=".*is sharing your screen.*"] size 1x1
+for_window [title=".*is sharing your screen.*"] no_blur
+
+# Rules for Firefox Sharing Indicator
+for_window [title=".*Firefox — Sharing Indicator.*"] opacity 0
+for_window [title=".*Firefox — Sharing Indicator.*"] no_focus
+for_window [title=".*Firefox — Sharing Indicator.*"] floating enable
+for_window [title=".*Firefox — Sharing Indicator.*"] size 1x1
+for_window [title=".*Firefox — Sharing Indicator.*"] no_blur
+
+# Rules for floating windows
+for_window [window_role = "pop-up"] floating enable
+for_window [window_role = "bubble"] floating enable
+for_window [window_role = "dialog"] floating enable
+for_window [window_type = "dialog"] floating enable
+for_window [window_role = "task_dialog"] floating enable
+for_window [window_type = "menu"] floating enable
+for_window [app_id = "floating"] floating enable
+for_window [app_id = "floating_update"] floating enable, resize set width 1000px height 600px
+for_window [class = "(?i)pinentry"] floating enable
+for_window [title = "Administrator privileges required"] floating enable
+
+# Rules for LibreWolf
+for_window [title = "About LibreWolf"] floating enable
+for_window [window_role = "About"] floating enable
+for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
+
+# Rules for Steam
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable

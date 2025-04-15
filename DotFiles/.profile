@@ -28,30 +28,30 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   
   # Set the GTK theme to use for applications
-  export GTK_THEME=Fluent-Dark
+  export GTK_THEME=Nordic
 
   # Set the Xcursor theme
-  export XCURSOR_THEME=Fluent-cursors
+  export XCURSOR_THEME=WhiteSur-cursors
 fi
 
 if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ] || [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
   # Override the default style for QT applications 
   export QT_STYLE_OVERRIDE=kvantum
   # Set Kvantum theme
-  export KVANTUM_THEME=FluentDark
+  export KVANTUM_THEME=Nordic-solid
 
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt6ct
 
   # Set the icon theme for the desktop environment
-  export ICON_THEME=Fluent-dark
-  export QT_QPA_ICONTHEME=Fluent-dark
+  export ICON_THEME=Papirus-Dark
+  export QT_QPA_ICONTHEME=Papirus-Dark
 
   # Set the cursor theme across various environments
-  export CURSOR_THEME=Fluent-cursors
-  export QT_QT_CURSORTHEME=Fluent-cursors
-  export QT_QT5_CURSORTHEME=Fluent-cursors
-  export QT_QT6_CURSORTHEME=Fluent-cursors
+  export CURSOR_THEME=WhiteSur-cursors
+  export QT_QT_CURSORTHEME=WhiteSur-cursors
+  export QT_QT5_CURSORTHEME=WhiteSur-cursors
+  export QT_QT6_CURSORTHEME=WhiteSur-cursors
 
   # Define the cursor size for different environments
   export CURSOR_SIZE=24
@@ -67,14 +67,14 @@ if [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-way
  # export GTK_THEME=adw-gtk3-dark
 
   # Set the Xcursor theme
-  export XCURSOR_THEME=Adwaita
+  export XCURSOR_THEME=WhiteSur-cursors
 fi
 
 if [ "$XDG_SESSION_DESKTOP" = "KDE" ]: then
 
   # Set the GTK theme to use for applications
-  export GTK_THEME=breeze-dark
+  export GTK_THEME=Nordic
 
   # Set the Xcursor theme
-  export XCURSOR_THEME=breeze_cursors
+  export XCURSOR_THEME=WhiteSur-cursors
 fi

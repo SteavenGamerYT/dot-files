@@ -44,10 +44,10 @@ ln -s ~/DotFiles/.config/mpv ~/.config/mpv
 ln -s ~/DotFiles/.config/mpv ~/.var/app/io.mpv.Mpv/config/mpv
 ln -s ~/DotFiles/.local/share/flatpak/overrides ~/.local/share/flatpak/overrides
 
-#ln -s ~/DotFiles/.config/Kvantum ~/.config/Kvantum
-#ln -s ~/DotFiles/.config/gtk-2.0 ~/.config/gtk-2.0
-#ln -s ~/DotFiles/.config/gtk-3.0 ~/.config/gtk-3.0
-#ln -s ~/DotFiles/.config/gtk-4.0 ~/.config/gtk-4.0
+ln -s ~/DotFiles/.config/Kvantum ~/.config/Kvantum
+ln -s ~/DotFiles/.config/gtk-2.0 ~/.config/gtk-2.0
+ln -s ~/DotFiles/.config/gtk-3.0 ~/.config/gtk-3.0
+ln -s ~/DotFiles/.config/gtk-4.0 ~/.config/gtk-4.0
 
 
 #cp -r ~/DotFiles/.config/Kvantum ~/.config/Kvantum
