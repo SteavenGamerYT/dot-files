@@ -1,2 +1,7 @@
 [Context]
-filesystems=/mnt/hdd2/Roms/PlayStation 3:rw
+filesystems=xdg-config/MangoHud:ro;/mnt/hdd2/Roms/PlayStation 3:rw;/mnt/nvme/Roms/PlayStation 3:rw;~/SaveGames/rpcs3:rw
+
+[Environment]
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1
+MANGOHUD=1

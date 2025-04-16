@@ -1,2 +1,7 @@
 [Context]
-filesystems=/mnt/hdd2/Roms/Nintendo Wii U:ro;~/SaveGames/Cemu:rw
+filesystems=/mnt/hdd2/Roms/Nintendo Wii U:ro;~/SaveGames/Cemu:rw;/mnt/nvme/Roms/Nintendo Wii U:ro;xdg-config/MangoHud:ro
+
+[Environment]
+MANGOHUD=1
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1

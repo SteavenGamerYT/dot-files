@@ -1,2 +1,7 @@
 [Context]
-filesystems=/mnt/hdd2/Roms/Nintendo Wii:ro;/mnt/hdd2/Roms/Nintendo GameCube:ro;~/SaveGames/Dolphin/dolphin-emu:rw
+filesystems=~/SaveGames/Dolphin:rw;/mnt/nvme/Roms/Nintendo Wii:ro;/mnt/nvme/Roms/Nintendo GameCube:ro;~/SaveGames/Dolphin/dolphin-emu:rw;/mnt/hdd2/Roms/Nintendo GameCube:ro;/mnt/hdd2/Roms/Nintendo Wii:ro;xdg-config/MangoHud:ro
+
+[Environment]
+MANGOHUD=1
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1
