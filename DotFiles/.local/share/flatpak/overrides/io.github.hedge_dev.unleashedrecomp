@@ -1,0 +1,7 @@
+[Context]
+filesystems=xdg-config/MangoHud:ro;~/SaveGames/UnleashedRecomp:rw
+
+[Environment]
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1
+MANGOHUD=1

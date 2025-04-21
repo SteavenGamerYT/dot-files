@@ -5,6 +5,7 @@ mount_points=(
     "/mnt/hdd"
     "/mnt/hdd2"
     "/mnt/hdd3"
+    "/mnt/nvme"
     "/home"
     "/"
 )

@@ -1,0 +1,49 @@
+font pango:Roboto Regular 12
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'FluentDark'
+    gsettings set $gnome-schema icon-theme 'Fluent-dark'
+    gsettings set $gnome-schema cursor-theme 'Fluent-cursors'
+    gsettings set $gnome-schema cursor-size 24
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
+    gsettings set $gnome-schema font-name 'Roboto Regular 12'
+}
+seat seat0 xcursor_theme Fluent-cursors 24
+
+
+# Color scheme
+set $rosewater #e6d5cf
+set $flamingo  #e5b4b4
+set $pink      #e5bdd6
+set $mauve     #b3a0e3
+set $red       #e66161
+set $maroon    #d08080
+set $peach     #e9a27f
+set $yellow    #e5c07b
+set $green     #8fb573
+set $teal      #72c3b8
+set $sky       #6cb6eb
+set $sapphire  #5aa6d4
+set $blue      #5e81ac
+set $lavender  #a1a9d0
+set $text      #dadada
+set $subtext1  #c0c0c0
+set $subtext0  #a8a8a8
+set $overlay2  #8d8d8d
+set $overlay1  #777777
+set $overlay0  #626262
+set $surface2  #4e4e4e
+set $surface1  #3b3b3b
+set $surface0  #2e2e2e
+set $base      #1e1e1e
+set $mantle    #191919
+set $crust     #121212                                                                  
+# class                 border  bground text    indicator child_border
+# target                 title     bg    text   indicator  border
+client.focused           $blue $base $text  $rosewater $blue
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base

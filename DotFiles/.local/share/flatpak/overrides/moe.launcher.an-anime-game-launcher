@@ -1,0 +1,11 @@
+[Context]
+filesystems=xdg-config/MangoHud:ro;/mnt/nvme/Games/Genshin Impact:rw;/mnt/nvme/Games/YuanShen:rw
+
+[Environment]
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1
+MANGOHUD=1
+NMCLI_CLI=flatpak-spawn --host /usr/bin/nmcli
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=talk

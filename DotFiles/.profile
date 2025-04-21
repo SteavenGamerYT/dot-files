@@ -77,4 +77,4 @@ if [ "$XDG_SESSION_DESKTOP" = "KDE" ]: then
 
   # Set the Xcursor theme
   export XCURSOR_THEME=WhiteSur-cursors
-fi
+fiexport PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"

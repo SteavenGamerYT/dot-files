@@ -12,7 +12,7 @@ TEMP_WALLPAPER_PATH=~/.config/i3/blurred_wallpaper.jpg
 if [ -f "$WALLPAPER_PATH" ]; then
     # Apply a blur effect to the wallpaper
     magick "$WALLPAPER_PATH" -blur 0x4 "$TEMP_WALLPAPER_PATH"
-    
+
     # Update the lock screen wallpaper using betterlockscreen
     betterlockscreen -u "$TEMP_WALLPAPER_PATH"
 else

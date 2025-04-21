@@ -12,7 +12,7 @@ while true; do
 
   # update wallpaper for betterlockscreen
   ~/.config/i3/scripts/lockscreen-update.sh
-  
+
   # Set the selected image as the wallpaper using feh
   feh --bg-scale --randomize --no-fehbg "$selected_image"
 

@@ -1,0 +1,7 @@
+[Context]
+filesystems=/mnt/hdd2/Roms/Nintendo Switch:ro;~/SaveGames/Ryujinx:rw;/mnt/nvme/Roms/Nintendo Switch:ro;xdg-config/MangoHud:ro
+
+[Environment]
+MANGOHUD=1
+OBS_VKCAPTURE=1
+ENABLE_VKBASALT=1

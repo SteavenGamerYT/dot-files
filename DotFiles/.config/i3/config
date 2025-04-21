@@ -1,219 +1,31 @@
-# Set Mod key
+#include /etc/i3/config.d/*
+#exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP i3SOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+#exec --no-startup-id dbus-update-activation-environment --all
 set $mod Mod4
 
-# Set font
-font pango:Roboto Regular 12
 
-# Autodetect and configure touchpad and mouse settings
-exec_always --no-startup-id ~/.config/i3/scripts/touchpad-mouse-config.sh
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃                         Source Files                        ┃
+# ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+include = ~/.config/i3/configs/autostart
+include = ~/.config/i3/configs/theme-Nordic
+include = ~/.config/i3/configs/keybinds
+include = ~/.config/i3/configs/hardware
+include = ~/.config/i3/configs/windowrules
 
-# Display Configuration
-exec_always --no-startup-id ~/.config/i3/scripts/display.sh
-
-# Audio Configuration
-exec_always --no-startup-id systemctl --user restart audio
-
-# Workspace
-workspace 1 output HDMI-0
-# Startup
-exec_always --no-startup-id mpv --config-dir=/dev/null --no-video --no-resume-playback "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
-
-# Theme
-exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
-exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
-exec --no-startup-id gsettings set org.gnome.desktop.interface cursor-size 24
-exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-exec --no-startup-id gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-
-# System Utitles
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id ~/.config/i3/scripts/kwallet
 exec_always --no-startup-id ~/.config/i3/scripts/headset
-exec --no-startup-id coolercontrol
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 '~/.config/i3/scripts/lockscreen.sh' ''
-exec --no-startup-id picom
-exec --no-startup-id nm-applet
-exec --no-startup-id /usr/lib/kdeconnectd
-exec --no-startup-id dunst
-exec --no-startup-id numlockx on
-exec --no-startup-id ~/.config/i3/scripts/wallpaper2.sh &
-exec --no-startup-id flameshot
+
 #exec --no-startup-id easyeffects --gapplication-service
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Applications
-exec --no-startup-id "discord --start-minimized"
-exec --no-startup-id "steam -silent"
-exec --no-startup-id dropbox
-exec --no-startup-id "/opt/freedownloadmanager/fdm --hidden"
-exec --no-startup-id qbittorrent
-exec --no-startup-id sunshine
 
-# Keybindings
-bindsym $mod+l exec "betterlockscreen -l"
-bindsym $mod+Return exec kitty
-bindsym $mod+x exec kitty
-bindsym $mod+b exec firefox --profile /home/omarhanykasban/.mozilla/firefox/29dx8ujh.default-release
-bindsym $mod+z exec nemo
-bindsym $mod+slash exec looking-glass-client
-bindsym $mod+Shift+q kill
-bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
-#bindsym $mod+d exec "rofi -modi drun,run -show drun -theme ~/.config/polybar/scripts/rofi/nord.rasi"
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
-
-# Screenshots
-bindsym --release Print exec scrot "$HOME/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png" -M 0 -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot taken"
-bindsym --release $mod+Shift+s exec flameshot gui -p ~/Pictures/Screenshots -c
 
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
 exec_always "setxkbmap -layout us,ara -option grp:alt_shift_toggle"
 
-# Resize mode
-mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        #bindsym $mod+r mode "default"
-}
-#bindsym $mod+r mode "resize"
-
-# Focus and move focus
-
-# move focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-
-bindsym $mod+semicolon focus right
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# Window management
-bindsym $mod+h split h
-bindsym $mod+v split v
-bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-bindsym $mod+space floating toggle
-bindsym $mod+Shift+z focus mode_toggle
-bindsym $mod+a focus parent
-#bindsym $mod+d focus child
-
-# Workspace management
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
-floating_modifier $mod
-
-# Audio and brightness controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume --inc 
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume --dec 
-bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume --toggle
-bindsym XF86AudioMicMute exec --no-startup-id ~/.config/i3/scripts/volume --toggle-mic 
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
-
-# Color scheme
-set $rosewater #f5e0dc
-set $flamingo  #f2cdcd
-set $pink      #f5c2e7
-set $mauve     #cba6f7
-set $red       #f38ba8
-set $maroon    #eba0ac
-set $peach     #fab387
-set $yellow    #f9e2af
-set $green     #a6e3a1
-set $teal      #94e2d5
-set $sky       #89dceb
-set $sapphire  #74c7ec
-set $blue      #89b4fa
-set $lavender  #b4befe
-set $text      #cdd6f4
-set $subtext1  #bac2de
-set $subtext0  #a6adc8
-set $overlay2  #9399b2
-set $overlay1  #7f849c
-set $overlay0  #6c7086
-set $surface2  #585b70
-set $surface1  #45475a
-set $surface0  #313244
-set $base      #1e1e2e
-set $mantle    #181825
-set $crust     #11111b                                                                      
-# class                 border  bground text    indicator child_border
-# target                 title     bg    text   indicator  border
-client.focused           $blue $base $text  $rosewater $blue
-client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base $text  $rosewater $overlay0
-client.urgent            $peach    $base $peach $overlay0  $peach
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
-client.background        $base
 
 # Gaps and borders
 gaps inner 3
 gaps outer 3
 default_border pixel 5
 
-# for_window [class="^.*"] border pixel 2
-#floating_minimum_size 75 x 50
-#floating_maximum_size 1280 x 720
-
-for_window [class="Lutris" title="Add a new game"] floating enable
-for_window [class="Lutris" title="Add games to Lutris"] floating enable
-
-# Automatically move Forza Horizon 5 black window to workspace 10
-#for_window [class="steam_app_480" title=" "] move container to workspace 10
-#for_window [class="steam_app_480" _NET_WM_STATE="fullscreen"] floating enable, move container to workspace 10
-
-# Force Forza Horizon 5 to float, go fullscreen, and get focused
-#for_window [class="steam_app_480" title="Forza Horizon 5"] floating enable, fullscreen enable, focus
+exec_always --no-startup-id = uwsm app -- ~/.config/i3/scripts/hardware.sh

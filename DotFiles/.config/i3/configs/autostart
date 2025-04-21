@@ -1,0 +1,36 @@
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃                    Autostart Configuration                  ┃
+# ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+# Clipboard History
+bindsym $mod+v exec cliphist list | rofi -dmenu -theme ~/.config/rofi/clipboard.rasi | cliphist decode | wl-copy
+
+#  ## Startup Sound
+exec_always --no-startup-id mpv --config-dir=/dev/null --no-video --no-resume-playback "$(find ~/Audio/mp3/Sounds/startup -type f | sort -R | head -n 1)"
+
+# Autostart Applications
+exec --no-startup-id ~/.config/i3/scripts/wallpaper2.sh
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 '~/.config/i3/scripts/lockscreen.sh' ''
+exec --no-startup-id nm-applet --indicator
+exec --no-startup-id dunst
+exec --no-startup-id numlockx on
+exec --no-startup-id picom
+exec --no-startup-id flameshot
+exec --no-startup-id ~/.config/i3/scripts/kwallet
+exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
+
+exec --no-startup-id /usr/bin/kdeconnectd
+exec --no-startup-id /usr/bin/kdeconnect-indicator
+exec --no-startup-id sleep 4 && coolercontrol
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# GUI apps (Starts in system tray)
+exec --no-startup-id sleep 4 && flatpak run com.discordapp.Discord --start-minimized
+exec --no-startup-id sleep 4 && /usr/bin/steam -silent
+exec --no-startup-id sleep 4 && /opt/Heroic/heroic
+exec --no-startup-id sleep 4 && sunshine
+exec --no-startup-id sleep 4 && flatpak run com.dropbox.Client
+exec --no-startup-id sleep 4 && /opt/freedownloadmanager/fdm --hidden
+exec --no-startup-id sleep 4 && flatpak run org.qbittorrent.qBittorrent
+exec --no-startup-id sleep 4 && flatpak run org.altaqwaa.Altaqwaa

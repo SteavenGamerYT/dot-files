@@ -1,3 +1,0 @@
-[preferred]
-default=gtk;wlr;hyprland;cosmic;gnome;kde;xapp
-org.freedesktop.impl.portal.FileChooser=gtk

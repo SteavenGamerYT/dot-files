@@ -1,0 +1,6 @@
+# Hardware Configuration
+exec_always --no-startup-id ~/.config/i3/scripts/hardware.sh
+exec_always --no-startup-id ~/.config/i3/scripts/touchpad-mouse-config.sh
+
+workspace 1 output HDMI-2
+workspace 2 output HDMI-1
