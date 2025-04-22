@@ -23,6 +23,7 @@ exec --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/bin/kdeconnectd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
 exec --no-startup-id sleep 4 && coolercontrol
+exec --no-startup-id sleep 4 && openrgb --startminimized --profile "SteavenGamerYT"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # GUI apps (Starts in system tray)
