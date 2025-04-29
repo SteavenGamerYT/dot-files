@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -d /sys/class/power_supply/BAT0 ]; then
     

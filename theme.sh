@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 sed -i 's/^\(\s*\)export ICON_THEME=.*/\1export ICON_THEME=Papirus-Dark/' ~/DotFiles/.profile
 sed -i 's/^\(\s*\)export QT_QPA_ICONTHEME=.*/\1export QT_QPA_ICONTHEME=Papirus-Dark/' ~/DotFiles/.profile
 sed -i 's/^\(\s*\)export CURSOR_THEME=.*/\1export CURSOR_THEME=WhiteSur-cursors/' ~/DotFiles/.profile

@@ -1,5 +1,5 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+set -x
 # Terminate already running bar instances
 killall -q polybar
 # If all your bars have ipc enabled, you can also use
@@ -11,4 +11,4 @@ polybar --config-path=~/.config/polybar/config.ini steaven 2>&1 | tee -a /tmp/po
 echo "Polybar launched..."
 
 sleep 5
-syncthingtray-qt6 --replace & disown
+syncthingtray --replace & disown

@@ -1,5 +1,5 @@
 # Loop to add specified directories to the PATH if they exist
-for dir in "$HOME/.bin" "$HOME/.local/bin" "$HOME/Applications" "/var/lib/flatpak/exports/bin" "$HOME/.spicetify" "/home/linuxbrew/.linuxbrew/bin"; do
+for dir in "$HOME/.bin" "$HOME/.local/bin" "$HOME/Applications" "/var/lib/flatpak/exports/bin" "$HOME/.spicetify" "/home/linuxbrew/.linuxbrew/bin" "/home/linuxbrew/.linuxbrew/sbin"; do
   [ -d "$dir" ] && PATH="$dir:$PATH"
 done
 
@@ -25,7 +25,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 
 
-if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
+if [ "$XDG_SESSION_DESKTOP" = "none+i3" ] ||  [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ]; then
   
   # Set the GTK theme to use for applications
   export GTK_THEME=Nordic
@@ -34,7 +34,7 @@ if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [
   export XCURSOR_THEME=WhiteSur-cursors
 fi
 
-if [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ] || [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
+if [ "$XDG_SESSION_DESKTOP" = "none+i3" ] || [ "$XDG_SESSION_DESKTOP" = "i3" ] || [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "Hyprland" ] || [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-wayland" ]; then
   # Override the default style for QT applications 
   export QT_STYLE_OVERRIDE=kvantum
   # Set Kvantum theme
@@ -77,4 +77,4 @@ if [ "$XDG_SESSION_DESKTOP" = "KDE" ]: then
 
   # Set the Xcursor theme
   export XCURSOR_THEME=WhiteSur-cursors
-fiexport PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+fi

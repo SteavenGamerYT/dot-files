@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Input date
 time1="08/27/2024 3:23PM"

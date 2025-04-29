@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check if battery directory exists (laptop mode)
 if [ -d /sys/class/power_supply/BAT0 ]; then

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Run hyprctl command to get keyboard information,
 # extract active_keymap, convert to lowercase,

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Function to disable mouse acceleration
 disable_mouse_acceleration() {
     local device_id

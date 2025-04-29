@@ -27,26 +27,27 @@ else
     linux_distro=$(lsb_release -si | tr '[:upper:]' '[:lower:]')
 fi
 
-case $linux_distro in
-  arch)
-    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
-    ;;
-  fedora)
-    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
-    ;;
-  debian)
-    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
-    ;;
-  ubuntu)
-    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
-    ;;
-  opensuse-tumbleweed)
-    export STARSHIP_CONFIG=~/.config/starship/starship-opensuse.toml
-    ;;
-  *)
-    export STARSHIP_CONFIG=~/.config/starship/starship.toml
-    ;;
-esac
+#case $linux_distro in
+#  arch)
+#    export STARSHIP_CONFIG=~/.config/starship/starship-arch.toml
+#    ;;
+#  fedora)
+#    export STARSHIP_CONFIG=~/.config/starship/starship-fedora.toml
+#    ;;
+#  debian)
+#    export STARSHIP_CONFIG=~/.config/starship/starship-debian.toml
+#    ;;
+#  ubuntu)
+#    export STARSHIP_CONFIG=~/.config/starship/starship-ubuntu.toml
+#    ;;
+#  opensuse-tumbleweed)
+#    export STARSHIP_CONFIG=~/.config/starship/starship-opensuse.toml
+#    ;;
+#  *)
+#    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+#    ;;
+#esac
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # Check if Starship configuration is readable before initializing
 if [[ -r "$STARSHIP_CONFIG" ]]; then

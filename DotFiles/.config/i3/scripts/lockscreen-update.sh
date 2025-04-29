@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Path to your wallpaper configuration file
 CONFIG_FILE=~/.config/i3/wallpaper.conf

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 sudo systemctl disable --now firewalld
 sudo ufw disable
 sudo ufw allow ssh comment 'ssh'

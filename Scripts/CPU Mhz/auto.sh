@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Get the laptop battery status
 status=$(cat /sys/class/power_supply/BAT0/status)

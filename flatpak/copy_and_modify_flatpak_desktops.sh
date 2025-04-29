@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Directories to search for .desktop files
 desktop_dirs=(
