@@ -42,13 +42,15 @@ alias ps='ps auxf'  # Process status with user-oriented format
 alias ping='ping -c 10'  # Send 10 echo requests to network hosts
 alias less='less -R'  # View file contents with raw control characters
 
-# Check for fastfetch in the two locations
+# Check for fastfetch in multiple locations
 if [ -f "/usr/bin/fastfetch" ]; then
   FASTFETCH_BIN="/usr/bin/fastfetch"
 elif [ -f "/home/linuxbrew/.linuxbrew/bin/fastfetch" ]; then
   FASTFETCH_BIN="/home/linuxbrew/.linuxbrew/bin/fastfetch"
+elif [ -f "/run/current-system/sw/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/run/current-system/sw/bin/fastfetch"
 else
-  alias fastfetch="echo 'fastfetch not found'"
+  echo 'fastfetch not found'
   return  # Exit if fastfetch is not found
 fi
 

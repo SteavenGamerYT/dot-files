@@ -60,15 +60,18 @@ fi
 eval "$(zoxide init bash)"  # Initialize zoxide for smarter directory navigation
 colorscript -r  # Run a random color script for terminal aesthetics
 
-# Check for fastfetch in the two locations
+# Check for fastfetch in multiple locations
 if [ -f "/usr/bin/fastfetch" ]; then
   FASTFETCH_BIN="/usr/bin/fastfetch"
 elif [ -f "/home/linuxbrew/.linuxbrew/bin/fastfetch" ]; then
   FASTFETCH_BIN="/home/linuxbrew/.linuxbrew/bin/fastfetch"
+elif [ -f "/run/current-system/sw/bin/fastfetch" ]; then
+  FASTFETCH_BIN="/run/current-system/sw/bin/fastfetch"
 else
   echo 'fastfetch not found'
   return  # Exit if fastfetch is not found
 fi
+
 
 # Terminal-specific commands
 case "$TERM" in
