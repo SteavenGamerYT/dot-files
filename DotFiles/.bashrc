@@ -87,6 +87,24 @@ case "$TERM" in
 esac
 
 
-[[ -f /usr/share/bash-preexec/bash-preexec.sh ]] && source /usr/share/bash-preexec/bash-preexec.sh
-[ -f /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh ] && . /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh
-eval "$(atuin init bash)"
+# Try to source bash-preexec from common locations
+bash_preexec_loaded=false
+
+if [[ -f /usr/share/bash-preexec/bash-preexec.sh ]]; then
+  source /usr/share/bash-preexec/bash-preexec.sh && bash_preexec_loaded=true
+elif [[ -f /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh ]]; then
+  source /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh && bash_preexec_loaded=true
+else
+  bash_preexec_pkg=$(nix eval --raw nixpkgs#bash-preexec 2>/dev/null)
+  if [[ -f "$bash_preexec_pkg/share/bash/bash-preexec.sh" ]]; then
+    source "$bash_preexec_pkg/share/bash/bash-preexec.sh" && bash_preexec_loaded=true
+  fi
+fi
+
+# Check if bash-preexec was successfully loaded
+if [[ "$bash_preexec_loaded" = true ]]; then
+  eval "$(atuin init bash)"
+else
+  echo "Error: bash-preexec could not be found or sourced." >&2
+fi
+

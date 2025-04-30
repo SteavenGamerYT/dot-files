@@ -51,7 +51,6 @@ elif [ -f "/run/current-system/sw/bin/fastfetch" ]; then
   FASTFETCH_BIN="/run/current-system/sw/bin/fastfetch"
 else
   echo 'fastfetch not found'
-  return  # Exit if fastfetch is not found
 fi
 
 # Check if colorscript exists
