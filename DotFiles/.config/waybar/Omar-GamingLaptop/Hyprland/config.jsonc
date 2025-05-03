@@ -28,12 +28,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/Laptop/Hyprland/scripts/nvidia-vram-usage.sh",
+    "exec": "~/.config/waybar/Omar-GamingLaptop/Hyprland/scripts/nvidia-vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/Laptop/Hyprland/scripts/nvidia-usage.sh",
+    "exec": "~/.config/waybar/Omar-GamingLaptop/Hyprland/scripts/nvidia-usage.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
@@ -52,8 +52,8 @@
   },
 
     "custom/language": {
-        "exec": "~/.config/waybar/Laptop/Hyprland/scripts/get-lang.sh",
-        "on-click": "~/.config/waybar/Laptop/Hyprland/scripts/toggle-keyboard-layout.sh", // update system
+        "exec": "~/.config/waybar/Omar-GamingLaptop/Hyprland/scripts/get-lang.sh",
+        "on-click": "~/.config/waybar/Omar-GamingLaptop/Hyprland/scripts/toggle-keyboard-layout.sh", // update system
         "interval": 1,
         "format": "  {}"
       },
@@ -92,7 +92,7 @@
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/Laptop/Hyprland/scripts/waybar-wttr.py",
+        "exec" : "~/.config/waybar/Omar-GamingLaptop/Hyprland/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {

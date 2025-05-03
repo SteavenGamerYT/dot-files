@@ -31,6 +31,7 @@ exec --no-startup-id uwsm app -- ~/.config/waybar/launch.sh
 
 # GUI apps (Starts in system tray)
 exec --no-startup-id uwsm app -- sleep 4 && flatpak run com.discordapp.Discord --start-minimized
+exec --no-startup-id uwsm app -- sleep 4 && flatpak run com.ktechpit.whatsie
 exec --no-startup-id uwsm app -- sleep 4 && steam -silent
 exec --no-startup-id uwsm app -- sleep 4 && /opt/Heroic/heroic
 exec --no-startup-id uwsm app -- sleep 4 && sunshine

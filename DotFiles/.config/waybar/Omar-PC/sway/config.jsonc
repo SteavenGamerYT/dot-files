@@ -7,8 +7,8 @@
     "gtk-layer-shell": true,
     "output":"HDMI-A-1",
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "sway/workspaces",
+        "sway/window"
     ],
     "modules-right": [
         "custom/disks",
@@ -29,12 +29,12 @@
         "custom/notification"
         ],
    "custom/vramusage": {
-    "exec": "~/.config/waybar/PC/Hyprland/scripts/amdgpu-vram-usage.sh",
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/amdgpu-vram-usage.sh",
     "interval": 1,
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/PC/Hyprland/scripts/amdgpu-usage.sh",
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/amdgpu-usage.sh",
     "interval": 1,
     "format": "󰍹 {}%"
   },
@@ -47,21 +47,28 @@
         "format": "  {usage}%"
    },
    "custom/disks": {
-    "exec": "~/.config/waybar/PC/Hyprland/scripts/disk-usage.sh",
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/disk-usage.sh",
     "interval": 1,
     "format": "󰋊 {}"
   },
 
-    "custom/language": {
-        "exec": "~/.config/waybar/PC/Hyprland/scripts/get-lang.sh",
-        "on-click": "~/.config/waybar/PC/Hyprland/scripts/toggle-keyboard-layout.sh", // update system
-        "interval": 1,
-        "format": "  {}"
-      },
-    "hyprland/window": {
+  "custom/language": {
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/Omar-PC/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "interval": 1,
+    "format": "  {}"
+  },
+  "sway/language": {
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/get-lang.sh",
+    "on-click": "~/.config/waybar/Omar-PC/sway/scripts/toggle-keyboard-layout.sh", // update system
+    "interval": 1,
+    "format": "  {}"
+  },
+
+    "sway/window": {
         "format": "{}"
     },
-    "hyprland/workspaces": {
+    "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
@@ -93,7 +100,7 @@
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/PC/Hyprland/scripts/waybar-wttr.py",
+        "exec" : "~/.config/waybar/Omar-PC/sway/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {
@@ -101,12 +108,12 @@
         "spacing": 10
     },
     "clock": {
-      //  "format": "{: %I:%M %p}",
-      "format": "<span >  </span><span>{:%I:%M %p}</span>",  
-       "format-alt": "<span >  </span><span>{:%A, %B %d, %Y}</span>",
-   //   "format-alt": "<span >  </span><span>{:%d/%m/%Y}</span>",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
+        //  "format": "{: %I:%M %p}",
+        "format": "<span >  </span><span>{:%I:%M %p}</span>",  
+         "format-alt": "<span >  </span><span>{:%A, %B %d, %Y}</span>",
+     //   "format-alt": "<span >  </span><span>{:%d/%m/%Y}</span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
@@ -132,7 +139,7 @@
         "tooltip": false,
         "format-muted": "  Muted",
         "on-click": "pamixer -t",
-        "on-click-right": "~/.config/waybar/PC/Hyprland/scripts/audio.sh",
+        "on-click-right": "~/.config/waybar/Omar-PC/sway/scripts/audio.sh",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
         "scroll-step": 5,

@@ -30,4 +30,4 @@ if [ ! -f "$GPU_BUSY_FILE" ]; then
 fi
 
 # Show GPU busy percent and only display the value
-/usr/bin/cat "$GPU_BUSY_FILE"
+command cat "$GPU_BUSY_FILE"

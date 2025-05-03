@@ -1,31 +1,35 @@
 #!/usr/bin/env bash
 
+# Get current hostname
+HOSTNAME=$(hostname)
+
 # Kill all instances of waybar (if any)
 
 kill $(pidof waybar)
 
 if pgrep -x waybar > /dev/null; then
-    syncthingtray-qt6 --replace & disown
+    syncthingtray --replace & disown
     exit
 fi
 
-# Determine system configuration based on battery presence and desktop environment
-if [ -d /sys/class/power_supply/BAT0 ]; then
-    if [[ $XDG_SESSION_DESKTOP == "sway" ]]; then
-        waybar -c ~/.config/waybar/Laptop/sway/config.jsonc -s ~/.config/waybar/Laptop/sway/style.css & disown
-    elif [[ $XDG_SESSION_DESKTOP == "Hyprland" ]]; then
-        waybar -c ~/.config/waybar/Laptop/Hyprland/config.jsonc -s ~/.config/waybar/Laptop/Hyprland/style.css & disown
-    fi
-else
-    if [[ $XDG_SESSION_DESKTOP == "sway" ]]; then
-        waybar -c ~/.config/waybar/PC/sway/config.jsonc -s ~/.config/waybar/PC/sway/style.css & disown
-    elif [[ $XDG_SESSION_DESKTOP == "Hyprland" ]]; then
-        waybar -c ~/.config/waybar/PC/Hyprland/config.jsonc -s ~/.config/waybar/PC/Hyprland/style.css & disown
-    fi
+# Check if hostname is valid
+if [ "$HOSTNAME" != "Omar-PC" ] && [ "$HOSTNAME" != "Omar-GamingLaptop" ]; then
+    echo "Invalid hostname: $HOSTNAME"
+    echo "This script only supports Omar-PC, Omar-GamingLaptop"
+    exit 1
+fi
+
+echo "Detected hostname: $HOSTNAME"
+
+# Start Waybar
+if [[ $XDG_SESSION_DESKTOP == "sway" ]]; then
+    waybar -c ~/.config/waybar/$HOSTNAME/sway/config.jsonc -s ~/.config/waybar/$HOSTNAME/sway/style.css & disown
+elif [[ $XDG_SESSION_DESKTOP == "Hyprland" ]]; then
+    waybar -c ~/.config/waybar/$HOSTNAME/Hyprland/config.jsonc -s ~/.config/waybar/$HOSTNAME/Hyprland/style.css & disown
 fi
 
 # Wait a bit before starting other applications
 sleep 5
 
 # Start syncthingtray-qt6 and ensure it runs in the background
-syncthingtray-qt6 --replace & disown
+syncthingtray --replace & disown
