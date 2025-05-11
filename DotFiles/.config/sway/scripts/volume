@@ -3,7 +3,7 @@
 ICON_THEME="Papirus"
 ICON_DIR="/usr/share/icons/$ICON_THEME"
 if [ ! -d "$ICON_DIR" ]; then
-    ICON_DIR="$HOME/.icons/$ICON_THEME"
+    ICON_DIR="$HOME/.local/share/icons/$ICON_THEME"
 fi
 
 # Get Volume
