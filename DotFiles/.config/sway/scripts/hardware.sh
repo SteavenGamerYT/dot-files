@@ -22,4 +22,6 @@ else
     
     # Start input remapper for the mouse with the specified preset
     input-remapper-control --command start --device "SINOWEALTH Wired Gaming Mouse" --preset "mouse extra buttons"
+    
+   systemctl --user restart audio
 fi
