@@ -13,6 +13,7 @@ bindsym $mod+x exec kitty
 bindsym $mod+b exec flatpak run io.gitlab.librewolf-community
 bindsym $mod+z exec nemo
 bindsym $mod+slash exec looking-glass-client
+bindsym $mod+period exec scrcpy
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
 bindsym $mod+Shift+c reload
