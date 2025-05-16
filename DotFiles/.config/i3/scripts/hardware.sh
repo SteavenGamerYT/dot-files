@@ -20,6 +20,7 @@ if [[ $HOSTNAME == "Omar-PC" ]]; then
         --output HDMI-1 --mode 1920x1080 --pos 0x768 --rotate normal --primary --rate 60
 
     input-remapper-control --command start --device "SINOWEALTH Wired Gaming Mouse" --preset "mouse extra buttons"
+    systemctl --user restart audio
 elif [[ $HOSTNAME == "Omar-GamingLaptop" ]]; then
     input-remapper-control --command start --device "Asus Keyboard" --preset "right arrow key is broken so i remapped keys"
 fi

@@ -13,9 +13,9 @@ if pgrep -x waybar > /dev/null; then
 fi
 
 # Check if hostname is valid
-if [ "$HOSTNAME" != "Omar-PC" ] && [ "$HOSTNAME" != "Omar-GamingLaptop" ]; then
+if [ "$HOSTNAME" != "Omar-PC" ] && [ "$HOSTNAME" != "Omar-GamingLaptop" ] && [ "$HOSTNAME" != "Omar-Laptop" ]; then
     echo "Invalid hostname: $HOSTNAME"
-    echo "This script only supports Omar-PC, Omar-GamingLaptop"
+    echo "This script only supports Omar-PC, Omar-GamingLaptop, and Omar-Laptop"
     exit 1
 fi
 

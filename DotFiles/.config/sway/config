@@ -33,5 +33,3 @@ input type:keyboard {
 gaps inner 3
 gaps outer 3
 default_border pixel 5
-
-exec_always --no-startup-id = uwsm app -- ~/.config/sway/scripts/hardware.sh
