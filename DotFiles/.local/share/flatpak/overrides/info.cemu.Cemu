@@ -1,5 +1,5 @@
 [Context]
-filesystems=/mnt/hdd2/Roms/Nintendo Wii U:ro;~/SaveGames/Cemu:rw;/mnt/nvme/Roms/Nintendo Wii U:ro;xdg-config/MangoHud:ro
+filesystems=~/Roms/Nintendo Wii U:ro;xdg-config/MangoHud:ro;/mnt/nvme/Roms/Nintendo Wii U:ro;~/SaveGames/Cemu:rw;/mnt/hdd2/Roms/Nintendo Wii U:ro
 
 [Environment]
 MANGOHUD=1
