@@ -1,2 +1,2 @@
 [Context]
-sockets=wayland
+filesystems=~/Memes:rw;xdg-music:ro
