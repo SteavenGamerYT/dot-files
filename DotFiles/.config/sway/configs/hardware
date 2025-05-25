@@ -1,5 +1,5 @@
 # Hardware Configuration
-include ~/.config/sway/pc-display
+#include ~/.config/sway/pc-display
 exec_always --no-startup-id ~/.config/sway/scripts/hardware.sh
 
 # Configure touchpad and mouse settings
@@ -16,6 +16,20 @@ input "1267:12410:ELAN1203:00_04F3:307A_Touchpad" {
 }
 
 input "1267:12410:ELAN1203:00_04F3:307A_Mouse" {
+    dwt disabled
+    accel_profile "flat"
+    tap enabled
+    natural_scroll enabled
+}
+
+input "1267:12584:ASUE1301:00_04F3:3128_Touchpad" {
+    dwt disabled
+    accel_profile "flat"
+    tap enabled
+    natural_scroll enabled
+}
+
+input "1267:12584:ASUE1301:00_04F3:3128_Mouse" {
     dwt disabled
     accel_profile "flat"
     tap enabled

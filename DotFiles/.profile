@@ -70,7 +70,7 @@ if [ "$XDG_SESSION_DESKTOP" = "gnome" ] || [ "$XDG_SESSION_DESKTOP" = "gnome-way
   export XCURSOR_THEME=WhiteSur-cursors
 fi
 
-if [ "$XDG_SESSION_DESKTOP" = "KDE" ]: then
+if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
 
   # Set the GTK theme to use for applications
   export GTK_THEME=Nordic
