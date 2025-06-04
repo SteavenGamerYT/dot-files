@@ -35,3 +35,17 @@ input "1267:12584:ASUE1301:00_04F3:3128_Mouse" {
     tap enabled
     natural_scroll enabled
 }
+
+input "1739:52865:DELL0A64:00_06CB:CE81_Touchpad" {
+    dwt disabled
+    accel_profile "flat"
+    tap enabled
+    natural_scroll enabled
+}
+
+input "1739:52865:DELL0A64:00_06CB:CE81_Mouse" {
+    dwt disabled
+    accel_profile "flat"
+    tap enabled
+    natural_scroll enabled
+}

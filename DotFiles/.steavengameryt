@@ -367,6 +367,8 @@ if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
     export MOZ_DRM_DEVICE=/dev/dri/renderD128
 elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
     export MANGOHUD_CONFIG="preset=7"
+elif [[ $GPU_MODEL == "GA106M [GeForce RTX 3060 Mobile / Max-Q] (rev a1)" ]]; then
+    export MANGOHUD_CONFIG="preset=9"
 fi
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 #export XCURSOR_THEME=Fluent-dark
