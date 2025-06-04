@@ -1,5 +1,5 @@
 # Hardware Configuration
-#include ~/.config/sway/pc-display
+include ~/.config/sway/pc-display
 exec_always --no-startup-id ~/.config/sway/scripts/hardware.sh
 
 # Configure touchpad and mouse settings

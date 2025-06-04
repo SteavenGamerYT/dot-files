@@ -30,7 +30,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id sleep 4 && flatpak run com.discordapp.Discord --start-minimized
 exec --no-startup-id sleep 4 && flatpak run com.ktechpit.whatsie
 exec --no-startup-id sleep 4 && steam -silent
-exec --no-startup-id sleep 4 && /opt/Heroic/heroic
+exec --no-startup-id sleep 4 && hheroic
 exec --no-startup-id sleep 4 && sunshine
 exec --no-startup-id sleep 4 && flatpak run com.dropbox.Client
 exec --no-startup-id sleep 4 && /opt/freedownloadmanager/fdm --hidden
