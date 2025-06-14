@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Array of mount points to monitor
 mount_points=(
     "/mnt/hdd"
     "/mnt/hdd2"
@@ -10,27 +9,33 @@ mount_points=(
     "/"
 )
 
-# Initialize total storage variable
 total_storage_gb=0
+tooltip_lines=()
 
-# Loop through each mount point
 for mount_point in "${mount_points[@]}"; do
-    # Check if mount point exists
-    if [ ! -e "$mount_point" ]; then
-        continue
-    fi
-    
-    # Get disk usage in GB for the current mount point
-    usage_gb=$(df -BG "$mount_point" 2>/dev/null | awk 'NR==2 {print $4}' | sed 's/G//')
-    
-    # Check if usage_gb is a number
-    if [[ ! "$usage_gb" =~ ^[0-9]+$ ]]; then
-        continue
-    fi
-    
-    # Add usage to total storage
-    total_storage_gb=$((total_storage_gb + usage_gb))
+    [ -e "$mount_point" ] || continue
+
+    usage_line=$(df -h "$mount_point" 2>/dev/null | awk 'NR==2')
+    [ -n "$usage_line" ] || continue
+
+    free=$(echo "$usage_line" | awk '{print $4}')
+    point=$(echo "$usage_line" | awk '{print $6}')
+    free_num=$(df -BG "$mount_point" 2>/dev/null | awk 'NR==2 {gsub("G","",$4); print $4}')
+
+    [[ "$free_num" =~ ^[0-9]+$ ]] || continue
+
+    total_storage_gb=$((total_storage_gb + free_num))
+    tooltip_lines+=("$point → $free")
 done
 
-# Print total storage left
-echo "$total_storage_gb GB"
+# Get fan RPM
+fan_rpm=$(sensors -u it8665-isa-0290 2>/dev/null | awk '/fan4_input:/ {print int($2) " RPM"}')
+if [ -n "$fan_rpm" ]; then
+    tooltip_lines+=("Samsung SSD 990 PRO 4TB Fan → $fan_rpm")
+fi
+
+# Format tooltip as single string for JSON
+tooltip=$(printf "%s\n" "${tooltip_lines[@]}" | jq -Rs .)
+text="${total_storage_gb} GB"
+
+echo "{\"text\": \"$text\", \"tooltip\": $tooltip}"
