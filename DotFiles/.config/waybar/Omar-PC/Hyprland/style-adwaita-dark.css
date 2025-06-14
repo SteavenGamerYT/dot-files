@@ -110,6 +110,15 @@ tooltip {
     color: @foreground;
 }
 
+#custom-cpu {
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: @shade2;
+    color: @foreground;
+}
+
+
 #memory {
     background: @shade1;
     color: @foreground;
