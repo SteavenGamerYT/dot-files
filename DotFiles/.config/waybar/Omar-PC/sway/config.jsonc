@@ -14,7 +14,7 @@
         "custom/disks",
         "custom/gpuusage",
         "custom/vramusage",
-        "cpu",
+        "custom/cpu",
         "memory",
         "backlight",
         "pulseaudio",
@@ -34,9 +34,10 @@
     "format": "  {}"
   },
    "custom/gpuusage": {
-    "exec": "~/.config/waybar/Omar-PC/sway/scripts/amdgpu-usage.sh",
-    "interval": 1,
-    "format": "󰍹 {}%"
+        "exec": "~/.config/waybar/Omar-PC/sway/scripts/amdgpu-usage.sh",
+        "interval": 1,
+        "return-type": "json",
+        "tooltip": true
   },
     "memory": {
         "interval": 1,
@@ -46,10 +47,20 @@
         "interval": 1,
         "format": "  {usage}%"
    },
+    "custom/cpu": {
+        "exec": "~/.config/waybar/Omar-PC/sway/scripts/cpu-fan-cycle.sh",
+        "interval": 1,
+        "format": "{}",
+        "return-type": "json",
+        "tooltip": true,
+        "on-click": "~/.config/waybar/Omar-PC/sway/scripts/cycle-cpu-fan.sh"
+   },
    "custom/disks": {
-    "exec": "~/.config/waybar/Omar-PC/sway/scripts/disk-usage.sh",
-    "interval": 1,
-    "format": "󰋊 {}"
+        "exec": "~/.config/waybar/Omar-PC/sway/scripts/disk-usage.sh",
+        "interval": 10,
+        "format": "󰋊 {}",
+        "return-type": "json",
+        "tooltip": true
   },
 
   "custom/language": {
