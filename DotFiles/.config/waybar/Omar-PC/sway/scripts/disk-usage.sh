@@ -29,7 +29,7 @@ for mount_point in "${mount_points[@]}"; do
 done
 
 # Get fan RPM
-fan_rpm=$(sensors -u it8665-isa-0290 2>/dev/null | awk '/fan4_input:/ {print int($2) " RPM"}')
+fan_rpm=$(sensors -u it8665-isa-0290 2>/dev/null | awk '/fan3_input:/ {print int($2) " RPM"}')
 if [ -n "$fan_rpm" ]; then
     tooltip_lines+=("Samsung SSD 990 PRO 4TB Fan → $fan_rpm")
 fi
