@@ -1,2 +1,5 @@
+[Context]
+devices=input;
+
 [Environment]
 MANGOHUD=1
