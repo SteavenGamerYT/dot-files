@@ -11,6 +11,7 @@
         "hyprland/window"
     ],
     "modules-right": [
+        "custom/vmgpuusage",
         "custom/disks",
         "custom/gpuusage",
         "custom/vramusage",
@@ -35,6 +36,12 @@
   },
    "custom/gpuusage": {
         "exec": "~/.config/waybar/Omar-PC/Hyprland/scripts/amdgpu-usage.sh",
+        "interval": 1,
+        "return-type": "json",
+        "tooltip": true
+  },
+   "custom/vmgpuusage": {
+        "exec": "~/.config/waybar/Omar-PC/sway/scripts/vm-gpu-usage.sh",
         "interval": 1,
         "return-type": "json",
         "tooltip": true
