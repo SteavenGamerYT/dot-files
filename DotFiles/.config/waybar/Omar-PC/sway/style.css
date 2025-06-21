@@ -10,6 +10,8 @@
 @define-color shade6 #4C566A;
 @define-color shade7 #4C566A;
 @define-color shade8 #4C566A;
+@define-color nvidia #a3be8c;
+@define-color amd #bf616a;
 
 * {
     border-radius: 0;
@@ -92,6 +94,14 @@ tooltip {
     padding-right: 12px;
     background: @shade2;
     color: @foreground;
+}
+
+#custom-vmgpuusage {
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: @shade2;
+    color: @nvidia;
 }
 
 #custom-vramusage {
