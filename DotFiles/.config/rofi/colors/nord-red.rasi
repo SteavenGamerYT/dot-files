@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Modified for Nordic Red theme
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #402E30FF;   /* Deep red-tinted background */
+    background-alt: #5A3F42FF;   /* Slightly lighter red-tinted alt */
+    foreground:     #F5F5F5FF;   /* Soft white text */
+    selected:       #C06C84FF;   /* Muted rose for selection */
+    active:         #D28E8EFF;   /* Warm muted pink for active */
+    urgent:         #BF616AFF;   /* Strong red (kept from Nord) */
+}
