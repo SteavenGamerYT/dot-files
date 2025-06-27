@@ -1,24 +1,24 @@
 format = """
-[░▒▓](#a3aed2)\
-[ 󰤇 ](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+[░▒▓](#70474c)\
+[ 󰤇 ](bg:#70474c fg:#dcdcdc)\
+[](bg:#bf616a fg:#70474c)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#bf616a bg:#3b2f30)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
+[](fg:#3b2f30 bg:#2e2e2e)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
+[](fg:#2e2e2e bg:#1d1d1d)\
 $time\
-[ ](fg:#1d2230)\
+[ ](fg:#1d1d1d)\
 \n$character"""
 command_timeout = 2000
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:#f8dfe2 bg:#bf616a"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -31,36 +31,35 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:#3b2f30"
+format = '[[ $symbol $branch ](fg:#f8dfe2 bg:#3b2f30)]($style)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+style = "bg:#3b2f30"
+format = '[[($all_status$ahead_behind )](fg:#f8dfe2 bg:#3b2f30)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#2e2e2e"
+format = '[[ $symbol ($version) ](fg:#f8dfe2 bg:#2e2e2e)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#2e2e2e"
+format = '[[ $symbol ($version) ](fg:#f8dfe2 bg:#2e2e2e)]($style)'
 
 [golang]
 symbol = "ﳑ"
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#2e2e2e"
+format = '[[ $symbol ($version) ](fg:#f8dfe2 bg:#2e2e2e)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#2e2e2e"
+format = '[[ $symbol ($version) ](fg:#f8dfe2 bg:#2e2e2e)]($style)'
 
 [time]
 disabled = false
-time_format = "%I:%M %P" # 12 HOUR format - Hour:Minute PM OR AM
-#time_format = "%R" # 24 HOUR FORMAT - Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+time_format = "%I:%M %P"
+style = "bg:#1d1d1d"
+format = '[[  $time ](fg:#d08791 bg:#1d1d1d)]($style)'

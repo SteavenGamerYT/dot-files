@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg:svg height="635.00043" id="svg1764" inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)" sodipodi:docname="Nordic-Solid.svg" version="1.1" viewBox="0 0 380.00266 635.00043" width="380.00266" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg:metadata id="metadata1768">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</svg:metadata>
+<sodipodi:namedview bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview1766" inkscape:current-layer="g658" inkscape:cx="-64.145705" inkscape:cy="302.95143" inkscape:deskcolor="#d1d1d1" inkscape:document-rotation="0" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.98823529" inkscape:pageshadow="2" inkscape:showpageshadow="2" inkscape:window-height="1378" inkscape:window-maximized="1" inkscape:window-width="2560" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="6.7502571" objecttolerance="10" pagecolor="#001419" showgrid="false"/>
+<svg:defs id="defs116">
+<svg:linearGradient id="linearGradient2000" inkscape:collect="always">
+<svg:stop id="stop1996" offset="0" style="stop-color:#ff005d;stop-opacity:1"/>
+<svg:stop id="stop1998" offset="1" style="stop-color:#ff8b26;stop-opacity:0.98823529"/>
+</svg:linearGradient>
+<svg:linearGradient id="generic-fill">
+<svg:stop id="stop2" offset="0" style="stop-color:#1e1e20"/>
+<svg:stop id="stop4" offset=".47916666" style="stop-color:#1e1e20"/>
+<svg:stop id="stop6" offset="1" style="stop-color:#323234"/>
+</svg:linearGradient>
+<svg:linearGradient id="button-focused-fill">
+<svg:stop id="stop9" offset="0" style="stop-color:#7a7a7c"/>
+<svg:stop id="stop11" offset="1" style="stop-color:#646466"/>
+</svg:linearGradient>
+<svg:linearGradient id="button-focused-border">
+<svg:stop id="stop14" offset="0" style="stop-color:#88888a"/>
+<svg:stop id="stop16" offset="1" style="stop-color:#727274"/>
+</svg:linearGradient>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1435" x1="23.75" x2="23.75" xlink:href="#button-focused-border" y1="48.751598" y2="81.251602"/>
+<svg:linearGradient gradientTransform="translate(14.999901,-60.000001)" gradientUnits="userSpaceOnUse" id="linearGradient1455" x1="56" x2="56" xlink:href="#button-focused-fill" y1="21" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1469" x1="2.0000992" x2="2.0000992" xlink:href="#button-focused-fill" y1="20.999998" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="button-toggled-fill" x1="2.0000992" x2="2.0000992" y1="20.999998" y2="53">
+<svg:stop id="stop22" offset="0" style="stop-color:#525254"/>
+<svg:stop id="stop24" offset="1" style="stop-color:#48484a"/>
+</svg:linearGradient>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="button-toggled-border" x1="23.75" x2="23.75" y1="48.751598" y2="81.251602">
+<svg:stop id="stop27" offset="0" style="stop-color:#606062"/>
+<svg:stop id="stop29" offset="1" style="stop-color:#565658"/>
+</svg:linearGradient>
+<svg:linearGradient gradientTransform="translate(15,-5.0000001)" gradientUnits="userSpaceOnUse" id="linearGradient1455-3" x1="56" x2="56" xlink:href="#button-focused-fill" y1="21" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1536" x1="21.25" x2="21.25" xlink:href="#button-focused-border" y1="48.751598" y2="81.251602"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1546" x1="6.0000992" x2="6.0000992" xlink:href="#button-toggled-fill" y1="20.999998" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1556" x1="21.25" x2="21.25" xlink:href="#button-toggled-border" y1="48.751598" y2="81.251602"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1564" x1="6.0000992" x2="6.0000992" xlink:href="#button-focused-fill" y1="20.999998" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1572" x1="2.0000992" x2="2.0000992" xlink:href="#button-toggled-fill" y1="20.999998" y2="53"/>
+<svg:linearGradient gradientTransform="translate(-190,-5.0000001)" gradientUnits="userSpaceOnUse" id="linearGradient1582" x1="361" x2="361" xlink:href="#button-toggled-fill" y1="21" y2="53"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient1584" x1="6" x2="6" xlink:href="#button-focused-fill" y1="21" y2="53"/>
+<svg:linearGradient gradientTransform="translate(114.9999,-60.000001)" gradientUnits="userSpaceOnUse" id="linearGradient1586" x1="56" x2="56" xlink:href="#button-toggled-fill" y1="21" y2="53"/>
+<svg:linearGradient gradientTransform="translate(305)" gradientUnits="userSpaceOnUse" id="linearGradient1188" x1="23.75" x2="23.75" xlink:href="#button-toggled-border" y1="48.751598" y2="81.251602"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient2255" x1="69" x2="69" xlink:href="#button-focused-fill" y1="311" y2="327"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient2342" x1="69" x2="69" xlink:href="#button-toggled-fill" y1="311" y2="327"/>
+<svg:linearGradient gradientTransform="matrix(1.125,0,0,1.125,-8.625,-39.875)" gradientUnits="userSpaceOnUse" id="linearGradient2348" x1="69" x2="69" xlink:href="#button-focused-fill" y1="311" y2="327"/>
+<svg:linearGradient gradientTransform="matrix(1.125,0,0,1.125,-8.625,-39.875)" gradientUnits="userSpaceOnUse" id="linearGradient2352" x1="69" x2="69" xlink:href="#button-toggled-fill" y1="311" y2="327"/>
+<svg:linearGradient gradientTransform="matrix(1.0357277 0 0 .5263158 97.25087 226.6579)" gradientUnits="userSpaceOnUse" id="linearGradient6754-0" x1="-24.863001" x2="-24.863001" xlink:href="#menu-shadow" y1="1080.8" y2="1072.25"/>
+<svg:linearGradient id="menu-shadow">
+<svg:stop id="stop47" offset="0"/>
+<svg:stop id="stop49" offset="1" style="stop-opacity:0"/>
+</svg:linearGradient>
+<svg:radialGradient cx="-24.705" cy="1133.2469" fx="-24.686001" fy="1133.543" gradientTransform="matrix(-1.4544547e-6,1.7989906,-2.4827569,-1.3247913e-5,2937.578,378.97281)" gradientUnits="userSpaceOnUse" id="radialGradient6744-9" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:linearGradient id="menu-shadow-corner">
+<svg:stop id="stop53" offset="0"/>
+<svg:stop id="stop55" offset=".488"/>
+<svg:stop id="stop57" offset="1" style="stop-opacity:0"/>
+</svg:linearGradient>
+<svg:radialGradient cx="-75.382004" cy="1132.228" fx="-75.843002" fy="1132.274" gradientTransform="matrix(-3.5863106,2.2914401e-5,3.434988e-6,-2.0702316,-192.34636,2678.4714)" gradientUnits="userSpaceOnUse" id="radialGradient6746-6" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:radialGradient cx="-24.531" cy="1084.0439" gradientTransform="matrix(1.9696085,-2.8775917e-6,-2.3123803e-7,3.0094402,174.81656,-2980.8658)" gradientUnits="userSpaceOnUse" id="radialGradient6742-3" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:radialGradient cx="-73.334999" cy="1084.806" gradientTransform="matrix(.00019936117 -3.8621156 2.8413414 7.9240303e-7 -3008.3548 .77215)" gradientUnits="userSpaceOnUse" id="radialGradient6740-0" r="3.625" xlink:href="#menu-shadow-corner-topleft"/>
+<svg:linearGradient id="menu-shadow-corner-topleft">
+<svg:stop id="stop63" offset="0"/>
+<svg:stop id="stop65" offset=".714"/>
+<svg:stop id="stop67" offset="1" style="stop-opacity:0"/>
+</svg:linearGradient>
+<svg:linearGradient gradientTransform="matrix(1.0357277 0 0 .68966345 149.75041 -449.49213)" gradientUnits="userSpaceOnUse" id="linearGradient6750-7" x1="-73.000999" x2="-73.015999" xlink:href="#menu-shadow" y1="1137.5" y2="1145.25"/>
+<svg:linearGradient gradientTransform="matrix(.68967448 0 0 1.1538462 141.79336 -974.0386)" gradientUnits="userSpaceOnUse" id="linearGradient6748-6" x1="-21.450001" x2="-12.75" xlink:href="#menu-shadow" y1="1084.234" y2="1084.234"/>
+<svg:linearGradient gradientTransform="matrix(.68963586 0 0 1.1538462 123.79147 -974.0386)" gradientUnits="userSpaceOnUse" id="linearGradient6752-2" x1="-70.75" x2="-85.25" xlink:href="#menu-shadow" y1="1084.234" y2="1084.234"/>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient2536" x1="205" x2="205" y1="365" y2="385">
+<svg:stop id="stop73" offset="0" style="stop-color:#1e1e20"/>
+<svg:stop id="stop75" offset="1" style="stop-color:#323234"/>
+</svg:linearGradient>
+<svg:linearGradient gradientTransform="translate(-45.000003,-65.000086)" gradientUnits="userSpaceOnUse" id="linearGradient2850" x1="165" x2="213" xlink:href="#linearGradient2000" y1="590" y2="638"/>
+<svg:linearGradient gradientTransform="translate(-45.000003,-65.000086)" gradientUnits="userSpaceOnUse" id="linearGradient2860" x1="213" x2="213" xlink:href="#generic-fill" y1="546" y2="638"/>
+<svg:linearGradient gradientTransform="translate(-45.000003,-65.000086)" gradientUnits="userSpaceOnUse" id="linearGradient2868" x1="121" x2="213" xlink:href="#generic-fill" y1="638" y2="638"/>
+<svg:linearGradient gradientTransform="translate(-45.000003,-65.000086)" gradientUnits="userSpaceOnUse" id="linearGradient2876" x1="165" x2="265" xlink:href="#generic-fill" y1="590" y2="590"/>
+<svg:linearGradient gradientTransform="translate(-45.000003,-65.000086)" gradientUnits="userSpaceOnUse" id="linearGradient2884" x1="165" x2="165" xlink:href="#generic-fill" y1="590" y2="690"/>
+<svg:radialGradient cx="-24.990999" cy="1133.449" fx="-25.268" fy="1133.64" gradientTransform="matrix(8.577396e-6,1.7989906,-2.6207253,-2.9316534e-8,3041.4588,985.95773)" gradientUnits="userSpaceOnUse" id="radialGradient4940-1" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:radialGradient cx="-75.382004" cy="1132.228" fx="-75.843002" fy="1132.274" gradientTransform="matrix(-3.5863106,-2.1109691e-4,1.2825659e-4,-1.9323222,-244.98724,3129.3088)" gradientUnits="userSpaceOnUse" id="radialGradient4949-9" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:radialGradient cx="-24.531" cy="1083.8781" gradientTransform="matrix(2.0689655,4.3903541e-6,-1.1247527e-5,3.0094402,124.76629,-2373.8657)" gradientUnits="userSpaceOnUse" id="radialGradient4962-3" r="3.625" xlink:href="#menu-shadow-corner"/>
+<svg:radialGradient cx="-73.205002" cy="1084.653" gradientTransform="matrix(1.9936117e-4,-3.8621156,2.8413414,7.9240303e-7,-3060.8544,607.77205)" gradientUnits="userSpaceOnUse" id="radialGradient4966-3" r="3.625" xlink:href="#menu-shadow-corner-topleft"/>
+<svg:linearGradient gradientTransform="matrix(1.0357277 0 0 .68966345 97.25086 157.50777)" gradientUnits="userSpaceOnUse" id="linearGradient4945-2" x1="-73.138" x2="-73.138" xlink:href="#menu-shadow" y1="1136.775" y2="1144.75"/>
+<svg:linearGradient gradientTransform="matrix(.68967448 0 0 1.1538462 89.29381 -367.03866)" gradientUnits="userSpaceOnUse" id="linearGradient4957-9" x1="-22.174999" x2="-12.75" xlink:href="#menu-shadow" y1="1084.234" y2="1084.234"/>
+<svg:linearGradient gradientTransform="matrix(.68963586 0 0 1.1538462 71.291918 -367.03866)" gradientUnits="userSpaceOnUse" id="linearGradient4953-3" x1="-70.75" x2="-85.25" xlink:href="#menu-shadow" y1="1084.234" y2="1084.234"/>
+<svg:linearGradient gradientTransform="matrix(1.0357277 0 0 .63157896 97.25087 199.78948)" gradientUnits="userSpaceOnUse" id="linearGradient4963" x1="-24.863001" x2="-24.863001" xlink:href="#menu-shadow" y1="1080.8" y2="1072.25"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3408" x1="-35.499939" x2="75.5" xlink:href="#generic-fill" y1="941.99994" y2="942"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3416" x1="17.500059" x2="17.500059" xlink:href="#generic-fill" y1="881.99994" y2="1006.9999"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3424" x1="17.500059" x2="138.50006" xlink:href="#generic-fill" y1="881.99994" y2="881.99994"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3432" x1="75.500061" x2="75.500061" xlink:href="#generic-fill" y1="826.99994" y2="941.99994"/>
+<svg:linearGradient gradientTransform="translate(-387.50002,-514.9999)" gradientUnits="userSpaceOnUse" id="linearGradient2700" x1="387.5" x2="427.50003" y1="1035" y2="1074.9999">
+<svg:stop id="stop95" offset="0" style="stop-color:#1e1e20"/>
+<svg:stop id="stop97" offset=".16435404" style="stop-color:#1e1e20"/>
+<svg:stop id="stop99" offset=".27687135" style="stop-color:#1e1e20"/>
+<svg:stop id="stop101" offset=".72499996" style="stop-color:#1e1e20"/>
+<svg:stop id="stop103" offset=".79999995" style="stop-color:#232325"/>
+<svg:stop id="stop105" offset=".875" style="stop-color:#28282a"/>
+<svg:stop id="stop107" offset="1" style="stop-color:#323234"/>
+</svg:linearGradient>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient1994" x1="5" x2="53" xlink:href="#generic-fill" y1="365" y2="413"/>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient2003" x1="5" x2="105" xlink:href="#generic-fill" y1="365" y2="365"/>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient2011" x1="53" x2="53" xlink:href="#generic-fill" y1="321" y2="413"/>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient2019" x1="-39" x2="53" xlink:href="#generic-fill" y1="413" y2="413"/>
+<svg:linearGradient gradientTransform="translate(0,-90)" gradientUnits="userSpaceOnUse" id="linearGradient2027" x1="5" x2="5" xlink:href="#generic-fill" y1="365" y2="465"/>
+<svg:linearGradient gradientUnits="userSpaceOnUse" id="linearGradient2008" x1="23.75" x2="23.75" xlink:href="#button-toggled-border" y1="48.751598" y2="81.251602"/>
+</svg:defs>
+<svg:g id="g171" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 115,524.99992 h 5 v 48 h -5 z" id="tooltip-normal-left" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 120,519.99992 -4.9989,3e-4 -10e-4,5 h 5 z" id="tooltip-normal-topleft" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 168,519.99992 v 5 h -48 v -5 z" id="tooltip-normal-top" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 173,524.99992 -3e-4,-4.9989 -5,-0.001 v 5 z" id="tooltip-normal-topright" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 172.99985,524.99992 h -5 v 48 l 5,-3e-4 z" id="tooltip-normal-right" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 167.9998,577.99992 4.9989,-3e-4 10e-4,-5 h -5 z" id="tooltip-normal-bottomright" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 120.00075,577.99992 3e-4,-5 h 48 l -3e-4,5 z" id="tooltip-normal-bottom" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 115.0005,572.99992 3e-4,4.9989 5,10e-4 v -5 z" id="tooltip-normal-bottomleft" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="48" id="tooltip-normal" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd" width="48" x="120" y="525"/>
+<svg:g id="tooltip-shadow-top" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 17.5005,877 -1.5e-4,2.0003 h 58 L 75.5005,877 Z" id="path127" inkscape:connector-curvature="0" style="opacity:0.3;fill:url(#linearGradient4963)"/>
+<svg:path d="m 17.5,879 v 3 h 58 v -3 z" id="path129" inkscape:connector-curvature="0" style="opacity:0.8;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tooltip-shadow-hint-top" transform="matrix(1,0,0,0.8,119.51044,304.00038)" width="100%" x="0" xlink:href="#menu-shadow-hint-top" y="0"/>
+<svg:g id="tooltip-shadow-left" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 12.5005,882 v 60 l 1.99985,3e-4 v -60 z" id="path133" inkscape:connector-curvature="0" style="opacity:0.4;fill:url(#linearGradient4953-3)"/>
+<svg:path d="m 14.5,882 v 60 h 3 v -60 z" id="path135" inkscape:connector-curvature="0" style="opacity:0.8;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tooltip-shadow-hint-left" transform="matrix(0.4,0,0,1,159.00018,252.50036)" width="100%" x="0" xlink:href="#menu-shadow-hint-left" y="0"/>
+<svg:g id="tooltip-shadow-right" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 77.50035,882.0003 v 60 L 80.5003,942 v -60 z" id="path139" inkscape:connector-curvature="0" style="opacity:0.48;fill:url(#linearGradient4957-9)"/>
+<svg:path d="m 75.5003,882 v 60 h 2 v -60 z" id="path141" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tooltip-shadow-hint-right" transform="matrix(0.6,0,0,1,173.20027,252.50036)" width="100%" x="0" xlink:href="#menu-shadow-hint-right" y="0"/>
+<svg:g id="tooltip-shadow-bottom" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="M 17.50035,944.0003 17.5005,947 h 58 l -1.5e-4,-2.9997 z" id="path145" inkscape:connector-curvature="0" style="opacity:0.58;fill:url(#linearGradient4945-2)"/>
+<svg:path d="m 17.5,942 v 2 h 58 v -2 z" id="path147" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tooltip-shadow-hint-bottom" transform="matrix(1,0,0,0.6,118.25045,386.0004)" width="100%" x="0" xlink:href="#menu-shadow-hint-bottom" y="0"/>
+<svg:g id="tooltip-shadow-topleft" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 12.50035,877 1e-4,5 1.9999,3e-4 L 14.5,879 l 3.00035,3e-4 9.5e-5,-2.0004 z" id="path151" inkscape:connector-curvature="0" style="opacity:0.28;fill:url(#radialGradient4966-3)"/>
+<svg:path d="m 14.5,879 6e-5,3 3,-6e-5 v -3 z" id="path153" inkscape:connector-curvature="0" style="opacity:0.8;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tooltip-shadow-topright" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 75.5005,877 -1.5e-4,2.0003 h 2 v 3 l 3.00015,-3e-4 1e-4,-5 z" id="path156" inkscape:connector-curvature="0" style="opacity:0.43;fill:url(#radialGradient4962-3)"/>
+<svg:path d="m 75.5005,879 v 3 h 2 v -3 z" id="path158" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tooltip-shadow-bottomleft" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 12.50045,942 v 5 h 5 l -10e-5,-2.9997 h -3 v -2 z" id="path161" inkscape:connector-curvature="0" style="opacity:0.48;fill:url(#radialGradient4949-9)"/>
+<svg:path d="m 14.5,942 v 2 h 3 l -3e-4,-2 z" id="path163" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tooltip-shadow-bottomright" style="fill-rule:evenodd" transform="translate(172.49994,-356.99994)">
+<svg:path d="m 77.5006,944 -2.00025,3e-4 4e-4,2.9997 h 5 v -5 l -3.0004,3e-4 z" id="path166" inkscape:connector-curvature="0" style="opacity:0.48;fill:url(#radialGradient4940-1)"/>
+<svg:path d="m 75.5005,942 1e-4,2 h 2 v -2 z" id="path168" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+</svg:g>
+<svg:g id="g183" transform="translate(0.00264425,45.000002)">
+<svg:g id="resize-grip-normal" transform="translate(-325,447.5)">
+<svg:rect height="25" id="rect173" style="opacity:0.00100002;fill:#ffffff" width="25" x="375" y="87.5"/>
+<svg:path d="m 400,95 -17.5,17.5 H 400 Z" id="path175" inkscape:connector-curvature="0" style="opacity:0;stroke-width:0.935"/>
+</svg:g>
+<svg:g id="resize-grip-focused" transform="translate(-298.16946,542.5)">
+<svg:rect height="25" id="rect178" style="opacity:0.00100002;fill:#ffffff" width="25" x="378.62646" y="-7.5"/>
+<svg:path d="M 400.44511,-4.318634 C 393.17225,2.954235 385.89936,10.22712 378.62648,17.5 h 25 v -25 c -1.06047,1.060474 -2.12095,2.120948 -3.18142,3.181422 z" id="path180" inkscape:connector-curvature="0" style="opacity:0;stroke-width:0.93185878"/>
+</svg:g>
+</svg:g>
+<svg:g id="g186" transform="translate(0.00264425,45.000002)">
+<svg:rect height="40" id="window-normal" style="fill:#3b2f30;fill-opacity:1" width="40" x="0" y="520"/>
+</svg:g>
+<svg:g id="g202" transform="translate(0.00264425,45.000002)">
+<svg:rect height="10" id="grip-pressed" style="fill-opacity:0" width="10" x="85" y="505"/>
+<svg:rect height="10" id="grip-focused" style="fill-opacity:0" width="10" x="70" y="505"/>
+<svg:rect height="10" id="grip-normal" style="fill-opacity:0" width="10" x="55" y="505"/>
+<svg:use height="100%" id="splitter-grip-pressed" transform="translate(14.999998)" width="100%" x="0" xlink:href="#splitter-grip-focused" y="0"/>
+<svg:g id="splitter-grip-focused" transform="matrix(1.1428571,0,0,1,-244.2857,-574)">
+<svg:rect height="32" id="rect192" style="fill-opacity:0" width="7" x="275" y="1039"/>
+<svg:rect height="32" id="rect194" style="opacity:0.12000002;fill:#ffffff" width="1.7500001" x="277.625" y="1039"/>
+</svg:g>
+<svg:g id="splitter-grip-normal" transform="matrix(1.1428571,0,0,1,-259.2857,-574)">
+<svg:rect height="32" id="rect197" style="fill-opacity:0" width="7" x="275" y="1039"/>
+<svg:rect height="32" id="rect199" style="opacity:0.1;fill:#ffffff" width="1.7500001" x="277.625" y="1039"/>
+</svg:g>
+</svg:g>
+<svg:g id="g249" transform="translate(0.00264425,45.000002)">
+<svg:rect height="30" id="dock-normal" style="opacity:0.8;fill:#70474c;fill-opacity:0.6" width="30" x="300" y="445.00043"/>
+<svg:rect height="30" id="dock-focused-left" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="340" y="445.00043"/>
+<svg:rect height="30" id="dock-focused-top" style="opacity:1;fill:#232831;fill-opacity:1" transform="rotate(-90)" width="5" x="-445.00043" y="345"/>
+<svg:rect height="5" id="dock-focused-topleft" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="340" y="440.00043"/>
+<svg:rect height="5" id="dock-focused-topright" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="375" y="440.00043"/>
+<svg:rect height="30" id="dock-focused-right" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="375" y="445.00043"/>
+<svg:rect height="30" id="dock-focused-bottom" style="opacity:1;fill:#232831;fill-opacity:1" transform="rotate(-90)" width="5" x="-480.00043" y="345"/>
+<svg:rect height="5" id="dock-focused-bottomright" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="375" y="475.00043"/>
+<svg:rect height="5" id="dock-focused-bottomleft" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="340" y="475.00043"/>
+<svg:rect height="30" id="dock-normal-left" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="295" y="445.00043"/>
+<svg:rect height="5" id="dock-normal-topleft" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="295" y="440.00043"/>
+<svg:rect height="30" id="dock-normal-top" style="opacity:1;fill:#232831;fill-opacity:1" transform="rotate(90)" width="5" x="440.00043" y="-330"/>
+<svg:rect height="5" id="dock-normal-topright" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="330" y="440.00043"/>
+<svg:rect height="30" id="dock-normal-right" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="330" y="445.00043"/>
+<svg:rect height="5" id="dock-normal-bottomright" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="330" y="475.00043"/>
+<svg:rect height="30" id="dock-normal-bottom" style="opacity:1;fill:#232831;fill-opacity:1" transform="rotate(-90)" width="5" x="-480.00043" y="300"/>
+<svg:rect height="5" id="dock-normal-bottomleft" style="opacity:1;fill:#232831;fill-opacity:1" width="5" x="295" y="475.00043"/>
+<svg:rect height="30" id="dock-focused" style="color:#000000;opacity:0.8;fill:#151926;fill-opacity:0.47843137" width="30" x="345" y="445.00043"/>
+</svg:g>
+<svg:g id="g336" transform="translate(0.00264425,45.000002)">
+<svg:g id="mdi-close-normal" transform="translate(151,11.970001)">
+<svg:rect height="16" id="rect251" style="opacity:0.00100002;fill:#000000" width="16" x="54" y="428.03"/>
+<svg:path class="ColorScheme-Text" d="m 65.002415,432.02406 a 1,1 0 0 0 -0.70703,0.29297 l -2.29297,2.29297 -2.2832,-2.2832 a 1,1 0 0 0 -0.01,-0.01 1,1 0 0 0 -0.70117,-0.28906 l -0.01,0.0137 a 1,1 0 0 0 -1,1 1,1 0 0 0 0.29297,0.70703 l 2.29297,2.29297 -2.29297,2.29297 a 1,1 0 0 0 -0.28906,0.69922 1,1 0 0 0 1,1 1,1 0 0 0 0.70703,-0.29297 l 2.29297,-2.29297 2.2832,2.2832 a 1,1 0 0 0 0.7168,0.30274 1,1 0 0 0 1,-1 1,1 0 0 0 -0.29297,-0.70703 l -2.30078,-2.29883 2.2832,-2.2832 a 1,1 0 0 0 0.31055,-0.72071 1,1 0 0 0 -1,-1 z" id="path253" inkscape:connector-curvature="0" style="color:#5c616c;fill:#aaaaac"/>
+</svg:g>
+<svg:g id="mdi-minimize-normal" transform="translate(149,12.969991)">
+<svg:rect height="16" id="rect256" style="opacity:0.00100002;fill:#000000" width="16" x="72" y="428.03"/>
+<svg:rect height="2" id="rect258" rx="0" ry="0" style="fill:#aaaaac" width="8" x="76" y="435.03"/>
+</svg:g>
+<svg:g id="mdi-maximize-normal" transform="translate(147,12.969991)">
+<svg:rect height="16" id="rect261" style="opacity:0.00100002;fill:#000000" width="16" x="90" y="428.03"/>
+<svg:path d="m 97,432.03 v 2.9993 l -3,7e-4 v 2 l 3,-7e-4 v 3.0007 h 2 v -3.0007 l 3,7e-4 v -2 l -3,-7e-4 V 432.03 Z" id="path263" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="mdi-restore-normal" transform="translate(145,12.969991)">
+<svg:rect height="16" id="rect266" style="opacity:0.00100002;fill:#000000" width="16" x="108" y="428.03"/>
+<svg:path d="m 116,432.0293 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z" id="path268" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="mdi-close-focused" transform="translate(151,27.970001)">
+<svg:rect height="16" id="rect271" style="opacity:0.00100002;fill:#000000" width="16" x="54" y="428.03"/>
+<svg:path class="ColorScheme-Text" d="m 65.002415,432.02406 a 1,1 0 0 0 -0.70703,0.29297 l -2.29297,2.29297 -2.2832,-2.2832 a 1,1 0 0 0 -0.01,-0.01 1,1 0 0 0 -0.70117,-0.28906 l -0.01,0.0137 a 1,1 0 0 0 -1,1 1,1 0 0 0 0.29297,0.70703 l 2.29297,2.29297 -2.29297,2.29297 a 1,1 0 0 0 -0.28906,0.69922 1,1 0 0 0 1,1 1,1 0 0 0 0.70703,-0.29297 l 2.29297,-2.29297 2.2832,2.2832 a 1,1 0 0 0 0.7168,0.30274 1,1 0 0 0 1,-1 1,1 0 0 0 -0.29297,-0.70703 l -2.30078,-2.29883 2.2832,-2.2832 a 1,1 0 0 0 0.31055,-0.72071 1,1 0 0 0 -1,-1 z" id="path273" inkscape:connector-curvature="0" style="color:#5c616c;fill:#da4453"/>
+</svg:g>
+<svg:g id="mdi-minimize-focused" transform="translate(149,27.970001)">
+<svg:rect height="16" id="rect276" style="opacity:0.00100002;fill:#000000" width="16" x="72" y="428.03"/>
+<svg:rect height="2" id="rect278" rx="0" ry="0" style="fill:#c8c8ca" width="8" x="76" y="435.03"/>
+</svg:g>
+<svg:g id="mdi-maximize-focused" transform="translate(147,27.970001)">
+<svg:rect height="16" id="rect281" style="opacity:0.00100002;fill:#000000" width="16" x="90" y="428.03"/>
+<svg:path d="m 97,432.03001 v 2.99929 l -3,7.1e-4 v 2 l 3,-7.1e-4 v 3.00071 h 2 v -3.00071 l 3,7.1e-4 v -2 l -3,-7.1e-4 v -2.99929 z" id="path283" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="mdi-restore-focused" transform="translate(145,27.970001)">
+<svg:rect height="16" id="rect286" style="opacity:0.00100002;fill:#000000" width="16" x="108" y="428.03"/>
+<svg:path d="m 116,432.0293 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z" id="path288" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="mdi-close-pressed" transform="translate(151,43.970001)">
+<svg:rect height="16" id="rect291" style="opacity:0.00100002;fill:#000000" width="16" x="54" y="428.03"/>
+<svg:path class="ColorScheme-Text" d="m 65.002415,432.02406 a 1,1 0 0 0 -0.70703,0.29297 l -2.29297,2.29297 -2.2832,-2.2832 a 1,1 0 0 0 -0.01,-0.01 1,1 0 0 0 -0.70117,-0.28906 l -0.01,0.0137 a 1,1 0 0 0 -1,1 1,1 0 0 0 0.29297,0.70703 l 2.29297,2.29297 -2.29297,2.29297 a 1,1 0 0 0 -0.28906,0.69922 1,1 0 0 0 1,1 1,1 0 0 0 0.70703,-0.29297 l 2.29297,-2.29297 2.2832,2.2832 a 1,1 0 0 0 0.7168,0.30274 1,1 0 0 0 1,-1 1,1 0 0 0 -0.29297,-0.70703 l -2.30078,-2.29883 2.2832,-2.2832 a 1,1 0 0 0 0.31055,-0.72071 1,1 0 0 0 -1,-1 z" id="path293" inkscape:connector-curvature="0" style="color:#5c616c;opacity:0.8;fill:#da4453"/>
+</svg:g>
+<svg:g id="mdi-minimize-pressed" transform="translate(149,43.970001)">
+<svg:rect height="16" id="rect296" style="opacity:0.00100002;fill:#000000" width="16" x="72" y="428.03"/>
+<svg:rect height="2" id="rect298" rx="0" ry="0" style="fill:#d2d2d4" width="8" x="76" y="435.03"/>
+</svg:g>
+<svg:g id="mdi-maximize-pressed" transform="translate(147,43.970001)">
+<svg:rect height="16" id="rect301" style="opacity:0.00100002;fill:#000000" width="16" x="90" y="428.03"/>
+<svg:path d="m 97,432.03 v 2.9993 l -3,7e-4 v 2 l 3,-7e-4 v 3.0007 h 2 v -3.0007 l 3,7e-4 v -2 l -3,-7e-4 V 432.03 Z" id="path303" inkscape:connector-curvature="0" style="fill:#d2d2d4"/>
+</svg:g>
+<svg:g id="mdi-restore-pressed" transform="translate(145,43.970001)">
+<svg:rect height="16" id="rect306" style="opacity:0.00100002;fill:#000000" width="16" x="108" y="428.03"/>
+<svg:path d="m 116,432.0293 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z" id="path308" inkscape:connector-curvature="0" style="fill:#d2d2d4"/>
+</svg:g>
+<svg:g id="mdi-close-disabled" transform="translate(151,59.970001)">
+<svg:rect height="16" id="rect311" style="opacity:0.00100002;fill:#000000" width="16" x="54" y="428.03"/>
+<svg:path class="ColorScheme-Text" d="m 65.002415,432.02406 a 1,1 0 0 0 -0.70703,0.29297 l -2.29297,2.29297 -2.2832,-2.2832 a 1,1 0 0 0 -0.01,-0.01 1,1 0 0 0 -0.70117,-0.28906 l -0.01,0.0137 a 1,1 0 0 0 -1,1 1,1 0 0 0 0.29297,0.70703 l 2.29297,2.29297 -2.29297,2.29297 a 1,1 0 0 0 -0.28906,0.69922 1,1 0 0 0 1,1 1,1 0 0 0 0.70703,-0.29297 l 2.29297,-2.29297 2.2832,2.2832 a 1,1 0 0 0 0.7168,0.30274 1,1 0 0 0 1,-1 1,1 0 0 0 -0.29297,-0.70703 l -2.30078,-2.29883 2.2832,-2.2832 a 1,1 0 0 0 0.31055,-0.72071 1,1 0 0 0 -1,-1 z" id="path313" inkscape:connector-curvature="0" style="color:#5c616c;opacity:0.3;fill:#ffffff"/>
+</svg:g>
+<svg:g id="mdi-minimize-disabled" transform="translate(149,59.970001)">
+<svg:rect height="16" id="rect316" style="opacity:0.00100002;fill:#000000" width="16" x="72" y="428.03"/>
+<svg:rect height="2" id="rect318" rx="0" ry="0" style="opacity:0.3;fill:#ffffff" width="8" x="76" y="435.03"/>
+</svg:g>
+<svg:g id="mdi-maximize-disabled" transform="translate(147,59.970001)">
+<svg:rect height="16" id="rect321" style="opacity:0.00100002;fill:#000000" width="16" x="90" y="428.03"/>
+<svg:path d="m 97,432.03 v 2.9993 l -3,7e-4 v 2 l 3,-7e-4 v 3.0007 h 2 v -3.0007 l 3,7e-4 v -2 l -3,-7e-4 V 432.03 Z" id="path323" inkscape:connector-curvature="0" style="opacity:0.3;fill:#ffffff"/>
+</svg:g>
+<svg:g id="mdi-restore-disabled" transform="translate(145,59.970001)">
+<svg:rect height="16" id="rect326" style="opacity:0.00100002;fill:#000000" width="16" x="108" y="428.03"/>
+<svg:path d="m 116,432.0293 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,2 a 2,2 0 0 1 2,2 2,2 0 0 1 -2,2 2,2 0 0 1 -2,-2 2,2 0 0 1 2,-2 z" id="path328" inkscape:connector-curvature="0" style="opacity:0.3;fill:#ffffff"/>
+</svg:g>
+<svg:g id="mdi-menu-normal" transform="translate(134,12.969991)">
+<svg:rect height="16" id="rect331" style="opacity:0.00100002;fill:#000000" width="16" x="135" y="428.03"/>
+<svg:path d="m 139,432.03 v 2 h 8 v -2 z m 0,3 v 2 h 8 v -2 z m 0,3 v 2 h 8 v -2 z" id="path333" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+</svg:g>
+<svg:g id="g340" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 170,475 v 30 h 30 v -30 z" id="titlebar-normal" inkscape:connector-curvature="0" style="fill:#0c0e14;fill-opacity:1"/>
+<svg:path d="m 170,440 v 30 h 30 v -30 z" id="titlebar-focused" inkscape:connector-curvature="0" style="fill:#0c0e14;fill-opacity:1"/>
+</svg:g>
+<svg:g id="g369" transform="translate(0.00264425,45.000002)">
+<svg:rect height="4" id="itemview-pressed-top" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="8" x="124" y="440"/>
+<svg:rect height="4" id="itemview-pressed-bottom" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="8" x="124" y="452"/>
+<svg:path d="m 124,444 h 8 v 8 h -8 z" id="itemview-pressed" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 132,440 h 4 v 4 h -4 z" id="itemview-pressed-topright" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 132,452 h 4 v 4 h -4 z" id="itemview-pressed-bottomright" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="8" id="itemview-pressed-right" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="4" x="132" y="444"/>
+<svg:rect height="8" id="itemview-pressed-left" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="4" x="120" y="444"/>
+<svg:path d="m 124,440 v 4 h -4 v -4 z" id="itemview-pressed-topleft" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 120,452 h 4 v 4 h -4 z" id="itemview-pressed-bottomleft" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="4" id="itemview-toggled-top" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="8" x="149" y="440"/>
+<svg:rect height="4" id="itemview-toggled-bottom" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="8" x="149" y="452"/>
+<svg:path d="m 149,444 h 8 v 8 h -8 z" id="itemview-toggled" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="8" id="itemview-toggled-right" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="4" x="157" y="444"/>
+<svg:path d="m 157,440 h 4 v 4 h -4 z" id="itemview-toggled-topright" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 157,452 h 4 v 4 h -4 z" id="itemview-toggled-bottomright" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="8" id="itemview-toggled-left" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="4" x="145" y="444"/>
+<svg:path d="m 149,440 v 4 h -4 v -4 z" id="itemview-toggled-topleft" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 145,452 h 4 v 4 h -4 z" id="itemview-toggled-bottomleft" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="4" id="itemview-focused-topleft" rx="0" ry="0" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="95" y="440"/>
+<svg:rect height="4" id="itemview-focused-top" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="8" x="99" y="440"/>
+<svg:rect height="4" id="itemview-focused-topright" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="107" y="440"/>
+<svg:rect height="8" id="itemview-focused-right" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="107" y="444"/>
+<svg:rect height="4" id="itemview-focused-bottomright" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="107" y="452"/>
+<svg:rect height="4" id="itemview-focused-bottom" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="8" x="99" y="452"/>
+<svg:rect height="4" id="itemview-focused-bottomleft" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="95" y="452"/>
+<svg:rect height="8" id="itemview-focused-left" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="4" x="95" y="444"/>
+<svg:rect height="8" id="itemview-focused" style="opacity:0.12;fill:#d08791;fill-opacity:1" width="8" x="99" y="444"/>
+</svg:g>
+<svg:g id="g408" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 5,450 v -5 H 0 v 5 z" id="header-normal-left" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 5,450 H 0 v 5 h 5 z" id="header-normal-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 10,450 H 5 v 5 h 5 z" id="header-normal-bottom" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 15,450 h -5 v 5 h 5 z" id="header-normal-bottomright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 15,450 v -5 h -5 v 5 z" id="header-normal-right" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 15,440 h -5 v 5 h 5 z" id="header-normal-topright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 10,440 H 5 v 5 h 5 z" id="header-normal-top" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 5,440 H 0 v 5 h 5 z" id="header-normal-topleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 10,450 v -5 H 5 v 5 z" id="header-normal" inkscape:connector-curvature="0" style="fill:#70474c;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 25,450 v -5 h -5 v 5 z" id="header-focused-left" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 25,450 h -5 v 5 h 5 z" id="header-focused-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 30,450 h -5 v 5 h 5 z" id="header-focused-bottom" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 35,450 h -5 v 5 h 5 z" id="header-focused-bottomright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 35,450 v -5 h -5 v 5 z" id="header-focused-right" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 35,440 h -5 v 5 h 5 z" id="header-focused-topright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 30,440 h -5 v 5 h 5 z" id="header-focused-top" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 25,440 h -5 v 5 h 5 z" id="header-focused-topleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 30,450 v -5 h -5 v 5 z" id="header-focused" inkscape:connector-curvature="0" style="fill:#3c4454;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 45,445 h -5 v 5 h 5 z" id="header-pressed-left" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 45,450 h -5 v 5 h 5 z" id="header-pressed-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 50,450 h -5 v 5 h 5 z" id="header-pressed-bottom" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 55,450 h -5 v 5 h 5 z" id="header-pressed-bottomright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 55,445 h -5 v 5 h 5 z" id="header-pressed-right" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 55,440 h -5 v 5 h 5 z" id="header-pressed-topright" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 50,440 h -5 v 5 h 5 z" id="header-pressed-top" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 45,440 h -5 v 5 h 5 z" id="header-pressed-topleft" inkscape:connector-curvature="0" style="text-transform:none;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 50,445 h -5 v 5 h 5 z" id="header-pressed" inkscape:connector-curvature="0" style="fill:#3c4454;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 65,450 v -5 h -5 v 5 z" id="header-toggled-left" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 65,450 h -5 v 5 h 5 z" id="header-toggled-bottomleft" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 70,450 h -5 v 5 h 5 z" id="header-toggled-bottom" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 75,450 h -5 v 5 h 5 z" id="header-toggled-bottomright" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 75,450 v -5 h -5 v 5 z" id="header-toggled-right" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 75,440 h -5 v 5 h 5 z" id="header-toggled-topright" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 70,440 h -5 v 5 h 5 z" id="header-toggled-top" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 65,440 h -5 v 5 h 5 z" id="header-toggled-topleft" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 70,450 v -5 h -5 v 5 z" id="header-toggled" inkscape:connector-curvature="0" style="fill:#3c4454;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 85,440 h -5 v 5 h 5 z" id="header-separator" inkscape:connector-curvature="0" style="color:#000000;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+</svg:g>
+<svg:g id="g425" transform="translate(0.00264425,45.000002)">
+<svg:g id="tabBarFrame-normal-bottom" transform="matrix(0,-1,0.66666667,0,-496.33334,574.0001)">
+<svg:path d="m 174,921.5 h -4 l 1e-4,-6 H 174 Z" id="path410" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 171,921.5 h -1 l 1e-4,-6 h 1 z" id="path412" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.1;fill:#ffffff"/>
+</svg:g>
+<svg:g id="tabBarFrame-normal-bottomright" transform="matrix(0,-1,0.66666667,0,-500.33334,574)">
+<svg:path d="m 174,921.5 h -4 l 1e-4,-6 H 174 Z" id="path415" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 171,921.5 h -1 l 1e-4,-6 h 1 z" id="path417" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.1;fill:#ffffff"/>
+</svg:g>
+<svg:g id="tabBarFrame-normal-bottomleft" transform="matrix(0,-1,0.66666667,0,-492.33334,574.0001)">
+<svg:path d="m 174,921.5 h -4 l 1e-4,-6 H 174 Z" id="path420" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 171,921.5 h -1 l 1e-4,-6 h 1 z" id="path422" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.1;fill:#ffffff"/>
+</svg:g>
+</svg:g>
+<svg:g id="g454" transform="translate(0.00264425,45.000002)">
+<svg:rect height="10" id="floating-tab-toggled" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="80" y="410"/>
+<svg:rect height="10" id="floating-tab-toggled-top" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="80" y="400"/>
+<svg:rect height="10" id="floating-tab-toggled-right" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="90" y="410"/>
+<svg:rect height="10" id="floating-tab-toggled-topright" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="90" y="400"/>
+<svg:rect height="10" id="floating-tab-toggled-left" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="70" y="410"/>
+<svg:rect height="10" id="floating-tab-toggled-topleft" style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="10" x="70" y="400"/>
+<svg:g id="g2022" style="fill:#d08791;fill-opacity:1">
+<svg:rect height="10" id="floating-tab-toggled-bottom" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="10" x="80" y="420"/>
+<svg:rect height="10" id="floating-tab-toggled-bottomright" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="10" x="90" y="420"/>
+<svg:rect height="10" id="floating-tab-toggled-bottomleft" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="10" x="70" y="420"/>
+</svg:g>
+<svg:rect height="10" id="floating-tab-focused" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="45" y="410"/>
+<svg:rect height="10" id="floating-tab-focused-top" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="45" y="400"/>
+<svg:rect height="10" id="floating-tab-focused-right" style="opacity:0.12999998;fill:#555564;fill-opacity:1;fill-rule:evenodd" width="10" x="55" y="410"/>
+<svg:rect height="10" id="floating-tab-focused-topright" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="55" y="400"/>
+<svg:rect height="10" id="floating-tab-focused-left" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="35" y="410"/>
+<svg:rect height="10" id="floating-tab-focused-topleft" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="35" y="400"/>
+<svg:rect height="10" id="floating-tab-focused-bottom" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="45" y="420"/>
+<svg:rect height="10" id="floating-tab-focused-bottomright" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="55" y="420"/>
+<svg:rect height="10" id="floating-tab-focused-bottomleft" style="opacity:0.12999998;fill:#555564;fill-opacity:0.90825686;fill-rule:evenodd" width="10" x="35" y="420"/>
+<svg:rect height="10" id="floating-tab-normal" style="fill:none" width="10" x="10" y="409.99976"/>
+<svg:path d="m 10,399.99975 v 10 L 0,409.9995 v -9.99975 z" id="floating-tab-normal-topleft" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 20,399.99975 v 10 l -10,-2.5e-4 v -9.99975 z" id="floating-tab-normal-top" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 30,400 v 10 l -10,-2.5e-4 V 400 Z" id="floating-tab-normal-topright" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 30,409.99975 v 10 l -10,-2.5e-4 v -9.99975 z" id="floating-tab-normal-right" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 30,420 v 10 l -10,-2.5e-4 V 420 Z" id="floating-tab-normal-bottomright" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 20,419.99975 v 10 l -10,-2.5e-4 v -9.99975 z" id="floating-tab-normal-bottom" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 10,419.99975 v 10 L 0,429.9995 v -9.99975 z" id="floating-tab-normal-bottomleft" inkscape:connector-curvature="0" style="fill:none"/>
+<svg:path d="m 10,409.99975 v 10 L 0,419.9995 v -9.99975 z" id="floating-tab-normal-left" inkscape:connector-curvature="0" style="fill:none"/>
+</svg:g>
+<svg:g id="g528" transform="translate(0.00264425,45.000002)">
+<svg:rect height="15" id="tab-tear" style="fill:#6e6e70;fill-rule:evenodd" width="15" x="280" y="350"/>
+<svg:g id="tab-close-normal" style="fill-rule:evenodd" transform="translate(-85,-620)">
+<svg:rect height="18" id="rect457" style="fill-opacity:0;stroke-width:1.3;stroke-linecap:square;stroke-linejoin:round" width="18" x="265" y="970"/>
+<svg:path d="m 268.7501,972 a 1.74961,1.74961 0 0 0 -1.21879,3.00483 l 3.9958,3.9935 -3.9958,3.9958 a 1.74961,1.74961 0 1 0 2.47403,2.47403 l 3.9958,-3.9958 3.9935,3.9958 a 1.74961,1.74961 0 1 0 2.47403,-2.47403 l -3.9935,-3.9958 3.9935,-3.9935 A 1.74961,1.74961 0 0 0 279.24988,972 a 1.74961,1.74961 0 0 0 -1.25524,0.5308 l -3.9935,3.9935 -3.9958,-3.9935 A 1.74961,1.74961 0 0 0 268.7501,972 Z" id="path459" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#aaaaac;fill-opacity:0.970588;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto"/>
+</svg:g>
+<svg:g id="tab-close-focused" style="fill-rule:evenodd" transform="translate(-60,-620)">
+<svg:rect height="18" id="rect462" style="fill-opacity:0;stroke-width:1.3;stroke-linecap:square;stroke-linejoin:round" width="18" x="265" y="970"/>
+<svg:path d="m 268.7501,972 a 1.74961,1.74961 0 0 0 -1.21879,3.00483 l 3.9958,3.9935 -3.9958,3.9958 a 1.74961,1.74961 0 1 0 2.47403,2.47403 l 3.9958,-3.9958 3.9935,3.9958 a 1.74961,1.74961 0 1 0 2.47403,-2.47403 l -3.9935,-3.9958 3.9935,-3.9935 A 1.74961,1.74961 0 0 0 279.24988,972 a 1.74961,1.74961 0 0 0 -1.25524,0.5308 l -3.9935,3.9935 -3.9958,-3.9935 A 1.74961,1.74961 0 0 0 268.7501,972 Z" id="path464" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#da4453;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto"/>
+</svg:g>
+<svg:g id="tab-close-pressed" style="fill-rule:evenodd" transform="translate(-35,-620)">
+<svg:rect height="18" id="rect467" style="fill-opacity:0;stroke-width:1.3;stroke-linecap:square;stroke-linejoin:round" width="18" x="265" y="970"/>
+<svg:path d="m 268.7501,972 a 1.74961,1.74961 0 0 0 -1.21879,3.00483 l 3.9958,3.9935 -3.9958,3.9958 a 1.74961,1.74961 0 1 0 2.47403,2.47403 l 3.9958,-3.9958 3.9935,3.9958 a 1.74961,1.74961 0 1 0 2.47403,-2.47403 l -3.9935,-3.9958 3.9935,-3.9935 A 1.74961,1.74961 0 0 0 279.24988,972 a 1.74961,1.74961 0 0 0 -1.25524,0.5308 l -3.9935,3.9935 -3.9958,-3.9935 A 1.74961,1.74961 0 0 0 268.7501,972 Z" id="path469" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;opacity:0.8;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#da4453;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto"/>
+</svg:g>
+<svg:g id="tab-close-disabled" style="fill-rule:evenodd" transform="translate(-10,-620)">
+<svg:rect height="18" id="rect472" style="fill-opacity:0;stroke-width:1.3;stroke-linecap:square;stroke-linejoin:round" width="18" x="265" y="970"/>
+<svg:path d="m 268.7501,972 a 1.74961,1.74961 0 0 0 -1.21879,3.00483 l 3.9958,3.9935 -3.9958,3.9958 a 1.74961,1.74961 0 1 0 2.47403,2.47403 l 3.9958,-3.9958 3.9935,3.9958 a 1.74961,1.74961 0 1 0 2.47403,-2.47403 l -3.9935,-3.9958 3.9935,-3.9935 A 1.74961,1.74961 0 0 0 279.24988,972 a 1.74961,1.74961 0 0 0 -1.25524,0.5308 l -3.9935,3.9935 -3.9958,-3.9935 A 1.74961,1.74961 0 0 0 268.7501,972 Z" id="path474" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;white-space:normal;opacity:0.25;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#ffffff;stroke-width:3;stroke-linecap:round;color-rendering:auto;image-rendering:auto;shape-rendering:auto"/>
+</svg:g>
+<svg:path d="m 138.9998,354 v 32 h 32 v -32 z" id="tab-toggled" inkscape:connector-curvature="0" style="opacity:0.6;fill:#70474c;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="tab-toggled-left" transform="matrix(0.8,0,0,0.98461538,118,305.99842)">
+<svg:path d="m 316,469 v 32 h 3 v -32 z" id="path478" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(1.25,0,0,1.015625,-372.5,-427.57652)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.2497 v -32.5 z" id="path480" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tab-toggled-topleft" transform="matrix(0.8,0,0,0.8,117.9998,316.99872)">
+<svg:path d="m 316,466 v 3 h 3 v -3 z" id="path483" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.8" transform="matrix(1.25,0,0,1.25,-372.49975,-539.9984)"/>
+<svg:path d="m 26.25,41.2516 h -5 v 5 h 1.2503 v -3.75 H 26.25 Z" id="path485" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tab-toggled-top" transform="matrix(0,0.8,-0.98461538,0,219.00138,333)">
+<svg:path d="m 319,466 v 3 h 32 v -3 z" id="path488" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(0,-1.015625,1.25,0,-560,405.23578)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.25 v -32.5 z" id="path490" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tab-toggled-topright" style="fill:#000000" transform="matrix(-1,0,0,1,309.9996,0)" width="100%" x="0" xlink:href="#tab-toggled-topleft" y="0"/>
+<svg:g id="tab-toggled-right" transform="matrix(-0.8,0,0,0.98461538,191.9998,305.99842)">
+<svg:path d="m 351,469 v 32 h 3 v -32 z" id="path494" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(-1.25,0,0,1.015625,464.99975,-427.57652)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.25 v -32.5 z" id="path496" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tab-toggled-bottomleft" transform="matrix(1,0,0,0.66666667,-35.0003,-224.33334)">
+<svg:path d="m 316,501 v 4 h 3 v -4 z" id="path499" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.816497" transform="matrix(1,0,0,1.5,-144.9997,164.00001)"/>
+<svg:path d="m 171,921.5 h -1 l 1e-4,-6 h 1 z" id="path501" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 139,386 h 31.9998 v 4 h -32 z" id="tab-toggled-bottom" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd"/>
+<svg:g id="tab-toggled-bottomright" transform="matrix(-1,0,0,0.66666667,345,-224.33344)">
+<svg:path d="m 351,501 v 4 h 3 v -4 z" id="path505" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.816497" transform="matrix(-1,0,0,1.5,525,164.00016)"/>
+<svg:path d="M 171.0001,921.5 H 170 l 1e-4,-6 h 1.0001 z" id="path507" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:rect height="10" id="tab-focused" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="110" y="360"/>
+<svg:rect height="10" id="tab-focused-top" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="110" y="350"/>
+<svg:rect height="10" id="tab-focused-right" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="120" y="360"/>
+<svg:rect height="10" id="tab-focused-topright" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="120" y="350"/>
+<svg:rect height="10" id="tab-focused-left" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="100" y="360"/>
+<svg:rect height="10" id="tab-focused-topleft" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="100" y="350"/>
+<svg:rect height="10" id="tab-focused-bottom" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="110" y="370"/>
+<svg:rect height="10" id="tab-focused-bottomright" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="120" y="370"/>
+<svg:rect height="10" id="tab-focused-bottomleft" style="opacity:0.04;fill:#ffffff;fill-rule:evenodd" width="10" x="100" y="370"/>
+<svg:rect height="10" id="tab-normal" style="fill:none" width="10" x="75" y="360"/>
+<svg:rect height="10" id="tab-normal-top" style="fill:none" width="10" x="75" y="350"/>
+<svg:rect height="10" id="tab-normal-right" style="fill:none" width="10" x="85" y="360"/>
+<svg:rect height="10" id="tab-normal-topright" style="fill:none" width="10" x="85" y="350"/>
+<svg:rect height="10" id="tab-normal-left" style="fill:none" width="10" x="65" y="360"/>
+<svg:rect height="10" id="tab-normal-topleft" style="fill:none" width="10" x="65" y="350"/>
+<svg:rect height="10" id="tab-normal-bottom" style="fill:none" width="10" x="75" y="370"/>
+<svg:rect height="10" id="tab-normal-bottomright" style="fill:none" width="10" x="85" y="370"/>
+<svg:rect height="10" id="tab-normal-bottomleft" style="fill:none" width="10" x="65" y="370"/>
+</svg:g>
+<svg:g id="g571" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 4,354 v 32 h 32 v -32 z" id="tabframe-normal" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="tabframe-normal-left" transform="matrix(0.8,0,0,0.98461538,-16.9998,305.99842)">
+<svg:path d="m 196,469 v 32 h 3 v -32 z" id="path531" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(1.25,0,0,1.015625,-222.5,-427.57652)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.2497 v -32.5 z" id="path533" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tabframe-normal-topleft" transform="matrix(0.8,0,0,0.8,-16.9998,316.99872)">
+<svg:path d="m 196,466 v 3 h 3 v -3 z" id="path536" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.8" transform="matrix(1.25,0,0,1.25,-222.5,-539.9984)"/>
+<svg:path d="m 26.25,41.2516 h -5 v 5 h 1.2497 l -3e-4,-3.75 h 3.7503 z" id="path538" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tabframe-normal-top" transform="matrix(0,0.8,-0.98461538,0,84.00158,333)">
+<svg:path d="m 199,466 v 3 h 32 v -3 z" id="path541" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(0,-1.015625,1.25,0,-560,283.36078)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.25 v -32.5 z" id="path543" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tabframe-normal-topright" style="fill:#1e1e20;fill-opacity:1" transform="matrix(-1,0,0,1,40.0002,0)" width="100%" x="0" xlink:href="#tabframe-normal-topleft" y="0"/>
+<svg:g id="tabframe-normal-right" transform="matrix(-0.8,0,0,-0.98461538,57,434.00158)">
+<svg:path d="m 231,469 v 32 h 3 v -32 z" id="path547" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(-1.25,0,0,-1.015625,314.99975,557.57973)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.25 v -32.5 z" id="path549" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="tabframe-normal-bottom" transform="matrix(0,-0.8,0.98461538,0,-44.00138,406.9999)">
+<svg:path d="m 199,501 v 3 h 32 v -3 z" id="path552" inkscape:connector-curvature="0" style="opacity:1;fill:#70474c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752" transform="matrix(0,1.015625,-1.25,0,652.49987,-153.35777)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 1.2499 v -32.5 z" id="path554" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="tabframe-normal-bottomleft" style="fill:#138d21;fill-opacity:1" transform="matrix(1,0,0,-1,0,739.9999)" width="100%" x="0" xlink:href="#tabframe-normal-topleft" y="0"/>
+<svg:use height="100%" id="tabframe-normal-bottomright" style="fill:#1e1e20;fill-opacity:1" transform="rotate(180,20.00015,369.99995)" width="100%" x="0" xlink:href="#tabframe-normal-topleft" y="0"/>
+<svg:g id="tabframe-normal-top-leftjunct" style="fill-rule:evenodd" transform="translate(-220,-515)">
+<svg:path d="m 269,865 h -4 v 4 h 4 z" id="path559" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 266,865 h -1 v 1 h 1 z" id="path561" inkscape:connector-curvature="0" style="opacity:0.1;fill:#ffffff"/>
+</svg:g>
+<svg:use height="100%" id="tabframe-normal-top-rightjunct" transform="matrix(-1,0,0,1,98,4e-6)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-right-leftjunct" transform="matrix(-1,0,0,1,94,5.000004)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-right-rightjunct" transform="matrix(1,0,0,-1,3.999996,714.00008)" width="100%" x="0" xlink:href="#tabframe-normal-right-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-left-leftjunct" transform="matrix(1,0,0,-1,-4e-6,714.00008)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-left-rightjunct" transform="translate(3.999996,10.000004)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-bottom-leftjunct" transform="matrix(1,0,0,-1,-4e-6,718.00008)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+<svg:use height="100%" id="tabframe-normal-bottom-rightjunct" transform="rotate(180,49,359)" width="100%" x="0" xlink:href="#tabframe-normal-top-leftjunct" y="0"/>
+</svg:g>
+<svg:path d="m360.00264 320a5 5 0 0 1-10 0 5 5 0 1 1 10 0z" id="toolbar-handle" style="fill:#ffffff;opacity:.18000004"/>
+<svg:g id="g601" transform="translate(0.00264425,45.000002)">
+<svg:rect height="10" id="menubaritem-pressed-bottom" style="fill:#6e6e70" width="10" x="320" y="290"/>
+<svg:rect height="10" id="menubaritem-toggled-bottom" style="opacity:0.12000002;fill:#ffffff" width="10" x="285" y="290"/>
+<svg:rect height="10" id="menubaritem-pressed" style="opacity:0.07999998;fill:#ffffff" width="10" x="320" y="280"/>
+<svg:rect height="10" id="menubaritem-pressed-left" style="opacity:0.07999998;fill:#ffffff" width="10" x="310" y="280"/>
+<svg:rect height="10" id="menubaritem-pressed-bottomleft" style="fill:#6e6e70" width="10" x="310" y="290"/>
+<svg:rect height="10" id="menubaritem-pressed-right" style="opacity:0.07999998;fill:#ffffff" width="10" x="330" y="280"/>
+<svg:rect height="10" id="menubaritem-pressed-bottomright" style="fill:#6e6e70" width="10" x="330" y="290"/>
+<svg:rect height="10" id="menubaritem-pressed-top" style="opacity:0.07999998;fill:#ffffff" width="10" x="320" y="270"/>
+<svg:rect height="10" id="menubaritem-pressed-topleft" style="opacity:0.07999998;fill:#ffffff" width="10" x="310" y="270"/>
+<svg:rect height="10" id="menubaritem-pressed-topright" style="opacity:0.07999998;fill:#ffffff" width="10" x="330" y="270"/>
+<svg:rect height="10" id="menubaritem-toggled" style="opacity:0.12000002;fill:#ffffff" width="10" x="285" y="280"/>
+<svg:rect height="10" id="menubaritem-toggled-left" style="opacity:0.12000002;fill:#ffffff" width="10" x="275" y="280"/>
+<svg:rect height="10" id="menubaritem-toggled-bottomleft" style="opacity:0.12000002;fill:#ffffff" width="10" x="275" y="290"/>
+<svg:rect height="10" id="menubaritem-toggled-right" style="opacity:0.12000002;fill:#ffffff" width="10" x="295" y="280"/>
+<svg:rect height="10" id="menubaritem-toggled-bottomright" style="opacity:0.12000002;fill:#ffffff" width="10" x="295" y="290"/>
+<svg:rect height="10" id="menubaritem-toggled-top" style="opacity:0.12000002;fill:#ffffff" width="10" x="285" y="270"/>
+<svg:rect height="10" id="menubaritem-toggled-topleft" style="opacity:0.12000002;fill:#ffffff" width="10" x="275" y="270"/>
+<svg:rect height="10" id="menubaritem-toggled-topright" style="opacity:0.12000002;fill:#ffffff" width="10" x="295" y="270"/>
+<svg:rect height="10" id="menubaritem-focused-bottom" style="opacity:0.12000002;fill:#ffffff" width="10" x="250" y="290"/>
+<svg:rect height="10" id="menubaritem-focused" style="opacity:0.12000002;fill:#ffffff" width="10" x="250" y="280"/>
+<svg:rect height="10" id="menubaritem-focused-left" style="opacity:0.12000002;fill:#ffffff" width="10" x="240" y="280"/>
+<svg:rect height="10" id="menubaritem-focused-bottomleft" style="opacity:0.12000002;fill:#ffffff" width="10" x="240" y="290"/>
+<svg:rect height="10" id="menubaritem-focused-right" style="opacity:0.12000002;fill:#ffffff" width="10" x="260" y="280"/>
+<svg:rect height="10" id="menubaritem-focused-bottomright" style="opacity:0.12000002;fill:#ffffff" width="10" x="260" y="290"/>
+<svg:rect height="10" id="menubaritem-focused-top" style="opacity:0.12000002;fill:#ffffff" width="10" x="250" y="270"/>
+<svg:rect height="10" id="menubaritem-focused-topleft" style="opacity:0.12000002;fill:#ffffff" width="10" x="240" y="270"/>
+<svg:rect height="10" id="menubaritem-focused-topright" style="opacity:0.12000002;fill:#ffffff" width="10" x="260" y="270"/>
+</svg:g>
+<svg:g id="g612" transform="translate(0.00264425,45.000002)">
+<svg:rect height="20" id="menubar-normal" style="fill:#70474c;fill-opacity:1" width="20" x="205" y="275"/>
+<svg:rect height="5" id="menubar-normal-left" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="20" x="275" y="-205"/>
+<svg:rect height="5" id="menubar-normal-topleft" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="5" x="270" y="-205"/>
+<svg:rect height="5" id="menubar-normal-top" style="opacity:1;fill:#131621;fill-opacity:1" width="20" x="205" y="270"/>
+<svg:rect height="5" id="menubar-normal-right" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="20" x="275" y="-230"/>
+<svg:rect height="5" id="menubar-normal-topright" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="5" x="270" y="-230"/>
+<svg:rect height="5" id="menubar-normal-bottomleft" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="5" x="295" y="-205"/>
+<svg:rect height="5" id="menubar-normal-bottom" style="opacity:1;fill:#131621;fill-opacity:1" width="20" x="205" y="295"/>
+<svg:rect height="5" id="menubar-normal-bottomright" style="opacity:1;fill:#131621;fill-opacity:1" transform="rotate(90)" width="5" x="295" y="-230"/>
+</svg:g>
+<svg:g id="g633" transform="translate(0.00264425,45.000002)">
+<svg:path d="M 151,276.0002 V 308 h -6 v -32 z" id="menuitem-normal-left" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 151,314 h -6 v -6 h 6 z" id="menuitem-normal-bottomleft" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 145,276 v -6 h 6 v 6 z" id="menuitem-normal-topleft" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 151.0002,308 H 183 v 6 h -32 z" id="menuitem-normal-bottom" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 182.9998,276 H 151 v -6 h 32 z" id="menuitem-normal-top" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 151,308 v -32 h 32 v 32 z" id="menuitem-normal" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 183,276 v 31.9998 h 6 v -32 z" id="menuitem-normal-right" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 183.00016,313.99992 6,8e-5 L 189,308 h -5.99984 z" id="menuitem-normal-bottomright" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 188.99984,276.00008 1.6e-4,-5.99992 -6,-8e-5 V 276 Z" id="menuitem-normal-topright" inkscape:connector-curvature="0" style="opacity:0.25;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="menuitem-tearoff-focused" style="color:#000000;fill-rule:evenodd" transform="translate(-75.5,-366.5)">
+<svg:rect height="9" id="rect623" style="opacity:0" transform="rotate(90)" width="7" x="686.5" y="-229.5"/>
+<svg:path d="m 227.2385,689 h -2.2462 v 2 h 2.2462 z m -4.4924,0 H 220.5 v 2 h 2.2461 z" id="path625" inkscape:connector-curvature="0" style="opacity:0.18;fill:#ffffff"/>
+</svg:g>
+<svg:g id="menuitem-tearoff-normal" style="fill-rule:evenodd" transform="translate(-60.5,-366.5)">
+<svg:rect height="9" id="rect628" style="opacity:0" transform="rotate(90)" width="7" x="686.5" y="-229.5"/>
+<svg:path d="m 227.2385,689 h -2.2462 v 2 h 2.2462 z m -4.4924,0 H 220.5 v 2 h 2.2461 z" id="path630" inkscape:connector-curvature="0" style="opacity:0.12;fill:#ffffff"/>
+</svg:g>
+</svg:g>
+<svg:g id="g658" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 2,275 h 5 v 48 H 2 Z" id="menu-normal-left" inkscape:connector-curvature="0" style="color:#000000;opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="M 7,270 H 2.0011 l -10e-4,5 h 5 z" id="menu-normal-topleft" inkscape:connector-curvature="0" style="color:#000000;opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 55.0003,270 v 5 h -48 v -5 z" id="menu-normal-top" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 60,275 -3e-4,-4.9989 -5,-0.001 v 5 z" id="menu-normal-topright" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 59.9998,275 h -5 v 48 h 5 z" id="menu-normal-right" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 54.9998,328 h 4.9989 l 10e-4,-5 h -5 z" id="menu-normal-bottomright" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 7.00075,328 3e-4,-5 h 48 l -3e-4,5 z" id="menu-normal-bottom" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 2.0004,323 3e-4,4.9989 5,0.001 v -5 z" id="menu-normal-bottomleft" inkscape:connector-curvature="0" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="48" id="menu-normal" style="opacity:1;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd" width="48" x="7.0005999" y="275"/>
+<svg:path d="m 65.00005,275.0001 v 60 h 5 v -60 z" id="menu-shadow-left" inkscape:connector-curvature="0" style="color:#000000;opacity:0.25;fill:url(#linearGradient6752-2);fill-rule:evenodd"/>
+<svg:path d="m 127.99985,275.0001 v 60 h 5 v -60 z" id="menu-shadow-right" inkscape:connector-curvature="0" style="color:#000000;opacity:0.28;fill:url(#linearGradient6748-6);fill-rule:evenodd"/>
+<svg:path d="m 70.00005,335.0001 v 5 h 58 v -5 z" id="menu-shadow-bottom" inkscape:connector-curvature="0" style="color:#000000;opacity:0.29;fill:url(#linearGradient6750-7);fill-rule:evenodd"/>
+<svg:path d="m 64.9999,270.0001 1e-4,5 5,-10e-5 v -5 z" id="menu-shadow-topleft" inkscape:connector-curvature="0" style="color:#000000;opacity:0.25;fill:url(#radialGradient6740-0);fill-rule:evenodd"/>
+<svg:path d="m 128.00005,270.0001 v 5 h 5 v -5 z" id="menu-shadow-topright" inkscape:connector-curvature="0" style="color:#000000;opacity:0.28;fill:url(#radialGradient6742-3);fill-rule:evenodd"/>
+<svg:path d="m 65,335.0001 v 5 h 5 l -5e-4,-5 z" id="menu-shadow-bottomleft" inkscape:connector-curvature="0" style="color:#000000;opacity:0.25;fill:url(#radialGradient6746-6);fill-rule:evenodd"/>
+<svg:path d="m 128,335.0001 3e-4,5 h 5 v -5 z" id="menu-shadow-bottomright" inkscape:connector-curvature="0" style="color:#000000;opacity:0.28;fill:url(#radialGradient6744-9);fill-rule:evenodd"/>
+<svg:rect height="5" id="menu-shadow-hint-bottom" style="fill:#ff00ff" width="2.5" x="99.24955" y="335.00009"/>
+<svg:rect height="5" id="menu-shadow-hint-right" style="fill:#ff00ff" transform="rotate(-90)" width="2.5" x="-304.00009" y="127.99955"/>
+<svg:rect height="5" id="menu-shadow-hint-left" style="fill:#ff00ff" transform="rotate(-90)" width="2.5" x="-304.00009" y="64.999557"/>
+<svg:g id="menu-shadow-top" style="fill-rule:evenodd" transform="translate(52.49955,-520.9999)">
+<svg:path d="m 17.5005,791 v 2.5 h 58 V 791 Z" id="path654" inkscape:connector-curvature="0" style="opacity:0.3;fill:url(#linearGradient6754-0)"/>
+</svg:g>
+<svg:rect height="2.5" id="menu-shadow-hint-top" style="fill:#ff00ff" width="2.5" x="97.989563" y="270.00009"/>
+</svg:g>
+<svg:g id="g672" transform="translate(0.00264425,45.000002)">
+<svg:rect height="45" id="dial" rx="22.5" ry="22.5" style="opacity:0.1;fill:#3c4366;fill-opacity:1;fill-rule:evenodd" width="45" x="0" y="215"/>
+<svg:g id="dial-notches" style="fill:#ffffff;fill-opacity:0.39200003;fill-rule:evenodd" transform="translate(-137.5,-452.5)">
+<svg:rect height="45" id="rect661" style="opacity:0" width="45" x="202.5" y="667.5"/>
+<svg:g id="g667">
+<svg:path d="m 214.625,670 -1.75,1 2.25,3.9063 1.75,-1 z m 20.75,0 -2.25,3.9063 1.75,1 2.25,-3.9063 z M 202.5,689 v 2 h 4.5 v -2 z m 40.5,0 v 2 h 4.5 v -2 z m -27.875,16.0938 -2.25,3.9062 1.75,1 2.25,-3.9062 z m 19.75,0 -1.75,1 2.25,3.9062 1.75,-1 z" id="path663" inkscape:connector-curvature="0" style="fill:#8c8c8e;fill-opacity:1"/>
+<svg:path d="m 222.9062,667.5938 -0.5,0.0625 0.3125,2.9688 0.5,-0.0312 -0.3125,-3 z m 4.1875,0 -0.3125,3 0.5,0.0312 0.3125,-2.9688 -0.5,-0.0625 z m -8.8125,0.9375 -0.4688,0.1562 0.9375,2.8438 0.4688,-0.1562 z m 13.4375,0 -0.9375,2.8438 0.4688,0.1562 0.9375,-2.8438 z m -21.5938,4.5938 -0.375,0.3125 2.0312,2.25 0.3438,-0.3438 -2,-2.2188 z m 29.75,0 -2,2.2188 0.3438,0.3438 2.0312,-2.25 -0.375,-0.3125 z m -32.9375,3.4375 -0.2812,0.4062 2.4062,1.7812 0.3125,-0.4062 z m 36.125,0 -2.4375,1.7812 0.3125,0.4062 2.4062,-1.7812 z m -38.5,4.0625 -0.2188,0.4375 2.75,1.25 0.1875,-0.4688 -2.7188,-1.2188 z m 40.875,0 -2.7188,1.2188 0.1875,0.4688 2.75,-1.25 -0.2188,-0.4375 z m -42.4062,4.4375 -0.0937,0.5 2.9375,0.625 0.0937,-0.5 z m 43.9375,0 -2.9375,0.625 0.0937,0.5 2.9375,-0.625 z m -41.0938,8.75 -2.9375,0.625 0.0937,0.5 2.9375,-0.625 z m 38.25,0 -0.0937,0.5 2.9375,0.625 0.0937,-0.5 z m -37.0312,3.875 -2.75,1.25 0.2188,0.4375 2.7188,-1.2188 -0.1875,-0.4688 z m 35.8125,0 -0.1875,0.4688 2.7188,1.2188 0.2188,-0.4375 -2.75,-1.25 z m -33.8438,3.5625 -2.4062,1.7812 0.2812,0.4062 2.4375,-1.7812 z m 31.875,0 -0.3125,0.4062 2.4375,1.7812 0.2812,-0.4062 z m -29.1562,3.0625 -2.0312,2.25 0.375,0.3125 2,-2.2188 -0.3438,-0.3438 z m 26.4375,0 -0.3438,0.3438 2,2.2188 0.375,-0.3125 -2.0312,-2.25 z" id="path665" inkscape:connector-curvature="0" style="fill:#555761;fill-opacity:1"/>
+</svg:g>
+</svg:g>
+<svg:circle cx="55" cy="220" id="dial-handle" r="5" style="fill:#555761;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="1" id="slider-tick-normal" style="color:#000000;fill:#555761;fill-opacity:1;fill-rule:evenodd" width="5" x="115" y="215"/>
+</svg:g>
+<svg:g id="g703" transform="translate(0.00264425,45.000002)">
+<svg:g id="g2039" style="fill:#d08791;fill-opacity:1">
+<svg:path d="m 235,170 h -5 v 5 h 5 z" id="progress-pattern-normal-left" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 235,175 h -5 v 5 h 5 z" id="progress-pattern-normal-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 240,175 h -5 v 5 h 5 z" id="progress-pattern-normal-bottom" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 245,175 h -5 v 5 h 5 z" id="progress-pattern-normal-bottomright" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 245,170 h -5 v 5 h 5 z" id="progress-pattern-normal-right" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 245,165 h -5 v 5 h 5 z" id="progress-pattern-normal-topright" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 240,165 h -5 v 5 h 5 z" id="progress-pattern-normal-top" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 235,165 h -5 v 5 h 5 z" id="progress-pattern-normal-topleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 240,170 h -5 v 5 h 5 z" id="progress-pattern-normal" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+</svg:g>
+<svg:path d="m 255,170 h -5 v 5 h 5 z" id="progress-normal-left" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 255,175 h -5 v 5 h 5 z" id="progress-normal-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 260,175 h -5 v 5 h 5 z" id="progress-normal-bottom" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 265,175 h -5 v 5 h 5 z" id="progress-normal-bottomright" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 265,170 h -5 v 5 h 5 z" id="progress-normal-right" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 265,165 h -5 v 5 h 5 z" id="progress-normal-topright" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 260,165 h -5 v 5 h 5 z" id="progress-normal-top" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 255,165 h -5 v 5 h 5 z" id="progress-normal-topleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 260,170 h -5 v 5 h 5 z" id="progress-normal" inkscape:connector-curvature="0" style="fill:#232831;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 275,170 h -5 v 5 h 5 z" id="progress-pattern-disabled-left" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 275,175 h -5 v 5 h 5 z" id="progress-pattern-disabled-bottomleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 280,175 h -5 v 5 h 5 z" id="progress-pattern-disabled-bottom" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 285,175 h -5 v 5 h 5 z" id="progress-pattern-disabled-bottomright" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 285,170 h -5 v 5 h 5 z" id="progress-pattern-disabled-right" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 285,165 h -5 v 5 h 5 z" id="progress-pattern-disabled-topright" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 280,165 h -5 v 5 h 5 z" id="progress-pattern-disabled-top" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 275,165 h -5 v 5 h 5 z" id="progress-pattern-disabled-topleft" inkscape:connector-curvature="0" style="text-transform:none;fill:#4b4b4d;fill-rule:evenodd"/>
+<svg:path d="m 280,170 h -5 v 5 h 5 z" id="progress-pattern-disabled" inkscape:connector-curvature="0" style="fill:#4b4b4d;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 290,165 v 10 h 10 v -10 z" id="expand-progress-pattern-normal" inkscape:connector-curvature="0" style="fill-rule:evenodd"/>
+<svg:path d="m 300,165 v 10 h 10 v -10 z" id="expand-progress-normal" inkscape:connector-curvature="0" style="fill-rule:evenodd"/>
+</svg:g>
+<svg:g id="g709" transform="translate(0.00264425,45.000002)">
+<svg:rect height="12" id="scrollbarslider-normal" style="fill:#7e818c;fill-opacity:1" width="8" x="165" y="165"/>
+<svg:rect height="12" id="scrollbarslider-focused" style="fill:#a0a4af;fill-opacity:1" width="8" x="180" y="165"/>
+<svg:rect height="12" id="scrollbarslider-pressed" style="fill:#d08791;fill-opacity:1" width="8" x="195" y="165"/>
+<svg:rect height="12" id="scrollbargroove-normal" style="fill:#414143" width="8" x="210" y="165"/>
+</svg:g>
+<svg:g id="g729" transform="translate(0.00264425,45.000002)">
+<svg:g id="slidercursor-normal" transform="translate(0,-145)">
+<svg:circle cx="69" cy="319" id="circle711" r="9" style="fill:#232831;fill-opacity:1"/>
+<svg:circle cx="69" cy="319" id="circle713" r="8" style="fill:#3b2f30;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slidercursor-focused" transform="translate(24.999999,-145)">
+<svg:circle cx="69" cy="319" id="circle716" r="9" style="fill:#232831;fill-opacity:1"/>
+<svg:circle cx="69" cy="319" id="circle718" r="8" style="fill:#3c4454;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slidercursor-pressed" transform="translate(49.999999,-145)">
+<svg:circle cx="69" cy="319" id="circle721" r="9" style="fill:#3c4454;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slidercursor-disabled" transform="translate(74.999999,-145)">
+<svg:circle cx="69" cy="319" id="circle724" r="9" style="fill:#232831;fill-opacity:1"/>
+<svg:circle cx="69" cy="319" id="circle726" r="8" style="fill:#232831;fill-opacity:1"/>
+</svg:g>
+</svg:g>
+<svg:g id="g759" transform="translate(0.00264425,45.000002)">
+<svg:path d="m 42,165 c -6.648,0 -12,5.352 -12,12 h 12 z" id="slider-toggled-topleft" inkscape:connector-curvature="0" style="opacity:0;fill:#fc01cb;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 30,177 v 16.5003 h 12 v -16.5 H 30 Z" id="slider-toggled-left" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 42,165 c 6.648,0 12,5.352 12,12 H 42 Z" id="slider-toggled-topright" inkscape:connector-curvature="0" style="opacity:0;fill:#fc0181;fill-opacity:1;fill-rule:evenodd"/>
+<svg:path d="m 42,177 v 16.5003 h 12 v -16.5 H 42 Z" id="slider-toggled-right" inkscape:connector-curvature="0" style="fill:#d08770;fill-opacity:1;fill-rule:evenodd;opacity:0"/>
+<svg:use height="1230" id="slider-toggled-bottomleft" transform="matrix(1,0,0,-1,0,370.5002)" width="450" x="0" xlink:href="#slider-toggled-topleft" y="0"/>
+<svg:use height="1230" id="slider-toggled-bottomright" style="opacity:1;fill:#13d931;fill-opacity:1" transform="matrix(1,0,0,-1,0,370.5002)" width="450" x="0" xlink:href="#slider-toggled-topright" y="0"/>
+<svg:g id="slider-normal-topleft" style="fill-rule:evenodd" transform="translate(-80,-552.5)">
+<svg:path d="M 92,717.5 H 80 v 12 h 12 z" id="path737" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 92,719.5 c -4.5,0 -8,4 -8,9 v 1 h 8 z" id="path739" inkscape:connector-curvature="0" style="fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slider-normal-left" style="fill-rule:evenodd" transform="translate(-80,-552.5)">
+<svg:path d="m 80,729.5002 v 16.5004 h 12 v -16.5 H 80 Z" id="path742" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 84,729.5006 v 16.4998 l 8,2e-4 v -16.4994 l -8,-2e-4 z" id="path744" inkscape:connector-curvature="0" style="fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slider-normal-topright" style="fill-rule:evenodd" transform="matrix(-1,0,0,1,104,-552.5)">
+<svg:path d="M 92,717.5 H 80 v 12 h 12 z" id="path747" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 92,719.5 c -4.5,0 -8,4 -8,9 v 1 h 8 z" id="path749" inkscape:connector-curvature="0" style="fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="slider-normal-right" style="fill-rule:evenodd" transform="matrix(-1,0,0,1,104,-552.5)">
+<svg:path d="m 80,729.5002 v 16.5004 h 12 v -16.5 H 80 Z" id="path752" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:path d="m 84,729.5006 v 16.4998 l 8,2e-4 v -16.4994 l -8,-2e-4 z" id="path754" inkscape:connector-curvature="0" style="fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:use height="100%" id="slider-normal-bottomleft" style="fill:#131621;fill-opacity:1" transform="matrix(1,0,0,-1,0,370.5)" width="100%" x="0" xlink:href="#slider-normal-topleft" y="0"/>
+<svg:use height="100%" id="slider-normal-bottomright" style="fill:#131621;fill-opacity:1" transform="matrix(1,0,0,-1,0,370.5006)" width="100%" x="0" xlink:href="#slider-normal-topright" y="0"/>
+</svg:g>
+<svg:g id="g855" transform="translate(0.00264425,45.000002)">
+<svg:g id="spin-plus-normal" transform="translate(205,-222)">
+<svg:rect height="8" id="rect761" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path763" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="spin-minus-normal" transform="translate(195,-211)">
+<svg:rect height="8" id="rect766" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect768" style="fill:#aaaaac" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-plus-focused" transform="translate(215,-222)">
+<svg:rect height="8" id="rect771" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path773" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="spin-minus-focused" transform="translate(205,-211)">
+<svg:rect height="8" id="rect776" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect778" style="fill:#c8c8ca" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-plus-pressed" transform="translate(225,-222)">
+<svg:rect height="8" id="rect781" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path783" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="spin-minus-pressed" transform="translate(215,-211)">
+<svg:rect height="8" id="rect786" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect788" style="fill:#c8c8ca" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-plus-disabled" transform="translate(235,-222)">
+<svg:rect height="8" id="rect791" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path793" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff"/>
+</svg:g>
+<svg:g id="spin-minus-disabled" transform="translate(225,-211)">
+<svg:rect height="8" id="rect796" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect798" style="opacity:0.25;fill:#ffffff" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-up-normal" transform="translate(205,-200.99994)">
+<svg:rect height="8" id="rect801" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path803" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="spin-down-normal" transform="translate(195,-189.99994)">
+<svg:rect height="8" id="rect806" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect808" style="fill:#aaaaac" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-up-focused" transform="translate(215,-200.99994)">
+<svg:rect height="8" id="rect811" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path813" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="spin-down-focused" transform="translate(205,-189.99994)">
+<svg:rect height="8" id="rect816" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect818" style="fill:#c8c8ca" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-up-pressed" transform="translate(225,-200.99994)">
+<svg:rect height="8" id="rect821" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path823" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="spin-down-pressed" transform="translate(215,-189.99994)">
+<svg:rect height="8" id="rect826" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect828" style="fill:#c8c8ca" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="spin-up-disabled" transform="translate(235,-200.99994)">
+<svg:rect height="8" id="rect831" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path833" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff"/>
+</svg:g>
+<svg:g id="spin-down-disabled" transform="translate(225,-189.99994)">
+<svg:rect height="8" id="rect836" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect838" style="opacity:0.25;fill:#ffffff" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:rect height="6" id="spin-separator-pressed" style="color:#000000;opacity:0.5;fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="2" x="275" y="101"/>
+<svg:rect height="6" id="spin-separator-top-pressed" style="color:#000000;opacity:0.5;fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="2" x="275" y="95"/>
+<svg:rect height="6" id="spin-separator-bottom-pressed" style="color:#000000;opacity:0.5;fill:#d08791;fill-opacity:1;fill-rule:evenodd" width="2" x="275" y="107"/>
+<svg:rect height="6" id="spin-separator-normal" style="color:#000000;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd" width="2" x="265" y="101"/>
+<svg:g id="spin-separator-top-normal" style="color:#000000;fill:#22252e;fill-rule:evenodd;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" transform="translate(0,-378)">
+<svg:path d="m 265,475 h 2 v 4 h -2 z" id="path845" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1"/>
+<svg:path d="m 267,473 v 2 h -2 v -2 z" id="path847" inkscape:connector-curvature="0" style="fill:none"/>
+</svg:g>
+<svg:g id="spin-separator-bottom-normal" style="color:#000000;fill:#22252e;fill-rule:evenodd;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" transform="matrix(1,0,0,-1,0,586)">
+<svg:path d="m 265,475 h 2 v 4 h -2 z" id="path850" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1"/>
+<svg:path d="m 267,473 v 2 h -2 v -2 z" id="path852" inkscape:connector-curvature="0" style="fill:none"/>
+</svg:g>
+</svg:g>
+<svg:g id="g917" transform="translate(.00264425 45.000002)">
+<svg:g id="flat-arrow-down-normal" transform="rotate(90,404,313)">
+<svg:rect height="8" id="rect857" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path859" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-down-focused" transform="rotate(90,409,318)">
+<svg:rect height="8" id="rect862" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path864" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-down-disabled" transform="rotate(90,414,323)">
+<svg:rect height="8" id="rect867" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path869" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-up-normal" transform="matrix(0,-1,-1,0,717,300.00006)">
+<svg:rect height="8" id="rect872" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path874" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-up-focused" transform="matrix(0,-1,-1,0,727,300.00006)">
+<svg:rect height="8" id="rect877" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path879" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-up-disabled" transform="matrix(0,-1,-1,0,737,300.00006)">
+<svg:rect height="8" id="rect882" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path884" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-left-normal" transform="rotate(180,187,327.00002)">
+<svg:rect height="8" id="rect887" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path889" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-left-focused" transform="rotate(180,192,327.00002)">
+<svg:rect height="8" id="rect892" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path894" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-left-disabled" transform="rotate(180,197,327.00002)">
+<svg:rect height="8" id="rect897" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path899" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-right-normal" transform="matrix(1,0,0,-1,-5.999982,665.00004)">
+<svg:rect height="8" id="rect902" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path904" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-right-focused" transform="matrix(1,0,0,-1,4.0000182,665.00004)">
+<svg:rect height="8" id="rect907" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path909" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="flat-arrow-right-disabled" transform="matrix(1,0,0,-1,14.000018,665.00004)">
+<svg:rect height="8" id="rect912" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path914" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+</svg:g>
+<svg:g id="g944" transform="translate(.00264425 45.000002)">
+<svg:g id="carrow-normal" transform="rotate(90,361.5,295.5)">
+<svg:rect height="8" id="rect919" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path921" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="carrow-focused" transform="rotate(90,366.5,300.5)">
+<svg:rect height="8" id="rect924" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path926" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="carrow-pressed" transform="rotate(90,371.5,305.5)">
+<svg:rect height="8" id="rect929" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path931" style="fill:#d2d2d4" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="carrow-toggled" transform="rotate(90,376.5,310.5)">
+<svg:rect height="8" id="rect934" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path936" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="carrow-disabled" transform="rotate(90,381.5,315.5)">
+<svg:rect height="8" id="rect939" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path941" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+</svg:g>
+<svg:g id="g996" transform="translate(.00264425 45.000002)">
+<svg:g id="tree-plus-normal" transform="translate(-66.000003,-434)">
+<svg:rect height="8" id="rect946" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path948" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-plus-focused" transform="translate(-56.000003,-434)">
+<svg:rect height="8" id="rect951" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path953" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-plus-pressed" transform="translate(-46.000003,-434)">
+<svg:rect height="8" id="rect956" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path958" style="fill:#d2d2d4" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-plus-toggled" transform="translate(-35.999993,-434)">
+<svg:rect height="8" id="rect961" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path963" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-plus-disabled" transform="translate(-25.999993,-434)">
+<svg:rect height="8" id="rect966" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path968" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-minus-normal" transform="rotate(90,369,287.99999)">
+<svg:rect height="8" id="rect971" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path973" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-minus-focused" transform="rotate(90,374,292.99999)">
+<svg:rect height="8" id="rect976" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path978" style="fill:#c8c8ca" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-minus-pressed" transform="rotate(90,379,297.99999)">
+<svg:rect height="8" id="rect981" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path983" style="fill:#d2d2d4" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-minus-toggled" transform="rotate(90,384,302.99999)">
+<svg:rect height="8" id="rect986" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path988" style="fill:#aaaaac" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+<svg:g id="tree-minus-disabled" transform="rotate(90,389,307.99999)">
+<svg:rect height="8" id="rect991" style="fill:#000000;opacity:.00100002" width="8" x="186" y="529"/>
+<svg:path d="m194.45572 532.57465-3.46411 2-3.4641 2v-8l3.4641 2z" id="path993" style="fill:#ffffff;opacity:.25" transform="matrix(.72168782 0 0 1 52.663678 .42535408)"/>
+</svg:g>
+</svg:g>
+<svg:g id="g1148" transform="translate(0.00264425,45.000002)">
+<svg:g id="arrow-right-normal" transform="translate(-126,-434)">
+<svg:rect height="8" id="rect998" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1000" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-right-focused" transform="translate(-115.99999,-434)">
+<svg:rect height="8" id="rect1003" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1005" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-right-pressed" transform="translate(-105.99999,-434)">
+<svg:rect height="8" id="rect1008" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1010" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-right-toggled" transform="translate(-95.99998,-434)">
+<svg:rect height="8" id="rect1013" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1015" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-right-disabled" transform="translate(-85.999983,-434)">
+<svg:rect height="8" id="rect1018" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1020" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-left-normal" transform="rotate(180,127,321.49997)">
+<svg:rect height="8" id="rect1023" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1025" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-left-focused" transform="rotate(180,132,321.49997)">
+<svg:rect height="8" id="rect1028" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1030" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-left-pressed" transform="rotate(180,137,321.49997)">
+<svg:rect height="8" id="rect1033" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1035" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-left-toggled" transform="rotate(180,142,321.49997)">
+<svg:rect height="8" id="rect1038" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1040" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-left-disabled" transform="rotate(180,147,321.49997)">
+<svg:rect height="8" id="rect1043" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1045" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-up-normal" transform="rotate(-90,-79.000003,390)">
+<svg:rect height="8" id="rect1048" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1050" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-up-focused" transform="rotate(-90,-74.000003,385)">
+<svg:rect height="8" id="rect1053" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1055" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-up-pressed" transform="rotate(-90,-69.000003,380)">
+<svg:rect height="8" id="rect1058" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1060" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-up-toggled" transform="rotate(-90,-64.000003,375)">
+<svg:rect height="8" id="rect1063" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1065" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-up-disabled" transform="rotate(-90,-59.000003,370)">
+<svg:rect height="8" id="rect1068" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1070" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-down-normal" transform="rotate(90,328,269)">
+<svg:rect height="8" id="rect1073" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1075" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-down-focused" transform="rotate(90,333,274)">
+<svg:rect height="8" id="rect1078" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1080" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-down-pressed" transform="rotate(90,338,279)">
+<svg:rect height="8" id="rect1083" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1085" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-down-toggled" transform="rotate(90,343,284)">
+<svg:rect height="8" id="rect1088" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1090" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-down-disabled" transform="rotate(90,348,289)">
+<svg:rect height="8" id="rect1093" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1095" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="arrow-plus-normal" transform="translate(45,-180)">
+<svg:rect height="8" id="rect1098" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path1100" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="arrow-minus-normal" transform="translate(35,-169)">
+<svg:rect height="8" id="rect1103" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect1105" style="fill:#aaaaac" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="arrow-plus-focused" transform="translate(55,-180)">
+<svg:rect height="8" id="rect1108" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path1110" inkscape:connector-curvature="0" style="fill:#c8c8ca"/>
+</svg:g>
+<svg:g id="arrow-minus-focused" transform="translate(45.00001,-169)">
+<svg:rect height="8" id="rect1113" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect1115" style="fill:#c8c8ca" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="arrow-plus-pressed" transform="translate(65,-180)">
+<svg:rect height="8" id="rect1118" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path1120" inkscape:connector-curvature="0" style="fill:#d2d2d4"/>
+</svg:g>
+<svg:g id="arrow-minus-pressed" transform="translate(55,-169)">
+<svg:rect height="8" id="rect1123" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect1125" style="fill:#d2d2d4" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="arrow-plus-toggled" transform="translate(75,-180)">
+<svg:rect height="8" id="rect1128" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path1130" inkscape:connector-curvature="0" style="fill:#aaaaac"/>
+</svg:g>
+<svg:g id="arrow-minus-toggled" transform="translate(65,-169)">
+<svg:rect height="8" id="rect1133" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect1135" style="fill:#aaaaac" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+<svg:g id="arrow-plus-disabled" transform="translate(85,-180)">
+<svg:rect height="8" id="rect1138" style="opacity:0.00100002;fill:#000000" width="8" x="15" y="317"/>
+<svg:path d="m 18,317 v 3 h -3 v 2 h 3 v 3 h 2 v -3 h 3 v -2 h -3 v -3 z" id="path1140" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff"/>
+</svg:g>
+<svg:g id="arrow-minus-disabled" transform="translate(75,-169)">
+<svg:rect height="8" id="rect1143" style="opacity:0.00100002;fill:#000000" width="8" x="25" y="317"/>
+<svg:rect height="8" id="rect1145" style="opacity:0.25;fill:#ffffff" transform="rotate(90)" width="2" x="320" y="-33"/>
+</svg:g>
+</svg:g>
+<svg:g id="g1250" transform="translate(0.00264425,45.000002)">
+<svg:g id="tarrow-right-normal" transform="translate(-185.99999,-434)">
+<svg:rect height="8" id="rect1150" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1152" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-right-focused" transform="translate(-175.99999,-434)">
+<svg:rect height="8" id="rect1155" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1157" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-right-pressed" transform="translate(-163.99999,-434)">
+<svg:rect height="8" id="rect1160" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1162" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-right-toggled" transform="translate(-155.99999,-434)">
+<svg:rect height="8" id="rect1165" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1167" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-right-disabled" transform="translate(-145.99999,-434)">
+<svg:rect height="8" id="rect1170" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1172" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-left-normal" transform="rotate(180,97.000007,321.49997)">
+<svg:rect height="8" id="rect1175" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1177" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-left-focused" transform="rotate(180,102,321.49997)">
+<svg:rect height="8" id="rect1180" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1182" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-left-pressed" transform="rotate(180,107,321.49997)">
+<svg:rect height="8" id="rect1185" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1187" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-left-toggled" transform="rotate(180,112,321.49997)">
+<svg:rect height="8" id="rect1190" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1192" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-left-disabled" transform="rotate(180,117,321.49997)">
+<svg:rect height="8" id="rect1195" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1197" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-up-normal" transform="rotate(-90,-109.00001,420)">
+<svg:rect height="8" id="rect1200" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1202" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-up-focused" transform="rotate(-90,-104.00001,415)">
+<svg:rect height="8" id="rect1205" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1207" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-up-pressed" transform="rotate(-90,-99.000003,410)">
+<svg:rect height="8" id="rect1210" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1212" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-up-toggled" transform="rotate(-90,-94.000003,405)">
+<svg:rect height="8" id="rect1215" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1217" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-up-disabled" transform="rotate(-90,-89.000003,400)">
+<svg:rect height="8" id="rect1220" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1222" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-down-normal" transform="rotate(90,298.00001,239.00001)">
+<svg:rect height="8" id="rect1225" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1227" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-down-focused" transform="rotate(90,303.00001,244.00001)">
+<svg:rect height="8" id="rect1230" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1232" inkscape:connector-curvature="0" style="fill:#c8c8ca" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-down-pressed" transform="rotate(90,308.00001,249.00001)">
+<svg:rect height="8" id="rect1235" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1237" inkscape:connector-curvature="0" style="fill:#d2d2d4" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-down-toggled" transform="rotate(90,313.00001,254.00001)">
+<svg:rect height="8" id="rect1240" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1242" inkscape:connector-curvature="0" style="fill:#aaaaac" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+<svg:g id="tarrow-down-disabled" transform="rotate(90,318.00001,259.00001)">
+<svg:rect height="8" id="rect1245" style="opacity:0.00100002;fill:#000000" width="8" x="186" y="529"/>
+<svg:path d="m 194.45572,532.57465 -3.46411,2 -3.4641,2 v -8 l 3.4641,2 z" id="path1247" inkscape:connector-curvature="0" style="opacity:0.25;fill:#ffffff" transform="matrix(0.72168782,0,0,1,52.663678,0.42535408)"/>
+</svg:g>
+</svg:g>
+<svg:g id="g1286" transform="translate(0.00264425,45.000002)">
+<svg:g id="checkbox-normal" transform="translate(5,-60)">
+<svg:rect height="16" id="rect1252" ry="2" style="opacity:1;fill:#232831;fill-opacity:1" width="16" x="85" y="125"/>
+<svg:rect height="14" id="rect1254" ry="1" style="fill:#373b43;fill-opacity:1" width="14" x="86" y="126"/>
+</svg:g>
+<svg:g id="checkbox-focused" transform="translate(25,-60)">
+<svg:rect height="16" id="rect1257" ry="2" style="opacity:1;fill:#d08770;fill-opacity:1" width="16" x="85" y="125"/>
+<svg:rect height="14" id="rect1259" ry="1" style="fill:#373b43;fill-opacity:1" width="14" x="86" y="126"/>
+</svg:g>
+<svg:g id="checkbox-checked-normal" transform="translate(45,-60)">
+<svg:path d="m 127,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1262" inkscape:connector-curvature="0" style="fill:#d08770;fill-opacity:1" transform="translate(-40)"/>
+<svg:path d="m 97.783637,128.28067 c -0.337258,0.011 -0.691713,0.1536 -0.956726,0.4185 l -5.740355,5.7404 -1.913451,-1.9134 c -0.530026,-0.5301 -1.349982,-0.5635 -1.853655,-0.06 l -0.119591,0.1196 c -0.503673,0.5036 -0.470231,1.3235 0.05979,1.8536 l 2.660893,2.631 c 0.04659,0.072 0.08653,0.1165 0.149489,0.1794 l 0.11958,0.12 c 0.04791,0.044 0.09781,0.085 0.149489,0.1195 0.01272,0.011 0.01692,0.022 0.0299,0.03 0.06416,0.042 0.141106,0.06 0.209285,0.089 0.05967,0.024 0.116906,0.045 0.179385,0.059 0.02157,0.012 0.03807,0.025 0.05979,0.03 0.165282,0.031 0.340191,0.033 0.508261,0 0.03161,-0.011 0.05857,-0.022 0.0897,-0.03 0.22706,-0.061 0.446334,-0.1773 0.627851,-0.3587 l 0.05979,-0.06 c 0.06296,-0.063 0.102901,-0.1075 0.149488,-0.1794 l 6.487797,-6.4579 c 0.530026,-0.5299 0.563468,-1.3499 0.05979,-1.8537 l -0.11959,-0.1195 c -0.251838,-0.2518 -0.559672,-0.3674 -0.89693,-0.3589 z" id="path1264" inkscape:connector-curvature="0" style="fill:#ffffff;fill-opacity:1"/>
+</svg:g>
+<svg:g id="checkbox-checked-focused" transform="translate(65,-60)">
+<svg:path d="m 147,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1267" inkscape:connector-curvature="0" style="fill:#6e6e70" transform="translate(-60)"/>
+<svg:path d="m 147,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1269" inkscape:connector-curvature="0" style="opacity:0.5;fill:#d08770;fill-opacity:1" transform="translate(-60)"/>
+<svg:path d="m 97.783637,128.28067 c -0.337258,0.011 -0.691713,0.1536 -0.956726,0.4185 l -5.740355,5.7404 -1.913451,-1.9134 c -0.530026,-0.5301 -1.349982,-0.5635 -1.853655,-0.06 l -0.119591,0.1196 c -0.503673,0.5036 -0.470231,1.3235 0.05979,1.8536 l 2.660893,2.631 c 0.04659,0.072 0.08653,0.1165 0.149489,0.1794 l 0.11958,0.12 c 0.04791,0.044 0.09781,0.085 0.149489,0.1195 0.01272,0.011 0.01692,0.022 0.0299,0.03 0.06416,0.042 0.141106,0.06 0.209285,0.089 0.05967,0.024 0.116906,0.045 0.179385,0.059 0.02157,0.012 0.03807,0.025 0.05979,0.03 0.165282,0.031 0.340191,0.033 0.508261,0 0.03161,-0.011 0.05857,-0.022 0.0897,-0.03 0.22706,-0.061 0.446334,-0.1773 0.627851,-0.3587 l 0.05979,-0.06 c 0.06296,-0.063 0.102901,-0.1075 0.149488,-0.1794 l 6.487797,-6.4579 c 0.530026,-0.5299 0.563468,-1.3499 0.05979,-1.8537 l -0.11959,-0.1195 c -0.251838,-0.2518 -0.559672,-0.3674 -0.89693,-0.3589 z" id="path1271" inkscape:connector-curvature="0" style="fill:#ffffff;fill-opacity:1"/>
+</svg:g>
+<svg:g id="checkbox-tristate-normal" transform="translate(84.74745,-60)">
+<svg:path d="m 87.25255,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1274" inkscape:connector-curvature="0" style="fill:#6e6e70"/>
+<svg:path d="m 172,128 v 4 h -4 v 2 h 4 v 4 h 2 v -4 h 4 v -2 h -4 v -4 z" id="path1276" inkscape:connector-curvature="0" style="fill:#1e1e20" transform="translate(-79.74745)"/>
+</svg:g>
+<svg:g id="checkbox-tristate-focused" transform="translate(105,-60)">
+<svg:path d="m 147,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1279" inkscape:connector-curvature="0" style="fill:#6e6e70" transform="translate(-60)"/>
+<svg:path d="m 147,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z" id="path1281" inkscape:connector-curvature="0" style="opacity:0.17999998;fill:#ffffff" transform="translate(-60)"/>
+<svg:path d="m 92,128 v 4 h -4 v 2 h 4 v 4 h 2 v -4 h 4 v -2 h -4 v -4 z" id="path1283" inkscape:connector-curvature="0" style="fill:#1e1e20"/>
+</svg:g>
+</svg:g>
+<svg:g id="g1316" transform="translate(0.00264425,45.000002)">
+<svg:g id="radio-normal" transform="translate(0,-89)">
+<svg:path d="m 8,154 a 8,8 0 0 0 -8,8 8,8 0 0 0 8,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" id="path1288" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1290" r="6" style="fill:#373b43;fill-opacity:1"/>
+</svg:g>
+<svg:g id="radio-focused" transform="translate(20,-89)">
+<svg:path d="m 8,154 a 8,8 0 0 0 -8,8 8,8 0 0 0 8,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" id="path1293" inkscape:connector-curvature="0" style="opacity:1;fill:#d08770;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1295" r="6" style="fill:#373b43;fill-opacity:1"/>
+</svg:g>
+<svg:g id="radio-checked-normal" transform="translate(40,-89)">
+<svg:path d="m 8,154 a 8,8 0 0 0 -8,8 8,8 0 0 0 8,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" id="path1298" inkscape:connector-curvature="0" style="fill:#d08770;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1300" r="6" style="fill:#373b43;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1302" r="4" style="fill:#d08770;fill-opacity:1"/>
+</svg:g>
+<svg:g id="radio-checked-focused" transform="translate(60,-89)">
+<svg:path d="m 8,154 a 8,8 0 0 0 -8,8 8,8 0 0 0 8,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" id="path1305" inkscape:connector-curvature="0" style="fill:#6e6e70"/>
+<svg:path d="m 8,154 a 8,8 0 0 0 -8,8 8,8 0 0 0 8,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,2 a 6,6 0 0 1 6,6 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 z" id="path1307" inkscape:connector-curvature="0" style="opacity:0.5;fill:#d08770;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1309" r="6" style="fill:#373b43;fill-opacity:1"/>
+<svg:circle cx="8" cy="162" id="circle1311" r="4" style="fill:#6e6e70"/>
+<svg:circle cx="8" cy="162" id="circle1313" r="4" style="opacity:0.5;fill:#d08770;fill-opacity:1"/>
+</svg:g>
+</svg:g>
+<svg:g id="g1401" transform="translate(0.00264425,45.000002)">
+<svg:rect height="10" id="expand-lineedit-normal" style="fill-rule:evenodd" width="10" x="220" y="10"/>
+<svg:g id="lineedit-normal-left" transform="matrix(0.8,0,0,0.98461538,218,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1319" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1321" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-bottomleft" transform="matrix(0,-0.8,0.8,0,201.99862,70.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1324" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1326" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-bottom" transform="matrix(0,-0.8,0.98461538,0,192.99832,71)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1329" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1331" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-bottomright" transform="matrix(-0.8,0,0,-0.8,295.9998,87.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1334" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1336" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-right" transform="matrix(-0.8,0,0,0.98461538,295.9998,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1339" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1341" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-topright" transform="matrix(0,0.8,-0.8,0,312.00118,-6.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1344" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1346" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-top" transform="matrix(0,0.8,-0.98461538,0,321.00148,-6.9999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1349" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1351" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-normal-topleft" transform="matrix(0.8,0,0,0.8,218,-23.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1354" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1356" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 241,16 v 32 h 32 V 16 Z" id="lineedit-normal" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="lineedit-focused-left" transform="matrix(0.8,0,0,0.98461538,268,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1360" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1362" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-bottomleft" transform="matrix(0,-0.8,0.8,0,251.99862,70.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1365" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1367" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-bottom" transform="matrix(0,-0.8,0.98461538,0,242.99832,71)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1370" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1372" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-bottomright" transform="matrix(-0.8,0,0,-0.8,345.9998,87.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1375" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1377" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-right" transform="matrix(-0.8,0,0,0.98461538,345.9998,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1380" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1382" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-topright" transform="matrix(0,0.8,-0.8,0,362.00118,-6.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1385" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1387" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-top" transform="matrix(0,0.8,-0.98461538,0,371.00148,-6.9999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1390" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1392" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="lineedit-focused-topleft" transform="matrix(0.8,0,0,0.8,268,-23.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1395" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1397" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 291,16 v 32 h 32 V 16 Z" id="lineedit-focused" inkscape:connector-curvature="0" style="opacity:1;fill:#3c4454;fill-opacity:1;fill-rule:evenodd"/>
+</svg:g>
+<svg:g id="g1568" transform="translate(0.00264425,45.000002)">
+<svg:g id="combo-normal-left" transform="matrix(0.8,0,0,0.98461538,-1.9999,-32.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1403" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1405" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-bottomleft" transform="matrix(0,-0.8,0.8,0,-18.00128,70.999901)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1408" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1410" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-bottom" transform="matrix(0,-0.8,0.98461538,0,-27.00158,71)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1413" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1415" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-bottomright" transform="matrix(-0.8,0,0,-0.8,75.9999,87.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1418" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1420" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-right" transform="matrix(-0.8,0,0,0.98461538,75.9999,-32.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1423" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1425" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-topright" transform="matrix(0,0.8,-0.8,0,92.00128,-6.9999012)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1428" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1430" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-top" transform="matrix(0,0.8,-0.98461538,0,101.00158,-6.9999012)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1433" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1435" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-normal-topleft" transform="matrix(0.8,0,0,0.8,-1.9999,-23.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1438" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1440" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 21.0001,15.999999 v 32 h 32 v -32 z" id="combo-normal" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="combo-focused-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,48,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1444" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1446" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,31.99872,70.999901)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1449" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1451" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,22.99842,70.999901)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1454" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1456" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,125.9999,87.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1459" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1461" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-right" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,0.98461538,126,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1464" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1466" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-topright" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.8,0,142.00128,-6.9999012)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1469" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1471" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-top" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.98461538,0,151.00158,-7.0000002)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1474" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1476" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-focused-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,48,-23.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1479" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1481" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 71,16 v 32 h 32 V 16 Z" id="combo-focused" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="combo-pressed-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,98,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1485" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1487" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,81.99872,71)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1490" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1492" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,72.99842,71)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1495" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1497" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,175.9999,87.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1500" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1502" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-right" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,0.98461538,176,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1505" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1507" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-topright" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.8,0,192.00128,-6.9999012)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1510" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1512" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-top" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.98461538,0,201.00158,-7.0000002)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1515" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1517" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-pressed-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,98,-23.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1520" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1522" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 121,16 v 32 h 32 V 16 Z" id="combo-pressed" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="combo-toggled-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,148,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1526" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1528" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,131.99872,70.999901)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1531" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1533" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,122.99842,70.999901)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1536" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1538" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,225.9999,87.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1541" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1543" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-right" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,0.98461538,226,-32.001575)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1546" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1548" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-topright" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.8,0,242.00128,-6.9999012)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1551" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1553" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-top" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.98461538,0,251.00158,-7.0000002)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1556" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1558" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="combo-toggled-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,148,-23.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1561" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1563" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 171,16 v 32 h 32 V 16 Z" id="combo-toggled" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="10" id="expand-combo-normal" style="fill-rule:evenodd" width="10" x="0" y="10"/>
+</svg:g>
+<svg:g id="g1590" transform="translate(0.00264425,45.000002)">
+<svg:use height="100%" id="focus-left" transform="rotate(-90,267,-28)" width="100%" x="0" xlink:href="#focus-top" y="0"/>
+<svg:path d="m 255,-16 h 2 v -2 h -2 z" id="focus-bottomleft" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.18000004;fill:#ffffff"/>
+<svg:use height="100%" id="focus-bottom" transform="rotate(180,267,-28)" width="100%" x="0" xlink:href="#focus-top" y="0"/>
+<svg:path d="m 277,-16 h 2 v -2 h -2 z" id="focus-bottomright" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.18000004;fill:#ffffff"/>
+<svg:use height="100%" id="focus-right" transform="rotate(90,267,-28)" width="100%" x="0" xlink:href="#focus-top" y="0"/>
+<svg:path d="m 277,-38 h 2 v -2 h -2 z" id="focus-topright" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.18000004;fill:#ffffff"/>
+<svg:g id="focus-top" style="color:#000000;text-indent:0;text-transform:none" transform="translate(167,-147.5)">
+<svg:path d="m 90,109.5 h 20 v -2 H 90 Z" id="path1576" inkscape:connector-curvature="0" style="fill-opacity:0"/>
+<svg:g id="g1586" style="opacity:0.17999998;fill:#ffffff">
+<svg:path d="m 90,109.5 h 2.5 v -2 H 90 Z" id="path1578" inkscape:connector-curvature="0" style="fill:#ffffff"/>
+<svg:path d="m 95,109.5 h 2.5 v -2 H 95 Z" id="path1580" inkscape:connector-curvature="0" style="fill:#ffffff"/>
+<svg:path d="m 99.75,109.5 h 2.5 v -2 h -2.5 z" id="path1582" inkscape:connector-curvature="0" style="fill:#ffffff"/>
+<svg:path d="m 105,109.5 h 2.5 v -2 H 105 Z" id="path1584" inkscape:connector-curvature="0" style="fill:#ffffff"/>
+</svg:g>
+</svg:g>
+<svg:path d="m 255,-38 h 2 v -2 h -2 z" id="focus-topleft" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:0.18000004;fill:#ffffff"/>
+</svg:g>
+<svg:g id="button-default-indicator" transform="translate(-154.99736,-87.499998)">
+<svg:rect height="25" id="rect1592" style="opacity:0" width="25" x="375" y="87.5"/>
+<svg:path d="m 400,92.5 -20,20 h 20 z" id="path1594" inkscape:connector-curvature="0" style="opacity:0.17999998;fill:#ffffff"/>
+</svg:g>
+<svg:g id="g1762" transform="translate(0.00264425,45.000002)">
+<svg:g id="button-normal-left" transform="matrix(0.8,0,0,0.98461538,-2.0000003,-87.001577)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1597" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1599" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-bottomleft" transform="matrix(0,-0.8,0.8,0,-18.00138,15.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1602" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1604" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-bottom" transform="matrix(0,-0.8,0.98461538,0,-27.001674,15.999999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1607" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1609" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-bottomright" transform="matrix(-0.8,0,0,-0.8,75.999802,32.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1612" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1614" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-right" transform="matrix(-0.8,0,0,0.98461538,75.999802,-87.001577)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1617" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1619" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-topright" transform="matrix(0,0.8,-0.8,0,92.001182,-61.999902)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1622" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1624" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-top" transform="matrix(0,0.8,-0.98461538,0,101.00148,-61.999902)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1627" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1629" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-normal-topleft" transform="matrix(0.8,0,0,0.8,-2.0000003,-78.001282)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1632" inkscape:connector-curvature="0" style="opacity:1;fill:#2f343f;fill-opacity:0.6;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1634" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 21,-39.000002 v 32 h 32 v -32 z" id="button-normal" inkscape:connector-curvature="0" style="opacity:0.6;fill:#3b2f30;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="button-focused-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,47.999901,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1638" inkscape:connector-curvature="0" style="opacity:1;fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1640" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,31.99862,15.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1643" inkscape:connector-curvature="0" style="opacity:1;fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1645" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,22.998325,15.9999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1648" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1650" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,125.9998,32.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1653" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 107.00195,38 c 0,2.5 -1.5,4 -4,4 v 2 c 3.3,4.1e-5 6.00003,-2.699976 6,-6 z" id="path1655" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1;stroke-width:0.80000001" transform="matrix(-1.25,0,0,-1.25,157.50306,96.251603)"/>
+</svg:g>
+<svg:g id="button-focused-right" transform="matrix(-0.8,0,0,0.98461538,125.9999,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1658" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1660" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-topright" transform="matrix(0,0.8,-0.8,0,142.00118,-61.999902)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1663" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1665" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-top" transform="matrix(0,0.8,-0.98461538,0,151.00148,-62.000001)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1668" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1670" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-focused-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,47.999901,-78.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1673" inkscape:connector-curvature="0" style="opacity:1;fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1675" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 70.999901,-39.000001 v 32 H 102.9999 v -32 z" id="button-focused" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="button-pressed-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,97.999901,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1679" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1681" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,81.998621,15.999999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1684" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1686" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,72.998326,15.999999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1689" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1691" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,175.9998,32.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1694" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1696" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-right" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,0.98461538,175.9999,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1699" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1701" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-topright" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.8,0,192.00118,-61.999902)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1704" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1706" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-top" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.98461538,0,201.00148,-62.000001)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1709" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1711" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-pressed-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,97.999901,-78.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1714" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1716" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 120.9999,-39.000001 v 32 h 32 v -32 z" id="button-pressed" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:g id="button-toggled-left" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.98461538,147.9999,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1720" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1722" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-bottomleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.8,0,131.99862,15.9999)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1725" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1727" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-bottom" style="fill:#d08791;fill-opacity:1" transform="matrix(0,-0.8,0.98461538,0,122.99832,15.9999)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1730" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1732" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-bottomright" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,-0.8,225.9998,32.00128)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1735" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1737" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-right" style="fill:#d08791;fill-opacity:1" transform="matrix(-0.8,0,0,0.98461538,225.9999,-87.001576)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1740" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1742" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-topright" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.8,0,242.00118,-61.999902)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1745" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1747" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-top" style="fill:#d08791;fill-opacity:1" transform="matrix(0,0.8,-0.98461538,0,251.00148,-62.000001)">
+<svg:path d="M 2,21 V 53 H 6 V 21 Z" id="path1750" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.88752031" transform="matrix(1.25,0,0,1.015625,21.249876,27.423476)"/>
+<svg:path d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z" id="path1752" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:g id="button-toggled-topleft" style="fill:#d08791;fill-opacity:1" transform="matrix(0.8,0,0,0.8,147.9999,-78.001281)">
+<svg:path d="M 6,17 C 3.5,17 2,18.5 2,21 H 6 Z" id="path1755" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd;stroke-width:0.80000001" transform="matrix(1.25,0,0,1.25,21.249876,22.501601)"/>
+<svg:path d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z" id="path1757" inkscape:connector-curvature="0" style="color:#000000;text-indent:0;text-transform:none;fill:#d08791;fill-opacity:1"/>
+</svg:g>
+<svg:path d="m 170.9999,-7.000001 v -32 h 32 v 32 z" id="button-toggled" inkscape:connector-curvature="0" style="fill:#d08791;fill-opacity:1;fill-rule:evenodd"/>
+<svg:rect height="10" id="expand-button-normal" style="fill-rule:evenodd" width="10" x="-2.3841858e-07" y="-45"/>
+</svg:g>
+<svg:g id="g229" transform="translate(0.555879,47.460984)">
+<svg:g id="common-normal-top" transform="translate(-609.00043,96.97131)">
+<svg:path d="m 610.00043,-369.02874 h 40 v 1.00005 h -40 z" id="path204" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1" transform="scale(1,-1)"/>
+</svg:g>
+<svg:rect class="ColorScheme-ButtonFocus" height="40" id="common-normal" style="color:#3daee9;opacity:0.00100002;fill:#002700;fill-opacity:1" transform="scale(1,-1)" width="40" x="1" y="-506.00006"/>
+<svg:g id="common-normal-topleft" transform="translate(-608.00043,96.97136)">
+<svg:path class="ColorScheme-Text" d="m 609.00043,368.02864 c -1.10167,0 -0.99779,-0.10151 -0.99779,1.00012 H 609 Z" id="path208" inkscape:connector-curvature="0" style="color:#31363b;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="common-normal-topright" transform="translate(-609.99734,96.9713)">
+<svg:path class="ColorScheme-Text" d="m 650.99998,368.03139 c 1.10161,0 0.99736,-0.10427 0.99736,0.99736 h -0.99736 z" id="path211" inkscape:connector-curvature="0" style="color:#31363b;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="common-normal-left" transform="translate(-608,95.97136)">
+<svg:path d="m -410.02869,-608.99998 h 40 V -608 h -40 z" id="path214" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1" transform="matrix(0,-1,-1,0,0,0)"/>
+</svg:g>
+<svg:g id="common-normal-right" transform="translate(-610.00002,95.97127)">
+<svg:path d="m 370.02878,651.00002 h 40 v 1.00004 h -40 z" id="path217" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1" transform="matrix(0,1,1,0,0,0)"/>
+</svg:g>
+<svg:g id="common-normal-bottom" transform="translate(-609.00043,94.97116)">
+<svg:path d="m 610.00043,411.02889 h 40 v 0.99986 h -40 z" id="path220" inkscape:connector-curvature="0" style="opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="common-normal-bottomleft" transform="translate(-608.00264,94.97131)">
+<svg:path class="ColorScheme-Text" d="m 609,412.02609 c -1.10167,0 -0.99736,0.10447 -0.99736,-0.99735 H 609 Z" id="path223" inkscape:connector-curvature="0" style="color:#31363b;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+<svg:g id="common-normal-bottomright" transform="translate(-609.99998,94.97131)">
+<svg:path class="ColorScheme-Text" d="m 650.99998,412.02609 c 1.10161,0 0.99736,0.10447 0.99736,-0.99735 h -0.99736 z" id="path226" inkscape:connector-curvature="0" style="color:#31363b;opacity:1;fill:#232831;fill-opacity:1"/>
+</svg:g>
+</svg:g>
+</svg:svg>
