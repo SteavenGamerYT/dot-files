@@ -40,7 +40,7 @@ if [ "$XDG_SESSION_DESKTOP" = "none+i3" ] || [ "$XDG_SESSION_DESKTOP" = "i3" ] |
   # Override the default style for QT applications 
   export QT_STYLE_OVERRIDE=kvantum
   # Set Kvantum theme
-  export KVANTUM_THEME=Nordic-solid
+  export KVANTUM_THEME=Nordic-Solid-Red
 
   # Set the platform theme for QT applications
   export QT_QPA_PLATFORMTHEME=qt6ct
