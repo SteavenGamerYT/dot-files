@@ -66,4 +66,11 @@ for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
 for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
 for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 for_window [title="^Steam Keyboard$"] floating enable
-for_window [class="^steam_app_default*"] inhibit_idle open
+
+# Rules for Wine/Proton
+for_window [app_id=".*\.exe"] inhibit_idle open
+for_window [class="steam_app_.*"] inhibit_idle open
+
+# Emulators
+for_window [class="Ryujinx"] inhibit_idle open
+for_window [app_id="rpcs3"] inhibit_idle open

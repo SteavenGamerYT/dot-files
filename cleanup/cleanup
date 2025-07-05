@@ -44,7 +44,20 @@ cleanup_dnf() {
     echo
 }
 
+cleanup_nixos() {
+    echo "Running cleanup for NixOS..."
+    old_dir="$PWD"
+    cd /etc/nixos
+    sudo nix-collect-garbage -d
+    sudo /run/current-system/bin/switch-to-configuration boot
+    cd "$old_dir"
+}
+
 # Main logic
+if command -v nix-collect-garbage &>/dev/null; then
+    cleanup_nixos
+fi
+
 if command -v pacman &>/dev/null; then
     cleanup_pacman
 fi
