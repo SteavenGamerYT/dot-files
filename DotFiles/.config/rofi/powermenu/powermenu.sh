@@ -63,26 +63,26 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl poweroff
+			~/.config/rofi/powermenu/shutdown-sound.sh && systemctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl reboot
+			~/.config/rofi/powermenu/shutdown-sound.sh && systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && systemctl suspend
+			~/.config/rofi/powermenu/shutdown-sound.sh && systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "Openbox" ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && openbox --exit
+				~/.config/rofi/powermenu/shutdown-sound.sh && openbox --exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "bspwm" ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && bspc quit
+				~/.config/rofi/powermenu/shutdown-sound.sh && bspc quit
 			elif [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && i3-msg exit
+				~/.config/rofi/powermenu/shutdown-sound.sh && i3-msg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && swaymsg exit
+				~/.config/rofi/powermenu/shutdown-sound.sh && swaymsg exit
 			elif [[ "$XDG_SESSION_DESKTOP" == "Hyprland" ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && hyprctl dispatch exit
+				~/.config/rofi/powermenu/shutdown-sound.sh && hyprctl dispatch exit
 			elif [[ "$XDG_SESSION_DESKTOP" == 'plasma' ]]; then
-				flatpak run io.mpv.Mpv --config-dir=/dev/null --no-video --no-resume-playback ~/Audio/mp3/Sounds/LOGOFF.WAV && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+				~/.config/rofi/powermenu/shutdown-sound.sh && qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 			fi
 		elif [[ $1 == '--lock' ]]; then
 			if [[ "$XDG_SESSION_DESKTOP" == "i3" ]]; then
