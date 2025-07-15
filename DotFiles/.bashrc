@@ -96,7 +96,7 @@ elif [[ -f /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh ]]; then
   source /home/linuxbrew/.linuxbrew/etc/profile.d/bash-preexec.sh && bash_preexec_loaded=true
 else
 #  nix build nixpkgs#bash-preexec
-  bash_preexec_pkg=$(nix eval --raw nixpkgs#bash-preexec 2>/dev/null)
+  bash_preexec_pkg=$(nix eval --offline --raw nixpkgs#bash-preexec 2>/dev/null)
   if [[ -f "$bash_preexec_pkg/share/bash/bash-preexec.sh" ]]; then
     source "$bash_preexec_pkg/share/bash/bash-preexec.sh" && bash_preexec_loaded=true
   fi

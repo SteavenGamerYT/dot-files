@@ -2,7 +2,7 @@
 
 # Remote machine details
 USER="omarhanykasban"
-IP="192.168.1.110"
+IP="192.168.1.15"
 PASSWORD="omargamer1234"  # Strongly recommend using SSH keys instead
 
 # GPU scripts directory (Windows-style path)
