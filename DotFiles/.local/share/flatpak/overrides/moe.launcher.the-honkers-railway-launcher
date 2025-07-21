@@ -1,0 +1,5 @@
+[Context]
+filesystems=/mnt/nvme/The Dawn Winery/moe.launcher.the-honkers-railway-launcher:rw;xdg-config/MangoHud:ro
+
+[Session Bus Policy]
+com.feralinteractive.GameMode=talk

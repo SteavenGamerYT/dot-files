@@ -1,10 +1,9 @@
 [Context]
-filesystems=xdg-config/MangoHud:ro;/mnt/nvme/Games/Genshin Impact:rw;/mnt/nvme/Games/YuanShen:rw
+filesystems=/mnt/nvme/The Dawn Winery/moe.launcher.an-anime-game-launcher:rw;xdg-config/MangoHud:ro
 
 [Environment]
 OBS_VKCAPTURE=1
 ENABLE_VKBASALT=1
-#MANGOHUD=1
 NMCLI_CLI=flatpak-spawn --host /usr/bin/nmcli
 
 [Session Bus Policy]

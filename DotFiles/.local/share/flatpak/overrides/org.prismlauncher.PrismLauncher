@@ -1,6 +1,2 @@
 [Context]
-filesystems=~/SaveGames/Minecraft:rw;xdg-config/MangoHud:ro
-
-#[Environment]
-#QT_QPA_PLATFORMTHEME=gtk3
-#QT_STYLE_OVERRIDE=Breeze
+filesystems=/mnt/nvme/Games/PrismLauncher:rw;xdg-config/MangoHud:ro;~/SaveGames/Minecraft:rw
