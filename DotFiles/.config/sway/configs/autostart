@@ -14,7 +14,7 @@ exec_always --no-startup-id uwsm app -- ~/.config/sway/scripts/startup-sound.sh
 
 # Autostart Applications
 exec --no-startup-id uwsm app -- swaync
-exec --no-startup-id uwsm app -- ~/.config/sway/scripts/wallpaper2.sh
+exec --no-startup-id uwsm app -- ~/.config/sway/scripts/wallpaper.sh
 exec --no-startup-id uwsm app --  swayidle -w \
           timeout 300 '~/.config/sway/scripts/lockscreen.sh' \
 #          timeout 600 'systemctl suspend' \

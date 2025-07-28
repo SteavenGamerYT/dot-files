@@ -1,18 +1,27 @@
 #!/usr/bin/env bash
 
-# Find all image files in the specified directory
-img=($(find ~/Pictures/SteavenGamerYT/ -type f -exec file {} \; | grep -oP '^.+: \w+ image' | cut -d':' -f1))
+# Create an array of image paths safely
+mapfile -t img < <(find ~/Pictures/SteavenGamerYT/ -type f -exec file --mime-type {} + | awk -F: '$2 ~ /image\// {print $1}')
 
 while true; do
-  # Randomly select an image from the array
+  # Pick a random image
   selected_image="${img[RANDOM % ${#img[@]}]}"
 
-  # Save the path of the current wallpaper to the configuration file
+  # Save the wallpaper path
   echo "WALLPAPER_PATH=$selected_image" > ~/.config/hypr/wallpaper.conf
 
-  # Set the selected image as the wallpaper using swaybg
-  swaybg -m fill -i "$selected_image"
+  # Get the current swaybg PID (if any)
+  swaybg_pid=$(pgrep -x swaybg)
 
-  # Wait for 10 minutes before changing the wallpaper
-  sleep 10m
+  # If swaybg is not running, start it
+  if [[ -z "$swaybg_pid" ]]; then
+    swaybg -m fill -i "$selected_image" &
+  else
+    # If it's running, restart with the new image
+    kill "$swaybg_pid"
+    swaybg -m fill -i "$selected_image" &
+  fi
+
+  # Wait 10 minutes
+  sleep 600
 done
