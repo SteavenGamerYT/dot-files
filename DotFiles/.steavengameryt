@@ -185,11 +185,12 @@ alias yaysyu='yay -Syu --noconfirm'  # Update system and AUR packages using yay 
 alias parsua='paru -Sua --noconfirm'  # Update AUR packages using paru without confirmation
 alias parsyu='paru -Syu --noconfirm'  # Update system and AUR packages using paru without confirmation
 alias unlock='sudo rm /var/lib/pacman/db.lck'  # Remove the lock file for pacman
-alias cleanup='~/GitHub/dot-files/cleanup/cleanup'
+alias cleanup='~/GitHub/dot-files/DotFiles/Scripts/cleanup.sh'
 alias theme-flatpak='~/GitHub/dot-files/DotFiles/Scripts/flatpak/stylepak install-system use-import'  # Install system-wide flatpak themes
 alias flatpak-update-font-cache='~/GitHub/dot-files/DotFiles/Scripts/flatpak/flatpak-font.sh'  # Update font cache for flatpak
 alias cat='bat'  # Use batcat instead of cat for syntax highlighting
 alias convert='magick'
+alias defrag-hdds='~/GitHub/dot-files/DotFiles/Scripts/defrag-hdds.sh'
 # Audio Management
 # Aliases for managing audio combining and uncombining
 alias combine-audio='pactl load-module module-combine-sink'  # Load the module for combining audio streams
