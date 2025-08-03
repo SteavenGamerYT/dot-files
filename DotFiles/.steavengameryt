@@ -191,6 +191,11 @@ alias flatpak-update-font-cache='~/GitHub/dot-files/DotFiles/Scripts/flatpak/fla
 alias cat='bat'  # Use batcat instead of cat for syntax highlighting
 alias convert='magick'
 alias defrag-hdds='~/GitHub/dot-files/DotFiles/Scripts/defrag-hdds.sh'
+# Define commands to update Linux systems and Flatpak applications
+alias update-arch="topgrade"
+alias update-fedora="topgrade"
+alias update-debian="topgrade"
+alias update-nix="sudo ~/GitHub/SteavenNIX/update.sh && topgrade"
 # Audio Management
 # Aliases for managing audio combining and uncombining
 alias combine-audio='pactl load-module module-combine-sink'  # Load the module for combining audio streams
@@ -340,38 +345,21 @@ cpp() {
 		}
 	END { print "" }' total_size="$(stat -c '%s' "${1}")" count=0
 }
-# Define commands to update Arch-based systems and Flatpak applications
-updatearch="topgrade"
-
-# Define commands to update Fedora-based systems and Flatpak applications
-updatefedora="sudo dnf update -y && sudo flatpak update -y"
-
-# Define commands to update Debian-based systems using Nala and Flatpak applications
-updatedebian="sudo nala upgrade -y && sudo flatpak update -y"
-
-# Define command to update dotfiles from a Git repository
-dotfiles='cd ~/GitHub/dot-files && git pull && cd'
-
-# Create an alias to update all specified systems via SSH, executing the update commands remotely
-alias update-all="ssh -t omar-pc '${updatearch}' && ssh -t omar-gaminglaptop '${updatearch}'"  # Remotely update both omar-pc and omar-gaminglaptop using Arch update commands
-
-# Create an alias to update dotfiles on all specified systems via SSH, executing the dotfiles update commands remotely
-alias update-dotfiles="ssh -t omar-pc '${dotfiles}' && ssh -t omar-gaminglaptop '${dotfiles}'"  # Remotely update dotfiles on both omar-pc and omar-gaminglaptop
 
 export MAKEFLAGS="-j$(nproc)" # Sets the MAKEFLAGS environment variable to use all available CPU cores for parallel compilation with make.
 
-# Get the GPU model
-GPU_MODEL=$(lspci | grep -i 'vga' | grep -oP '(?<=NVIDIA Corporation ).*')
+# Check the hostname and set the MANGOHUD_CONFIG variable accordingly
+case "$(hostname)" in
+    Omar-PC) export MANGOHUD_CONFIG="preset=5" ;;
+    Omar-Laptop) export MANGOHUD_CONFIG="preset=8" ;;
+    Omar-GamingLaptop) export MANGOHUD_CONFIG="preset=7" ;;
+    Hany-Laptop) export MANGOHUD_CONFIG="preset=9" ;;
+esac
+# Set the ELECTRON_OZONE_PLATFORM_HINT environment variable to auto for Electron apps
+export ELECTRON_OZONE_PLATFORM_HINT=auto  # Set Electron app platform hint to automatic detection
 
-# Check the GPU model and set the MANGOHUD_CONFIG variable
-if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=5"
-    export MOZ_DRM_DEVICE=/dev/dri/renderD128
-elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=7"
-elif [[ $GPU_MODEL == "GA106M [GeForce RTX 3060 Mobile / Max-Q] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=9"
-fi
-export ELECTRON_OZONE_PLATFORM_HINT=auto
-#export XCURSOR_THEME=Fluent-dark
-export HOMEBREW_NO_ANALYTICS=1
+# Disable Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1  # Prevent Homebrew from sending usage statistics
+
+# Set OLLAMA_HOST to Omar-PC
+export OLLAMA_HOST=192.168.1.14:11434  # Define the host for Ollama service

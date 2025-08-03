@@ -11,18 +11,14 @@ fi
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"  # Directory for storing screenshots
 export EDITOR=nano
 
-# Get the GPU model
-GPU_MODEL=$(lspci | grep -i 'vga' | grep -oP '(?<=NVIDIA Corporation ).*')
+# Check the hostname and set the MANGOHUD_CONFIG variable accordingly
+case "$(hostname)" in
+    Omar-PC) export MANGOHUD_CONFIG="preset=5" ;;
+    Omar-Laptop) export MANGOHUD_CONFIG="preset=8" ;;
+    Omar-GamingLaptop) export MANGOHUD_CONFIG="preset=7" ;;
+    Hany-Laptop) export MANGOHUD_CONFIG="preset=9" ;;
+esac
 
-# Check the GPU model and set the MANGOHUD_CONFIG variable
-if [[ $GPU_MODEL == "TU116 [GeForce GTX 1650] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=5"
-    export MOZ_DRM_DEVICE=/dev/dri/renderD128
-elif [[ $GPU_MODEL == "TU117M [GeForce GTX 1650 Ti Mobile] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=7"
-elif [[ $GPU_MODEL == "GA106M [GeForce RTX 3060 Mobile / Max-Q] (rev a1)" ]]; then
-    export MANGOHUD_CONFIG="preset=9"
-fi
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 
