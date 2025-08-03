@@ -30,6 +30,6 @@ if [[ ! -f "$VRAM_USED_FILE" ]]; then
     exit 1
 fi
 
-# Monitor VRAM usage in MB
-VRAM_USED=$(($(cat "$VRAM_USED_FILE") / 1048576))   # Convert to MB
-echo "${VRAM_USED}MB"
+# Monitor VRAM usage in GiB with decimal points
+VRAM_USED=$(awk '{printf "%.2f", $1 / 1073741824}' "$VRAM_USED_FILE")
+echo "${VRAM_USED} GiB"
