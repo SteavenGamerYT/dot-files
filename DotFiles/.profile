@@ -76,3 +76,4 @@ if [ "$XDG_SESSION_DESKTOP" = "KDE" ]; then
   # Set the Xcursor theme
   export XCURSOR_THEME=WhiteSur-cursors
 fi
+export KDE_COLOR_SCHEME="Nord Red Dark"

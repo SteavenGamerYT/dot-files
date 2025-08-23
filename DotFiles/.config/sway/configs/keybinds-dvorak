@@ -7,20 +7,21 @@
 set $mod Mod4
 
 # Keybindings
-bindsym $mod+l exec uwsm app -- ~/.config/sway/scripts/lockscreen.sh
+bindsym $mod+n exec uwsm app -- ~/.config/sway/scripts/lockscreen.sh
 bindsym $mod+Return uwsm app -- exec kitty
-bindsym $mod+x exec uwsm app -- kitty
-bindsym $mod+b exec uwsm app -- flatpak run io.gitlab.librewolf-community
-bindsym $mod+z exec uwsm app -- nemo
-bindsym $mod+slash exec uwsm app -- looking-glass-client
-bindsym $mod+period exec uwsm app -- scrcpy
-bindsym $mod+Shift+q kill
-bindsym $mod+d exec uwsm app -- ~/.config/rofi/launcher/launcher.sh
-bindsym $mod+Shift+r exec uwsm app -- swaymsg reload
+bindsym $mod+q exec uwsm app -- kitty
+bindsym $mod+x exec uwsm app -- flatpak run io.gitlab.librewolf-community
+bindsym $mod+semicolon exec uwsm app -- nemo
+bindsym $mod+z exec uwsm app -- looking-glass-client
+bindsym $mod+v exec uwsm app -- scrcpy
+bindsym $mod+Shift+apostrophe kill
+bindsym $mod+e exec uwsm app -- ~/.config/rofi/launcher/launcher.sh
+bindsym $mod+Shift+p exec uwsm app -- swaymsg reload
+bindsym $mod+k exec uwsm app -- cliphist list | rofi -dmenu -theme ~/.config/rofi/clipboard.rasi | cliphist decode | wl-copy
 
 # Screenshots
 bindsym Print exec uwsm app -- grimshot --notify savecopy output
-bindsym $mod+Shift+s exec uwsm app -- grimshot --notify savecopy anything
+bindsym $mod+Shift+o exec uwsm app -- grimshot --notify savecopy anything
 
 # Resize mode
 mode "resize" {
@@ -45,7 +46,7 @@ mode "resize" {
 #bindsym $mod+k focus down
 #bindsym $mod+l focus up
 
-bindsym $mod+semicolon focus right
+bindsym $mod+bracketleft focus right
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -53,7 +54,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+bracketleft move right
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -62,12 +63,12 @@ bindsym $mod+Shift+Right move right
 # Window management
 bindsym $mod+h split h
 #bindsym $mod+v split v
-bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+u fullscreen toggle
+bindsym $mod+o layout stacking
+bindsym $mod+comma layout tabbed
+bindsym $mod+period layout toggle split
 bindsym $mod+space floating toggle
-bindsym $mod+Shift+z focus mode_toggle
+bindsym $mod+Shift+semicolon focus mode_toggle
 bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 

@@ -88,6 +88,22 @@ tooltip {
     padding-right: 12px;
 }
 
+#custom-nvidia-gpuusage {
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: @shade2;
+    color: @foreground;
+}
+
+#custom-nvidia-vramusage {
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: @shade1;
+    color: @foreground;
+}
+
 #custom-gpuusage {
     padding: 2px;
     padding-left: 12px;

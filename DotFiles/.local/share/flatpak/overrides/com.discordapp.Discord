@@ -1,2 +1,2 @@
 [Context]
-filesystems=~/Memes:rw;xdg-music:ro
+filesystems=xdg-music:ro;~/Memes:rw;home

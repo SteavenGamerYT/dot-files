@@ -108,4 +108,3 @@ if [[ "$bash_preexec_loaded" = true ]]; then
 else
   echo "Error: bash-preexec could not be found or sourced." >&2
 fi
-

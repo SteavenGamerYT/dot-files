@@ -7,7 +7,6 @@
 exec --no-startup-id uwsm app -- wl-paste --type text --watch cliphist store
 exec --no-startup-id uwsm app -- wl-paste --type image --watch cliphist store
 exec --no-startup-id uwsm app -- wl-clip-persist --clipboard regular
-bindsym $mod+v exec uwsm app -- cliphist list | rofi -dmenu -theme ~/.config/rofi/clipboard.rasi | cliphist decode | wl-copy
 
 #  ## Startup Sound
 exec_always --no-startup-id uwsm app -- ~/.config/sway/scripts/startup-sound.sh
@@ -31,7 +30,7 @@ exec --no-startup-id uwsm app -- ~/.config/waybar/launch.sh
 
 # GUI apps (Starts in system tray)
 exec --no-startup-id uwsm app -- sleep 4 && flatpak run com.discordapp.Discord --start-minimized
-exec --no-startup-id uwsm app -- sleep 4 && flatpak run com.ktechpit.whatsie
+exec --no-startup-id uwsm app -- sleep 4 && flatpak run com.rtosta.zapzap
 exec --no-startup-id uwsm app -- sleep 4 && steam -silent
 exec --no-startup-id uwsm app -- sleep 4 && heroic
 exec --no-startup-id uwsm app -- sleep 4 && sunshine

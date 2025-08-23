@@ -1,7 +1,7 @@
 [Context]
-filesystems=xdg-config/MangoHud:ro;/mnt/hdd2/Roms/Nintendo Wii:ro;/mnt/hdd2/Roms/Nintendo GameCube:ro;/mnt/nvme/Roms/Nintendo GameCube:ro;/mnt/nvme/Roms/Nintendo Wii:ro;~/SaveGames/Dolphin:rw
+filesystems=~/SaveGames/Dolphin;~/Games/Roms/Nintendo GameCube:ro;xdg-config/MangoHud:ro;/home/omarhanykasban/Games/Roms/Nintendo Wii:ro;~/Games/Roms/Nintendo Wii:ro;/home/omarhanykasban/SaveGames/Dolphin;/home/omarhanykasban/Games/Roms/Nintendo GameCube:ro;
 
 [Environment]
-MANGOHUD=1
 OBS_VKCAPTURE=1
 ENABLE_VKBASALT=1
+MANGOHUD=1

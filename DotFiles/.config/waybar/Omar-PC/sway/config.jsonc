@@ -11,8 +11,9 @@
         "sway/window"
     ],
     "modules-right": [
-        "custom/vmgpuusage",
         "custom/disks",
+        "custom/nvidia-gpuusage",
+        "custom/nvidia-vramusage",
         "custom/gpuusage",
         "custom/vramusage",
         "custom/cpu",
@@ -39,6 +40,16 @@
         "interval": 1,
         "return-type": "json",
         "tooltip": true
+  },
+   "custom/nvidia-vramusage": {
+    "exec": "~/.config/waybar/Omar-PC/sway/scripts/nvidia-vram-usage.sh",
+    "interval": 1,
+    "format": "  {}"
+  },
+   "custom/nvidia-gpuusage": {
+        "exec": "~/.config/waybar/Omar-PC/sway/scripts/nvidia-usage.sh",
+        "interval": 1,
+        "format": "󰍹 {}%"
   },
    "custom/vmgpuusage": {
         "exec": "~/.config/waybar/Omar-PC/sway/scripts/vm-gpu-usage.sh",

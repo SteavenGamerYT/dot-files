@@ -10,7 +10,8 @@ include ~/.config/sway/configs/autostart
 include ~/.config/sway/configs/theme-Nordic-red
 #include ~/.config/sway/configs/input
 #include ~/.config/sway/configs/laptop
-include ~/.config/sway/configs/keybinds
+include ~/.config/sway/configs/keybinds-qwerty
+#include ~/.config/sway/configs/keybinds-dvorak
 #include ~/.config/sway/configs/monitor
 include ~/.config/sway/configs/hardware
 include ~/.config/sway/configs/windowrules
@@ -23,7 +24,7 @@ exec_always --no-startup-id ~/.config/sway/scripts/headset
 
 # Switch between English (US) and Arabic (Egypt) keyboard layouts
 input type:keyboard {
-        xkb_layout "us,eg"
+        xkb_layout "us,eg,us(dvorak)"
         xkb_options "grp:alt_shift_toggle"
         xkb_numlock enabled
 }

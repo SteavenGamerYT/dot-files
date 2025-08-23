@@ -1,0 +1,118 @@
+
+# ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃                         Keybinds                            ┃
+# ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+set $mod Mod4
+
+# Keybindings
+bindsym $mod+l exec uwsm app -- ~/.config/sway/scripts/lockscreen.sh
+bindsym $mod+Return uwsm app -- exec kitty
+bindsym $mod+x exec uwsm app -- kitty
+bindsym $mod+b exec uwsm app -- flatpak run io.gitlab.librewolf-community
+bindsym $mod+z exec uwsm app -- nemo
+bindsym $mod+slash exec uwsm app -- looking-glass-client
+bindsym $mod+period exec uwsm app -- scrcpy
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec uwsm app -- ~/.config/rofi/launcher/launcher.sh
+bindsym $mod+Shift+r exec uwsm app -- swaymsg reload
+bindsym $mod+v exec uwsm app -- cliphist list | rofi -dmenu -theme ~/.config/rofi/clipboard.rasi | cliphist decode | wl-copy
+
+# Screenshots
+bindsym Print exec uwsm app -- grimshot --notify savecopy output
+bindsym $mod+Shift+s exec uwsm app -- grimshot --notify savecopy anything
+
+# Resize mode
+mode "resize" {
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        #bindsym $mod+r mode "default"
+}
+#bindsym $mod+r mode "resize"
+
+# Focus and move focus
+
+# move focus
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+
+bindsym $mod+semicolon focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Window management
+bindsym $mod+h split h
+#bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+space floating toggle
+bindsym $mod+Shift+z focus mode_toggle
+bindsym $mod+a focus parent
+#bindsym $mod+d focus child
+
+# Workspace management
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+floating_modifier $mod
+
+# Audio and brightness controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id uwsm app -- ~/.config/i3/scripts/volume --inc 
+bindsym XF86AudioLowerVolume exec --no-startup-id uwsm app -- ~/.config/i3/scripts/volume --dec 
+bindsym XF86AudioMute exec --no-startup-id uwsm app -- ~/.config/i3/scripts/volume --toggle
+bindsym XF86AudioMicMute exec --no-startup-id uwsm app -- ~/.config/i3/scripts/volume --toggle-mic 
+bindsym XF86AudioPlay exec --no-startup-id uwsm app -- playerctl play-pause
+bindsym XF86AudioPause exec --no-startup-id uwsm app -- playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id uwsm app -- playerctl next
+bindsym XF86AudioPrev exec --no-startup-id uwsm app -- playerctl previous
+bindsym XF86MonBrightnessUp exec --no-startup-id uwsm app -- brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id uwsm app -- brightnessctl set 5%-
