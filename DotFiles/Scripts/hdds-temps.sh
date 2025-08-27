@@ -5,7 +5,6 @@ declare -A DRIVES=(
   ["a9a4ea8c-b44b-4126-b450-eadb6cd4efcd"]="2TB HDD"
   ["72992caa-c5b6-40f9-b4f6-1679a2510174"]="4TB HDD"
   ["2f47ccca-365a-4b47-999b-0f9a91dd8c0e"]="1TB HDD1"
-  ["1d5fa1ec-cf1e-4d8b-a604-4a4b09337003"]="1TB HDD2"
 )
 
 for uuid in "${!DRIVES[@]}"; do
