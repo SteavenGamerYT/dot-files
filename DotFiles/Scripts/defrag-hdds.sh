@@ -3,7 +3,6 @@
 # List of UUIDs for the HDDs
 UUIDS=(
   "2f47ccca-365a-4b47-999b-0f9a91dd8c0e"
-  "1d5fa1ec-cf1e-4d8b-a604-4a4b09337003"
   "a9a4ea8c-b44b-4126-b450-eadb6cd4efcd"
   "72992caa-c5b6-40f9-b4f6-1679a2510174"
 )
