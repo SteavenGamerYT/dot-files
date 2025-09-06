@@ -1,3 +1,4 @@
+# Rx 7600 XT
 output "HDMI-A-2" {
     mode  1366x768@59.79Hz
     pos 0 0
@@ -16,16 +17,10 @@ output "HDMI-A-1" {
     adaptive_sync off
     dpms on
 }
-output "DP-2" {
-    mode  1920x1080@60.0Hz
-    pos 1920 984
-    transform normal
-    scale 1.25
-    scale_filter nearest
-    adaptive_sync off
-    dpms on
-}
-output "HDMI-A-3" disable
-output "DP-3" disable
 workspace 1 output HDMI-A-2
 workspace 2 output HDMI-A-1
+
+# GTX 1650
+output "DVI-D-1" disable
+output "HDMI-A-3" disable
+output "DP-3" disable
