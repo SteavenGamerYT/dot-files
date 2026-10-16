@@ -2,8 +2,12 @@
 
 # Define an array of sinks
 sinks=(
-    "alsa_output.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.iec958-stereo"
-    "alsa_output.usb-XiiSound_Technology_Corporation_H848_USB_Gaming_Headset-00.iec958-stereo"
+     "alsa_output.usb-Jieli_Technology_H540-PRO_Wireless_Headset_1120050704030607-00.iec958-stereo"
+#     "Redragon_H540_Pro_Wireless_cinema_pro_matrix_physics"
+     "alsa_output.usb-Jieli_Technology_H540-PRO_USB_Gaming_Headset_415035333035350F-01.iec958-stereo"
+#     "Redragon_H540_Pro_Wired_cinema_pro_matrix_physics"
+#    "alsa_output.usb-XiiSound_Technology_Corporation_H848_Wireless_headset-00.iec958-stereo"
+#    "alsa_output.usb-XiiSound_Technology_Corporation_H848_USB_Gaming_Headset-00.iec958-stereo"
 #    "alsa_output.pci-0000_03_00.1.pro-output-3"
 #    "alsa_output.pci-0000_03_00.1.pro-output-7"
     "alsa_output.pci-0000_76_00.6.analog-stereo"

@@ -5,6 +5,7 @@ file:///home/omarhanykasban/Pictures Pictures
 file:///home/omarhanykasban/Videos Videos
 file:///mnt/hdd/Videos Videos (1TB HDD)
 file:///home/omarhanykasban/GitHub GitHub
+file:///home/omarhanykasban/Collage Collage
 file:///home/omarhanykasban/Youtube Youtube
 file:///mnt/hdd4/Youtube Youtube (4TB HDD)
 file:///home/omarhanykasban/Games Games
@@ -15,3 +16,4 @@ file:///mnt/hdd2/jellyfin jellyfin (4TB HDD)
 sftp://omarhanykasban@192.168.1.24/ / on 192.168.1.24
 sftp://omarhanykasban@192.168.1.115/home/omarhanykasban Omar-Old-PC (SFTP)
 sftp://medo@10.40.249.160/ Medo-PC (SFTP)
+file:///home/omarhanykasban/ROMs/ps3 ps3
